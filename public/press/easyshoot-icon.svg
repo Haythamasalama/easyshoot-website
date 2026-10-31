@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#62C6FF"/>
+      <stop offset=".5" stop-color="#2C8CF4"/>
+      <stop offset="1" stop-color="#1650D0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".28" cy=".06" r=".85">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".42"/>
+      <stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".75"/>
+      <stop offset=".35" stop-color="#FFFFFF" stop-opacity=".08"/>
+      <stop offset=".8" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="frost" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCEBFF"/>
+    </linearGradient>
+    <linearGradient id="frostEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barrel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E3242"/>
+      <stop offset="1" stop-color="#0E1018"/>
+    </linearGradient>
+    <linearGradient id="barrelRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".45"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#9CCBFF" stop-opacity=".35"/>
+    </linearGradient>
+    <radialGradient id="glass" cx=".5" cy=".72" r=".7">
+      <stop offset="0" stop-color="#3D9BFF"/>
+      <stop offset=".55" stop-color="#123F8C"/>
+      <stop offset="1" stop-color="#05122B"/>
+    </radialGradient>
+    <linearGradient id="spec" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="tileShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0D2E66" flood-opacity=".3"/>
+    </filter>
+    <filter id="lift" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0D2A66" flood-opacity=".35"/>
+    </filter>
+    <filter id="lensLift" x="-40%" y="-40%" width="180%" height="190%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#06204D" flood-opacity=".5"/>
+    </filter>
+    <linearGradient id="lRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5E6577"/>
+      <stop offset=".45" stop-color="#23262F"/>
+      <stop offset="1" stop-color="#3A4256"/>
+    </linearGradient>
+    <linearGradient id="lBarrel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B1E27"/>
+      <stop offset="1" stop-color="#0A0C12"/>
+    </linearGradient>
+    <radialGradient id="lGlass" cx=".5" cy=".62" r=".62">
+      <stop offset="0" stop-color="#2F7CF0"/>
+      <stop offset=".5" stop-color="#123C96"/>
+      <stop offset="1" stop-color="#050C24"/>
+    </radialGradient>
+    <linearGradient id="lCoat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#58E0FF" stop-opacity=".22"/>
+      <stop offset=".45" stop-color="#58E0FF" stop-opacity="0"/>
+      <stop offset=".75" stop-color="#8A6CFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#8A6CFF" stop-opacity=".28"/>
+    </linearGradient>
+    <radialGradient id="lCore" cx=".45" cy=".4" r=".7">
+      <stop offset="0" stop-color="#16244D"/>
+      <stop offset="1" stop-color="#03050C"/>
+    </radialGradient>
+    <linearGradient id="lSpec" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".1"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#tile)" filter="url(#tileShadow)"/>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#glow)"/>
+  <rect x="103" y="103" width="818" height="818" rx="182" fill="none" stroke="url(#rim)" stroke-width="6"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="url(#frost)" stroke-width="60" filter="url(#lift)" opacity=".96">
+      <path d="M244 364v-60q0-60 60-60h60"/>
+      <path d="M660 244h60q60 0 60 60v60"/>
+      <path d="M780 660v60q0 60-60 60h-60"/>
+      <path d="M364 780h-60q-60 0-60-60v-60"/>
+    </g>
+    <g stroke="url(#frostEdge)" stroke-width="8" transform="translate(0 -20)" opacity=".9">
+      <path d="M262 360v-56q0-42 42-42h56"/>
+      <path d="M664 262h56q42 0 42 42v56"/>
+    </g>
+  </g>
+
+  <g filter="url(#lensLift)"><circle cx="512" cy="512" r="152" fill="url(#lRim)"/></g>
+  <circle cx="512" cy="512" r="140" fill="url(#lBarrel)"/>
+  <circle cx="512" cy="512" r="140" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="2"/>
+  <circle cx="512" cy="512" r="118" fill="#03060F"/>
+  <circle cx="512" cy="512" r="112" fill="url(#lGlass)"/>
+  <circle cx="512" cy="512" r="112" fill="url(#lCoat)"/>
+  <circle cx="512" cy="512" r="84" fill="none" stroke="#7FB8FF" stroke-opacity=".18" stroke-width="2"/>
+  <circle cx="512" cy="512" r="58" fill="url(#lCore)"/>
+  <circle cx="512" cy="512" r="58" fill="none" stroke="#9CC8FF" stroke-opacity=".25" stroke-width="2"/>
+  <path d="M428 474a92 92 0 0 1 150-44" fill="none" stroke="url(#lSpec)" stroke-width="22" stroke-linecap="round"/>
+  <path d="M584 586a92 92 0 0 1-60 36" fill="none" stroke="#6FC6FF" stroke-opacity=".55" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="552" cy="470" r="13" fill="#FFFFFF"/>
+  <circle cx="574" cy="494" r="5" fill="#FFFFFF" fill-opacity=".7"/>
+</svg>
