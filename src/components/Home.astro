@@ -153,10 +153,8 @@ const headingTail = t("seo.title").split(/\s*:\s*/)[1];
         <p class="sub">{t("ar.sub")}</p>
         <div class="langs"><span>English</span><span>العربية</span><span>Français</span><span>Español</span><span>Deutsch</span></div>
       </div>
-      <div>
-        <div class="ar-big" set:html={t("ar.big")} />
-        <div class="shot-wrap"><div class="ed bare m-ar" set:html={shotHTML("ar", lang)} /></div>
-      </div>
+      <div class="ar-big" set:html={t("ar.big")} />
+      <figure class="ar-stage"><div class="ed m-ar" role="img" aria-label={t("hero.alt")} set:html={edHTML("ar", lang)} /></figure>
     </div>
   </div>
 </section>

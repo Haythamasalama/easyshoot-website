@@ -1,0 +1,48 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, pagePath, privacyPath, supportPath, useT, type Lang } from "../i18n";
+import { content, articleOf, hubPath, articlePath, alternatesFor, GUIDES, COMPARES } from "../i18n/articles";
+import { breadcrumbNode } from "../lib/seo";
+import press from "../i18n/press.json";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useT(lang);
+const ui = content(lang).ui;
+const mapPath = (l: Lang) => `${pagePath(l)}sitemap/`;
+const url = SITE + mapPath(lang);
+const groups = [
+  { h: t("map.pages"), links: [
+    { name: "EasyShoot", href: pagePath(lang) },
+    { name: (press as any)[lang].h1, href: `${pagePath(lang)}press/` },
+  ] },
+  { h: ui.guides, hub: hubPath(lang, "guides"), links: GUIDES.map(a => ({ name: articleOf(lang, a.slug).h1, href: articlePath(lang, a) })) },
+  { h: ui.compare, hub: hubPath(lang, "compare"), links: COMPARES.map(a => ({ name: articleOf(lang, a.slug).h1, href: articlePath(lang, a) })) },
+  { h: t("foot.help"), links: [
+    { name: t("foot.support"), href: supportPath(lang) },
+    { name: t("foot.privacy"), href: privacyPath(lang) },
+  ] },
+];
+---
+<Base lang={lang} title={`${t("map.title")} | EasyShoot`} description={t("map.desc")} alternates={alternatesFor(mapPath)} graph={[breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: t("map.title"), path: mapPath(lang) }])]}>
+<main class="doc">
+  <div class="wrap narrow-doc">
+    <nav class="crumbs reveal" aria-label="Breadcrumb">
+      <ol><li><a href={pagePath(lang)}>EasyShoot</a></li><li><span aria-current="page">{t("map.title")}</span></li></ol>
+    </nav>
+    <header class="doc-head reveal">
+      <h1>{t("map.title")}</h1>
+      <p class="doc-lead">{t("map.desc")}</p>
+    </header>
+    <div class="map-groups">
+      {groups.map(g => (
+        <section class="map-group reveal">
+          <h2>{g.hub ? <a href={g.hub}>{g.h}</a> : g.h}</h2>
+          <ul>{g.links.map(l => <li><a href={l.href}>{l.name}</a></li>)}</ul>
+        </section>
+      ))}
+    </div>
+    <p class="doc-note">XML: <a href="/sitemap-index.xml" dir="ltr">sitemap-index.xml</a></p>
+  </div>
+</main>
+</Base>

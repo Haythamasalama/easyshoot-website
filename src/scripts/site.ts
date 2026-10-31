@@ -49,6 +49,18 @@ document.querySelectorAll<HTMLButtonElement>("[data-copy]").forEach(b => b.addEv
   setTimeout(() => (b.textContent = label), 1600);
 }));
 
+// Table of contents follows the section in view.
+const tocLinks = [...document.querySelectorAll<HTMLAnchorElement>(".doc-toc a")];
+if (tocLinks.length && "IntersectionObserver" in window) {
+  const byId = new Map(tocLinks.map(a => [a.hash.slice(1), a]));
+  const spy = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    tocLinks.forEach(a => a.classList.remove("on"));
+    byId.get(e.target.id)?.classList.add("on");
+  }), { rootMargin: "-20% 0px -70% 0px" });
+  byId.forEach((_, id) => { const el = document.getElementById(id); if (el) spy.observe(el); });
+}
+
 // Showcase tabs: every mode is in the HTML already; only one is shown.
 const tabs = [...document.querySelectorAll<HTMLButtonElement>("[data-tab]")];
 function showTab(i: number) {
@@ -70,13 +82,13 @@ tools.forEach(b => b.addEventListener("click", () => {
 
 // Every button and control gives a small spring when pressed.
 if (!reduce) {
-  press(".btn, .chip-btn, .tabs button, .faq summary, .lang-menu a, .links a, .foot a", el => {
+  press(".btn, .chip-btn, .tabs button, .faq summary, .lang-menu a, .links a, .foot-cols a, .foot-langs a, .pill-tag", el => {
     animate(el, { scale: 0.94 }, { type: "spring", stiffness: 600, damping: 30 });
     return () => animate(el, { scale: 1 }, { type: "spring", bounce: 0.55, duration: 0.45 });
   });
 }
 
-if (reduce) {
+if (reduce || document.hidden) {
   document.querySelectorAll<HTMLElement>(".reveal").forEach(el => (el.style.opacity = "1"));
 } else {
   const ease = [0.2, 0.8, 0.2, 1] as const;
@@ -98,6 +110,16 @@ if (reduce) {
     const i = Math.max(0, siblings.indexOf(el));
     animate(el, { opacity: [0, 1], y: [26, 0] }, { duration: 0.7, delay: Math.min(i, 6) * 0.07, ease });
   }, { margin: "0px 0px -10% 0px" });
+
+  // If the animation clock stalls (a throttled or background tab), never leave visible content hidden.
+  setTimeout(() => {
+    document.querySelectorAll<HTMLElement>(".reveal, .hero-copy > *, .hero-icon, .desk, .editor-win").forEach(el => {
+      if (el.getBoundingClientRect().top < innerHeight && +getComputedStyle(el).opacity < 0.5) {
+        el.getAnimations().forEach(an => an.finish());
+        el.style.opacity = "1";
+      }
+    });
+  }, 1800);
 
   // Floating tool icons settle into place one after another.
   inView(".toolrow", row => {

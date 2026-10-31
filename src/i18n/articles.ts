@@ -26,3 +26,44 @@ export const ALL = [...GUIDES, ...COMPARES];
 export const hubPath = (lang: Lang, kind: Kind) => `${pagePath(lang)}${kind}/`;
 export const articlePath = (lang: Lang, a: Article) => `${hubPath(lang, a.kind)}${a.slug}/`;
 export const alternatesFor = (path: (l: Lang) => string) => Object.fromEntries(LANGS.map(l => [l, path(l)])) as Record<Lang, string>;
+
+const TAG_NAMES: Record<string, Record<Lang, string>> = {
+  mac: { en: "Mac", ar: "ماك", fr: "Mac", es: "Mac", de: "Mac" },
+  screenshots: { en: "Screenshots", ar: "لقطات الشاشة", fr: "Captures d’écran", es: "Capturas de pantalla", de: "Screenshots" },
+  scrolling: { en: "Scrolling capture", ar: "التقاط مع التمرير", fr: "Capture défilante", es: "Captura con desplazamiento", de: "Scroll-Aufnahme" },
+  privacy: { en: "Privacy", ar: "الخصوصية", fr: "Confidentialité", es: "Privacidad", de: "Datenschutz" },
+  markup: { en: "Markup", ar: "التوضيح", fr: "Annotation", es: "Anotación", de: "Markieren" },
+  arabic: { en: "Arabic and RTL", ar: "العربية ومن اليمين لليسار", fr: "Arabe et RTL", es: "Árabe y RTL", de: "Arabisch und RTL" },
+  shortcuts: { en: "Keyboard shortcuts", ar: "اختصارات لوحة المفاتيح", fr: "Raccourcis clavier", es: "Atajos de teclado", de: "Tastenkürzel" },
+  comparison: { en: "Comparison", ar: "مقارنة", fr: "Comparatif", es: "Comparativa", de: "Vergleich" },
+  alternatives: { en: "Alternatives", ar: "بدائل", fr: "Alternatives", es: "Alternativas", de: "Alternativen" },
+  free: { en: "Free apps", ar: "تطبيقات مجانية", fr: "Apps gratuites", es: "Apps gratis", de: "Kostenlose Apps" },
+};
+const ARTICLE_TAGS: Record<string, string[]> = {
+  "scrolling-screenshot-mac": ["scrolling", "screenshots", "mac"],
+  "blur-screenshot-mac": ["privacy", "markup", "screenshots"],
+  "annotate-screenshot-mac": ["markup", "shortcuts", "screenshots"],
+  "arabic-text-screenshot-mac": ["arabic", "markup", "mac"],
+  "cleanshot-x-alternative": ["comparison", "alternatives", "free"],
+  "shottr-alternative": ["comparison", "alternatives", "free"],
+  "snagit-alternative": ["comparison", "alternatives", "free"],
+  "lightshot-alternative": ["comparison", "alternatives", "privacy"],
+  "macos-screenshot-alternative": ["comparison", "mac", "scrolling"],
+};
+export const tagsFor = (lang: Lang, slug: string) => (ARTICLE_TAGS[slug] ?? []).map(k => TAG_NAMES[k][lang]);
+
+const READ: Record<Lang, (n: number) => string> = {
+  en: n => `${n} min read`,
+  ar: n => (n === 1 ? "دقيقة قراءة" : n === 2 ? "دقيقتا قراءة" : n <= 10 ? `${n} دقائق قراءة` : `${n} دقيقة قراءة`),
+  fr: n => `${n} min de lecture`,
+  es: n => `${n} min de lectura`,
+  de: n => `${n} Min. Lesezeit`,
+};
+export const TOC_LABEL: Record<Lang, string> = { en: "On this page", ar: "في هذه الصفحة", fr: "Sur cette page", es: "En esta página", de: "Auf dieser Seite" };
+
+// Words in the visible article, for reading time and schema.
+export function wordCount(a: any) {
+  const parts = [a.intro, ...(a.steps ?? []).flatMap((s: any) => [s.name, s.text]), ...(a.table ?? []).flat(), ...a.sections.flatMap((s: any) => [s.h2, s.html]), ...a.faq.flatMap((f: any) => [f.q, f.a])];
+  return parts.join(" ").replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+}
+export const readingTime = (lang: Lang, words: number) => READ[lang](Math.max(1, Math.round(words / 200)));

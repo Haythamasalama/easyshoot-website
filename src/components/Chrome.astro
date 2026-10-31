@@ -35,7 +35,7 @@ const supportHref = supportPath(lang);
           <span>{lang.toUpperCase()}</span>
         </summary>
         <ul class="lang-menu">
-          {LANGS.map(l => <li><a href={alternates[l]} hreflang={l} lang={l} aria-current={l === lang ? "page" : undefined}>{LANG_NAMES[l]} <small>{l.toUpperCase()}</small></a></li>)}
+          {LANGS.map(l => <li><a href={alternates[l] ?? pagePath(l)} hreflang={l} lang={l} aria-current={l === lang ? "page" : undefined}>{LANG_NAMES[l]} <small>{l.toUpperCase()}</small></a></li>)}
         </ul>
       </details>
       <button class="chip-btn" id="themeBtn" type="button" aria-label={t("theme.toggle")} data-to-light={t("theme.toLight")} data-to-dark={t("theme.toDark")}>
@@ -49,18 +49,26 @@ const supportHref = supportPath(lang);
 
 <slot />
 
-<footer>
+<footer class="site-foot">
   <div class="wrap">
-    <div class="foot">
-      <div>
-        <a class="brand wm" href={pagePath(lang)} dir="ltr"><img src="/icon.png" width="30" height="30" alt="" loading="lazy"><span>Easy<span class="s">Shoot</span></span></a>
+    <div class="foot-card">
+      <div class="foot-brand">
+        <a class="brand wm" href={pagePath(lang)} dir="ltr"><img src="/icon.png" width="40" height="40" alt="" loading="lazy"><span>Easy<span class="s">Shoot</span></span></a>
         <p>{t("foot.about")}</p>
+        <a class="btn btn-dark" href={storeHref}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span>{t("hero.cta")}</span></a>
       </div>
-      <div><h4>{t("foot.product")}</h4><ul><li><a href={home + "#features"}>{t("nav.features")}</a></li><li><a href={home + "#tools"}>{t("nav.tools")}</a></li><li><a href={home + "#faq"}>{t("nav.faq")}</a></li></ul></div>
-      <div><h4>{t("foot.guides")}</h4><ul>{GUIDES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
-      <div><h4>{t("foot.compare")}</h4><ul>{COMPARES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
-      <div><h4>{t("foot.help")}</h4><ul><li><a href={supportHref}>{t("foot.support")}</a></li><li><a href={privacyHref}>{t("foot.privacy")}</a></li><li><a href={home + "press/"}>{t("foot.press")}</a></li></ul></div>
+      <nav class="foot-cols" aria-label={t("foot.product")}>
+        <div><h4>{t("foot.product")}</h4><ul><li><a href={home + "#features"}>{t("nav.features")}</a></li><li><a href={home + "#tools"}>{t("nav.tools")}</a></li><li><a href={home + "#privacy"}>{t("nav.privacy")}</a></li><li><a href={home + "#faq"}>{t("nav.faq")}</a></li></ul></div>
+        <div><h4>{t("foot.guides")}</h4><ul>{GUIDES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
+        <div><h4>{t("foot.compare")}</h4><ul>{COMPARES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
+        <div><h4>{t("foot.help")}</h4><ul><li><a href={supportHref}>{t("foot.support")}</a></li><li><a href={privacyHref}>{t("foot.privacy")}</a></li><li><a href={home + "press/"}>{t("foot.press")}</a></li><li><a href={home + "sitemap/"}>{t("map.title")}</a></li></ul></div>
+      </nav>
     </div>
-    <div class="copy"><span>© 2026 EasyShoot</span></div>
+    <div class="foot-bar">
+      <span>© 2026 EasyShoot</span>
+      <ul class="foot-langs">
+        {LANGS.map(l => <li><a href={alternates[l] ?? pagePath(l)} hreflang={l} lang={l} aria-current={l === lang ? "page" : undefined}>{LANG_NAMES[l]}</a></li>)}
+      </ul>
+    </div>
   </div>
 </footer>

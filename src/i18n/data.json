@@ -108,7 +108,10 @@
    "hero.alt": "The EasyShoot editor with a checkout page marked up with a box, two numbered steps, an arrow and a note.",
    "foot.guides": "Guides",
    "foot.compare": "Compare",
-   "foot.press": "Press kit"
+   "foot.press": "Press kit",
+   "map.title": "Sitemap",
+   "map.desc": "Every page on the EasyShoot website, in every language.",
+   "map.pages": "Pages"
   },
   "ar": {
    "nav.features": "المزايا",
@@ -222,7 +225,10 @@
    "hero.alt": "محرر EasyShoot وفيه صفحة دفع موضّحة بمربع وخطوتين مرقّمتين وسهم وملاحظة.",
    "foot.guides": "الأدلة",
    "foot.compare": "مقارنات",
-   "foot.press": "الملف الصحفي"
+   "foot.press": "الملف الصحفي",
+   "map.title": "خريطة الموقع",
+   "map.desc": "كل صفحات موقع EasyShoot، بكل اللغات.",
+   "map.pages": "الصفحات"
   },
   "fr": {
    "nav.features": "Fonctionnalités",
@@ -332,7 +338,10 @@
    "hero.alt": "L’éditeur EasyShoot avec une page de paiement annotée : un cadre, deux étapes numérotées, une flèche et une note.",
    "foot.guides": "Guides",
    "foot.compare": "Comparatifs",
-   "foot.press": "Dossier de presse"
+   "foot.press": "Dossier de presse",
+   "map.title": "Plan du site",
+   "map.desc": "Toutes les pages du site EasyShoot, dans toutes les langues.",
+   "map.pages": "Pages"
   },
   "es": {
    "nav.features": "Funciones",
@@ -442,7 +451,10 @@
    "hero.alt": "El editor de EasyShoot con una página de pago anotada con un recuadro, dos pasos numerados, una flecha y una nota.",
    "foot.guides": "Guías",
    "foot.compare": "Comparativas",
-   "foot.press": "Kit de prensa"
+   "foot.press": "Kit de prensa",
+   "map.title": "Mapa del sitio",
+   "map.desc": "Todas las páginas del sitio de EasyShoot, en todos los idiomas.",
+   "map.pages": "Páginas"
   },
   "de": {
    "nav.features": "Funktionen",
@@ -552,7 +564,10 @@
    "hero.alt": "Der EasyShoot-Editor mit einer Bezahlseite, markiert mit einem Rahmen, zwei nummerierten Schritten, einem Pfeil und einer Notiz.",
    "foot.guides": "Anleitungen",
    "foot.compare": "Vergleiche",
-   "foot.press": "Pressemappe"
+   "foot.press": "Pressemappe",
+   "map.title": "Sitemap",
+   "map.desc": "Alle Seiten der EasyShoot-Website, in allen Sprachen.",
+   "map.pages": "Seiten"
   }
  },
  "ed": {

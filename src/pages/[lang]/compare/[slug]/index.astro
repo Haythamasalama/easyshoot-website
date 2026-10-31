@@ -1,7 +1,7 @@
 ---
-import ArticlePage from "../../../components/ArticlePage.astro";
-import { LANGS, type Lang } from "../../../i18n";
-import { COMPARES as LIST } from "../../../i18n/articles";
+import ArticlePage from "../../../../components/ArticlePage.astro";
+import { LANGS, type Lang } from "../../../../i18n";
+import { COMPARES as LIST } from "../../../../i18n/articles";
 
 export function getStaticPaths() {
   return LANGS.filter(l => l !== "en").flatMap(lang => LIST.map(article => ({ params: { lang, slug: article.slug }, props: { article } })));
