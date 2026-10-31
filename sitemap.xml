@@ -11,7 +11,17 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://easyshoot.haythamasalama.me/ar/support.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://easyshoot.haythamasalama.me/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://easyshoot.haythamasalama.me/ar/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
