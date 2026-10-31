@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EasyShoot for Mac</title>
-<meta name="description" content="EasyShoot is a free screenshot app for macOS. Capture an area, a window or a whole scrolling page, add arrows, numbered steps, text and pixelation, frame it on a clean background and share it. No account, no cloud.">
+<meta name="description" content="EasyShoot is a free screenshot app for macOS, coming soon to the Mac App Store. Capture an area, a window or a whole scrolling page, add arrows, numbered steps, text and pixelation, put it on a clean background and share it. No account, no cloud.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Haytham A. Salama">
 <meta name="application-name" content="EasyShoot">
@@ -18,15 +18,15 @@
 <meta property="og:locale:alternate" content="es_ES">
 <meta property="og:locale:alternate" content="de_DE">
 <meta property="og:title" content="EasyShoot for Mac">
-<meta property="og:description" content="Screenshots, explained. Coming soon to the Mac App Store.">
+<meta property="og:description" content="Screenshots that explain themselves. Coming soon to the Mac App Store.">
 <meta property="og:image" content="https://easyshoot.haythamasalama.me/og.png">
 <meta property="og:url" content="https://easyshoot.haythamasalama.me/">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="EasyShoot: screenshots, explained.">
+<meta property="og:image:alt" content="EasyShoot: screenshots that explain themselves.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="EasyShoot for Mac">
-<meta name="twitter:description" content="Screenshots, explained. Coming soon to the Mac App Store.">
+<meta name="twitter:description" content="Screenshots that explain themselves. Coming soon to the Mac App Store.">
 <meta name="twitter:image" content="https://easyshoot.haythamasalama.me/og.png">
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="canonical" href="https://easyshoot.haythamasalama.me/">
@@ -34,7 +34,7 @@
 <meta name="theme-color" content="#08080A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Kufi+Arabic:wght@600;700;800&family=Readex+Pro:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -45,18 +45,11 @@
    "applicationCategory": "MultimediaApplication",
    "applicationSubCategory": "Screenshot tool",
    "operatingSystem": "macOS 14 or later",
-   "description": "A free screenshot app for macOS: area, window, fullscreen and scrolling capture, annotations, pixelation, Arabic and right-to-left text, background frames, presets and export. No account and no cloud.",
+   "description": "A screenshot app for macOS: area, window, fullscreen and scrolling capture, annotations, pixelation, Arabic and right-to-left text, background frames, presets and export. No account and no cloud.",
    "url": "https://easyshoot.haythamasalama.me/",
    "image": "https://easyshoot.haythamasalama.me/og.png",
    "softwareHelp": "https://easyshoot.haythamasalama.me/support.html",
-   "isAccessibleForFree": true,
-   "inLanguage": [
-    "en",
-    "ar",
-    "fr",
-    "es",
-    "de"
-   ],
+   "inLanguage": ["en", "ar", "fr", "es", "de"],
    "featureList": [
     "Area, window, fullscreen",
     "Scrolling capture",
@@ -99,742 +92,535 @@
   try { var t = localStorage.getItem("easyshoot-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
 <style>
-/* Dark first. Signal orange is the one accent: the main action, the capture corners and the glow. */
+/* Dark first. One calm blue accent: the main action, the capture corners and step markers. */
 :root {
-  --bg: #08080A; --surface: #0F0F12; --card: #0D0D10; --line: #1E1E24; --line2: #2A2A32;
-  --ink: #F5F5F7; --muted: #A1A1AA; --muted2: #8A8A94; --chip: #17171B;
-  --signal: #FF5A1F; --signal-ink: #FF7A45; --glow: .5;
-  --display: "Bricolage Grotesque", "Noto Kufi Arabic", ui-sans-serif, system-ui, sans-serif;
-  --body: "Instrument Sans", "Readex Pro", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --bg: #08080A; --surface: #0F0F12; --card: #121216; --raised: #1A1A1F; --line: #222228; --line2: #2E2E36;
+  --ink: #F5F5F7; --muted: #A1A1AA; --chip: #17171B;
+  --signal: #0071E3; --signal-ink: #4DA3FF; --on-signal: #FFFFFF;
+  --display: "IBM Plex Sans", "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --body: "IBM Plex Sans", "IBM Plex Sans Arabic", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --desk: linear-gradient(160deg, #18202B, #221C16);
   color-scheme: dark;
 }
 :root[data-theme="light"] {
-  --bg: #F5F5F3; --surface: #FFFFFF; --card: #FFFFFF; --line: #E4E4E7; --line2: #D6D6DB;
-  --ink: #0B0B0D; --muted: #55555E; --muted2: #6B6B75; --chip: #EEEEF0;
-  --signal-ink: #C2410C; --glow: .22;
+  --bg: #FFFFFF; --surface: #F5F5F3; --card: #F4F4F5; --raised: #FFFFFF; --line: #E4E4E7; --line2: #D6D6DB;
+  --ink: #0B0B0D; --muted: #55555E; --chip: #EEEEF0;
+  --signal-ink: #0066CC;
+  --desk: linear-gradient(160deg, #E3EAF3, #F4ECDF);
   color-scheme: light;
 }
-:root[dir="rtl"] { --display: "Noto Kufi Arabic", "Bricolage Grotesque", system-ui, sans-serif; --body: "Readex Pro", "Instrument Sans", system-ui, sans-serif; }
+:root[dir="rtl"] { --display: "IBM Plex Sans Arabic", "IBM Plex Sans", system-ui, sans-serif; --body: "IBM Plex Sans Arabic", "IBM Plex Sans", system-ui, sans-serif; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 a { color: inherit; }
 img, svg { display: block; }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-.eyebrow { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--signal-ink); }
-:root[dir="rtl"] .eyebrow { letter-spacing: 0; }
-.h2 { margin: 14px 0 0; font-family: var(--display); font-weight: 700; font-size: clamp(34px, 5vw, 60px); line-height: 1.02; letter-spacing: -.04em; }
-:root[dir="rtl"] .h2, :root[dir="rtl"] h1 { letter-spacing: 0; line-height: 1.25; }
+:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
 .muted { color: var(--muted); }
-.btn { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 16px; }
-.btn-primary { background: var(--signal); color: #FFFFFF; box-shadow: 0 10px 40px -10px rgba(255, 90, 31, .75); }
-.btn-primary:hover { background: #F04E14; }
-.btn-ghost { border: 1px solid var(--line2); color: var(--ink); font-weight: 500; }
-.btn-ghost:hover { background: var(--chip); }
-.card { border-radius: 22px; background: var(--card); border: 1px solid var(--line); }
-section { scroll-margin-top: 90px; }
+.mono { font-family: var(--mono); }
+h1, .h2 { font-family: var(--display); font-weight: 700; letter-spacing: -.025em; margin: 0; }
+:root[dir="rtl"] h1, :root[dir="rtl"] .h2, :root[dir="rtl"] h3 { letter-spacing: 0; line-height: 1.3; }
+.h2 { font-size: clamp(32px, 4.6vw, 52px); line-height: 1.05; text-align: center; }
+.hl { color: var(--signal-ink); }
 
-/* Nav */
-.top { position: sticky; top: 0; z-index: 20; padding: 14px 16px 0; }
-.nav { max-width: 1120px; margin: 0 auto; padding: 8px; padding-inline-start: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; border-radius: 999px; border: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 74%, transparent); backdrop-filter: saturate(1.6) blur(16px); -webkit-backdrop-filter: saturate(1.6) blur(16px); }
-.brand { display: flex; align-items: center; gap: 9px; text-decoration: none; margin-inline-end: 8px; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 17px; }
-.links { display: flex; flex-wrap: wrap; flex: 1 1 auto; justify-content: center; font-size: 14px; font-weight: 500; }
-.links a { color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 999px; }
-.links a:hover { color: var(--ink); background: var(--chip); }
-.icon-btn { width: 38px; height: 38px; border-radius: 50%; border: 0; background: transparent; color: var(--muted); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
-.icon-btn:hover { color: var(--ink); background: var(--chip); }
-.nav-cta { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; background: var(--signal); color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 600; }
-.lang { position: relative; }
-.lang-btn { display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
-.lang-btn:hover { background: var(--chip); }
-.lang-menu { position: absolute; inset-inline-end: 0; top: 46px; z-index: 30; min-width: 190px; padding: 6px; margin: 0; list-style: none; border-radius: 14px; border: 1px solid var(--line2); background: var(--surface); box-shadow: 0 20px 50px -12px rgba(0, 0, 0, .5); }
-.lang-menu[hidden] { display: none; }
-.lang-menu button { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; padding: 9px 10px; border: 0; border-radius: 9px; background: transparent; color: var(--ink); font: inherit; font-size: 14px; text-align: start; cursor: pointer; }
-.lang-menu button:hover, .lang-menu button[aria-selected="true"] { background: var(--chip); }
-.lang-menu small { font-family: var(--mono); font-size: 11px; color: var(--muted2); }
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 16px; }
+.btn-primary { background: var(--signal); color: var(--on-signal); }
+.btn-primary:hover { filter: brightness(1.06); }
+.btn-ghost { border: 1px solid var(--line2); color: var(--ink); }
+.btn-ghost:hover { background: var(--chip); }
+
+/* Header */
+.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: saturate(180%) blur(18px); -webkit-backdrop-filter: saturate(180%) blur(18px); border-bottom: 1px solid var(--line); }
+.nav { max-width: 1120px; margin: 0 auto; padding: 0 20px; min-height: 62px; display: flex; align-items: center; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 17px; font-family: var(--display); letter-spacing: -.02em; }
+.brand .shoot { color: var(--signal-ink); }
+.links { display: flex; gap: 22px; flex: 1; font-size: 14px; }
+.links a { text-decoration: none; color: var(--muted); padding: 12px 0; }
+.links a:hover { color: var(--ink); }
+.tools { display: flex; align-items: center; gap: 8px; margin-inline-start: auto; }
+.icon-btn, .lang-btn { height: 38px; min-width: 38px; border-radius: 19px; border: 1px solid var(--line); background: transparent; color: var(--ink); display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 0 10px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+.icon-btn:hover, .lang-btn:hover { background: var(--chip); }
 .theme-dark-icon { display: none; }
 :root[data-theme="light"] .theme-dark-icon { display: block; }
 :root[data-theme="light"] .theme-light-icon { display: none; }
+.lang { position: relative; }
+.lang-menu { position: absolute; inset-inline-end: 0; top: 46px; margin: 0; padding: 6px; list-style: none; min-width: 170px; background: var(--raised); border: 1px solid var(--line2); border-radius: 14px; box-shadow: 0 20px 40px -20px rgba(0,0,0,.5); }
+.lang-menu button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 40px; padding: 0 12px; border: 0; border-radius: 9px; background: transparent; color: var(--ink); font: inherit; font-size: 14px; cursor: pointer; text-align: start; }
+.lang-menu button:hover, .lang-menu button[aria-selected="true"] { background: var(--chip); }
+.lang-menu small { color: var(--muted); font-family: var(--mono); }
+.nav .cta { min-height: 38px; padding: 0 16px; font-size: 14px; }
+@media (max-width: 760px) { .links { display: none; } .nav .cta { display: none; } }
 
 /* Hero */
-.hero { position: relative; padding: 96px 24px 0; text-align: center; }
-.glow { position: absolute; left: 50%; width: 1100px; height: 700px; transform: translateX(-50%); background: radial-gradient(closest-side, rgba(255, 90, 31, var(--glow)), rgba(255, 90, 31, 0) 70%); filter: blur(30px); pointer-events: none; }
-.badge { position: relative; display: flex; width: fit-content; margin: 0 auto; align-items: center; gap: 10px; padding: 6px 14px; padding-inline-start: 6px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); font-size: 13px; color: var(--muted); }
-.badge b { padding: 3px 9px; border-radius: 999px; background: var(--chip); color: var(--ink); font-weight: 600; }
-.selection { position: relative; display: block; width: fit-content; max-width: 100%; margin: 48px auto 0; padding: 28px 44px; }
-.corner { position: absolute; width: 44px; height: 44px; border: 0 solid var(--signal); }
-.corner.tl { left: 0; top: 0; border-width: 4px 0 0 4px; border-top-left-radius: 10px; }
-.corner.tr { right: 0; top: 0; border-width: 4px 4px 0 0; border-top-right-radius: 10px; }
-.corner.bl { left: 0; bottom: 0; border-width: 0 0 4px 4px; border-bottom-left-radius: 10px; }
-.corner.br { right: 0; bottom: 0; border-width: 0 4px 4px 0; border-bottom-right-radius: 10px; }
-.dims { position: absolute; right: 0; bottom: -38px; padding: 3px 8px; border-radius: 6px; background: var(--signal); color: #FFFFFF; font-family: var(--mono); font-size: 12px; font-weight: 500; direction: ltr; }
-h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: clamp(52px, 9vw, 128px); line-height: .92; letter-spacing: -.05em; }
-:root[dir="rtl"] h1 { font-size: clamp(48px, 8vw, 112px); }
-.hl { position: relative; display: inline-block; z-index: 0; }
-.hl::after { content: ""; position: absolute; left: -1%; right: -1%; bottom: .04em; height: .24em; background: var(--signal); opacity: .85; z-index: -1; border-radius: 4px; }
-.hero-sub { position: relative; margin: 56px auto 0; max-width: 560px; font-size: 19px; color: var(--muted); }
-.hero-ctas { position: relative; margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-.hero-meta { position: relative; margin: 18px 0 0; font-size: 13px; color: var(--muted2); }
+.hero { position: relative; padding: 76px 0 0; text-align: center; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: -20% 10% auto; height: 620px; background: radial-gradient(50% 50% at 50% 50%, rgba(0, 113, 227, .14), rgba(0, 113, 227, 0)); pointer-events: none; }
+:root[data-theme="light"] .hero::before { background: radial-gradient(50% 50% at 50% 50%, rgba(0, 113, 227, .07), rgba(0, 113, 227, 0)); }
+.hero .wrap { position: relative; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line2); font-size: 13px; font-weight: 500; color: var(--muted); }
+.pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--signal); }
+h1 { font-size: clamp(42px, 7vw, 82px); line-height: 1.02; max-width: 13em; }
+.lead { margin: 0; font-size: clamp(18px, 2vw, 21px); color: var(--muted); max-width: 32em; }
+.actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding-top: 6px; }
+.meta { font-size: 13px; color: var(--muted); }
+.shot { margin: 40px auto 0; max-width: 1040px; }
+.shot img { width: 100%; height: auto; }
 
-/* App window mock (always LTR: it is a screenshot) */
-.mock-wrap { position: relative; max-width: 1120px; margin: 80px auto 0; perspective: 2000px; }
-.mock { direction: ltr; transform: rotateX(8deg); transform-origin: 50% 0; border-radius: 16px; background: #0C0C0F; border: 1px solid #2A2A32; box-shadow: 0 0 0 1px rgba(0, 0, 0, .6), 0 50px 120px -30px rgba(0, 0, 0, .9), 0 0 80px -20px rgba(255, 90, 31, .35); overflow: hidden; text-align: left; font-family: "Instrument Sans", system-ui, sans-serif; font-size: 13px; color: #E4E4E7; }
-.mock-bar { display: flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; background: #141418; border-bottom: 1px solid #222228; }
-.dot { width: 12px; height: 12px; border-radius: 50%; }
-.mock-body { display: flex; min-height: 560px; }
-.mock-canvas { flex: 1 1 auto; min-width: 0; position: relative; background: #101013 radial-gradient(#1C1C21 1px, transparent 1px) 0 0 / 18px 18px; display: flex; flex-direction: column; align-items: center; padding: 18px 28px 28px; gap: 20px; }
-.toolbar { display: flex; align-items: center; gap: 2px; padding: 5px; border-radius: 14px; background: rgba(30, 30, 36, .85); border: 1px solid #2E2E36; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .8); }
-.tool { width: 34px; height: 30px; border-radius: 9px; display: flex; align-items: center; justify-content: center; color: #C4C4CC; }
-.tool.on { color: #FF7A45; background: rgba(255, 90, 31, .16); }
-.sep { width: 1px; height: 18px; margin: 0 4px; background: #33333B; }
-.frame { width: 100%; max-width: 700px; padding: 40px; border-radius: 16px; background: linear-gradient(135deg, #3B2BD9 0%, #7B4DFF 45%, #FF7A59 100%); }
-.shot { position: relative; border-radius: 12px; background: #FFFFFF; color: #0B0B0D; box-shadow: 0 30px 60px -20px rgba(20, 10, 60, .7); display: flex; }
-.shot-side { width: 150px; flex: none; background: #F6F6F8; border-right: 1px solid #ECECEF; border-radius: 12px 0 0 12px; padding: 16px 12px; display: flex; flex-direction: column; gap: 8px; font-size: 12px; color: #55555E; }
-.shot-side span { padding: 6px 8px; }
-.shot-main { flex: 1; min-width: 0; padding: 18px; display: flex; flex-direction: column; gap: 14px; }
-.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
-.kpi { border: 1px solid #ECECEF; border-radius: 10px; padding: 10px; }
-.kpi small { display: block; font-size: 11px; color: #6B6B75; }
-.kpi b { font-size: 18px; }
-.bars { height: 110px; display: flex; align-items: flex-end; gap: 6px; padding: 8px 4px 0; border-bottom: 1px solid #ECECEF; }
-.bars span { flex: 1; border-radius: 4px 4px 0 0; background: #DCD6FF; }
-.mosaic { display: grid; grid-template-columns: repeat(14, 7px); grid-auto-rows: 7px; border-radius: 3px; overflow: hidden; }
-.step { position: absolute; width: 30px; height: 30px; border-radius: 50%; background: #FF3B30; color: #FFFFFF; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; border: 3px solid #FFFFFF; box-shadow: 0 6px 14px rgba(0, 0, 0, .35); }
-.note { position: absolute; right: -34px; top: -84px; padding: 8px 12px; border-radius: 10px; background: #FF3B30; color: #FFFFFF; font-size: 14px; font-weight: 700; white-space: nowrap; box-shadow: 0 10px 24px -6px rgba(0, 0, 0, .45); }
-.inspector { width: 260px; flex: none; background: #121216; border-left: 1px solid #222228; padding: 16px; display: flex; flex-direction: column; gap: 18px; }
-.seg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 3px; border-radius: 9px; background: #1C1C21; text-align: center; font-weight: 500; color: #A1A1AA; }
-.seg span { padding: 5px 0; border-radius: 7px; }
-.seg .on { background: #2C2C33; color: #F5F5F7; }
-.swatches { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
-.swatches span { aspect-ratio: 1; border-radius: 8px; }
-.slider { height: 4px; border-radius: 2px; background: #26262C; }
-.slider i { display: block; height: 4px; border-radius: 2px; background: #C4C4CC; }
-.row { display: flex; justify-content: space-between; align-items: center; }
+/* Sections */
+.section { padding: 120px 0 0; }
+.section-head { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 36px; }
 
-/* Keys */
-.keys { margin-top: 52px; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; direction: ltr; }
-.key { display: inline-flex; align-items: center; justify-content: center; min-width: 64px; height: 64px; padding: 0 14px; border-radius: 14px; background: linear-gradient(180deg, #26262C, #141418); border: 1px solid #33333B; box-shadow: 0 6px 0 #050507, 0 10px 24px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .08); color: #F5F5F7; font-size: 24px; font-weight: 500; }
-.key.hit { background: linear-gradient(180deg, #FF6A33, #E04A12); border-color: #FF7A45; }
-.shortcuts { margin: 48px auto 0; max-width: 860px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; text-align: start; }
-.shortcuts div { background: var(--surface); padding: 18px 20px; }
-.shortcuts b { display: block; font-weight: 600; }
-.shortcuts code { font-family: var(--mono); font-size: 13px; color: var(--muted2); direction: ltr; unicode-bidi: isolate; }
+/* Bento */
+.bento { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.span2 { grid-column: span 2; }
+@media (max-width: 880px) { .bento { grid-template-columns: minmax(0, 1fr); } .span2 { grid-column: auto; } }
+.tile { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 26px; display: flex; flex-direction: column; gap: 20px; overflow: hidden; }
+.tile h3 { margin: 0 0 6px; font-family: var(--display); font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
+.tile p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.45; }
+.art { flex: 1; min-height: 210px; position: relative; border-radius: 16px; }
+.win { background: #FFFFFF; color: #1D1D1F; border-radius: 12px; font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; }
+.field { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid #E5E5EA; border-radius: 8px; font-size: 13px; }
+.field span:first-child { color: #6E6E73; }
+.pay { padding: 8px 14px; border-radius: 8px; background: #1D1D1F; color: #fff; font-weight: 600; font-size: 13px; }
+.step { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: var(--signal); color: var(--on-signal); border: 2px solid #fff; font: 700 12px/22px var(--body); text-align: center; box-shadow: 0 4px 10px -4px rgba(0,0,0,.4); }
+.note { position: absolute; padding: 6px 11px; border-radius: 8px; background: var(--signal); color: var(--on-signal); font: 600 13px/1.2 var(--body); box-shadow: 0 8px 18px -8px rgba(0,0,0,.45); white-space: nowrap; }
+.ring { outline: 3px solid var(--signal); outline-offset: 4px; }
+.mosaic { background: repeating-conic-gradient(#9C9CA3 0 25%, #C7C7CC 0 50%) 0 0 / 8px 8px; border-radius: 3px; }
+.keys { display: flex; gap: 4px; direction: ltr; }
+.key { min-width: 26px; height: 26px; padding: 0 5px; border-radius: 6px; background: var(--chip); border: 1px solid var(--line2); border-bottom-width: 2px; display: inline-flex; align-items: center; justify-content: center; font: 500 12px var(--mono); }
+.mode { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px; background: var(--raised); border: 1px solid var(--line); font-size: 15px; }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 24px; }
+.chips span { padding: 9px 16px; border-radius: 999px; border: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 
-/* Features */
-.features { margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
-.feature { padding: 28px; display: flex; flex-direction: column; gap: 10px; }
-.feature .ico { width: 46px; height: 46px; border-radius: 13px; background: rgba(255, 90, 31, .12); border: 1px solid rgba(255, 90, 31, .22); color: #FF6A2B; display: flex; align-items: center; justify-content: center; }
-.feature h3 { margin: 10px 0 0; font-size: 18px; font-weight: 600; letter-spacing: -.01em; }
-.feature p { margin: 0; color: var(--muted); font-size: 15px; }
+/* Feature art */
+.tile-img { display: block; width: 100%; height: auto; border-radius: 14px; margin-top: auto; }
+.raw-img { border-radius: 0; box-shadow: 0 0 0 1px var(--line); }
+.stage { position: relative; flex: 1; border-radius: 16px; background: var(--desk); overflow: hidden; }
+.menubar { position: absolute; inset: 0 0 auto 0; height: 22px; display: flex; align-items: center; gap: 12px; padding: 0 12px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, var(--raised) 70%, transparent); color: var(--ink); }
+.tl { display: inline-flex; gap: 5px; }
+.tl i, .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
+.tl i:nth-child(1) { background: #FF5F57; } .tl i:nth-child(2) { background: #FEBC2E; } .tl i:nth-child(3) { background: #28C840; }
+.chat { position: absolute; right: 12px; top: 34px; bottom: 14px; width: 56%; border-radius: 12px; background: var(--raised); border: 1px solid var(--line); display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 16px 30px -16px rgba(0,0,0,.4); }
+.chat-head { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-bottom: 1px solid var(--line); font-size: 12px; }
+.chat-body { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; padding: 10px; font-size: 11px; }
+.bubble { max-width: 85%; padding: 6px 10px; border-radius: 14px; line-height: 1.3; }
+.bubble.in { align-self: flex-start; background: var(--chip); }
+.bubble.out { align-self: flex-end; background: #0A84FF; color: #fff; }
+.bubble.out-img { align-self: flex-end; padding: 4px; background: #0A84FF; }
+.win.mini { padding: 8px; display: flex; flex-direction: column; gap: 4px; font-size: 9px; border-radius: 9px; min-width: 110px; }
+.win.mini strong { font-size: 11px; }
+.ln { display: flex; justify-content: space-between; gap: 10px; }
+.ln span:first-child { color: #6E6E73; }
+.pay.sm { padding: 3px 7px; font-size: 9px; border-radius: 5px; align-self: flex-end; }
+.win .ring, .pay.ring { outline: 2px solid var(--signal); outline-offset: 2px; }
+.qa { position: absolute; left: 12px; bottom: 14px; width: 40%; min-width: 132px; border-radius: 12px; background: color-mix(in srgb, var(--raised) 90%, transparent); border: 1px solid var(--line2); box-shadow: 0 18px 34px -12px rgba(0,0,0,.55); padding: 7px; display: flex; flex-direction: column; gap: 7px; transform: rotate(-3deg); }
+.qa-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; font-size: 11px; text-align: center; }
+.qa-btns span { padding: 5px 0; border-radius: 6px; background: var(--chip); }
+.cursor { position: absolute; right: 6px; bottom: 30px; filter: drop-shadow(0 2px 2px rgba(0,0,0,.4)); }
+.tag { position: absolute; padding: 4px 9px; border-radius: 7px; background: var(--raised); border: 1px solid var(--line); font-size: 12px; font-weight: 600; }
+.mosaic.face { width: 38px; height: 38px; border-radius: 50%; background: repeating-conic-gradient(#C9A27E 0 25%, #8E6B52 0 50%) 0 0 / 9px 9px; flex-shrink: 0; }
+.pix-sel { position: absolute; left: 44%; right: 18%; top: -5px; bottom: -5px; border: 2px dashed var(--signal); border-radius: 4px; }
+.tool-chip { position: absolute; right: -10px; top: -14px; display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 8px; background: #1D1D1F; color: #fff; font-size: 12px; font-weight: 600; box-shadow: 0 8px 18px -8px rgba(0,0,0,.5); }
+.browser { position: relative; width: 52%; max-width: 230px; border-radius: 10px; background: #fff; color: #1D1D1F; overflow: hidden; box-shadow: 0 18px 34px -16px rgba(0,0,0,.5); }
+.browser .chat-head { border-color: #EEE; color: #6E6E73; }
+.url { flex: 1; padding: 2px 8px; border-radius: 5px; background: #F2F2F4; font-size: 10px; }
+.page, .strip { display: flex; flex-direction: column; gap: 6px; padding: 10px; }
+.page { height: 150px; overflow: hidden; }
+.strip { width: 96px; border-radius: 8px; background: #fff; box-shadow: 0 18px 34px -16px rgba(0,0,0,.5); padding: 8px; gap: 5px; }
+.sticky { font-size: 11px; font-weight: 700; padding-bottom: 4px; border-bottom: 1px solid #EEE; }
+.strip .sticky { font-size: 8px; }
+.hero-img { height: 46px; border-radius: 6px; background: linear-gradient(135deg, #BFE3FF, #3D8BFD); flex-shrink: 0; }
+.strip .hero-img { height: 26px; }
+.line { height: 6px; border-radius: 3px; background: #E5E5EA; flex-shrink: 0; }
+.seam { border-top: 1.5px dashed var(--signal); margin: 2px 0; }
+.scroll-pill { position: absolute; right: 8px; bottom: 8px; padding: 4px 8px; border-radius: 999px; background: #1D1D1F; color: #fff; font-size: 10px; font-weight: 600; }
+.ba { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1.3fr); gap: 16px; align-items: center; }
+.ba-col { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.ba-arrow { color: var(--muted); }
+.raw { width: 100%; padding: 10px 0 0 10px; background: #D9D9DE; }
+:root[data-theme="dark"] .raw { background: #3A3A3F; }
+.specs { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+.specs span { padding: 4px 9px; border-radius: 7px; background: var(--chip); border: 1px solid var(--line); font: 500 11px var(--mono); }
+@media (max-width: 620px) { .ba { grid-template-columns: minmax(0, 1fr); } .ba-arrow { transform: rotate(90deg); justify-self: center; } }
 
 /* Steps */
-.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); border-top: 1px solid var(--line); }
-.steps > div { padding: 32px 0 0; padding-inline-end: 28px; }
-.num { font-family: "Bricolage Grotesque", sans-serif; font-size: 88px; font-weight: 800; line-height: 1; letter-spacing: -.05em; color: transparent; -webkit-text-stroke: 1.5px var(--line2); }
-.num.on { color: var(--signal); -webkit-text-stroke: 0; }
-.steps h3 { margin: 18px 0 0; font-size: 22px; font-weight: 600; }
-.steps p { margin: 8px 0 0; color: var(--muted); }
+.how { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+.how > div { border: 1px solid var(--line); border-radius: 24px; padding: 26px; display: flex; flex-direction: column; gap: 12px; }
+.how .n { width: 34px; height: 34px; border-radius: 50%; background: var(--signal); color: var(--on-signal); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.how strong { font-family: var(--display); font-size: 22px; }
 
-/* Install */
-.install { padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
-.install ol { margin: 28px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px; }
-.install li { display: flex; gap: 14px; }
-.store-card { flex: 1 1 320px; min-width: 0; display: flex; align-items: center; gap: 18px; padding: 28px; border-radius: 16px; background: #0A0A0C; border: 1px solid #222228; color: #F5F5F7; }
-.store-card small { display: block; font-size: 14px; color: #A1A1AA; }
-.store-card b { display: block; font-family: var(--display); font-weight: 800; font-size: clamp(24px, 3vw, 30px); letter-spacing: -.02em; }
-.install li > span:first-child { flex: none; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line2); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; }
-
+/* Privacy band and final */
+.band { border: 1px solid var(--line); border-radius: 28px; padding: clamp(28px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; }
+.band svg { flex-shrink: 0; }
+.band h2 { margin: 0; font-family: var(--display); font-size: clamp(26px, 3.4vw, 36px); letter-spacing: -.02em; }
+:root[dir="rtl"] .band h2 { letter-spacing: 0; }
+.final { padding: 120px 0; }
+.final .box { border-radius: 32px; background: var(--card); border: 1px solid var(--line); padding: clamp(44px, 7vw, 88px) 24px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; }
 
 footer { border-top: 1px solid var(--line); }
-footer .wrap { padding-top: 26px; padding-bottom: 26px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--muted2); }
-footer a { text-decoration: none; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding-top: 22px; padding-bottom: 22px; font-size: 13px; color: var(--muted); }
+footer a { text-decoration: none; padding: 10px 0; display: inline-block; }
 footer a:hover { color: var(--ink); }
-
-/* Refined: spotlight from the top, calmer weights, pill labels, compact cards */
-:root { --bg: #09090B; --card: rgba(255, 255, 255, .025); --line: rgba(255, 255, 255, .08); --line2: rgba(255, 255, 255, .14); }
-:root[data-theme="light"] { --card: #FFFFFF; --line: rgba(10, 10, 12, .09); --line2: rgba(10, 10, 12, .16); }
-.hero { padding-top: 150px; padding-bottom: 0; }
-.hero::before { content: ""; position: absolute; inset: -120px 0 auto 0; height: 980px; pointer-events: none; background:
-  radial-gradient(60% 55% at 50% 0%, rgba(255, 138, 92, calc(var(--glow) * .55)), transparent 70%),
-  conic-gradient(from 180deg at 50% -8%, transparent 160deg, rgba(255, 170, 130, calc(var(--glow) * .22)) 172deg, rgba(255, 170, 130, calc(var(--glow) * .32)) 180deg, rgba(255, 170, 130, calc(var(--glow) * .22)) 188deg, transparent 200deg);
-  -webkit-mask-image: linear-gradient(#000 40%, transparent); mask-image: linear-gradient(#000 40%, transparent); }
-.hero .glow { display: none; }
-h1 { font-weight: 600; font-size: clamp(48px, 7.4vw, 100px); line-height: 1.02; letter-spacing: -.045em; }
-.hl::after { display: none; }
-.hl { color: var(--signal); }
-.corner { border-color: color-mix(in srgb, var(--signal) 80%, transparent); }
-.hero-sub { margin-top: 44px; font-size: 18px; max-width: 520px; }
-.btn { min-height: 46px; padding: 0 20px; border-radius: 10px; font-size: 15px; }
-.btn-primary { box-shadow: 0 0 0 1px rgba(255, 255, 255, .12) inset, 0 8px 24px -10px rgba(255, 90, 31, .7); }
-.btn-ghost { background: rgba(255, 255, 255, .04); border-color: var(--line2); }
-.badge { background: rgba(255, 255, 255, .04); }
-.mock-wrap { margin-top: 96px; perspective: none; }
-.mock { transform: none; border-color: var(--line2); box-shadow: 0 0 0 1px rgba(0, 0, 0, .5), 0 40px 100px -40px rgba(0, 0, 0, .9), 0 -1px 0 rgba(255, 255, 255, .06) inset; }
-.eyebrow { display: inline-flex; align-items: center; padding: 4px 11px; border-radius: 999px; background: rgba(255, 90, 31, .1); border: 1px solid rgba(255, 90, 31, .28); color: var(--signal-ink); font-size: 12px; font-weight: 500; letter-spacing: 0; text-transform: none; }
-.h2 { font-weight: 600; font-size: clamp(30px, 4.2vw, 50px); line-height: 1.08; letter-spacing: -.035em; }
-.split { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px 48px; }
-.split > :first-child { flex: 1 1 420px; }
-.split > p { flex: 0 1 440px; margin: 0; color: var(--muted); font-size: 16px; }
-.card { border-radius: 14px; }
-.features { gap: 12px; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
-.feature { padding: 22px 22px 24px; display: grid; grid-template-columns: auto 1fr; align-items: center; column-gap: 10px; row-gap: 8px; }
-.feature .ico { width: auto; height: auto; background: none; border: 0; color: var(--signal); }
-.feature .ico svg { width: 18px; height: 18px; }
-.feature h3 { margin: 0; font-size: 15.5px; }
-.feature p { grid-column: 1 / -1; font-size: 14.5px; }
-.key { background: linear-gradient(180deg, #1D1D22, #121216); border-color: rgba(255, 255, 255, .1); box-shadow: 0 4px 0 #040405, 0 10px 24px rgba(0, 0, 0, .45), inset 0 1px 0 rgba(255, 255, 255, .06); }
-.num { font-size: 64px; font-weight: 600; -webkit-text-stroke: 1px var(--line2); }
-.final .h2 { font-weight: 600 !important; }
-
-.section { padding-top: 150px; }
-.final { padding: 170px 24px 150px; }
-.menu-btn { display: none; }
-
-@media (max-width: 900px) {
-  .inspector, .note, .arrow { display: none !important; }
-  .shot-side { display: none; }
-  .mock { transform: none; }
-  .mock-body { min-height: 0; }
-  .frame { padding: 22px; }
-}
-@media (max-width: 760px) {
-  .top { padding: 10px 10px 0; }
-  .nav { border-radius: 22px; padding: 6px; padding-inline-start: 12px; gap: 4px; }
-  .brand { margin-inline-end: auto; }
-  .menu-btn { display: inline-flex; order: 10; }
-  .links { display: none; order: 20; width: 100%; flex-direction: column; padding: 6px 0 4px; border-top: 1px solid var(--line); margin-top: 4px; }
-  .nav.open .links { display: flex; }
-  .links a { padding: 12px 10px; border-radius: 12px; font-size: 16px; color: var(--ink); }
-  .nav-cta { min-height: 38px; padding: 0 14px; }
-  .lang-btn { padding: 0 10px; }
-  .hide-xs { display: none !important; }
-  .section { padding-top: 96px; }
-  .final { padding: 110px 20px 96px; }
-  .wrap { padding-left: 20px; padding-right: 20px; }
-  .step.s2 { left: auto !important; right: 8px; top: 58px !important; }
-  .hero { padding: 56px 20px 0; }
-  .badge { font-size: 12px; }
-  .selection { margin-top: 36px; padding: 18px 20px; }
-  .corner { width: 26px; height: 26px; }
-  .corner.tl, .corner.tr { border-top-width: 3px; } .corner.bl, .corner.br { border-bottom-width: 3px; }
-  .corner.tl, .corner.bl { border-left-width: 3px; } .corner.tr, .corner.br { border-right-width: 3px; }
-  .dims { bottom: -30px; font-size: 11px; }
-  h1 { font-size: clamp(44px, 13vw, 64px); }
-  :root[dir="rtl"] h1 { font-size: clamp(38px, 11vw, 56px); }
-  .hero-sub { margin-top: 44px; font-size: 17px; }
-  .hero-ctas { flex-direction: column; align-items: stretch; max-width: 340px; margin-left: auto; margin-right: auto; }
-  .hero-ctas .btn { justify-content: center; }
-  .mock-wrap { margin-top: 48px; }
-  .mock { border-radius: 12px; }
-  .mock-bar { height: 34px; padding: 0 12px; }
-  .mock-bar .dot { width: 9px; height: 9px; }
-  .mock-canvas { padding: 12px; gap: 12px; }
-  .toolbar { transform: scale(.86); }
-  .frame { padding: 14px; border-radius: 12px; }
-  .shot-main { padding: 12px; gap: 10px; }
-  .kpis { gap: 6px; }
-  .kpi { padding: 7px; }
-  .kpi b { font-size: 14px; }
-  .bars { height: 70px; gap: 4px; }
-  .step { width: 24px; height: 24px; font-size: 12px; border-width: 2px; }
-  .h2 { font-size: clamp(30px, 8.5vw, 40px); }
-  .keys { gap: 10px; margin-top: 36px; }
-  .key { min-width: 52px; height: 52px; font-size: 20px; border-radius: 12px; }
-  .shortcuts { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 36px; }
-  .features { margin-top: 36px; grid-template-columns: 1fr; gap: 12px; }
-  .feature { padding: 22px; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 4px 14px; }
-  .feature .ico { width: 42px; height: 42px; }
-  .feature h3 { margin: 0; flex: 1; }
-  .feature p { flex-basis: 100%; margin-top: 8px; }
-  .steps > div { padding-inline-end: 0; padding-bottom: 8px; }
-  .num { font-size: 64px; }
-  .install { padding: 24px; gap: 28px; }
-}
-@media (max-width: 420px) {
-  .nav-cta { display: none; }
-}
 </style>
 </head>
 <body>
 
 <header class="top">
   <nav class="nav" aria-label="Main">
-    <a class="brand" href="#top">
-      <svg width="26" height="26" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="23" fill="#17171B"/><path d="M22 38V28q0-6 6-6h10M62 22h10q6 0 6 6v10M78 62v10q0 6-6 6H62M38 78H28q-6 0-6-6V62" fill="none" stroke="#FF5A1F" stroke-width="7" stroke-linecap="round"/><path d="M50 40v20M40 50h20" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/></svg>
-      EasyShoot
+    <a class="brand" href="#top" dir="ltr">
+      <svg width="28" height="28" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="23" fill="#17171B"/><path d="M22 38V28q0-6 6-6h10M62 22h10q6 0 6 6v10M78 62v10q0 6-6 6H62M38 78H28q-6 0-6-6V62" fill="none" stroke="#4DA3FF" stroke-width="7" stroke-linecap="round"/><path d="M50 40v20M40 50h20" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/></svg>
+      <span>Easy<span class="shoot">Shoot</span></span>
     </a>
-    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
-    <div class="links" id="navLinks">
+    <div class="links">
       <a href="#features" data-i18n="nav.features">Features</a>
       <a href="#how" data-i18n="nav.how">How it works</a>
-      <a href="#install" data-i18n="nav.install">Install</a>
+      <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
     </div>
-    <div class="lang">
-      <button class="lang-btn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="langMenu">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
-        <span id="langCode">EN</span>
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    <div class="tools">
+      <div class="lang">
+        <button class="lang-btn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="langMenu">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+          <span id="langCode">EN</span>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox" aria-label="Language" hidden>
+          <li><button type="button" role="option" data-lang="en">English <small>EN</small></button></li>
+          <li><button type="button" role="option" data-lang="ar">العربية <small>AR</small></button></li>
+          <li><button type="button" role="option" data-lang="fr">Français <small>FR</small></button></li>
+          <li><button type="button" role="option" data-lang="es">Español <small>ES</small></button></li>
+          <li><button type="button" role="option" data-lang="de">Deutsch <small>DE</small></button></li>
+        </ul>
+      </div>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch theme">
+        <svg class="theme-light-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="theme-dark-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
       </button>
-      <ul class="lang-menu" id="langMenu" role="listbox" aria-label="Language" hidden>
-        <li><button type="button" role="option" data-lang="en">English <small>EN</small></button></li>
-        <li><button type="button" role="option" data-lang="ar">العربية <small>AR</small></button></li>
-        <li><button type="button" role="option" data-lang="fr">Français <small>FR</small></button></li>
-        <li><button type="button" role="option" data-lang="es">Español <small>ES</small></button></li>
-        <li><button type="button" role="option" data-lang="de">Deutsch <small>DE</small></button></li>
-      </ul>
+      <a class="btn btn-primary cta store-link" href="#get" data-i18n="nav.download">Download</a>
     </div>
-    <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch theme">
-      <svg class="theme-light-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-      <svg class="theme-dark-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
-    </button>
-    <a class="nav-cta" href="#install" data-i18n="nav.download">Download</a>
   </nav>
 </header>
 
 <main>
 <section class="hero" id="top">
-  <div class="glow" style="top: 520px" aria-hidden="true"></div>
-  <p class="badge"><b>v1.0</b><span data-i18n="hero.badge">Coming soon to the Mac App Store</span></p>
-  <div class="selection">
-    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-    <span class="dims" aria-hidden="true">1064 × 312</span>
-    <h1 data-i18n-html="hero.title">Screenshots,<br><span class="hl">explained</span>.</h1>
+  <div class="wrap">
+    <span class="pill"><i></i><span data-i18n="hero.badge" data-i18n-live="hero.badgeLive">Coming soon to the Mac App Store</span></span>
+    <h1 data-i18n-html="hero.title">Screenshots that <span class="hl">explain</span> themselves.</h1>
+    <p class="lead" data-i18n="hero.sub">Capture anything on your Mac, mark it up and share it in seconds.</p>
+    <div class="actions">
+      <a class="btn btn-primary store-link" href="#get">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+        <span data-i18n="hero.cta" data-i18n-live="hero.ctaLive">Mac App Store · Coming soon</span>
+      </a>
+      <a class="btn btn-ghost" href="#features" data-i18n="hero.cta2">See the features</a>
+    </div>
+    <span class="meta" data-i18n="hero.meta">Free · macOS 14 or later · No account</span>
+    <div class="shot">
+      <img id="heroShot" src="editor-en.png" width="1880" height="988" alt="The EasyShoot editor with a dashboard screenshot: the revenue amount is pixelated, the New Customers card is boxed and numbered 1, Quick Create is numbered 2, and an arrow points at the −20% change." data-i18n-alt="hero.alt">
+    </div>
   </div>
-  <p class="hero-sub" data-i18n="hero.sub">Capture any part of your Mac. Point, number and blur. Drop it on a clean background and share it, all before your coffee cools.</p>
-  <div class="hero-ctas">
-    <a class="btn btn-primary" href="#install">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9s-2-.9-3.3-.9c-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.8 1.2 1.8 2.6 3.1 2.6s1.7-.8 3.3-.8 2 .8 3.3.8 2.2-1.3 3-2.5c1-1.4 1.3-2.7 1.4-2.8-.1 0-2.6-1-2.6-4.2zM14 5.1c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>
-      <span data-i18n="hero.cta">Download for Mac</span>
-    </a>
-    <a class="btn btn-ghost" href="#features" data-i18n="hero.cta2">See what it does</a>
-  </div>
-  <p class="hero-meta" data-i18n="hero.meta">macOS 14 or later · Apple silicon and Intel · No account, ever</p>
+</section>
 
-  <!-- A drawn app window: the editor with a framed, annotated screenshot -->
-  <div class="mock-wrap">
-    <div class="mock" role="img" aria-label="The EasyShoot editor: a dashboard screenshot on a purple gradient, with three numbered steps, a highlighted growth figure, a pixelated email and a note pointing to Export.">
-      <div class="mock-bar">
-        <span class="dot" style="background:#FF5F57"></span><span class="dot" style="background:#FEBC2E"></span><span class="dot" style="background:#28C840"></span>
-        <span style="flex:1; text-align:center; color:#8A8A94; font-weight:500">EasyShoot — dashboard.png</span><span style="width:52px"></span>
-      </div>
-      <div class="mock-body">
-        <div class="mock-canvas">
-          <div class="toolbar" aria-hidden="true">
-            <span class="tool"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 3l12 8-5 1.5L9 18z"/></svg></span>
-            <span class="tool"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 2v14a2 2 0 0 0 2 2h14M18 22V8a2 2 0 0 0-2-2H2"/></svg></span>
-            <span class="sep"></span>
-            <span class="tool on"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-            <span class="tool"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="6" width="16" height="12" rx="2"/></svg></span>
-            <span class="tool"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg></span>
-            <span class="tool"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M11 9h2v6" stroke-linecap="round"/></svg></span>
-            <span class="tool"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/><rect x="13" y="4" width="7" height="7" opacity=".4"/><rect x="4" y="13" width="7" height="7" opacity=".4"/></svg></span>
-          </div>
-          <div class="frame">
-            <div class="shot">
-              <div class="shot-side">
-                <b style="color:#0B0B0D; font-size:13px; padding:0 8px 6px">Northwind</b>
-                <span style="border-radius:7px; background:#FFFFFF; color:#0B0B0D; font-weight:600; box-shadow:0 1px 2px rgba(0,0,0,.08)">Overview</span>
-                <span>Customers</span><span>Invoices</span><span>Reports</span><span>Settings</span>
-              </div>
-              <div class="shot-main">
-                <div class="row"><b style="font-size:16px">Revenue</b><span style="padding:6px 12px; border-radius:8px; background:#0B0B0D; color:#FFFFFF; font-size:12px; font-weight:600; outline:3px solid #FF3B30; outline-offset:3px">Export CSV</span></div>
-                <div class="kpis">
-                  <div class="kpi"><small>This month</small><b>$48.2k</b></div>
-                  <div class="kpi" style="background:rgba(255,214,0,.45)"><small>Growth</small><b>+12.4%</b></div>
-                  <div class="kpi"><small>Churn</small><b>1.8%</b></div>
-                </div>
-                <div class="bars"><span style="height:38%"></span><span style="height:52%"></span><span style="height:46%"></span><span style="height:64%"></span><span style="height:58%"></span><span style="height:78%; background:#7B4DFF"></span><span style="height:70%"></span><span style="height:92%"></span></div>
-                <div class="row" style="font-size:12px; color:#55555E"><span>Top customer</span><span class="mosaic" id="mosaic"></span></div>
-              </div>
-              <span class="step" style="left:-15px; top:72px">1</span>
-              <span class="step s2" style="left:290px; top:66px">2</span>
-              <span class="step" style="right:120px; bottom:6px">3</span>
-              <svg class="arrow" width="170" height="110" viewBox="0 0 170 110" style="position:absolute; right:-20px; top:-50px; overflow:visible" aria-hidden="true"><path d="M150 10 C 120 6, 70 20, 36 76" fill="none" stroke="#FF3B30" stroke-width="5" stroke-linecap="round"/><path d="M28 54 L34 80 L58 70" fill="none" stroke="#FF3B30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span class="note">Export from here</span>
+<section class="section" id="features" aria-labelledby="feat-h">
+  <div class="wrap">
+    <div class="section-head"><h2 class="h2" id="feat-h" data-i18n="feat.title">Everything a screenshot needs.</h2></div>
+    <div class="bento">
+
+      <article class="tile span2">
+        <div><h3 data-i18n="mark.t">Mark it up</h3><p data-i18n="mark.b">Arrows, boxes, text and numbered steps. One key for each tool.</p></div>
+        <img class="tile-img" src="shots/markup.png" width="1800" height="851" alt="" loading="lazy" aria-hidden="true">
+      </article>
+
+      <article class="tile">
+        <div><h3 data-i18n="capture.t">Capture any way</h3><p data-i18n="capture.b">Area, window, full screen or a whole scrolling page.</p></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <div class="mode"><span data-i18n="mode.area">Area</span><span class="keys"><span class="key">⌥</span><span class="key">⇧</span><span class="key">⌘</span><span class="key">4</span></span></div>
+          <div class="mode"><span data-i18n="mode.window">Window</span><span class="keys"><span class="key">⌥</span><span class="key">⇧</span><span class="key">⌘</span><span class="key">5</span></span></div>
+          <div class="mode"><span data-i18n="mode.full">Full screen</span><span class="keys"><span class="key">⌥</span><span class="key">⇧</span><span class="key">⌘</span><span class="key">3</span></span></div>
+          <div class="mode"><span data-i18n="mode.scroll">Scrolling</span><span class="keys"><span class="key">⌥</span><span class="key">⇧</span><span class="key">⌘</span><span class="key">6</span></span></div>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div><h3 data-i18n="quick.t">Quick Access</h3><p data-i18n="quick.b">Copy, save or drag it into any app right after you capture.</p></div>
+        <div class="stage" aria-hidden="true" dir="ltr" style="min-height: 290px;">
+          <div class="menubar"><span style="width: 9px; height: 9px; border-radius: 2px; background: var(--ink);"></span><span>File</span><span>Edit</span><span>View</span></div>
+          <div class="chat">
+            <div class="chat-head"><span class="tl"><i></i><i></i><i></i></span><strong>Design team</strong></div>
+            <div class="chat-body">
+              <span class="bubble in">Can you send the checkout bug?</span>
+              <span class="bubble out-img"><span class="win mini"><strong>Checkout</strong><span class="ln"><span>Total</span><span>$48.00</span></span><span class="pay sm ring">Pay now</span></span></span>
+              <span class="bubble out">Here, step 2 is broken</span>
             </div>
           </div>
+          <div class="qa">
+            <div class="win mini"><strong>Checkout</strong><span class="ln"><span>Plan</span><span>Pro</span></span><span class="ln"><span>Total</span><span>$48.00</span></span><span class="pay sm ring">Pay now</span></div>
+            <div class="qa-btns"><span data-i18n="ui.copy">Copy</span><span data-i18n="ui.save">Save</span></div>
+            <svg class="cursor" width="22" height="22" viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-3 6z" fill="#fff" stroke="#0B0B0D" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <svg width="90" height="70" viewBox="0 0 90 70" style="position: absolute; left: 40%; top: 46%; color: var(--signal-ink);"><path d="M4 64C22 28 52 14 80 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/><path d="M72 6l9 8-10 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="tag" style="left: 12px; top: 34px;" data-i18n="quick.drag">Drag into any app</span>
         </div>
-        <aside class="inspector" aria-hidden="true">
-          <div class="seg"><span class="on">Background</span><span>Style</span><span>Export</span></div>
-          <div class="swatches">
-            <span style="background:linear-gradient(135deg,#3B2BD9,#FF7A59); box-shadow:0 0 0 2px #121216, 0 0 0 4px #F5F5F7"></span>
-            <span style="background:linear-gradient(135deg,#2D5BD7,#7CC4F2)"></span>
-            <span style="background:linear-gradient(135deg,#0E9F6E,#A7F3D0)"></span>
-            <span style="background:linear-gradient(135deg,#F2545B,#FDBA74)"></span>
-            <span style="background:#F5F5F7"></span>
-            <span style="background:#2A2A32"></span>
-            <span style="background:repeating-conic-gradient(#2A2A32 0 25%, #1A1A1F 0 50%) 0 0/10px 10px"></span>
-            <span style="border:1px dashed #3A3A42; display:flex; align-items:center; justify-content:center; color:#80808A; font-size:16px">+</span>
+      </article>
+
+      <article class="tile">
+        <div><h3 data-i18n="blur.t">Hide private info</h3><p data-i18n="blur.b">Pixelate emails, card numbers and faces before you share.</p></div>
+        <img class="tile-img" src="shots/pixelate.png" width="800" height="380" alt="" loading="lazy" aria-hidden="true">
+      </article>
+
+      <article class="tile">
+        <div><h3 data-i18n="scroll.t">Scrolling capture</h3><p data-i18n="scroll.b">Long pages and chats in one image. Sticky headers appear once.</p></div>
+        <div class="stage" aria-hidden="true" dir="ltr" style="min-height: 290px; display: flex; align-items: center; justify-content: center; gap: 18px; padding: 20px;">
+          <div class="browser">
+            <div class="chat-head"><span class="tl"><i></i><i></i><i></i></span><span class="url">blog.example.com</span></div>
+            <div class="page">
+              <span class="sticky">Weekly notes</span>
+              <span class="hero-img"></span>
+              <span class="line" style="width: 90%;"></span><span class="line" style="width: 75%;"></span><span class="line" style="width: 82%;"></span>
+            </div>
+            <span class="scroll-pill">↓ Scrolling…</span>
           </div>
-          <div style="display:flex; flex-direction:column; gap:9px">
-            <div class="row"><span>Padding</span><span style="color:#80808A">40</span></div><div class="slider"><i style="width:50%"></i></div>
-            <div class="row" style="margin-top:4px"><span>Corners</span><span style="color:#80808A">12</span></div><div class="slider"><i style="width:30%"></i></div>
-            <div class="row" style="margin-top:4px"><span>Shadow</span><span style="color:#80808A">24</span></div><div class="slider"><i style="width:42%"></i></div>
+          <svg width="26" height="18" viewBox="0 0 26 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="color: var(--muted); flex-shrink: 0;"><path d="M2 9h20M15 2l7 7-7 7"/></svg>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+            <div class="strip">
+              <span class="sticky">Weekly notes</span>
+              <span class="hero-img"></span>
+              <span class="line" style="width: 90%;"></span><span class="line" style="width: 75%;"></span>
+              <span class="seam"></span>
+              <span class="line" style="width: 82%;"></span><span class="hero-img" style="height: 30px; background: linear-gradient(135deg, #B9F3DD, #3FB68E);"></span>
+              <span class="line" style="width: 70%;"></span>
+              <span class="seam"></span>
+              <span class="line" style="width: 88%;"></span><span class="line" style="width: 60%;"></span>
+            </div>
+            <span class="mono muted" style="font-size: 11px;" data-i18n="scroll.meta">1 image · 4,820 px</span>
           </div>
-          <div class="row"><span>Aspect</span><span style="padding:4px 10px; border-radius:7px; background:#1C1C21; border:1px solid #2A2A32">16:9</span></div>
-          <div style="margin-top:auto; display:flex; gap:8px">
-            <span style="flex:1; text-align:center; padding:8px 0; border-radius:9px; background:#1C1C21; border:1px solid #2A2A32">Copy</span>
-            <span style="flex:1; text-align:center; padding:8px 0; border-radius:9px; background:#FF5A1F; color:#FFFFFF; font-weight:600">Save</span>
+        </div>
+      </article>
+
+      <article class="tile span2">
+        <div><h3 data-i18n="bg.t">Ready to post</h3><p data-i18n="bg.b">Put any shot on a background with padding, rounded corners and a soft shadow.</p></div>
+        <div class="ba" aria-hidden="true" dir="ltr">
+          <div class="ba-col">
+            <img class="tile-img raw-img" src="shots/before.png" width="1400" height="577" alt="" loading="lazy">
+            <span class="muted" style="font-size: 13px;" data-i18n="bg.before">Before</span>
           </div>
-        </aside>
+          <svg class="ba-arrow" width="36" height="20" viewBox="0 0 36 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h28M24 3l7 7-7 7"/></svg>
+          <div class="ba-col">
+            <img class="tile-img" src="shots/after.png" width="1400" height="662" alt="" loading="lazy">
+            <span style="font-size: 13px; font-weight: 600;" data-i18n="bg.after">After, in one click</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div><h3 data-i18n="ar.t">Arabic built in</h3><p data-i18n="ar.b">Right-to-left text with correct letter shaping, in any font on your Mac.</p></div>
+        <img class="tile-img" src="shots/arabic.png" width="1200" height="677" alt="" loading="lazy" aria-hidden="true">
+      </article>
+
+    </div>
+    <div class="chips">
+      <span data-i18n="chip.presets">Presets</span>
+      <span>PNG · JPEG · HEIC · TIFF</span>
+      <span data-i18n="chip.shortcuts">Custom shortcuts</span>
+      <span data-i18n="chip.crop">Crop and resize</span>
+      <span data-i18n="chip.glass">Built for Liquid Glass</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="section-head"><h2 class="h2" id="how-h" data-i18n="how.title">Three steps. A few seconds.</h2></div>
+    <div class="how">
+      <div><span class="n">1</span><strong data-i18n="how.1t">Capture</strong><span class="muted" data-i18n="how.1b">Press the shortcut and drag.</span><span class="keys"><span class="key">⌥</span><span class="key">⇧</span><span class="key">⌘</span><span class="key">4</span></span></div>
+      <div><span class="n">2</span><strong data-i18n="how.2t">Mark up</strong><span class="muted" data-i18n="how.2b">Add arrows, steps or blur.</span><span class="keys"><span class="key">A</span><span class="key">T</span><span class="key">N</span></span></div>
+      <div><span class="n">3</span><strong data-i18n="how.3t">Share</strong><span class="muted" data-i18n="how.3b">Copy it or drag it anywhere.</span><span class="keys"><span class="key">⇧</span><span class="key">⌘</span><span class="key">C</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="privacy" aria-labelledby="priv-h">
+  <div class="wrap">
+    <div class="band">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--signal-ink)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      <div style="flex: 1 1 300px;">
+        <h2 id="priv-h" data-i18n="privacy.title">Your screenshots stay on your Mac.</h2>
+        <p class="muted" style="margin: 6px 0 0; font-size: 17px;" data-i18n="privacy.body">No account, no cloud, no tracking.</p>
       </div>
+      <a class="btn btn-ghost privacy-link" href="privacy.html" data-i18n="privacy.link">Privacy policy</a>
     </div>
   </div>
 </section>
 
-<section class="section" style="padding-left: 24px; padding-right: 24px; text-align: center">
-  <p class="eyebrow" data-i18n="keys.eyebrow">One shortcut</p>
-  <h2 class="h2" style="max-width: 760px; margin-left: auto; margin-right: auto" data-i18n="keys.title">Four keys away, from anywhere.</h2>
-  <div class="keys" aria-hidden="true"><span class="key">⌥</span><span class="key">⇧</span><span class="key">⌘</span><span class="key hit">4</span></div>
-  <div class="shortcuts">
-    <div><b data-i18n="keys.area">Area</b><code>⌥⇧⌘4</code></div>
-    <div><b data-i18n="keys.window">Window</b><code>⌥⇧⌘5</code></div>
-    <div><b data-i18n="keys.full">Fullscreen</b><code>⌥⇧⌘3</code></div>
-    <div><b data-i18n="keys.scroll">Scrolling</b><code>⌥⇧⌘6</code></div>
-  </div>
-  <p style="margin: 16px 0 0; font-size: 14px; color: var(--muted2)" data-i18n="keys.note">Don’t like ours? Record your own in Settings.</p>
-</section>
-
-<section id="features" class="wrap section">
-  <div class="split">
-    <div>
-      <p class="eyebrow" data-i18n="feat.eyebrow">Everything inside</p>
-      <h2 class="h2" data-i18n="feat.title">Four apps’ worth of work. One window.</h2>
+<section class="final" id="get" aria-labelledby="get-h">
+  <div class="wrap">
+    <div class="box">
+      <svg width="88" height="88" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="23" fill="#17171B"/><path d="M22 38V28q0-6 6-6h10M62 22h10q6 0 6 6v10M78 62v10q0 6-6 6H62M38 78H28q-6 0-6-6V62" fill="none" stroke="#4DA3FF" stroke-width="7" stroke-linecap="round"/><path d="M50 40v20M40 50h20" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/></svg>
+      <h2 class="h2" id="get-h" style="max-width: 13em;" data-i18n="final.title">Your next screenshot deserves better.</h2>
+      <a class="btn btn-primary store-link" href="#get">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+        <span data-i18n="hero.cta" data-i18n-live="hero.ctaLive">Mac App Store · Coming soon</span>
+      </a>
+      <span class="meta" data-i18n="hero.meta">Free · macOS 14 or later · No account</span>
     </div>
-    <p data-i18n="feat.sub">Capture, mark up, frame and share without leaving EasyShoot. Every tool is a single key away.</p>
-  </div>
-  <div class="features">
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M12 9v6M9 12h6"/></svg></span>
-      <h3 data-i18n="f.capture.t">Area, window, fullscreen</h3>
-      <p data-i18n="f.capture.b">Drag over an area, click a window, or take the whole screen, each on its own shortcut.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v14M7 12l5 5 5-5M5 21h14"/></svg></span>
-      <h3 data-i18n="f.scrolling.t">Scrolling capture</h3>
-      <p data-i18n="f.scrolling.b">Stitch long pages, chats and documents into one image. Sticky headers appear once.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="13" width="9" height="7" rx="1.5"/><path d="M3 14V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3M3 18h5"/></svg></span>
-      <h3 data-i18n="f.quick.t">Quick Access</h3>
-      <p data-i18n="f.quick.b">A floating thumbnail after each capture. Copy, save, or drag it into any app.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-      <h3 data-i18n="f.arrows.t">Arrows and shapes</h3>
-      <p data-i18n="f.arrows.b">Arrows, lines, rectangles, ellipses, highlighter and pen. Every mark stays editable.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 6h11M10 12h11M10 18h11M4 6h1v4M4 10h2M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></span>
-      <h3 data-i18n="f.steps.t">Numbered steps</h3>
-      <p data-i18n="f.steps.b">Counters number themselves in order, so a walkthrough takes seconds.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.9 9.9a3 3 0 1 0 4.2 4.2M10.7 5.1A10.4 10.4 0 0 1 12 5c7 0 10 7 10 7a13 13 0 0 1-1.7 2.7M6.6 6.6A13.5 13.5 0 0 0 2 12s3 7 10 7a9.7 9.7 0 0 0 5.4-1.6M2 2l20 20"/></svg></span>
-      <h3 data-i18n="f.pixelate.t">Pixelate</h3>
-      <p data-i18n="f.pixelate.b">Hide card numbers, emails and faces before you share.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg></span>
-      <h3 data-i18n="f.fonts.t">Any font</h3>
-      <p data-i18n="f.fonts.b">Every font on your Mac, plus Google Fonts. Resize text by dragging its corner.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></span>
-      <h3 data-i18n="f.rtl.t">Arabic and right-to-left</h3>
-      <p data-i18n="f.rtl.b">Arabic and Hebrew write right-to-left with correct letter shaping.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
-      <h3 data-i18n="f.background.t">Background tool</h3>
-      <p data-i18n="f.background.b">Gradients or solid colours, with padding, corners, shadow and aspect ratios.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v14a2 2 0 0 0 2 2h14M18 22V8a2 2 0 0 0-2-2H2"/></svg></span>
-      <h3 data-i18n="f.crop.t">Crop and resize</h3>
-      <p data-i18n="f.crop.b">Crop freely or to 1:1, 4:3 and 16:9, and resize to an exact width.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4"/></svg></span>
-      <h3 data-i18n="f.presets.t">Presets</h3>
-      <p data-i18n="f.presets.b">Save a look and reuse it, or start each shot with your last settings.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></span>
-      <h3 data-i18n="f.export.t">Export</h3>
-      <p data-i18n="f.export.b">PNG, JPEG, HEIC or TIFF, with the final size shown before you save.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M8 13h.01M12 13h.01M16 13h.01M7 16h10"/></svg></span>
-      <h3 data-i18n="f.shortcuts.t">Your shortcuts</h3>
-      <p data-i18n="f.shortcuts.b">Record your own global shortcuts. In the editor, single letters switch tools.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7l8.6 3.9a1 1 0 0 1 0 1.8L12 12.3 3.4 8.4a1 1 0 0 1 0-1.8zM2 12l10 4.6L22 12M2 17l10 4.6L22 17"/></svg></span>
-      <h3 data-i18n="f.glass.t">Liquid Glass</h3>
-      <p data-i18n="f.glass.b">Built for the newest macOS look, with a clean fallback on macOS 14 and 15.</p>
-    </div>
-    <div class="card feature">
-      <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.6 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.6 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1zM9 12l2 2 4-4"/></svg></span>
-      <h3 data-i18n="f.private.t">Private by design</h3>
-      <p data-i18n="f.private.b">No account, no cloud, no analytics. It only goes online to download fonts you pick.</p>
-    </div>
-  </div>
-</section>
-
-<section id="how" class="wrap section">
-  <div class="steps">
-    <div><div class="num">01</div><h3 data-i18n="how.1t">Capture</h3><p data-i18n="how.1b">Drag over an area or click a window. Start a scrolling capture for long pages.</p></div>
-    <div><div class="num">02</div><h3 data-i18n="how.2t">Mark it up</h3><p data-i18n="how.2b">Single-letter tools: A for arrow, T for text, N for the next step.</p></div>
-    <div><div class="num on">03</div><h3 data-i18n="how.3t">Share</h3><p data-i18n="how.3b">⇧⌘C to copy, ⌘S to save, or drag the image into any app.</p></div>
-  </div>
-</section>
-
-<section id="install" class="wrap section">
-  <div class="card install">
-    <div style="flex: 1 1 360px; min-width: 0">
-      <p class="eyebrow" data-i18n="install.eyebrow">Install</p>
-      <h2 class="h2" style="font-size: clamp(30px, 4vw, 46px)" data-i18n="install.title">Running in under a minute.</h2>
-      <ol>
-        <li><span>1</span><span data-i18n-html="install.s1"><b>Get EasyShoot</b> from the Mac App Store.</span></li>
-        <li><span>2</span><span data-i18n-html="install.s2"><b>Allow</b> screen recording in the Welcome window, then press ⌥⇧⌘4.</span></li>
-        <li><span>3</span><span data-i18n-html="install.s3"><b>Updates come from the App Store</b>, like any other app.</span></li>
-      </ol>
-      <p style="margin: 22px 0 0; font-size: 14px; color: var(--muted2)"><span data-i18n="install.req">Requires macOS 14 Sonoma or later, on Apple silicon or Intel.</span></p>
-    </div>
-    </div>
-    <div class="store-card">
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9s-2-.9-3.3-.9c-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.8 1.2 1.8 2.6 3.1 2.6s1.7-.8 3.3-.8 2 .8 3.3.8 2.2-1.3 3-2.5c1-1.4 1.3-2.7 1.4-2.8-.1 0-2.6-1-2.6-4.2zM14 5.1c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>
-      <span><small data-i18n="install.soon">Coming soon</small><b dir="ltr">Mac App Store</b></span>
-    </div>
-  </div>
-</section>
-
-
-<section class="final" style="position: relative; text-align: center">
-  <div class="glow" style="top: 10%; width: 900px; height: 500px" aria-hidden="true"></div>
-  <div style="position: relative">
-    <img src="icon.png" width="96" height="96" alt="" style="margin: 0 auto; border-radius: 22px; filter: drop-shadow(0 20px 40px rgba(255,90,31,.45))">
-    <h2 class="h2" style="margin: 32px auto 0; max-width: 820px; font-weight: 800; font-size: clamp(42px, 7vw, 92px); line-height: .98" data-i18n="cta.title">Your next screenshot deserves better.</h2>
-    <a class="btn btn-primary" style="margin-top: 40px; min-height: 56px; font-size: 17px" href="#install" data-i18n="cta.button">Download EasyShoot, free</a>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span><span data-i18n="footer.by">Made by</span> <a href="https://haythamasalama.me" style="color: var(--ink)">Haytham A. Salama</a></span>
-    <span style="display: flex; gap: 20px"><a href="support.html" data-i18n="footer.support">Support</a><a href="privacy.html" data-i18n="footer.privacy">Privacy</a></span>
+    <span>© 2026 EasyShoot</span>
+    <span style="display: flex; gap: 20px;"><a href="support.html" id="supportLink" data-i18n="footer.support">Support</a><a class="privacy-link" href="privacy.html" data-i18n="footer.privacy">Privacy</a></span>
   </div>
 </footer>
 
 <script>
+// Set this to the app's Mac App Store link once App Review approves it.
+const APP_STORE_URL = "";
+
 const I18N = {
   en: {
-    "feat.sub": "Capture, mark up, frame and share without leaving EasyShoot. Every tool is a single key away.",
-    "nav.features": "Features", "nav.how": "How it works", "nav.install": "Install", "nav.download": "Download",
-    "hero.badge": "Coming soon to the Mac App Store",
-    "hero.title": 'Screenshots,<br><span class="hl">explained</span>.',
-    "hero.sub": "Capture any part of your Mac. Point, number and blur. Drop it on a clean background and share it, all before your coffee cools.",
-    "hero.cta": "Download for Mac", "hero.cta2": "See what it does",
-    "hero.meta": "macOS 14 or later · Apple silicon and Intel · No account, ever",
-    "keys.eyebrow": "One shortcut", "keys.title": "Four keys away, from anywhere.",
-    "keys.area": "Area", "keys.window": "Window", "keys.full": "Fullscreen", "keys.scroll": "Scrolling",
-    "keys.note": "Don’t like ours? Record your own in Settings.",
-    "feat.eyebrow": "Everything inside", "feat.title": "Four apps’ worth of work. One window.",
-    "f.capture.t": "Area, window, fullscreen", "f.capture.b": "Drag over an area, click a window, or take the whole screen, each on its own shortcut.",
-    "f.scrolling.t": "Scrolling capture", "f.scrolling.b": "Stitch long pages, chats and documents into one image. Sticky headers appear once.",
-    "f.quick.t": "Quick Access", "f.quick.b": "A floating thumbnail after each capture. Copy, save, or drag it into any app.",
-    "f.arrows.t": "Arrows and shapes", "f.arrows.b": "Arrows, lines, rectangles, ellipses, highlighter and pen. Every mark stays editable.",
-    "f.steps.t": "Numbered steps", "f.steps.b": "Counters number themselves in order, so a walkthrough takes seconds.",
-    "f.pixelate.t": "Pixelate", "f.pixelate.b": "Hide card numbers, emails and faces before you share.",
-    "f.fonts.t": "Any font", "f.fonts.b": "Every font on your Mac, plus Google Fonts. Resize text by dragging its corner.",
-    "f.rtl.t": "Arabic and right-to-left", "f.rtl.b": "Arabic and Hebrew write right-to-left with correct letter shaping.",
-    "f.background.t": "Background tool", "f.background.b": "Gradients or solid colours, with padding, corners, shadow and aspect ratios.",
-    "f.crop.t": "Crop and resize", "f.crop.b": "Crop freely or to 1:1, 4:3 and 16:9, and resize to an exact width.",
-    "f.presets.t": "Presets", "f.presets.b": "Save a look and reuse it, or start each shot with your last settings.",
-    "f.export.t": "Export", "f.export.b": "PNG, JPEG, HEIC or TIFF, with the final size shown before you save.",
-    "f.shortcuts.t": "Your shortcuts", "f.shortcuts.b": "Record your own global shortcuts. In the editor, single letters switch tools.",
-    "f.glass.t": "Liquid Glass", "f.glass.b": "Built for the newest macOS look, with a clean fallback on macOS 14 and 15.",
-    "f.private.t": "Private by design", "f.private.b": "No account, no cloud, no analytics. It only goes online to download fonts you pick.",
-    "how.1t": "Capture", "how.1b": "Drag over an area or click a window. Start a scrolling capture for long pages.",
-    "how.2t": "Mark it up", "how.2b": "Single-letter tools: A for arrow, T for text, N for the next step.",
-    "how.3t": "Share", "how.3b": "⇧⌘C to copy, ⌘S to save, or drag the image into any app.",
-    "install.eyebrow": "Install", "install.title": "Running in under a minute.",
-    "install.s1": "<b>Get EasyShoot</b> from the Mac App Store.",
-    "install.s2": "<b>Allow</b> screen recording in the Welcome window, then press ⌥⇧⌘4.",
-    "install.s3": "<b>Updates come from the App Store</b>, like any other app.",
-    "install.req": "Requires macOS 14 Sonoma or later, on Apple silicon or Intel.",
-    "cta.title": "Your next screenshot deserves better.", "cta.button": "Download EasyShoot, free",
-    "footer.by": "Made by", "footer.support": "Support", "footer.privacy": "Privacy", "install.soon": "Coming soon",
+    "nav.features": "Features", "nav.how": "How it works", "nav.privacy": "Privacy", "nav.download": "Download",
+    "hero.badge": "Coming soon to the Mac App Store", "hero.badgeLive": "Free on the Mac App Store",
+    "hero.title": 'Screenshots that <span class="hl">explain</span> themselves.',
+    "hero.sub": "Capture anything on your Mac, mark it up and share it in seconds.",
+    "hero.cta": "Mac App Store · Coming soon", "hero.ctaLive": "Download on the Mac App Store", "hero.cta2": "See the features",
+    "hero.meta": "Free · macOS 14 or later · No account",
+    "hero.alt": "The EasyShoot editor with a dashboard screenshot: the revenue amount is pixelated, the New Customers card is boxed and numbered 1, Quick Create is numbered 2, and an arrow points at the −20% change.",
+    "feat.title": "Everything a screenshot needs.",
+    "mark.t": "Mark it up", "mark.b": "Arrows, boxes, text and numbered steps. One key for each tool.",
+    "capture.t": "Capture any way", "capture.b": "Area, window, full screen or a whole scrolling page.",
+    "mode.area": "Area", "mode.window": "Window", "mode.full": "Full screen", "mode.scroll": "Scrolling",
+    "quick.t": "Quick Access", "quick.b": "Copy, save or drag it into any app right after you capture.", "quick.drag": "Drag into any app",
+    "ui.copy": "Copy", "ui.save": "Save",
+    "blur.t": "Hide private info", "blur.b": "Pixelate emails, card numbers and faces before you share.",
+    "scroll.t": "Scrolling capture", "scroll.b": "Long pages and chats in one image. Sticky headers appear once.", "scroll.meta": "1 image · 4,820 px",
+    "bg.t": "Ready to post", "bg.b": "Put any shot on a background with padding, rounded corners and a soft shadow.", "bg.before": "Before", "bg.after": "After, in one click",
+    "ar.t": "Arabic built in", "ar.b": "Right-to-left text with correct letter shaping, in any font on your Mac.",
+    "chip.presets": "Presets", "chip.shortcuts": "Custom shortcuts", "chip.crop": "Crop and resize", "chip.glass": "Built for Liquid Glass",
+    "how.title": "Three steps. A few seconds.",
+    "how.1t": "Capture", "how.1b": "Press the shortcut and drag.",
+    "how.2t": "Mark up", "how.2b": "Add arrows, steps or blur.",
+    "how.3t": "Share", "how.3b": "Copy it or drag it anywhere.",
+    "privacy.title": "Your screenshots stay on your Mac.", "privacy.body": "No account, no cloud, no tracking.", "privacy.link": "Privacy policy",
+    "final.title": "Your next screenshot deserves better.",
+    "footer.support": "Support", "footer.privacy": "Privacy",
     "theme.toLight": "Switch to light mode", "theme.toDark": "Switch to dark mode"
   },
   ar: {
-    "feat.sub": "التقط، ووضّح، وأطّر، وشارك دون مغادرة EasyShoot. كل أداة على بعد زر واحد.",
-    "nav.features": "المميزات", "nav.how": "كيف يعمل", "nav.install": "التثبيت", "nav.download": "تنزيل",
-    "hero.badge": "قريباً على Mac App Store",
-    "hero.title": 'لقطات شاشة<br><span class="hl">تشرح نفسها</span>.',
-    "hero.sub": "التقط أي جزء من شاشة الماك. أشِر ورقّم وموّه، ثم ضعها على خلفية أنيقة وشاركها، كل ذلك قبل أن تبرد قهوتك.",
-    "hero.cta": "نزّله للماك", "hero.cta2": "شاهد ما يفعله",
-    "hero.meta": "macOS 14 أو أحدث · معالجات Apple وIntel · بلا حساب أبداً",
-    "keys.eyebrow": "اختصار واحد", "keys.title": "أربعة أزرار، من أي مكان.",
-    "keys.area": "منطقة", "keys.window": "نافذة", "keys.full": "الشاشة كاملة", "keys.scroll": "التقاط طويل",
-    "keys.note": "لا تعجبك اختصاراتنا؟ سجّل اختصاراتك من الإعدادات.",
-    "feat.eyebrow": "كل ما بداخله", "feat.title": "عمل أربعة تطبيقات في نافذة واحدة.",
-    "f.capture.t": "منطقة، نافذة، الشاشة كاملة", "f.capture.b": "اسحب فوق منطقة، أو انقر على نافذة، أو التقط الشاشة كاملة، ولكلٍّ منها اختصاره.",
-    "f.scrolling.t": "الالتقاط الطويل", "f.scrolling.b": "اجمع الصفحات والمحادثات والمستندات الطويلة في صورة واحدة. الترويسات الثابتة تظهر مرة واحدة.",
-    "f.quick.t": "الوصول السريع", "f.quick.b": "صورة مصغّرة عائمة بعد كل لقطة. انسخها أو احفظها أو اسحبها إلى أي تطبيق.",
-    "f.arrows.t": "أسهم وأشكال", "f.arrows.b": "أسهم وخطوط ومستطيلات ودوائر وقلم تمييز وقلم حر. كل علامة تبقى قابلة للتعديل.",
-    "f.steps.t": "خطوات مرقّمة", "f.steps.b": "العدّادات ترقّم نفسها بالترتيب، فيصبح الشرح خطوة بخطوة في ثوانٍ.",
-    "f.pixelate.t": "التمويه", "f.pixelate.b": "أخفِ أرقام البطاقات والإيميلات والوجوه قبل المشاركة.",
-    "f.fonts.t": "أي خط", "f.fonts.b": "كل خطوط جهازك، مع خطوط Google. غيّر حجم النص بسحب زاويته.",
-    "f.rtl.t": "العربية والكتابة من اليمين", "f.rtl.b": "العربية والعبرية تُكتب من اليمين لليسار مع تشكيل صحيح للحروف.",
-    "f.background.t": "أداة الخلفية", "f.background.b": "تدرّجات أو ألوان ثابتة، مع هوامش وزوايا وظل ونِسب أبعاد.",
-    "f.crop.t": "القص وتغيير الحجم", "f.crop.b": "قصّ بحرية أو بنسبة 1:1 و4:3 و16:9، وغيّر الحجم لعرض محدد.",
-    "f.presets.t": "إعدادات محفوظة", "f.presets.b": "احفظ شكلاً وأعد استخدامه، أو ابدأ كل لقطة بآخر إعداداتك.",
-    "f.export.t": "التصدير", "f.export.b": "PNG أو JPEG أو HEIC أو TIFF، مع عرض الحجم النهائي قبل الحفظ.",
-    "f.shortcuts.t": "اختصاراتك", "f.shortcuts.b": "سجّل اختصاراتك العامة. وفي المحرر، حرف واحد يبدّل الأداة.",
-    "f.glass.t": "Liquid Glass", "f.glass.b": "مصمم لأحدث شكل في macOS، مع بديل نظيف على macOS 14 و15.",
-    "f.private.t": "خصوصية أولاً", "f.private.b": "بلا حساب ولا سحابة ولا تتبّع. لا يتصل بالإنترنت إلا لتنزيل الخطوط التي تختارها.",
-    "how.1t": "التقط", "how.1b": "اسحب فوق منطقة أو انقر على نافذة، أو ابدأ التقاطاً مع التمرير للصفحات الطويلة.",
-    "how.2t": "وضّح", "how.2b": "أدوات بحرف واحد: A للسهم، وT للنص، وN للخطوة التالية.",
-    "how.3t": "شارك", "how.3b": "‎⇧⌘C‎ للنسخ، و‎⌘S‎ للحفظ، أو اسحب الصورة إلى أي تطبيق.",
-    "install.eyebrow": "التثبيت", "install.title": "جاهز خلال أقل من دقيقة.",
-    "install.s1": "<b>نزّل EasyShoot</b> من Mac App Store.",
-    "install.s2": "<b>اسمح</b> بتسجيل الشاشة من نافذة الترحيب، ثم اضغط ‎⌥⇧⌘4‎.",
-    "install.s3": "<b>التحديثات تصلك من App Store</b> مثل أي تطبيق آخر.",
-    "install.req": "يتطلب macOS 14 Sonoma أو أحدث، على معالجات Apple أو Intel.",
-    "cta.title": "لقطتك القادمة تستحق أفضل.", "cta.button": "نزّل EasyShoot مجاناً",
-    "footer.by": "من صنع", "footer.support": "الدعم", "footer.privacy": "الخصوصية", "install.soon": "قريباً",
+    "nav.features": "المزايا", "nav.how": "طريقة العمل", "nav.privacy": "الخصوصية", "nav.download": "تحميل",
+    "hero.badge": "قريبًا على Mac App Store", "hero.badgeLive": "مجاني على Mac App Store",
+    "hero.title": 'لقطات شاشة <span class="hl">تشرح</span> نفسها.',
+    "hero.sub": "التقط أي شيء على جهاز Mac، ووضّح عليه، وشاركه في ثوانٍ.",
+    "hero.cta": "Mac App Store · قريبًا", "hero.ctaLive": "حمّله من Mac App Store", "hero.cta2": "شاهد المزايا",
+    "hero.meta": "مجاني · macOS 14 أو أحدث · بلا حساب",
+    "hero.alt": "محرر EasyShoot وفيه لقطة للوحة تحكم: مبلغ الإيرادات مموّه، وبطاقة العملاء الجدد داخل مربع برقم 1، وزر الإنشاء السريع برقم 2، وسهم يشير إلى نسبة −20%.",
+    "feat.title": "كل ما تحتاجه اللقطة.",
+    "mark.t": "وضّح عليها", "mark.b": "أسهم ومربعات ونصوص وخطوات مرقّمة، ولكل أداة مفتاح واحد.",
+    "capture.t": "التقط كما تريد", "capture.b": "منطقة، أو نافذة، أو الشاشة كاملة، أو صفحة كاملة بالتمرير.",
+    "mode.area": "منطقة", "mode.window": "نافذة", "mode.full": "الشاشة كاملة", "mode.scroll": "بالتمرير",
+    "quick.t": "وصول سريع", "quick.b": "انسخها أو احفظها أو اسحبها لأي تطبيق بعد الالتقاط مباشرة.", "quick.drag": "اسحبها لأي تطبيق",
+    "ui.copy": "نسخ", "ui.save": "حفظ",
+    "blur.t": "أخفِ بياناتك", "blur.b": "موّه البريد وأرقام البطاقات والوجوه قبل المشاركة.",
+    "scroll.t": "التقاط بالتمرير", "scroll.b": "صفحات ومحادثات طويلة في صورة واحدة، والترويسات الثابتة تظهر مرة واحدة.", "scroll.meta": "صورة واحدة · 4820 بكسل",
+    "bg.t": "جاهزة للنشر", "bg.b": "ضع أي لقطة على خلفية مع هوامش وزوايا دائرية وظل ناعم.", "bg.before": "قبل", "bg.after": "بعد، بنقرة واحدة",
+    "ar.t": "العربية مدمجة", "ar.b": "نص من اليمين لليسار بحروف متصلة وصحيحة، بأي خط على جهازك.",
+    "chip.presets": "إعدادات محفوظة", "chip.shortcuts": "اختصارات خاصة", "chip.crop": "قص وتغيير الحجم", "chip.glass": "مصمم لـ Liquid Glass",
+    "how.title": "ثلاث خطوات. ثوانٍ قليلة.",
+    "how.1t": "التقط", "how.1b": "اضغط الاختصار واسحب.",
+    "how.2t": "وضّح", "how.2b": "أضف أسهمًا أو خطوات أو تمويهًا.",
+    "how.3t": "شارك", "how.3b": "انسخها أو اسحبها لأي مكان.",
+    "privacy.title": "لقطاتك تبقى على جهازك.", "privacy.body": "بلا حساب، بلا سحابة، بلا تتبّع.", "privacy.link": "سياسة الخصوصية",
+    "final.title": "لقطتك القادمة تستحق أفضل.",
+    "footer.support": "الدعم", "footer.privacy": "الخصوصية",
     "theme.toLight": "التبديل إلى الوضع الفاتح", "theme.toDark": "التبديل إلى الوضع الداكن"
   },
   fr: {
-    "feat.sub": "Capturez, annotez, encadrez et partagez sans quitter EasyShoot. Chaque outil est à une touche.",
-    "nav.features": "Fonctions", "nav.how": "Comment ça marche", "nav.install": "Installation", "nav.download": "Télécharger",
-    "hero.badge": "Bientôt sur le Mac App Store",
-    "hero.title": 'Des captures<br><span class="hl">qui expliquent</span>.',
-    "hero.sub": "Capturez n’importe quelle partie de votre Mac. Pointez, numérotez, floutez. Posez-la sur un fond soigné et partagez-la avant que votre café refroidisse.",
-    "hero.cta": "Télécharger pour Mac", "hero.cta2": "Voir ce qu’il fait",
-    "hero.meta": "macOS 14 ou plus récent · Apple silicon et Intel · Aucun compte, jamais",
-    "keys.eyebrow": "Un raccourci", "keys.title": "À quatre touches, depuis n’importe où.",
-    "keys.area": "Zone", "keys.window": "Fenêtre", "keys.full": "Plein écran", "keys.scroll": "Défilement",
-    "keys.note": "Les nôtres ne vous plaisent pas ? Enregistrez les vôtres dans Réglages.",
-    "feat.eyebrow": "Tout est inclus", "feat.title": "Le travail de quatre apps. Une seule fenêtre.",
-    "f.capture.t": "Zone, fenêtre, plein écran", "f.capture.b": "Sélectionnez une zone, cliquez sur une fenêtre ou prenez tout l’écran, chacun avec son raccourci.",
-    "f.scrolling.t": "Capture défilante", "f.scrolling.b": "Assemblez pages, conversations et documents longs en une image. Les en-têtes fixes n’apparaissent qu’une fois.",
-    "f.quick.t": "Accès rapide", "f.quick.b": "Une vignette flottante après chaque capture. Copiez, enregistrez ou glissez-la dans n’importe quelle app.",
-    "f.arrows.t": "Flèches et formes", "f.arrows.b": "Flèches, lignes, rectangles, ellipses, surligneur et stylo. Chaque annotation reste modifiable.",
-    "f.steps.t": "Étapes numérotées", "f.steps.b": "Les compteurs se numérotent dans l’ordre : un tutoriel en quelques secondes.",
-    "f.pixelate.t": "Pixellisation", "f.pixelate.b": "Masquez numéros de carte, e-mails et visages avant de partager.",
-    "f.fonts.t": "Toutes les polices", "f.fonts.b": "Toutes les polices de votre Mac, plus Google Fonts. Redimensionnez le texte par son coin.",
-    "f.rtl.t": "Arabe et droite à gauche", "f.rtl.b": "L’arabe et l’hébreu s’écrivent de droite à gauche, avec des lettres bien liées.",
-    "f.background.t": "Arrière-plan", "f.background.b": "Dégradés ou couleurs unies, avec marges, coins, ombre et proportions.",
-    "f.crop.t": "Recadrer et redimensionner", "f.crop.b": "Recadrez librement ou en 1:1, 4:3 et 16:9, et redimensionnez à une largeur exacte.",
-    "f.presets.t": "Préréglages", "f.presets.b": "Enregistrez un style, ou reprenez vos derniers réglages à chaque capture.",
-    "f.export.t": "Export", "f.export.b": "PNG, JPEG, HEIC ou TIFF, avec la taille finale affichée avant d’enregistrer.",
-    "f.shortcuts.t": "Vos raccourcis", "f.shortcuts.b": "Enregistrez vos raccourcis globaux. Dans l’éditeur, une lettre change d’outil.",
-    "f.glass.t": "Liquid Glass", "f.glass.b": "Pensé pour le nouveau look de macOS, avec un rendu propre sur macOS 14 et 15.",
-    "f.private.t": "Privé par conception", "f.private.b": "Ni compte, ni cloud, ni statistiques. Il ne se connecte que pour télécharger les polices choisies.",
-    "how.1t": "Capturer", "how.1b": "Sélectionnez une zone ou cliquez sur une fenêtre. Capture défilante pour les pages longues.",
-    "how.2t": "Annoter", "how.2b": "Des outils à une lettre : A pour flèche, T pour texte, N pour l’étape suivante.",
-    "how.3t": "Partager", "how.3b": "⇧⌘C pour copier, ⌘S pour enregistrer, ou glissez l’image dans n’importe quelle app.",
-    "install.eyebrow": "Installation", "install.title": "Prêt en moins d’une minute.",
-    "install.s1": "<b>Installez EasyShoot</b> depuis le Mac App Store.",
-    "install.s2": "<b>Autorisez</b> l’enregistrement de l’écran dans la fenêtre d’accueil, puis appuyez sur ⌥⇧⌘4.",
-    "install.s3": "<b>Les mises à jour arrivent par l’App Store</b>, comme pour toute autre app.",
-    "install.req": "Nécessite macOS 14 Sonoma ou plus récent, sur Apple silicon ou Intel.",
-    "cta.title": "Votre prochaine capture mérite mieux.", "cta.button": "Télécharger EasyShoot, gratuit",
-    "footer.by": "Créé par", "footer.support": "Assistance", "footer.privacy": "Confidentialité", "install.soon": "Bientôt",
+    "nav.features": "Fonctionnalités", "nav.how": "Fonctionnement", "nav.privacy": "Confidentialité", "nav.download": "Télécharger",
+    "hero.badge": "Bientôt sur le Mac App Store", "hero.badgeLive": "Gratuit sur le Mac App Store",
+    "hero.title": 'Des captures d’écran qui <span class="hl">s’expliquent</span> toutes seules.',
+    "hero.sub": "Capturez n’importe quoi sur votre Mac, annotez et partagez en quelques secondes.",
+    "hero.cta": "Mac App Store · Bientôt", "hero.ctaLive": "Télécharger sur le Mac App Store", "hero.cta2": "Voir les fonctionnalités",
+    "hero.meta": "Gratuit · macOS 14 ou ultérieur · Sans compte",
+    "hero.alt": "L’éditeur EasyShoot avec la capture d’un tableau de bord : le chiffre d’affaires est pixelisé, la carte Nouveaux clients est encadrée et numérotée 1, Quick Create porte le numéro 2 et une flèche montre la baisse de −20 %.",
+    "feat.title": "Tout ce qu’il faut à une capture.",
+    "mark.t": "Annotez", "mark.b": "Flèches, cadres, texte et étapes numérotées. Une touche par outil.",
+    "capture.t": "Capturez comme vous voulez", "capture.b": "Zone, fenêtre, plein écran ou page entière défilante.",
+    "mode.area": "Zone", "mode.window": "Fenêtre", "mode.full": "Plein écran", "mode.scroll": "Défilement",
+    "quick.t": "Accès rapide", "quick.b": "Copiez, enregistrez ou glissez-la dans n’importe quelle app juste après la capture.", "quick.drag": "Glissez dans une app",
+    "ui.copy": "Copier", "ui.save": "Enregistrer",
+    "blur.t": "Masquez le privé", "blur.b": "Pixelisez e-mails, numéros de carte et visages avant de partager.",
+    "scroll.t": "Capture défilante", "scroll.b": "Pages et discussions longues en une image. Les en-têtes fixes n’apparaissent qu’une fois.", "scroll.meta": "1 image · 4 820 px",
+    "bg.t": "Prête à publier", "bg.b": "Posez n’importe quelle capture sur un fond, avec marges, coins arrondis et ombre douce.", "bg.before": "Avant", "bg.after": "Après, en un clic",
+    "ar.t": "L’arabe intégré", "ar.b": "Texte de droite à gauche aux lettres bien liées, dans n’importe quelle police de votre Mac.",
+    "chip.presets": "Préréglages", "chip.shortcuts": "Raccourcis personnalisés", "chip.crop": "Recadrer et redimensionner", "chip.glass": "Conçu pour Liquid Glass",
+    "how.title": "Trois étapes. Quelques secondes.",
+    "how.1t": "Capturez", "how.1b": "Appuyez sur le raccourci et faites glisser.",
+    "how.2t": "Annotez", "how.2b": "Ajoutez flèches, étapes ou flou.",
+    "how.3t": "Partagez", "how.3b": "Copiez-la ou glissez-la n’importe où.",
+    "privacy.title": "Vos captures restent sur votre Mac.", "privacy.body": "Pas de compte, pas de cloud, pas de suivi.", "privacy.link": "Politique de confidentialité",
+    "final.title": "Votre prochaine capture mérite mieux.",
+    "footer.support": "Assistance", "footer.privacy": "Confidentialité",
     "theme.toLight": "Passer en mode clair", "theme.toDark": "Passer en mode sombre"
   },
   es: {
-    "feat.sub": "Captura, anota, enmarca y comparte sin salir de EasyShoot. Cada herramienta está a una tecla.",
-    "nav.features": "Funciones", "nav.how": "Cómo funciona", "nav.install": "Instalar", "nav.download": "Descargar",
-    "hero.badge": "Muy pronto en la Mac App Store",
-    "hero.title": 'Capturas que<br><span class="hl">se explican</span>.',
-    "hero.sub": "Captura cualquier parte de tu Mac. Señala, numera y difumina. Ponla sobre un fondo limpio y compártela antes de que se enfríe tu café.",
-    "hero.cta": "Descargar para Mac", "hero.cta2": "Ver qué hace",
-    "hero.meta": "macOS 14 o posterior · Apple silicon e Intel · Sin cuenta, nunca",
-    "keys.eyebrow": "Un atajo", "keys.title": "A cuatro teclas, desde cualquier lugar.",
-    "keys.area": "Área", "keys.window": "Ventana", "keys.full": "Pantalla completa", "keys.scroll": "Desplazamiento",
-    "keys.note": "¿No te gustan los nuestros? Graba los tuyos en Ajustes.",
-    "feat.eyebrow": "Todo incluido", "feat.title": "El trabajo de cuatro apps. Una sola ventana.",
-    "f.capture.t": "Área, ventana, pantalla completa", "f.capture.b": "Arrastra sobre un área, haz clic en una ventana o captura toda la pantalla, cada uno con su atajo.",
-    "f.scrolling.t": "Captura con desplazamiento", "f.scrolling.b": "Une páginas, chats y documentos largos en una imagen. Las cabeceras fijas salen una vez.",
-    "f.quick.t": "Acceso rápido", "f.quick.b": "Una miniatura flotante tras cada captura. Cópiala, guárdala o arrástrala a cualquier app.",
-    "f.arrows.t": "Flechas y formas", "f.arrows.b": "Flechas, líneas, rectángulos, elipses, resaltador y lápiz. Todo sigue siendo editable.",
-    "f.steps.t": "Pasos numerados", "f.steps.b": "Los contadores se numeran en orden, así un tutorial lleva segundos.",
-    "f.pixelate.t": "Pixelar", "f.pixelate.b": "Oculta números de tarjeta, correos y caras antes de compartir.",
-    "f.fonts.t": "Cualquier fuente", "f.fonts.b": "Todas las fuentes de tu Mac, más Google Fonts. Cambia el tamaño arrastrando la esquina.",
-    "f.rtl.t": "Árabe y derecha a izquierda", "f.rtl.b": "El árabe y el hebreo se escriben de derecha a izquierda con las letras bien unidas.",
-    "f.background.t": "Fondo", "f.background.b": "Degradados o colores sólidos, con márgenes, esquinas, sombra y proporciones.",
-    "f.crop.t": "Recortar y redimensionar", "f.crop.b": "Recorta libremente o a 1:1, 4:3 y 16:9, y ajusta a un ancho exacto.",
-    "f.presets.t": "Preajustes", "f.presets.b": "Guarda un estilo y reutilízalo, o empieza cada captura con tus últimos ajustes.",
-    "f.export.t": "Exportar", "f.export.b": "PNG, JPEG, HEIC o TIFF, con el tamaño final visible antes de guardar.",
-    "f.shortcuts.t": "Tus atajos", "f.shortcuts.b": "Graba tus atajos globales. En el editor, una letra cambia de herramienta.",
-    "f.glass.t": "Liquid Glass", "f.glass.b": "Hecho para el nuevo aspecto de macOS, con una versión limpia en macOS 14 y 15.",
-    "f.private.t": "Privado por diseño", "f.private.b": "Sin cuenta, sin nube, sin analíticas. Solo se conecta para descargar las fuentes que elijas.",
-    "how.1t": "Captura", "how.1b": "Arrastra sobre un área o haz clic en una ventana. Captura con desplazamiento para páginas largas.",
-    "how.2t": "Anota", "how.2b": "Herramientas de una letra: A para flecha, T para texto, N para el siguiente paso.",
-    "how.3t": "Comparte", "how.3b": "⇧⌘C para copiar, ⌘S para guardar, o arrastra la imagen a cualquier app.",
-    "install.eyebrow": "Instalar", "install.title": "Listo en menos de un minuto.",
-    "install.s1": "<b>Descarga EasyShoot</b> desde la Mac App Store.",
-    "install.s2": "<b>Permite</b> la grabación de pantalla en la ventana de bienvenida y pulsa ⌥⇧⌘4.",
-    "install.s3": "<b>Las actualizaciones llegan desde la App Store</b>, como en cualquier otra app.",
-    "install.req": "Requiere macOS 14 Sonoma o posterior, en Apple silicon o Intel.",
-    "cta.title": "Tu próxima captura merece algo mejor.", "cta.button": "Descargar EasyShoot gratis",
-    "footer.by": "Hecho por", "footer.support": "Soporte", "footer.privacy": "Privacidad", "install.soon": "Muy pronto",
+    "nav.features": "Funciones", "nav.how": "Cómo funciona", "nav.privacy": "Privacidad", "nav.download": "Descargar",
+    "hero.badge": "Muy pronto en el Mac App Store", "hero.badgeLive": "Gratis en el Mac App Store",
+    "hero.title": 'Capturas de pantalla que se <span class="hl">explican</span> solas.',
+    "hero.sub": "Captura lo que quieras en tu Mac, anótalo y compártelo en segundos.",
+    "hero.cta": "Mac App Store · Muy pronto", "hero.ctaLive": "Descargar en el Mac App Store", "hero.cta2": "Ver las funciones",
+    "hero.meta": "Gratis · macOS 14 o posterior · Sin cuenta",
+    "hero.alt": "El editor de EasyShoot con la captura de un panel: los ingresos están pixelados, la tarjeta de nuevos clientes está enmarcada con el número 1, Quick Create lleva el 2 y una flecha señala el −20 %.",
+    "feat.title": "Todo lo que necesita una captura.",
+    "mark.t": "Anota", "mark.b": "Flechas, recuadros, texto y pasos numerados. Una tecla por herramienta.",
+    "capture.t": "Captura a tu manera", "capture.b": "Área, ventana, pantalla completa o una página entera con desplazamiento.",
+    "mode.area": "Área", "mode.window": "Ventana", "mode.full": "Pantalla completa", "mode.scroll": "Desplazamiento",
+    "quick.t": "Acceso rápido", "quick.b": "Cópiala, guárdala o arrástrala a cualquier app justo después de capturar.", "quick.drag": "Arrastra a cualquier app",
+    "ui.copy": "Copiar", "ui.save": "Guardar",
+    "blur.t": "Oculta lo privado", "blur.b": "Pixela correos, números de tarjeta y caras antes de compartir.",
+    "scroll.t": "Captura con desplazamiento", "scroll.b": "Páginas y chats largos en una sola imagen. Los encabezados fijos salen una vez.", "scroll.meta": "1 imagen · 4.820 px",
+    "bg.t": "Lista para publicar", "bg.b": "Pon cualquier captura sobre un fondo con márgenes, esquinas redondeadas y una sombra suave.", "bg.before": "Antes", "bg.after": "Después, en un clic",
+    "ar.t": "Árabe integrado", "ar.b": "Texto de derecha a izquierda con letras bien unidas, en cualquier fuente de tu Mac.",
+    "chip.presets": "Ajustes guardados", "chip.shortcuts": "Atajos propios", "chip.crop": "Recortar y redimensionar", "chip.glass": "Hecho para Liquid Glass",
+    "how.title": "Tres pasos. Unos segundos.",
+    "how.1t": "Captura", "how.1b": "Pulsa el atajo y arrastra.",
+    "how.2t": "Anota", "how.2b": "Añade flechas, pasos o desenfoque.",
+    "how.3t": "Comparte", "how.3b": "Cópiala o arrástrala donde quieras.",
+    "privacy.title": "Tus capturas se quedan en tu Mac.", "privacy.body": "Sin cuenta, sin nube, sin rastreo.", "privacy.link": "Política de privacidad",
+    "final.title": "Tu próxima captura merece algo mejor.",
+    "footer.support": "Soporte", "footer.privacy": "Privacidad",
     "theme.toLight": "Cambiar a modo claro", "theme.toDark": "Cambiar a modo oscuro"
   },
   de: {
-    "feat.sub": "Aufnehmen, markieren, rahmen und teilen, ohne EasyShoot zu verlassen. Jedes Werkzeug liegt eine Taste entfernt.",
-    "nav.features": "Funktionen", "nav.how": "So funktioniert’s", "nav.install": "Installation", "nav.download": "Laden",
-    "hero.badge": "Bald im Mac App Store",
-    "hero.title": 'Screenshots,<br><span class="hl">erklärt</span>.',
-    "hero.sub": "Erfasse jeden Teil deines Macs. Zeigen, nummerieren, verpixeln. Auf einen sauberen Hintergrund legen und teilen, bevor der Kaffee kalt ist.",
-    "hero.cta": "Für Mac laden", "hero.cta2": "Was es kann",
-    "hero.meta": "macOS 14 oder neuer · Apple silicon und Intel · Nie ein Konto",
-    "keys.eyebrow": "Ein Kurzbefehl", "keys.title": "Vier Tasten entfernt, von überall.",
-    "keys.area": "Bereich", "keys.window": "Fenster", "keys.full": "Vollbild", "keys.scroll": "Scrollen",
-    "keys.note": "Unsere gefallen dir nicht? Nimm in den Einstellungen eigene auf.",
-    "feat.eyebrow": "Alles drin", "feat.title": "Die Arbeit von vier Apps. Ein Fenster.",
-    "f.capture.t": "Bereich, Fenster, Vollbild", "f.capture.b": "Ziehe über einen Bereich, klicke auf ein Fenster oder nimm den ganzen Bildschirm, jeweils mit eigenem Kurzbefehl.",
-    "f.scrolling.t": "Scrollende Aufnahme", "f.scrolling.b": "Lange Seiten, Chats und Dokumente in einem Bild. Fixierte Kopfzeilen erscheinen nur einmal.",
-    "f.quick.t": "Schnellzugriff", "f.quick.b": "Eine schwebende Vorschau nach jeder Aufnahme. Kopieren, sichern oder in jede App ziehen.",
-    "f.arrows.t": "Pfeile und Formen", "f.arrows.b": "Pfeile, Linien, Rechtecke, Ellipsen, Textmarker und Stift. Alles bleibt bearbeitbar.",
-    "f.steps.t": "Nummerierte Schritte", "f.steps.b": "Zähler nummerieren sich selbst, so dauert eine Anleitung nur Sekunden.",
-    "f.pixelate.t": "Verpixeln", "f.pixelate.b": "Kartennummern, E-Mails und Gesichter vor dem Teilen verbergen.",
-    "f.fonts.t": "Jede Schrift", "f.fonts.b": "Alle Schriften deines Macs plus Google Fonts. Textgröße per Ecke ziehen.",
-    "f.rtl.t": "Arabisch und rechts nach links", "f.rtl.b": "Arabisch und Hebräisch laufen von rechts nach links, mit korrekt verbundenen Buchstaben.",
-    "f.background.t": "Hintergrund", "f.background.b": "Verläufe oder Volltöne, mit Abstand, Ecken, Schatten und Seitenverhältnis.",
-    "f.crop.t": "Zuschneiden und skalieren", "f.crop.b": "Frei oder auf 1:1, 4:3 und 16:9 zuschneiden und auf eine genaue Breite skalieren.",
-    "f.presets.t": "Vorlagen", "f.presets.b": "Einen Look sichern und wiederverwenden, oder jede Aufnahme mit den letzten Einstellungen starten.",
-    "f.export.t": "Export", "f.export.b": "PNG, JPEG, HEIC oder TIFF, mit der finalen Größe vor dem Sichern.",
-    "f.shortcuts.t": "Deine Kurzbefehle", "f.shortcuts.b": "Nimm eigene globale Kurzbefehle auf. Im Editor wechselt ein Buchstabe das Werkzeug.",
-    "f.glass.t": "Liquid Glass", "f.glass.b": "Gebaut für den neuen macOS-Look, mit sauberem Fallback auf macOS 14 und 15.",
-    "f.private.t": "Privat von Grund auf", "f.private.b": "Kein Konto, keine Cloud, keine Analyse. Online nur für Schriften, die du auswählst.",
-    "how.1t": "Aufnehmen", "how.1b": "Ziehe über einen Bereich oder klicke auf ein Fenster. Scrollaufnahme für lange Seiten.",
-    "how.2t": "Markieren", "how.2b": "Werkzeuge mit einem Buchstaben: A für Pfeil, T für Text, N für den nächsten Schritt.",
-    "how.3t": "Teilen", "how.3b": "⇧⌘C zum Kopieren, ⌘S zum Sichern, oder das Bild in jede App ziehen.",
-    "install.eyebrow": "Installation", "install.title": "In unter einer Minute startklar.",
-    "install.s1": "<b>Lade EasyShoot</b> aus dem Mac App Store.",
-    "install.s2": "<b>Erlaube</b> die Bildschirmaufnahme im Willkommensfenster und drücke dann ⌥⇧⌘4.",
-    "install.s3": "<b>Updates kommen über den App Store</b>, wie bei jeder anderen App.",
-    "install.req": "Benötigt macOS 14 Sonoma oder neuer, auf Apple silicon oder Intel.",
-    "cta.title": "Dein nächster Screenshot verdient mehr.", "cta.button": "EasyShoot kostenlos laden",
-    "footer.by": "Gemacht von", "footer.support": "Support", "footer.privacy": "Datenschutz", "install.soon": "Demnächst",
+    "nav.features": "Funktionen", "nav.how": "So geht’s", "nav.privacy": "Datenschutz", "nav.download": "Laden",
+    "hero.badge": "Bald im Mac App Store", "hero.badgeLive": "Kostenlos im Mac App Store",
+    "hero.title": 'Screenshots, die sich von selbst <span class="hl">erklären</span>.',
+    "hero.sub": "Nimm alles auf deinem Mac auf, markiere es und teile es in Sekunden.",
+    "hero.cta": "Mac App Store · Demnächst", "hero.ctaLive": "Im Mac App Store laden", "hero.cta2": "Funktionen ansehen",
+    "hero.meta": "Kostenlos · ab macOS 14 · Kein Konto",
+    "hero.alt": "Der EasyShoot-Editor mit einem Dashboard-Screenshot: Der Umsatz ist verpixelt, die Karte „New Customers“ ist umrahmt und mit 1 nummeriert, Quick Create trägt die 2, und ein Pfeil zeigt auf −20 %.",
+    "feat.title": "Alles, was ein Screenshot braucht.",
+    "mark.t": "Markieren", "mark.b": "Pfeile, Rahmen, Text und nummerierte Schritte. Eine Taste pro Werkzeug.",
+    "capture.t": "Aufnehmen, wie du willst", "capture.b": "Bereich, Fenster, Vollbild oder eine ganze scrollende Seite.",
+    "mode.area": "Bereich", "mode.window": "Fenster", "mode.full": "Vollbild", "mode.scroll": "Scrollen",
+    "quick.t": "Schnellzugriff", "quick.b": "Direkt nach der Aufnahme kopieren, sichern oder in jede App ziehen.", "quick.drag": "In jede App ziehen",
+    "ui.copy": "Kopieren", "ui.save": "Sichern",
+    "blur.t": "Privates verbergen", "blur.b": "Verpixle E-Mails, Kartennummern und Gesichter vor dem Teilen.",
+    "scroll.t": "Scrollende Aufnahme", "scroll.b": "Lange Seiten und Chats in einem Bild. Feste Kopfzeilen erscheinen nur einmal.", "scroll.meta": "1 Bild · 4.820 px",
+    "bg.t": "Bereit zum Posten", "bg.b": "Leg jeden Screenshot auf einen Hintergrund mit Abstand, runden Ecken und weichem Schatten.", "bg.before": "Vorher", "bg.after": "Nachher, mit einem Klick",
+    "ar.t": "Arabisch eingebaut", "ar.b": "Text von rechts nach links mit korrekt verbundenen Buchstaben, in jeder Schrift auf deinem Mac.",
+    "chip.presets": "Voreinstellungen", "chip.shortcuts": "Eigene Kurzbefehle", "chip.crop": "Zuschneiden und skalieren", "chip.glass": "Für Liquid Glass gebaut",
+    "how.title": "Drei Schritte. Ein paar Sekunden.",
+    "how.1t": "Aufnehmen", "how.1b": "Kurzbefehl drücken und ziehen.",
+    "how.2t": "Markieren", "how.2b": "Pfeile, Schritte oder Unschärfe hinzufügen.",
+    "how.3t": "Teilen", "how.3b": "Kopieren oder überallhin ziehen.",
+    "privacy.title": "Deine Screenshots bleiben auf deinem Mac.", "privacy.body": "Kein Konto, keine Cloud, kein Tracking.", "privacy.link": "Datenschutzerklärung",
+    "final.title": "Dein nächster Screenshot verdient mehr.",
+    "footer.support": "Support", "footer.privacy": "Datenschutz",
     "theme.toLight": "Zum hellen Modus wechseln", "theme.toDark": "Zum dunklen Modus wechseln"
   }
 };
-
-// Pixelated email in the mock.
-const mosaic = document.getElementById("mosaic");
-let seed = 7;
-const rand = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
-mosaic.innerHTML = Array.from({ length: 28 }, () => { const v = 150 + Math.round(rand() * 65); return `<span style="background:rgb(${v},${v},${v + 6})"></span>`; }).join("");
 
 const SUPPORTED = Object.keys(I18N);
 let currentLang = "en";
@@ -845,8 +631,12 @@ function applyLang(lang) {
   const dict = I18N[lang], en = I18N.en;
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = dict[el.dataset.i18n] ?? en[el.dataset.i18n] ?? el.textContent; });
+  document.querySelectorAll("[data-i18n]").forEach(el => { const key = (APP_STORE_URL && el.dataset.i18nLive) || el.dataset.i18n; el.textContent = dict[key] ?? en[key] ?? el.textContent; });
   document.querySelectorAll("[data-i18n-html]").forEach(el => { el.innerHTML = dict[el.dataset.i18nHtml] ?? en[el.dataset.i18nHtml] ?? el.innerHTML; });
+  document.querySelectorAll("[data-i18n-alt]").forEach(el => { el.alt = dict[el.dataset.i18nAlt] ?? en[el.dataset.i18nAlt] ?? el.alt; });
+  document.getElementById("heroShot").src = lang === "ar" ? "editor-ar.png" : "editor-en.png";
+  document.getElementById("supportLink").href = lang === "ar" ? "ar/support.html" : "support.html";
+  document.querySelectorAll(".privacy-link").forEach(a => { a.href = lang === "ar" ? "ar/privacy.html" : "privacy.html"; });
   document.getElementById("langCode").textContent = lang.toUpperCase();
   document.querySelectorAll("#langMenu button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.lang === lang)));
   updateThemeLabel();
@@ -859,6 +649,9 @@ function initialLang() {
   return nav.slice(0, 2).toLowerCase();
 }
 
+// App Store links
+if (APP_STORE_URL) document.querySelectorAll(".store-link").forEach(a => { a.href = APP_STORE_URL; });
+
 // Language menu
 const langBtn = document.getElementById("langBtn"), langMenu = document.getElementById("langMenu");
 function setMenu(open) { langMenu.hidden = !open; langBtn.setAttribute("aria-expanded", String(open)); }
@@ -867,17 +660,12 @@ langMenu.querySelectorAll("button").forEach(b => b.addEventListener("click", () 
 document.addEventListener("click", e => { if (!langMenu.hidden && !e.target.closest(".lang")) setMenu(false); });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && !langMenu.hidden) { setMenu(false); langBtn.focus(); } });
 
-// Mobile menu
-const navEl = document.querySelector(".nav"), menuBtn = document.getElementById("menuBtn");
-menuBtn.addEventListener("click", () => { const open = !navEl.classList.contains("open"); navEl.classList.toggle("open", open); menuBtn.setAttribute("aria-expanded", String(open)); });
-document.querySelectorAll("#navLinks a").forEach(a => a.addEventListener("click", () => { navEl.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }));
-
 // Theme
 const themeBtn = document.getElementById("themeBtn");
 function updateThemeLabel() {
   const dark = document.documentElement.dataset.theme !== "light";
   themeBtn.setAttribute("aria-label", I18N[currentLang][dark ? "theme.toLight" : "theme.toDark"]);
-  document.querySelector('meta[name="theme-color"]').content = dark ? "#08080A" : "#F5F5F3";
+  document.querySelector('meta[name="theme-color"]').content = dark ? "#08080A" : "#FFFFFF";
 }
 themeBtn.addEventListener("click", () => {
   const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
