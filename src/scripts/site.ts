@@ -1,4 +1,4 @@
-import { animate, inView, scroll, stagger } from "motion";
+import { animate, inView, press, scroll, stagger } from "motion";
 
 const root = document.documentElement;
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -11,11 +11,26 @@ function updateThemeLabel() {
   if (!themeBtn) return;
   themeBtn.setAttribute("aria-label", (isDark() ? themeBtn.dataset.toLight : themeBtn.dataset.toDark) ?? "");
 }
-themeBtn?.addEventListener("click", () => {
-  const next = isDark() ? "light" : "dark";
+function applyTheme(next: "light" | "dark") {
   root.dataset.theme = next;
   try { localStorage.setItem("easyshoot-theme", next); } catch {}
   updateThemeLabel();
+}
+// The new theme grows out of the button in a circle; browsers without view transitions just switch.
+themeBtn?.addEventListener("click", () => {
+  const next = isDark() ? "light" : "dark";
+  if (!themeBtn) return;
+  if (!reduce) animate(themeBtn.querySelectorAll("svg"), { rotate: [-90, 0], scale: [0.4, 1] }, { type: "spring", bounce: 0.4, duration: 0.6 });
+  const start = (document as Document & { startViewTransition?: (cb: () => void) => { ready: Promise<void> } }).startViewTransition;
+  if (reduce || !start) return applyTheme(next);
+  const r = themeBtn.getBoundingClientRect();
+  const x = r.left + r.width / 2, y = r.top + r.height / 2;
+  const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+  const t = start.call(document, () => applyTheme(next));
+  t.ready.then(() => {
+    root.animate({ clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
+      { duration: 650, easing: "cubic-bezier(.2,.8,.2,1)", pseudoElement: "::view-transition-new(root)" });
+  });
 });
 darkQuery.addEventListener("change", updateThemeLabel);
 updateThemeLabel();
@@ -43,6 +58,14 @@ tools.forEach(b => b.addEventListener("click", () => {
   tools.forEach(x => x.setAttribute("aria-pressed", String(x === b)));
   if (!reduce) animate(b.querySelector(".ic")!, { scale: [0.86, 1] }, { type: "spring", bounce: 0.5, duration: 0.5 });
 }));
+
+// Every button and control gives a small spring when pressed.
+if (!reduce) {
+  press(".btn, .chip-btn, .tabs button, .faq summary, .lang-menu a, .links a, .foot a", el => {
+    animate(el, { scale: 0.94 }, { type: "spring", stiffness: 600, damping: 30 });
+    return () => animate(el, { scale: 1 }, { type: "spring", bounce: 0.55, duration: 0.45 });
+  });
+}
 
 if (reduce) {
   document.querySelectorAll<HTMLElement>(".reveal").forEach(el => (el.style.opacity = "1"));

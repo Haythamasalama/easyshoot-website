@@ -1,55 +1,25 @@
 ---
 import "../styles/global.css";
-import { SITE, LANGS, OG_LOCALE, pagePath, dirOf, useT, APP_STORE_URL, type Lang } from "../i18n";
+import Chrome from "../components/Chrome.astro";
+import { SITE, LANGS, OG_LOCALE, dirOf, type Lang } from "../i18n";
 
-interface Props { lang: Lang }
-const { lang } = Astro.props;
-const t = useT(lang);
-const url = SITE + pagePath(lang);
-const title = t("seo.title");
-const description = t("seo.desc");
-
-const faq = [1, 2, 3, 4, 5].map(n => ({
-  "@type": "Question",
-  name: t(`q.${n}`),
-  acceptedAnswer: { "@type": "Answer", text: t(`a.${n}`) },
-}));
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  alternates: Record<Lang, string>;
+  graph?: object[];
+  ogType?: string;
+}
+const { lang, title, description, alternates, graph = [], ogType = "website" } = Astro.props;
+const url = SITE + alternates[lang];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "SoftwareApplication",
-      "@id": `${SITE}/#app`,
-      name: "EasyShoot",
-      applicationCategory: "MultimediaApplication",
-      applicationSubCategory: "Screenshot tool",
-      operatingSystem: "macOS 14 or later",
-      description,
-      url,
-      image: `${SITE}/og.png`,
-      softwareHelp: `${SITE}/support.html`,
-      inLanguage: [...LANGS],
-      ...(APP_STORE_URL ? { downloadUrl: APP_STORE_URL } : {}),
-      featureList: [
-        "Area, window, fullscreen and scrolling capture",
-        "Quick Access after every capture",
-        "Arrows, boxes, ellipses, text and numbered steps",
-        "Highlighter, pen and pixelate",
-        "Arabic and right-to-left text in any font",
-        "Background tool with padding, corners and shadow",
-        "Crop and resize",
-        "Presets",
-        "PNG, JPEG, HEIC and TIFF export",
-        "Custom capture shortcuts",
-        "Liquid Glass on macOS 26",
-        "No account, no cloud, no tracking",
-      ],
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    },
-    { "@type": "WebSite", "@id": `${SITE}/#site`, name: "EasyShoot", url: `${SITE}/`, inLanguage: lang },
+    { "@type": "WebSite", "@id": `${SITE}/#site`, name: "EasyShoot", url: `${SITE}/` },
     { "@type": "WebPage", "@id": `${url}#page`, url, name: title, description, inLanguage: lang, isPartOf: { "@id": `${SITE}/#site` }, about: { "@id": `${SITE}/#app` } },
-    { "@type": "FAQPage", "@id": `${url}#faq`, inLanguage: lang, mainEntity: faq },
+    ...graph,
   ],
 };
 ---
@@ -63,11 +33,11 @@ const jsonLd = {
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="application-name" content="EasyShoot">
 <link rel="canonical" href={url}>
-{LANGS.map(l => <link rel="alternate" hreflang={l} href={SITE + pagePath(l)}>)}
-<link rel="alternate" hreflang="x-default" href={SITE + "/"}>
+{LANGS.map(l => <link rel="alternate" hreflang={l} href={SITE + alternates[l]}>)}
+<link rel="alternate" hreflang="x-default" href={SITE + alternates.en}>
 <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
 <link rel="sitemap" href="/sitemap-index.xml">
-<meta property="og:type" content="website">
+<meta property="og:type" content={ogType}>
 <meta property="og:site_name" content="EasyShoot">
 <meta property="og:locale" content={OG_LOCALE[lang]}>
 {LANGS.filter(l => l !== lang).map(l => <meta property="og:locale:alternate" content={OG_LOCALE[l]}>)}
@@ -96,7 +66,7 @@ const jsonLd = {
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 </head>
 <body>
-<slot />
+<Chrome lang={lang} alternates={alternates}><slot /></Chrome>
 <script>
   import "../scripts/site.ts";
 </script>

@@ -1,0 +1,671 @@
+{
+  "ui": {
+    "home": "Accueil",
+    "guides": "Guides",
+    "compare": "Comparatifs",
+    "updated": "Mis à jour le 1er novembre 2026",
+    "steps": "Étapes",
+    "faq": "Questions",
+    "related": "À lire aussi",
+    "feature": "Fonctionnalité",
+    "notListed": "Non mentionné",
+    "sources": "Les informations sur les autres apps proviennent de leurs pages officielles, consultées le 1er novembre 2026. Les prix et les fonctionnalités évoluent ; vérifiez sur leurs sites avant d’acheter.",
+    "ctaTitle": "Essayez EasyShoot sur votre Mac",
+    "ctaBody": "Capturez, annotez et partagez, sans que rien ne quitte votre Mac."
+  },
+  "hubs": {
+    "guides": {
+      "title": "Guides de capture d’écran sur Mac | EasyShoot",
+      "description": "Des guides courts et pratiques pour les captures d’écran sur Mac : captures défilantes, floutage des infos privées, flèches, étapes numérotées et texte arabe.",
+      "h1": "Guides de capture d’écran sur Mac",
+      "intro": "Des réponses courtes aux questions les plus fréquentes sur les captures d’écran sur Mac, avec les touches exactes à utiliser."
+    },
+    "compare": {
+      "title": "EasyShoot comparé aux autres apps de capture pour Mac",
+      "description": "EasyShoot face à CleanShot X, Shottr, Snagit et l’outil de capture intégré à macOS, avec des remarques honnêtes sur les cas où chacun convient mieux.",
+      "h1": "EasyShoot comparé",
+      "intro": "Vous cherchez une autre app de capture d’écran pour votre Mac ? Voici comment EasyShoot se situe face aux outils auxquels on le compare souvent, y compris quand un autre outil est le meilleur choix."
+    }
+  },
+  "articles": {
+    "scrolling-screenshot-mac": {
+      "short": "Captures défilantes",
+      "title": "Faire une capture d’écran défilante sur Mac | EasyShoot",
+      "description": "Capturez une page web, une conversation ou un document entier en une seule longue image sur votre Mac, pas à pas avec la Capture défilante d’EasyShoot.",
+      "h1": "Comment faire une capture d’écran défilante sur Mac",
+      "intro": "Une capture défilante enregistre plus que ce qui tient à l’écran : une page web entière, une longue conversation ou un document, assemblés en une seule grande image. L’outil Capture d’écran intégré à macOS ne capture que ce qui est visible ; pour une page entière, il faut un outil de capture défilante comme EasyShoot.",
+      "steps": [
+        {
+          "name": "Lancez la Capture défilante",
+          "text": "Appuyez sur Option + Maj + Commande + 6, ou choisissez Capture défilante dans le menu EasyShoot de la barre des menus."
+        },
+        {
+          "name": "Sélectionnez la zone",
+          "text": "Faites glisser le pointeur sur la partie de la fenêtre à faire défiler, par exemple le contenu de la page sans la barre d’outils du navigateur. Appuyez sur Échap pour annuler."
+        },
+        {
+          "name": "Faites défiler lentement",
+          "text": "Faites défiler vers le bas à un rythme régulier. Si vous allez trop vite, EasyShoot vous demande de remonter un peu et de continuer plus lentement."
+        },
+        {
+          "name": "Cliquez sur Terminé",
+          "text": "EasyShoot assemble le tout en une seule image et l’ouvre, prête à être annotée, copiée ou enregistrée. Les en-têtes fixes n’apparaissent qu’une fois, pas sur chaque tranche."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Conseils pour un résultat propre",
+          "html": "<ul><li>Sélectionnez uniquement le contenu qui défile, pour que les barres d’outils et barres latérales fixes restent hors de l’image.</li><li>Faites défiler dans un seul sens, de haut en bas.</li><li>Les longues images peuvent aussi être larges : redimensionnez-les ou recadrez-les dans l’éditeur avant de les partager.</li></ul>"
+        },
+        {
+          "h2": "Ce qu’il vous faut",
+          "html": "<p>EasyShoot fonctionne sous macOS 14 ou version ultérieure. La Capture défilante nécessite l’autorisation Enregistrement de l’écran, qu’EasyShoot vous demande lors de votre première capture.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Le Mac peut-il faire une capture défilante sans app ?",
+          "a": "Le guide d’Apple sur l’outil Capture d’écran intégré couvre l’écran entier, une fenêtre ou une partie sélectionnée. Il ne décrit pas de capture défilante ; une app séparée est donc la solution habituelle pour capturer une page entière."
+        },
+        {
+          "q": "Est-ce que ça fonctionne dans toutes les apps ?",
+          "a": "La Capture défilante fonctionne avec le contenu que vous faites défiler à l’écran, comme les pages web, les conversations et les documents."
+        },
+        {
+          "q": "Quel est le raccourci ?",
+          "a": "Option + Maj + Commande + 6 par défaut. Vous pouvez le modifier dans les réglages d’EasyShoot."
+        }
+      ]
+    },
+    "blur-screenshot-mac": {
+      "short": "Flouter les infos privées",
+      "title": "Flouter ou pixeliser une capture d’écran sur Mac | EasyShoot",
+      "description": "Masquez adresses e-mail, numéros de carte et visages dans une capture d’écran sur Mac avant de la partager. Pixelisez une zone en quelques secondes.",
+      "h1": "Comment flouter une partie d’une capture d’écran sur Mac",
+      "intro": "Avant de partager une capture d’écran, masquez ce qui ne vous appartient pas : une adresse e-mail, un numéro de carte, un nom ou un visage. EasyShoot pixelise toute zone sur laquelle vous faites glisser le pointeur, et rien ne quitte votre Mac pendant ce temps.",
+      "steps": [
+        {
+          "name": "Capturez ou ouvrez l’image",
+          "text": "Faites une capture d’écran avec EasyShoot, ou copiez une image et choisissez Annoter l’image du presse-papiers."
+        },
+        {
+          "name": "Choisissez Pixeliser",
+          "text": "Appuyez sur B, ou cliquez sur l’outil Pixeliser dans la barre d’outils."
+        },
+        {
+          "name": "Faites glisser sur la partie privée",
+          "text": "Tracez un rectangle sur le texte ou le visage. Tracez-en d’autres pour les autres détails."
+        },
+        {
+          "name": "Copiez ou enregistrez",
+          "text": "Appuyez sur Maj + Commande + C pour copier, ou sur Commande + S pour enregistrer. La zone pixelisée fait partie de l’image exportée."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Pixelisez peu, pas tout",
+          "html": "<p>Ne couvrez que le détail privé. Une capture avec une petite zone masquée reste compréhensible ; une capture à moitié floutée ne l’est plus.</p>"
+        },
+        {
+          "h2": "Confidentiel par conception",
+          "html": "<p>EasyShoot n’a ni compte ni cloud. Votre capture reste sur votre Mac pendant que vous la modifiez, et ne va que là où vous la copiez ou l’enregistrez.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "macOS peut-il flouter une partie d’une capture d’écran tout seul ?",
+          "a": "Le guide d’Apple sur Annotation mentionne les formes, le texte, la surbrillance, le croquis, la loupe et le recadrage, mais pas d’outil de flou ou de pixelisation ; on utilise donc généralement une app pour cela."
+        },
+        {
+          "q": "La pixelisation est-elle réversible ?",
+          "a": "L’image exportée ne contient que les blocs pixelisés, pas le détail d’origine."
+        },
+        {
+          "q": "Puis-je pixeliser après avoir ajouté des flèches et des étapes ?",
+          "a": "Oui. Chaque annotation reste modifiable jusqu’à l’export, dans n’importe quel ordre."
+        }
+      ]
+    },
+    "annotate-screenshot-mac": {
+      "short": "Flèches et étapes numérotées",
+      "title": "Ajouter flèches, texte et étapes à une capture sur Mac | EasyShoot",
+      "description": "Annotez vos captures d’écran sur Mac avec des flèches, des cadres, du texte et des étapes numérotées, une touche par outil. Un guide rapide avec EasyShoot.",
+      "h1": "Comment ajouter des flèches et des étapes numérotées à une capture d’écran sur Mac",
+      "intro": "Une bonne capture d’écran montre une seule chose et dit quoi faire. EasyShoot attribue une seule touche à chaque outil d’annotation : vous encadrez, numérotez et pointez sans toucher à la souris.",
+      "steps": [
+        {
+          "name": "Capturez l’écran",
+          "text": "Appuyez sur Option + Maj + Commande + 4 et faites glisser le pointeur sur une zone. L’éditeur s’ouvre avec la capture."
+        },
+        {
+          "name": "Encadrez l’essentiel",
+          "text": "Appuyez sur R et tracez un rectangle autour, en laissant un peu d’espace pour que le trait ne coupe pas le texte."
+        },
+        {
+          "name": "Numérotez les étapes",
+          "text": "Appuyez sur N et cliquez à côté de chaque élément, dans l’ordre. Les numéros se suivent tout seuls : 1, 2, 3."
+        },
+        {
+          "name": "Pointez et expliquez",
+          "text": "Appuyez sur A pour tracer une flèche, ou sur T pour ajouter une courte note."
+        },
+        {
+          "name": "Partagez",
+          "text": "Appuyez sur Maj + Commande + C pour copier, puis collez directement dans Messages, Slack ou Mail."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Chaque outil, une touche",
+          "html": "<table><thead><tr><th>Outil</th><th>Touche</th></tr></thead><tbody><tr><td>Flèche</td><td><kbd>A</kbd></td></tr><tr><td>Ligne</td><td><kbd>L</kbd></td></tr><tr><td>Rectangle</td><td><kbd>R</kbd></td></tr><tr><td>Ellipse</td><td><kbd>O</kbd></td></tr><tr><td>Texte</td><td><kbd>T</kbd></td></tr><tr><td>Étape numérotée</td><td><kbd>N</kbd></td></tr><tr><td>Surligneur</td><td><kbd>H</kbd></td></tr><tr><td>Stylo</td><td><kbd>P</kbd></td></tr><tr><td>Pixeliser</td><td><kbd>B</kbd></td></tr><tr><td>Recadrer</td><td><kbd>C</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Restez lisible",
+          "html": "<ul><li>Utilisez trois ou quatre annotations au maximum : un cadre, deux numéros, une flèche.</li><li>Placez les numéros à côté de ce qu’ils désignent, pas sur le texte.</li><li>Modifiez la couleur et l’épaisseur de chaque annotation dans le panneau Style.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Puis-je modifier une annotation après l’avoir tracée ?",
+          "a": "Oui. Chaque annotation reste modifiable jusqu’à ce que vous exportiez l’image."
+        },
+        {
+          "q": "Puis-je utiliser ma propre police pour le texte ?",
+          "a": "Oui. Le texte peut utiliser n’importe quelle police installée sur votre Mac."
+        },
+        {
+          "q": "Puis-je enregistrer mon style préféré ?",
+          "a": "Oui. Enregistrez un arrière-plan, un style d’annotation et un format d’export comme préréglage, et définissez-le par défaut."
+        }
+      ]
+    },
+    "arabic-text-screenshot-mac": {
+      "short": "Texte arabe sur les captures",
+      "title": "Écrire du texte arabe sur une capture d’écran sur Mac | EasyShoot",
+      "description": "Ajoutez du texte arabe ou hébreu à vos captures sur Mac, avec le bon sens de droite à gauche et des lettres bien liées, dans n’importe quelle police.",
+      "h1": "Comment écrire en arabe sur une capture d’écran sur Mac",
+      "intro": "Beaucoup d’outils d’image écrivent l’arabe de gauche à droite ou séparent les lettres. EasyShoot détecte l’arabe et l’hébreu pendant la saisie et les écrit de droite à gauche avec des lettres correctement liées, dans n’importe quelle police de votre Mac.",
+      "steps": [
+        {
+          "name": "Capturez ou ouvrez l’image",
+          "text": "Faites une capture d’écran, ou copiez une image et choisissez Annoter l’image du presse-papiers."
+        },
+        {
+          "name": "Choisissez Texte",
+          "text": "Appuyez sur T et cliquez à l’endroit où placer le texte."
+        },
+        {
+          "name": "Tapez en arabe",
+          "text": "Tapez normalement. Avec la direction réglée sur Auto, EasyShoot passe de lui-même de droite à gauche."
+        },
+        {
+          "name": "Choisissez une police et une taille",
+          "text": "Choisissez n’importe quelle police de votre Mac dans le panneau Style, et faites glisser le coin du texte pour le redimensionner."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Direction : Auto, LTR ou RTL",
+          "html": "<p>Auto détecte l’arabe et l’hébreu et écrit de droite à gauche. Choisissez LTR ou RTL pour imposer une direction, par exemple pour une ligne qui mêle l’arabe à des noms de produits en anglais.</p>"
+        },
+        {
+          "h2": "Toute l’app en arabe",
+          "html": "<p>EasyShoot est disponible en arabe, anglais, français, espagnol et allemand, et ses fenêtres suivent le sens d’écriture de la langue.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi les lettres arabes paraissent-elles séparées dans certaines apps ?",
+          "a": "Les lettres arabes changent de forme selon leurs voisines. Les apps qui ne gèrent pas cette mise en forme dessinent chaque lettre isolément ; EasyShoot met le texte en forme correctement."
+        },
+        {
+          "q": "Puis-je mêler arabe et anglais dans une même note ?",
+          "a": "Oui. Réglez la direction de la ligne, et les chiffres et mots latins restent dans le bon ordre."
+        },
+        {
+          "q": "L’hébreu est-il pris en charge ?",
+          "a": "Oui. La direction Auto détecte l’hébreu comme l’arabe."
+        }
+      ]
+    },
+    "cleanshot-x-alternative": {
+      "short": "vs CleanShot X",
+      "title": "Alternative à CleanShot X sur Mac : comparatif | EasyShoot",
+      "description": "EasyShoot et CleanShot X comparés : capture, annotation, confidentialité et prix, avec des remarques honnêtes sur les cas où CleanShot X convient mieux.",
+      "h1": "EasyShoot, une alternative à CleanShot X",
+      "intro": "CleanShot X est une app de capture populaire et très complète pour Mac, avec enregistrement de l’écran et service cloud. EasyShoot est une app de capture d’écran gratuite et ciblée, qui garde tout sur votre Mac. Voici comment elles se comparent.",
+      "competitor": "CleanShot X",
+      "table": [
+        [
+          "Prix",
+          "Gratuit",
+          "35 $ en achat unique avec un an de mises à jour (19 $/an pour renouveler) ; offre cloud Pro à 10 $ par utilisateur et par mois, facturée à l’année"
+        ],
+        [
+          "macOS",
+          "14 ou version ultérieure",
+          "13 ou version ultérieure"
+        ],
+        [
+          "Zone, fenêtre et plein écran",
+          "Oui",
+          "Non mentionné sur les pages consultées"
+        ],
+        [
+          "Capture défilante",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Flèches, cadres, texte, étapes numérotées",
+          "Oui",
+          "Outline Steps et autres outils mentionnés"
+        ],
+        [
+          "Masquer les infos privées",
+          "Pixeliser",
+          "Caviarder"
+        ],
+        [
+          "Outil d’arrière-plan",
+          "Oui",
+          "Oui, 20 arrière-plans"
+        ],
+        [
+          "Enregistrement de l’écran et GIF",
+          "Non",
+          "Oui, MP4 et GIF"
+        ],
+        [
+          "Reconnaissance de texte (OCR)",
+          "Non",
+          "Oui"
+        ],
+        [
+          "Liens de partage cloud",
+          "Non, rien n’est envoyé",
+          "CleanShot Cloud en option"
+        ],
+        [
+          "Compte",
+          "Aucun",
+          "Pas nécessaire pour l’app ; utilisé pour Cloud"
+        ],
+        [
+          "Langues de l’interface",
+          "Anglais, arabe, français, espagnol, allemand",
+          "Non mentionné"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Choisissez EasyShoot si",
+          "html": "<ul><li>Vous voulez uniquement des captures d’écran, avec une annotation rapide à une touche.</li><li>Rien ne doit quitter votre Mac : ni compte ni cloud.</li><li>Vous écrivez en arabe ou en hébreu sur vos captures, ou voulez l’app en arabe.</li><li>Vous préférez ne pas payer pour un outil de capture d’écran.</li></ul>"
+        },
+        {
+          "h2": "Choisissez CleanShot X si",
+          "html": "<ul><li>Vous enregistrez aussi votre écran ou créez des GIF.</li><li>Vous avez besoin de la reconnaissance de texte (OCR).</li><li>Votre équipe partage les captures par lien via un service cloud.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "EasyShoot est-il une alternative gratuite à CleanShot X ?",
+          "a": "EasyShoot est gratuit et couvre la capture, la capture défilante, l’annotation, la pixelisation et les arrière-plans. Il n’enregistre pas de vidéo et ne reconnaît pas le texte."
+        },
+        {
+          "q": "Puis-je utiliser les deux ?",
+          "a": "Oui. Chaque app vous permet de définir ses propres raccourcis ; vous pouvez donc leur attribuer des touches différentes."
+        },
+        {
+          "q": "EasyShoot envoie-t-il les captures en ligne ?",
+          "a": "Non. Il n’a ni compte ni cloud ; les captures restent sur votre Mac."
+        }
+      ]
+    },
+    "shottr-alternative": {
+      "short": "vs Shottr",
+      "title": "Alternative à Shottr sur Mac : comparatif | EasyShoot",
+      "description": "EasyShoot et Shottr comparés pour les captures sur Mac : capture, annotation, confidentialité, langues et prix, et quand Shottr convient mieux.",
+      "h1": "EasyShoot, une alternative à Shottr",
+      "intro": "Shottr est un outil de capture d’écran léger et rapide pour Mac, avec OCR et de nombreuses options d’annotation. EasyShoot est une app native gratuite, sans compte ni envoi en ligne, avec une prise en charge complète de l’arabe. Voici comment elles se comparent.",
+      "competitor": "Shottr",
+      "table": [
+        [
+          "Prix",
+          "Gratuit",
+          "Utilisation gratuite ; licences à 12 $ ou 30 $ en achat unique ; licence requise pour un usage commercial"
+        ],
+        [
+          "macOS",
+          "14 ou version ultérieure",
+          "10.15 ou version ultérieure"
+        ],
+        [
+          "Zone, fenêtre et plein écran",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Capture défilante",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Flèches, cadres, texte, étapes numérotées",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Masquer les infos privées",
+          "Pixeliser",
+          "Pixeliser, flouter et supprimer"
+        ],
+        [
+          "Outil d’arrière-plan",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Reconnaissance de texte (OCR)",
+          "Non",
+          "Oui, ainsi que les codes QR"
+        ],
+        [
+          "Envoi en ligne",
+          "Non, rien n’est envoyé",
+          "Envoi facultatif vers un stockage compatible S3"
+        ],
+        [
+          "Langues de l’interface",
+          "Anglais, arabe, français, espagnol, allemand",
+          "Non mentionné"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Choisissez EasyShoot si",
+          "html": "<ul><li>Vous utilisez votre Mac en arabe, français, espagnol ou allemand, ou écrivez de droite à gauche sur vos captures.</li><li>Vous le voulez gratuit aussi pour le travail, sans licence à acheter.</li><li>Vous préférez une app qui n’envoie jamais vos captures en ligne.</li></ul>"
+        },
+        {
+          "h2": "Choisissez Shottr si",
+          "html": "<ul><li>Vous avez besoin de l’OCR ou de la lecture de codes QR.</li><li>Votre Mac utilise une version antérieure à macOS 14.</li><li>Vous envoyez vos captures vers votre propre stockage S3.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "EasyShoot est-il gratuit pour un usage commercial ?",
+          "a": "Oui. EasyShoot est gratuit, sans licence à acheter pour le travail."
+        },
+        {
+          "q": "Les deux apps proposent-elles la capture défilante ?",
+          "a": "Oui, les deux capturent les longues pages et conversations en une seule image."
+        },
+        {
+          "q": "Laquelle prend en charge l’arabe ?",
+          "a": "EasyShoot écrit l’arabe et l’hébreu de droite à gauche avec des lettres correctement liées, et il est disponible en arabe. Les pages de Shottr ne mentionnent pas l’arabe."
+        }
+      ]
+    },
+    "snagit-alternative": {
+      "short": "vs Snagit",
+      "title": "Alternative à Snagit sur Mac : comparatif | EasyShoot",
+      "description": "EasyShoot et Snagit comparés sur Mac : capture, annotation, confidentialité et prix, avec des remarques honnêtes sur les cas où Snagit convient mieux.",
+      "h1": "EasyShoot, une alternative à Snagit sur Mac",
+      "intro": "Snagit, de TechSmith, est un outil de capture établi de longue date sur Mac et Windows, vendu par abonnement annuel, avec enregistrement de l’écran et partage. EasyShoot est une app de capture d’écran gratuite, uniquement pour Mac et sans compte. Voici comment elles se comparent.",
+      "competitor": "Snagit",
+      "table": [
+        [
+          "Prix",
+          "Gratuit",
+          "39 $ par utilisateur et par an"
+        ],
+        [
+          "Plateformes",
+          "Mac (macOS 14 ou version ultérieure)",
+          "Mac (macOS 14 ou version ultérieure) et Windows"
+        ],
+        [
+          "Capture défilante",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Flèches, texte et légendes",
+          "Oui, ainsi que les étapes numérotées",
+          "Oui"
+        ],
+        [
+          "Masquer les infos privées",
+          "Pixeliser",
+          "Smart Redact (flou ou masquage)"
+        ],
+        [
+          "Outil d’arrière-plan",
+          "Oui",
+          "Non mentionné"
+        ],
+        [
+          "Enregistrement de l’écran",
+          "Non",
+          "Oui, avec audio et webcam"
+        ],
+        [
+          "Partage",
+          "Copier, enregistrer ou glisser dans n’importe quelle app",
+          "Hébergement Screencast et bouton de partage"
+        ],
+        [
+          "Compte",
+          "Aucun",
+          "La connexion active le logiciel"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Choisissez EasyShoot si",
+          "html": "<ul><li>Vous n’avez besoin que de captures d’écran sur Mac et ne voulez pas d’abonnement.</li><li>Vous ne voulez pas vous connecter pour utiliser un outil de capture d’écran.</li><li>Vous voulez un outil d’arrière-plan pour rendre vos captures prêtes à publier.</li></ul>"
+        },
+        {
+          "h2": "Choisissez Snagit si",
+          "html": "<ul><li>Vous travaillez aussi sur Windows.</li><li>Vous enregistrez votre écran avec votre voix et votre webcam.</li><li>Votre équipe partage via TechSmith Screencast.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Existe-t-il une alternative gratuite à Snagit sur Mac ?",
+          "a": "EasyShoot est gratuit sur Mac et couvre la capture, la capture défilante, l’annotation, la pixelisation et les arrière-plans. Il n’enregistre pas de vidéo."
+        },
+        {
+          "q": "EasyShoot nécessite-t-il un compte ?",
+          "a": "Non. Ouvrez-le et commencez ; aucune connexion n’est nécessaire."
+        },
+        {
+          "q": "EasyShoot fonctionne-t-il sous Windows ?",
+          "a": "Non, EasyShoot est conçu uniquement pour macOS."
+        }
+      ]
+    },
+    "macos-screenshot-alternative": {
+      "short": "vs Capture d’écran de macOS",
+      "title": "Mieux que Commande + Maj + 5 ? EasyShoot face à l’outil du Mac",
+      "description": "Ce qu’EasyShoot ajoute à l’outil de capture intégré à macOS : capture défilante, étapes numérotées, pixelisation, arrière-plans et préréglages.",
+      "h1": "EasyShoot face à l’outil Capture d’écran intégré au Mac",
+      "intro": "macOS comprend un outil Capture d’écran solide (Maj + Commande + 5) avec enregistrement de l’écran et Annotation. EasyShoot reprend la même idée pour les captures que vous voulez expliquer et partager.",
+      "competitor": "macOS Screenshot",
+      "table": [
+        [
+          "Prix",
+          "Gratuit",
+          "Inclus avec macOS"
+        ],
+        [
+          "Zone, fenêtre et plein écran",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Capture défilante",
+          "Oui",
+          "Non mentionné dans le guide d’Apple"
+        ],
+        [
+          "Flèches et étapes numérotées",
+          "Oui",
+          "Formes et texte ; étapes numérotées non mentionnées"
+        ],
+        [
+          "Pixeliser les infos privées",
+          "Oui",
+          "Non mentionné dans le guide Annotation d’Apple"
+        ],
+        [
+          "Arrière-plan, marges et ombre",
+          "Oui",
+          "Non mentionné"
+        ],
+        [
+          "Préréglages",
+          "Oui",
+          "Non"
+        ],
+        [
+          "Enregistrement de l’écran",
+          "Non",
+          "Oui (.mov)"
+        ],
+        [
+          "Formats d’export",
+          "PNG, JPEG, HEIC, TIFF",
+          "PNG pour les captures d’écran"
+        ],
+        [
+          "Raccourcis personnalisés",
+          "Oui, dans EasyShoot",
+          "Oui, dans Réglages Système"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Quand l’outil intégré suffit",
+          "html": "<p>Pour une capture rapide ou un enregistrement de l’écran, Maj + Commande + 3, 4 et 5 font l’affaire et sont déjà sur votre Mac.</p>"
+        },
+        {
+          "h2": "Quand EasyShoot vous aide",
+          "html": "<ul><li>Capturer une page ou une conversation entière en une seule image.</li><li>Expliquer quelque chose avec des étapes numérotées et des flèches.</li><li>Masquer les infos privées avant de partager.</li><li>Rendre vos captures prêtes à publier avec un arrière-plan.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Puis-je continuer à utiliser Maj + Commande + 4 ?",
+          "a": "Oui. EasyShoot utilise par défaut des raccourcis Option + Maj + Commande, donc ceux du système continuent de fonctionner. Vous pouvez modifier l’un ou l’autre jeu."
+        },
+        {
+          "q": "EasyShoot remplace-t-il Annotation ?",
+          "a": "Pour les captures d’écran, oui : il ajoute les étapes numérotées, la pixelisation et les arrière-plans aux flèches, formes et texte."
+        },
+        {
+          "q": "EasyShoot est-il gratuit ?",
+          "a": "Oui."
+        }
+      ]
+    },
+    "lightshot-alternative": {
+      "short": "vs Lightshot",
+      "title": "Alternative à Lightshot sur Mac : EasyShoot comparé | EasyShoot",
+      "description": "EasyShoot et Lightshot (prnt.sc) sur Mac : capture, annotation et confidentialité, y compris ce que deviennent les captures envoyées.",
+      "h1": "EasyShoot, une alternative à Lightshot sur Mac",
+      "intro": "Lightshot est un outil de capture gratuit et rapide pour Windows et Mac, qui peut envoyer une capture sur prnt.sc et vous donner un lien court. EasyShoot est une app Mac gratuite qui garde chaque capture sur votre Mac. Voici comment ils se comparent.",
+      "table": [
+        [
+          "Prix",
+          "Gratuit",
+          "Gratuit"
+        ],
+        [
+          "Plateformes",
+          "Mac (macOS 14 ou ultérieur)",
+          "Windows, Mac (macOS 10.7 ou ultérieur) et extensions de navigateur"
+        ],
+        [
+          "Dernière version Mac",
+          "Récente, conçue pour macOS actuel",
+          "2.22, juillet 2019 (Mac App Store)"
+        ],
+        [
+          "Capture de zone",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Capture de fenêtre, plein écran et défilante",
+          "Oui",
+          "Non mentionné"
+        ],
+        [
+          "Flèches, lignes et texte",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Étapes numérotées",
+          "Oui",
+          "Non mentionné"
+        ],
+        [
+          "Pixeliser les détails privés",
+          "Oui",
+          "Non mentionné"
+        ],
+        [
+          "Outil d’arrière-plan",
+          "Oui",
+          "Non mentionné"
+        ],
+        [
+          "Partage",
+          "Copier, enregistrer ou glisser dans n’importe quelle app",
+          "Envoi facultatif sur prnt.sc avec un lien court"
+        ],
+        [
+          "Qui voit les images partagées",
+          "Seulement les personnes à qui vous les envoyez",
+          "La politique de confidentialité de Lightshot indique que les images envoyées sont publiques et accessibles par leur URL"
+        ],
+        [
+          "Recherche d’images similaires",
+          "Non",
+          "Oui"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Choisissez EasyShoot si",
+          "html": "<ul><li>Vos captures montrent des choses privées qui ne doivent pas être sur un serveur public.</li><li>Vous voulez des étapes numérotées, la pixelisation et un outil d’arrière-plan.</li><li>Vous avez besoin de capturer une fenêtre, tout l’écran ou une page défilante sur Mac.</li></ul>"
+        },
+        {
+          "h2": "Choisissez Lightshot si",
+          "html": "<ul><li>Vous travaillez sous Windows, ou voulez une extension de navigateur.</li><li>Vous voulez un lien court public à coller partout, et l’image n’est pas privée.</li><li>Vous utilisez sa recherche d’images similaires.</li></ul>"
+        },
+        {
+          "h2": "À propos des envois",
+          "html": "<p>La politique de confidentialité de Lightshot indique que chaque image envoyée est publique et a sa propre URL. L’envoi est facultatif : si vous enregistrez ou copiez seulement, rien n’est envoyé. EasyShoot n’envoie jamais rien.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Existe-t-il une alternative privée à Lightshot sur Mac ?",
+          "a": "EasyShoot garde les captures sur votre Mac : sans compte, sans cloud et sans envoi. Vous partagez en copiant, enregistrant ou glissant."
+        },
+        {
+          "q": "Les envois Lightshot sont-ils publics ?",
+          "a": "La politique de confidentialité de Lightshot indique que les images envoyées sont publiques et accessibles par leur URL. Enregistrer ou copier sans envoyer les garde en local."
+        },
+        {
+          "q": "Puis-je garder le raccourci de Lightshot ?",
+          "a": "La page de téléchargement Mac de Lightshot indique Maj + Commande + 9. EasyShoot utilise par défaut des raccourcis Option + Maj + Commande, que vous pouvez modifier."
+        }
+      ],
+      "competitor": "Lightshot"
+    }
+  }
+}

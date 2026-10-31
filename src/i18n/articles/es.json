@@ -1,0 +1,671 @@
+{
+  "ui": {
+    "home": "Inicio",
+    "guides": "Guías",
+    "compare": "Comparar",
+    "updated": "Actualizado el 1 de noviembre de 2026",
+    "steps": "Pasos",
+    "faq": "Preguntas",
+    "related": "Sigue leyendo",
+    "feature": "Función",
+    "notListed": "No indicado",
+    "sources": "Los datos de la competencia proceden de las páginas oficiales de cada producto, consultadas el 1 de noviembre de 2026. Los precios y las funciones cambian; revisa sus sitios antes de comprar.",
+    "ctaTitle": "Prueba EasyShoot en tu Mac",
+    "ctaBody": "Captura, anota y comparte sin que nada salga de tu Mac."
+  },
+  "hubs": {
+    "guides": {
+      "title": "Guías de capturas de pantalla en Mac | EasyShoot",
+      "description": "Guías breves y prácticas para hacer capturas en Mac: capturas con desplazamiento, ocultar datos privados, flechas y pasos numerados, y texto en árabe.",
+      "h1": "Guías de capturas de pantalla para Mac",
+      "intro": "Respuestas breves a lo que más se pregunta sobre las capturas de pantalla en un Mac, con las teclas exactas que hay que pulsar."
+    },
+    "compare": {
+      "title": "EasyShoot frente a otras apps de capturas para Mac",
+      "description": "Cómo se compara EasyShoot con CleanShot X, Shottr, Snagit y la herramienta de capturas de macOS, con notas sinceras sobre cuándo encaja mejor cada una.",
+      "h1": "EasyShoot comparado",
+      "intro": "¿Buscas otra app de capturas de pantalla para tu Mac? Así se compara EasyShoot con las herramientas con las que se suele comparar, incluidos los casos en que otra opción te conviene más."
+    }
+  },
+  "articles": {
+    "scrolling-screenshot-mac": {
+      "short": "Capturas con desplazamiento",
+      "title": "Cómo hacer una captura con desplazamiento en Mac | EasyShoot",
+      "description": "Captura una página web, un chat o un documento entero como una sola imagen larga en tu Mac. Paso a paso con la Captura con desplazamiento de EasyShoot.",
+      "h1": "Cómo hacer una captura con desplazamiento en un Mac",
+      "intro": "Una captura con desplazamiento recoge más de lo que cabe en la pantalla: una página web completa, un chat largo o un documento, unidos en una sola imagen alta. La herramienta Captura de Pantalla de macOS captura lo que está a la vista, así que para una página entera necesitas una herramienta de captura con desplazamiento como EasyShoot.",
+      "steps": [
+        {
+          "name": "Inicia la Captura con desplazamiento",
+          "text": "Pulsa Opción + Mayúsculas + Comando + 6, o elige Captura con desplazamiento en el menú de EasyShoot de la barra de menús."
+        },
+        {
+          "name": "Selecciona el área",
+          "text": "Arrastra sobre la parte de la ventana que quieres desplazar, por ejemplo el contenido de la página sin la barra del navegador. Pulsa Esc para cancelar."
+        },
+        {
+          "name": "Desplázate despacio",
+          "text": "Desplázate hacia abajo a un ritmo constante. Si vas demasiado rápido, EasyShoot te pide que vuelvas un poco hacia arriba y sigas más despacio."
+        },
+        {
+          "name": "Pulsa Listo",
+          "text": "EasyShoot une todo en una sola imagen y la abre, lista para anotar, copiar o guardar. Los encabezados fijos aparecen una sola vez, no en cada fragmento."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Consejos para un resultado limpio",
+          "html": "<ul><li>Selecciona solo el contenido que se desplaza, para que las barras de herramientas y laterales fijas queden fuera de la imagen.</li><li>Desplázate en una sola dirección, de arriba abajo.</li><li>Las imágenes largas también pueden ser anchas: cambia su tamaño o recórtalas en el editor antes de compartirlas.</li></ul>"
+        },
+        {
+          "h2": "Qué necesitas",
+          "html": "<p>EasyShoot funciona en macOS 14 o posterior. La Captura con desplazamiento necesita el permiso de Grabación de pantalla, que EasyShoot te pide la primera vez que capturas.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Puede el Mac hacer una captura con desplazamiento sin una app?",
+          "a": "La guía de Apple sobre la herramienta Captura de Pantalla incluye la pantalla completa, una ventana o una parte seleccionada. No describe una captura con desplazamiento, así que lo habitual es usar una app aparte para capturar una página entera."
+        },
+        {
+          "q": "¿Funciona en cualquier app?",
+          "a": "La Captura con desplazamiento funciona con el contenido que desplazas en pantalla, como páginas web, chats y documentos."
+        },
+        {
+          "q": "¿Cuál es el atajo?",
+          "a": "Opción + Mayúsculas + Comando + 6 de forma predeterminada. Puedes cambiarlo en los Ajustes de EasyShoot."
+        }
+      ]
+    },
+    "blur-screenshot-mac": {
+      "short": "Ocultar datos privados",
+      "title": "Cómo difuminar o pixelar parte de una captura en Mac | EasyShoot",
+      "description": "Oculta correos, números de tarjeta y caras en una captura en tu Mac antes de compartirla. Pixela cualquier área en segundos con EasyShoot.",
+      "h1": "Cómo difuminar parte de una captura de pantalla en un Mac",
+      "intro": "Antes de compartir una captura, oculta lo que no te corresponde compartir: una dirección de correo, un número de tarjeta, un nombre o una cara. EasyShoot pixela cualquier área sobre la que arrastres, y nada sale de tu Mac mientras lo haces.",
+      "steps": [
+        {
+          "name": "Captura o abre la imagen",
+          "text": "Haz una captura con EasyShoot, o copia una imagen y elige Anotar imagen del portapapeles."
+        },
+        {
+          "name": "Elige Pixelar",
+          "text": "Pulsa B, o haz clic en la herramienta Pixelar de la barra de herramientas."
+        },
+        {
+          "name": "Arrastra sobre la parte privada",
+          "text": "Arrastra un recuadro sobre el texto o la cara. Dibuja más recuadros para otros datos."
+        },
+        {
+          "name": "Copia o guarda",
+          "text": "Pulsa Mayúsculas + Comando + C para copiar, o Comando + S para guardar. El área pixelada forma parte de la imagen exportada."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Pixela poco, no todo",
+          "html": "<p>Cubre solo el dato privado. Una captura con una pequeña zona oculta se sigue entendiendo; una medio difuminada, no.</p>"
+        },
+        {
+          "h2": "Privada por diseño",
+          "html": "<p>EasyShoot no tiene cuenta ni nube. Tu captura se queda en tu Mac mientras la editas, y solo va adonde la copies o la guardes.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Puede macOS difuminar parte de una captura por sí solo?",
+          "a": "La guía de Marcación de Apple incluye formas, texto, resaltado, bosquejo, lupa y recorte, pero no una herramienta para difuminar o pixelar, así que se suele usar una app para esto."
+        },
+        {
+          "q": "¿Se puede deshacer el pixelado?",
+          "a": "La imagen exportada solo contiene los bloques pixelados, no el dato original."
+        },
+        {
+          "q": "¿Puedo pixelar después de añadir flechas y pasos?",
+          "a": "Sí. Todas las marcas se pueden editar hasta que exportas, en cualquier orden."
+        }
+      ]
+    },
+    "annotate-screenshot-mac": {
+      "short": "Flechas y pasos numerados",
+      "title": "Cómo añadir flechas, texto y pasos numerados en Mac | EasyShoot",
+      "description": "Anota capturas en tu Mac con flechas, recuadros, texto y pasos numerados, con una tecla por herramienta. Una guía rápida con EasyShoot.",
+      "h1": "Cómo añadir flechas y pasos numerados a una captura en un Mac",
+      "intro": "Una buena captura señala una sola cosa y dice qué hacer. EasyShoot asigna una tecla a cada herramienta de anotación, para que puedas enmarcar, numerar y señalar sin tocar el ratón.",
+      "steps": [
+        {
+          "name": "Captura la pantalla",
+          "text": "Pulsa Opción + Mayúsculas + Comando + 4 y arrastra sobre un área. El editor se abre con la captura."
+        },
+        {
+          "name": "Enmarca lo importante",
+          "text": "Pulsa R y arrastra un rectángulo a su alrededor, dejando un poco de espacio para que la línea no cruce el texto."
+        },
+        {
+          "name": "Numera los pasos",
+          "text": "Pulsa N y haz clic junto a cada elemento en orden. Los números se ponen solos: 1, 2, 3."
+        },
+        {
+          "name": "Señala y explica",
+          "text": "Pulsa A para dibujar una flecha, o T para añadir una nota breve."
+        },
+        {
+          "name": "Comparte",
+          "text": "Pulsa Mayúsculas + Comando + C para copiar y pégala directamente en Mensajes, Slack o Mail."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Cada herramienta, una tecla",
+          "html": "<table><thead><tr><th>Herramienta</th><th>Tecla</th></tr></thead><tbody><tr><td>Flecha</td><td><kbd>A</kbd></td></tr><tr><td>Línea</td><td><kbd>L</kbd></td></tr><tr><td>Rectángulo</td><td><kbd>R</kbd></td></tr><tr><td>Elipse</td><td><kbd>O</kbd></td></tr><tr><td>Texto</td><td><kbd>T</kbd></td></tr><tr><td>Paso numerado</td><td><kbd>N</kbd></td></tr><tr><td>Resaltador</td><td><kbd>H</kbd></td></tr><tr><td>Lápiz</td><td><kbd>P</kbd></td></tr><tr><td>Pixelar</td><td><kbd>B</kbd></td></tr><tr><td>Recortar</td><td><kbd>C</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Que se lea bien",
+          "html": "<ul><li>Usa tres o cuatro marcas como mucho: un recuadro, un par de números y una flecha.</li><li>Pon los números junto a lo que marcan, no encima del texto.</li><li>Cambia el color y el grosor de cualquier marca en el panel Estilo.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Puedo editar una marca después de dibujarla?",
+          "a": "Sí. Todas las marcas se pueden editar hasta que exportas la imagen."
+        },
+        {
+          "q": "¿Puedo usar mi propia tipografía para el texto?",
+          "a": "Sí. El texto puede usar cualquier tipografía instalada en tu Mac."
+        },
+        {
+          "q": "¿Puedo guardar mi estilo favorito?",
+          "a": "Sí. Guarda un fondo, un estilo de marcas y un formato de exportación como ajuste guardado, y hazlo predeterminado."
+        }
+      ]
+    },
+    "arabic-text-screenshot-mac": {
+      "short": "Texto en árabe en capturas",
+      "title": "Cómo escribir texto en árabe en una captura en Mac | EasyShoot",
+      "description": "Añade texto en árabe o hebreo a tus capturas en Mac con la dirección de derecha a izquierda y la forma de las letras correctas, en cualquier tipografía.",
+      "h1": "Cómo escribir en árabe en una captura de pantalla en un Mac",
+      "intro": "Muchas herramientas de imagen escriben el árabe de izquierda a derecha o separan las letras. EasyShoot detecta el árabe y el hebreo mientras escribes y los escribe de derecha a izquierda con la forma correcta de las letras, en cualquier tipografía de tu Mac.",
+      "steps": [
+        {
+          "name": "Captura o abre la imagen",
+          "text": "Haz una captura, o copia una imagen y elige Anotar imagen del portapapeles."
+        },
+        {
+          "name": "Elige Texto",
+          "text": "Pulsa T y haz clic donde debe ir el texto."
+        },
+        {
+          "name": "Escribe en árabe",
+          "text": "Escribe con normalidad. Con Dirección en Auto, EasyShoot cambia a derecha a izquierda por sí solo."
+        },
+        {
+          "name": "Elige tipografía y tamaño",
+          "text": "Elige cualquier tipografía de tu Mac en el panel Estilo, y arrastra la esquina del texto para cambiar su tamaño."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Dirección: Auto, LTR o RTL",
+          "html": "<p>Auto detecta el árabe y el hebreo y escribe de derecha a izquierda. Elige LTR o RTL para forzar una dirección, por ejemplo en una línea que mezcla árabe con nombres de productos en inglés.</p>"
+        },
+        {
+          "h2": "Toda la app en árabe",
+          "html": "<p>EasyShoot está disponible en árabe, inglés, francés, español y alemán, y sus ventanas siguen la dirección del idioma.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué las letras árabes se ven separadas en algunas apps?",
+          "a": "Las letras árabes cambian de forma según las letras vecinas. Las apps que no dan forma al texto dibujan cada letra por separado; EasyShoot da al texto la forma correcta."
+        },
+        {
+          "q": "¿Puedo mezclar árabe e inglés en una nota?",
+          "a": "Sí. Ajusta la dirección de la línea, y los números y las palabras en alfabeto latino se mantienen en el orden correcto."
+        },
+        {
+          "q": "¿Es compatible con el hebreo?",
+          "a": "Sí. La dirección automática detecta el hebreo además del árabe."
+        }
+      ]
+    },
+    "cleanshot-x-alternative": {
+      "short": "frente a CleanShot X",
+      "title": "Alternativa a CleanShot X: EasyShoot comparado | EasyShoot",
+      "description": "EasyShoot frente a CleanShot X: captura, anotación, privacidad y precio, con notas sinceras sobre cuándo CleanShot X es la mejor opción.",
+      "h1": "EasyShoot como alternativa a CleanShot X",
+      "intro": "CleanShot X es una app de captura para Mac popular y muy completa, con grabación de pantalla y un servicio en la nube. EasyShoot es una app de capturas gratuita y centrada en lo esencial que lo guarda todo en tu Mac. Así se comparan.",
+      "competitor": "CleanShot X",
+      "table": [
+        [
+          "Precio",
+          "Gratis",
+          "35 $ en un solo pago con un año de actualizaciones (19 $/año para renovar); plan Pro en la nube a 10 $ por usuario al mes, con facturación anual"
+        ],
+        [
+          "macOS",
+          "14 o posterior",
+          "13 o posterior"
+        ],
+        [
+          "Área, ventana y pantalla completa",
+          "Sí",
+          "No indicado en las páginas consultadas"
+        ],
+        [
+          "Captura con desplazamiento",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Flechas, recuadros, texto, pasos numerados",
+          "Sí",
+          "Pasos y otras herramientas indicados"
+        ],
+        [
+          "Ocultar datos privados",
+          "Pixelar",
+          "Ocultar"
+        ],
+        [
+          "Herramienta de fondo",
+          "Sí",
+          "Sí, 20 fondos"
+        ],
+        [
+          "Grabación de pantalla y GIF",
+          "No",
+          "Sí, MP4 y GIF"
+        ],
+        [
+          "Reconocimiento de texto (OCR)",
+          "No",
+          "Sí"
+        ],
+        [
+          "Enlaces para compartir en la nube",
+          "No, no se sube nada",
+          "CleanShot Cloud opcional"
+        ],
+        [
+          "Cuenta",
+          "Ninguna",
+          "No necesaria para la app; se usa para Cloud"
+        ],
+        [
+          "Idiomas de la interfaz",
+          "Inglés, árabe, francés, español, alemán",
+          "No indicado"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Elige EasyShoot si",
+          "html": "<ul><li>Solo quieres capturas de pantalla, con anotación rápida en teclas únicas.</li><li>Nada debe salir de tu Mac: sin cuenta y sin nube.</li><li>Escribes en árabe o hebreo en tus capturas, o quieres la app en árabe.</li><li>Prefieres no pagar por una herramienta de capturas.</li></ul>"
+        },
+        {
+          "h2": "Elige CleanShot X si",
+          "html": "<ul><li>También grabas la pantalla o haces GIF.</li><li>Necesitas reconocimiento de texto (OCR).</li><li>Tu equipo comparte capturas mediante enlaces a través de un servicio en la nube.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Es EasyShoot una alternativa gratuita a CleanShot X?",
+          "a": "EasyShoot es gratis e incluye captura, captura con desplazamiento, anotación, pixelado y fondos. No graba vídeo ni reconoce texto."
+        },
+        {
+          "q": "¿Puedo usar las dos?",
+          "a": "Sí. Cada app te permite definir sus propios atajos, así que puedes asignarles teclas distintas."
+        },
+        {
+          "q": "¿EasyShoot sube las capturas?",
+          "a": "No. No tiene cuenta ni nube; las capturas se quedan en tu Mac."
+        }
+      ]
+    },
+    "shottr-alternative": {
+      "short": "frente a Shottr",
+      "title": "Alternativa a Shottr para Mac: EasyShoot comparado | EasyShoot",
+      "description": "EasyShoot frente a Shottr para capturas en Mac: captura, anotación, privacidad, idiomas y precio, con notas sobre cuándo encaja mejor Shottr.",
+      "h1": "EasyShoot como alternativa a Shottr",
+      "intro": "Shottr es una herramienta de capturas para Mac pequeña y rápida, con OCR y muchas opciones de anotación. EasyShoot es una app nativa y gratuita, sin cuenta, sin subidas y con compatibilidad total con el árabe. Así se comparan.",
+      "competitor": "Shottr",
+      "table": [
+        [
+          "Precio",
+          "Gratis",
+          "Uso gratuito; licencias de 12 $ o 30 $ en un solo pago; licencia obligatoria para uso comercial"
+        ],
+        [
+          "macOS",
+          "14 o posterior",
+          "10.15 o posterior"
+        ],
+        [
+          "Área, ventana y pantalla completa",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Captura con desplazamiento",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Flechas, recuadros, texto, pasos numerados",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Ocultar datos privados",
+          "Pixelar",
+          "Pixelar, difuminar y eliminar"
+        ],
+        [
+          "Herramienta de fondo",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Reconocimiento de texto (OCR)",
+          "No",
+          "Sí, además de códigos QR"
+        ],
+        [
+          "Subida",
+          "No, no se sube nada",
+          "Subida opcional a almacenamiento compatible con S3"
+        ],
+        [
+          "Idiomas de la interfaz",
+          "Inglés, árabe, francés, español, alemán",
+          "No indicado"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Elige EasyShoot si",
+          "html": "<ul><li>Usas el Mac en árabe, francés, español o alemán, o escribes de derecha a izquierda en tus capturas.</li><li>La quieres gratis también para el trabajo, sin licencias que comprar.</li><li>Prefieres una app que nunca se conecta a internet con tus capturas.</li></ul>"
+        },
+        {
+          "h2": "Elige Shottr si",
+          "html": "<ul><li>Necesitas OCR o lectura de códigos QR.</li><li>Tienes un Mac con una versión anterior a macOS 14.</li><li>Subes tus capturas a tu propio almacenamiento S3.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿EasyShoot es gratis para uso comercial?",
+          "a": "Sí. EasyShoot es gratis, sin licencias que comprar para el trabajo."
+        },
+        {
+          "q": "¿Las dos apps tienen captura con desplazamiento?",
+          "a": "Sí, las dos capturan páginas y chats largos en una sola imagen."
+        },
+        {
+          "q": "¿Cuál es compatible con el árabe?",
+          "a": "EasyShoot escribe árabe y hebreo de derecha a izquierda con la forma correcta de las letras y está disponible en árabe. Las páginas de Shottr no mencionan el árabe."
+        }
+      ]
+    },
+    "snagit-alternative": {
+      "short": "frente a Snagit",
+      "title": "Alternativa a Snagit para Mac: EasyShoot comparado | EasyShoot",
+      "description": "EasyShoot frente a Snagit en Mac: captura, anotación, privacidad y precio, con notas sinceras sobre cuándo Snagit es la mejor opción.",
+      "h1": "EasyShoot como alternativa a Snagit en Mac",
+      "intro": "Snagit, de TechSmith, es una herramienta de captura veterana para Mac y Windows que se vende como suscripción anual, con grabación de pantalla y opciones para compartir. EasyShoot es una app de capturas gratuita, solo para Mac y sin cuenta. Así se comparan.",
+      "competitor": "Snagit",
+      "table": [
+        [
+          "Precio",
+          "Gratis",
+          "39 $ por usuario al año"
+        ],
+        [
+          "Plataformas",
+          "Mac (macOS 14 o posterior)",
+          "Mac (macOS 14 o posterior) y Windows"
+        ],
+        [
+          "Captura con desplazamiento",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Flechas, texto y llamadas",
+          "Sí, además de pasos numerados",
+          "Sí"
+        ],
+        [
+          "Ocultar datos privados",
+          "Pixelar",
+          "Smart Redact (difuminar o tapar)"
+        ],
+        [
+          "Herramienta de fondo",
+          "Sí",
+          "No indicado"
+        ],
+        [
+          "Grabación de pantalla",
+          "No",
+          "Sí, con audio y cámara web"
+        ],
+        [
+          "Compartir",
+          "Copiar, guardar o arrastrar a cualquier app",
+          "Alojamiento en Screencast y botón para compartir"
+        ],
+        [
+          "Cuenta",
+          "Ninguna",
+          "Iniciar sesión desbloquea el software"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Elige EasyShoot si",
+          "html": "<ul><li>Solo necesitas capturas de pantalla en un Mac y no quieres una suscripción.</li><li>No quieres iniciar sesión para usar una herramienta de capturas.</li><li>Quieres una herramienta de fondo para dejar tus capturas listas para publicar.</li></ul>"
+        },
+        {
+          "h2": "Elige Snagit si",
+          "html": "<ul><li>También trabajas en Windows.</li><li>Grabas la pantalla con tu voz y tu cámara web.</li><li>Tu equipo comparte a través de TechSmith Screencast.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Hay una alternativa gratuita a Snagit para Mac?",
+          "a": "EasyShoot es gratis en Mac e incluye captura, captura con desplazamiento, anotación, pixelado y fondos. No graba vídeo."
+        },
+        {
+          "q": "¿EasyShoot necesita una cuenta?",
+          "a": "No. Ábrela y empieza; no hay que iniciar sesión."
+        },
+        {
+          "q": "¿EasyShoot funciona en Windows?",
+          "a": "No, EasyShoot está hecha solo para macOS."
+        }
+      ]
+    },
+    "macos-screenshot-alternative": {
+      "short": "frente a Captura de Pantalla",
+      "title": "¿Mejor que Mayúsculas + Comando + 5? EasyShoot frente a macOS",
+      "description": "Lo que EasyShoot añade a la herramienta de capturas de macOS: captura con desplazamiento, pasos numerados, pixelado, fondos y preajustes.",
+      "h1": "EasyShoot frente a la herramienta Captura de Pantalla del Mac",
+      "intro": "macOS incluye una buena herramienta Captura de Pantalla (Mayúsculas + Comando + 5) con grabación de pantalla y Marcación. EasyShoot parte de la misma idea para las capturas que quieres explicar y compartir.",
+      "competitor": "macOS Screenshot",
+      "table": [
+        [
+          "Precio",
+          "Gratis",
+          "Incluida con macOS"
+        ],
+        [
+          "Área, ventana y pantalla completa",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Captura con desplazamiento",
+          "Sí",
+          "No indicada en la guía de Apple"
+        ],
+        [
+          "Flechas y pasos numerados",
+          "Sí",
+          "Formas y texto; pasos numerados no indicados"
+        ],
+        [
+          "Pixelar datos privados",
+          "Sí",
+          "No indicado en la guía de Marcación de Apple"
+        ],
+        [
+          "Fondo, margen y sombra",
+          "Sí",
+          "No indicado"
+        ],
+        [
+          "Preajustes",
+          "Sí",
+          "No"
+        ],
+        [
+          "Grabación de pantalla",
+          "No",
+          "Sí (.mov)"
+        ],
+        [
+          "Formatos de exportación",
+          "PNG, JPEG, HEIC, TIFF",
+          "PNG para capturas"
+        ],
+        [
+          "Atajos personalizados",
+          "Sí, en EasyShoot",
+          "Sí, en Ajustes del Sistema"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Cuándo basta la herramienta integrada",
+          "html": "<p>Para una captura rápida o una grabación de pantalla, Mayúsculas + Comando + 3, 4 y 5 cumplen su función y ya están en tu Mac.</p>"
+        },
+        {
+          "h2": "Cuándo ayuda EasyShoot",
+          "html": "<ul><li>Para capturar una página o un chat completo en una sola imagen.</li><li>Para explicar algo con pasos numerados y flechas.</li><li>Para ocultar datos privados antes de compartir.</li><li>Para dejar las capturas listas para publicar con un fondo.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Puedo seguir usando Mayúsculas + Comando + 4?",
+          "a": "Sí. EasyShoot usa de forma predeterminada atajos con Opción + Mayúsculas + Comando, así que los integrados siguen funcionando. Puedes cambiar cualquiera de los dos conjuntos."
+        },
+        {
+          "q": "¿EasyShoot sustituye a Marcación?",
+          "a": "Para capturas, sí: añade pasos numerados, pixelado y fondos a las flechas, las formas y el texto."
+        },
+        {
+          "q": "¿EasyShoot es gratis?",
+          "a": "Sí."
+        }
+      ]
+    },
+    "lightshot-alternative": {
+      "short": "vs Lightshot",
+      "title": "Alternativa a Lightshot para Mac: EasyShoot comparado | EasyShoot",
+      "description": "EasyShoot frente a Lightshot (prnt.sc) en Mac: captura, anotación y privacidad, incluido qué pasa con las capturas que se suben.",
+      "h1": "EasyShoot como alternativa a Lightshot en Mac",
+      "intro": "Lightshot es una herramienta de capturas gratuita y rápida para Windows y Mac, que puede subir una captura a prnt.sc y darte un enlace corto. EasyShoot es una app gratuita para Mac que guarda cada captura en tu Mac. Así se comparan.",
+      "table": [
+        [
+          "Precio",
+          "Gratis",
+          "Gratis"
+        ],
+        [
+          "Plataformas",
+          "Mac (macOS 14 o posterior)",
+          "Windows, Mac (macOS 10.7 o posterior) y extensiones de navegador"
+        ],
+        [
+          "Última versión para Mac",
+          "Nueva, hecha para el macOS actual",
+          "2.22, julio de 2019 (Mac App Store)"
+        ],
+        [
+          "Captura de área",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Captura de ventana, pantalla completa y con desplazamiento",
+          "Sí",
+          "No indicado"
+        ],
+        [
+          "Flechas, líneas y texto",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Pasos numerados",
+          "Sí",
+          "No indicado"
+        ],
+        [
+          "Pixelar datos privados",
+          "Sí",
+          "No indicado"
+        ],
+        [
+          "Herramienta de fondo",
+          "Sí",
+          "No indicado"
+        ],
+        [
+          "Compartir",
+          "Copiar, guardar o arrastrar a cualquier app",
+          "Subida opcional a prnt.sc con un enlace corto"
+        ],
+        [
+          "Quién ve las imágenes compartidas",
+          "Solo las personas a las que se las envías",
+          "La política de privacidad de Lightshot dice que las imágenes subidas son públicas y accesibles por su URL"
+        ],
+        [
+          "Búsqueda de imágenes similares",
+          "No",
+          "Sí"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Elige EasyShoot si",
+          "html": "<ul><li>Tus capturas muestran cosas privadas que no deberían estar en un servidor público.</li><li>Quieres pasos numerados, pixelado y una herramienta de fondo.</li><li>Necesitas capturar una ventana, la pantalla completa o una página con desplazamiento en Mac.</li></ul>"
+        },
+        {
+          "h2": "Elige Lightshot si",
+          "html": "<ul><li>Trabajas en Windows o quieres una extensión de navegador.</li><li>Quieres un enlace corto público para pegar en cualquier sitio, y la imagen no es privada.</li><li>Usas su búsqueda de imágenes similares.</li></ul>"
+        },
+        {
+          "h2": "Sobre las subidas",
+          "html": "<p>La política de privacidad de Lightshot dice que cada imagen subida es pública y tiene su propia URL. Subir es opcional: si solo guardas o copias, no se sube nada. EasyShoot no sube nada nunca.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Hay una alternativa privada a Lightshot en Mac?",
+          "a": "EasyShoot guarda las capturas en tu Mac: sin cuenta, sin nube y sin subidas. Compartes copiando, guardando o arrastrando."
+        },
+        {
+          "q": "¿Son públicas las subidas de Lightshot?",
+          "a": "La política de privacidad de Lightshot dice que las imágenes subidas son públicas y accesibles por su URL. Guardar o copiar sin subir las mantiene en local."
+        },
+        {
+          "q": "¿Puedo mantener el atajo de Lightshot?",
+          "a": "La página de descarga para Mac de Lightshot indica Mayúsculas + Comando + 9. EasyShoot usa por defecto atajos con Opción + Mayúsculas + Comando, y puedes cambiarlos."
+        }
+      ],
+      "competitor": "Lightshot"
+    }
+  }
+}

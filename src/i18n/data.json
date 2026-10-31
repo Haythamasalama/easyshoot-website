@@ -105,7 +105,9 @@
    "lang.label": "Language",
    "theme.toggle": "Switch theme",
    "icon.alt": "EasyShoot app icon",
-   "hero.alt": "The EasyShoot editor with a checkout page marked up with a box, two numbered steps, an arrow and a note."
+   "hero.alt": "The EasyShoot editor with a checkout page marked up with a box, two numbered steps, an arrow and a note.",
+   "foot.guides": "Guides",
+   "foot.compare": "Compare"
   },
   "ar": {
    "nav.features": "المزايا",
@@ -152,11 +154,11 @@
    "tab.ar": "النص",
    "more.eyebrow": "عمل يومي على الماك",
    "more.title": "تفاصيل صغيرة، متقنة.",
-   "scroll.t": "التقاط بالتمرير",
+   "scroll.t": "التقاط مع التمرير",
    "scroll.b": "صفحات ومحادثات ومستندات طويلة في صورة واحدة، والترويسات الثابتة تظهر مرة واحدة.",
    "fmt.t": "صدّر كما تريد",
    "fmt.b": "الصيغة والجودة التي تحتاجها، في كل مرة.",
-   "preset.t": "إعدادات محفوظة",
+   "preset.t": "الإعدادات المحفوظة",
    "preset.b": "احفظ الخلفية وشكل العلامات وإعدادات التصدير مرة واحدة.",
    "sc.t": "اختصاراتك",
    "sc.b": "غيّر أي مفتاح التقاط إلى الذي اعتادت عليه يداك.",
@@ -216,7 +218,9 @@
    "lang.label": "اللغة",
    "theme.toggle": "تبديل المظهر",
    "icon.alt": "أيقونة تطبيق EasyShoot",
-   "hero.alt": "محرر EasyShoot وفيه صفحة دفع موضّحة بمربع وخطوتين مرقّمتين وسهم وملاحظة."
+   "hero.alt": "محرر EasyShoot وفيه صفحة دفع موضّحة بمربع وخطوتين مرقّمتين وسهم وملاحظة.",
+   "foot.guides": "الأدلة",
+   "foot.compare": "مقارنات"
   },
   "fr": {
    "nav.features": "Fonctionnalités",
@@ -323,7 +327,9 @@
    "lang.label": "Langue",
    "theme.toggle": "Changer de thème",
    "icon.alt": "Icône de l’app EasyShoot",
-   "hero.alt": "L’éditeur EasyShoot avec une page de paiement annotée : un cadre, deux étapes numérotées, une flèche et une note."
+   "hero.alt": "L’éditeur EasyShoot avec une page de paiement annotée : un cadre, deux étapes numérotées, une flèche et une note.",
+   "foot.guides": "Guides",
+   "foot.compare": "Comparatifs"
   },
   "es": {
    "nav.features": "Funciones",
@@ -371,7 +377,7 @@
    "scroll.b": "Páginas, chats y documentos largos en una sola imagen. Los encabezados fijos salen una vez.",
    "fmt.t": "Exporta a tu manera",
    "fmt.b": "El formato y la calidad que necesitas, siempre.",
-   "preset.t": "Ajustes guardados",
+   "preset.t": "Preajustes",
    "preset.b": "Guarda una vez el fondo, el estilo de las marcas y la exportación.",
    "pr.plain": "Simple",
    "pr.dark": "Oscuro",
@@ -430,7 +436,9 @@
    "lang.label": "Idioma",
    "theme.toggle": "Cambiar tema",
    "icon.alt": "Icono de la app EasyShoot",
-   "hero.alt": "El editor de EasyShoot con una página de pago anotada con un recuadro, dos pasos numerados, una flecha y una nota."
+   "hero.alt": "El editor de EasyShoot con una página de pago anotada con un recuadro, dos pasos numerados, una flecha y una nota.",
+   "foot.guides": "Guías",
+   "foot.compare": "Comparativas"
   },
   "de": {
    "nav.features": "Funktionen",
@@ -474,11 +482,11 @@
    "tab.ar": "Text",
    "more.eyebrow": "Mac-Alltag",
    "more.title": "Kleine Dinge, richtig gemacht.",
-   "scroll.t": "Scrollende Aufnahme",
+   "scroll.t": "Scroll-Aufnahme",
    "scroll.b": "Lange Seiten, Chats und Dokumente in einem Bild. Feste Kopfzeilen erscheinen nur einmal.",
    "fmt.t": "Exportieren, wie du willst",
    "fmt.b": "Das Format und die Qualität, die du brauchst, jedes Mal.",
-   "preset.t": "Voreinstellungen",
+   "preset.t": "Vorlagen",
    "preset.b": "Hintergrund, Markierungsstil und Export einmal sichern.",
    "pr.plain": "Schlicht",
    "pr.dark": "Dunkel",
@@ -537,7 +545,9 @@
    "lang.label": "Sprache",
    "theme.toggle": "Design wechseln",
    "icon.alt": "App-Symbol von EasyShoot",
-   "hero.alt": "Der EasyShoot-Editor mit einer Bezahlseite, markiert mit einem Rahmen, zwei nummerierten Schritten, einem Pfeil und einer Notiz."
+   "hero.alt": "Der EasyShoot-Editor mit einer Bezahlseite, markiert mit einem Rahmen, zwei nummerierten Schritten, einem Pfeil und einer Notiz.",
+   "foot.guides": "Anleitungen",
+   "foot.compare": "Vergleiche"
   }
  },
  "ed": {
@@ -604,7 +614,7 @@
    "font": "Fuente",
    "dir": "Dirección",
    "auto": "Auto",
-   "presets": "Ajustes",
+   "presets": "Preajustes",
    "copied": "Copiado al portapapeles",
    "copy": "Copiar",
    "save": "Guardar"
@@ -638,7 +648,7 @@
    "font": "Schrift",
    "dir": "Richtung",
    "auto": "Auto",
-   "presets": "Voreinstellungen",
+   "presets": "Vorlagen",
    "copied": "In die Zwischenablage kopiert",
    "copy": "Kopieren",
    "save": "Sichern"
@@ -667,7 +677,7 @@
    "size": "Size",
    "pixel": "Pixel size",
    "padding": "Padding",
-   "radius": "Corners",
+   "radius": "Corner radius",
    "shadow": "Shadow",
    "font": "Font",
    "dir": "Direction",
@@ -706,7 +716,7 @@
    "font": "الخط",
    "dir": "الاتجاه",
    "auto": "تلقائي",
-   "presets": "إعدادات محفوظة",
+   "presets": "الإعدادات المحفوظة",
    "copied": "نُسخت إلى الحافظة",
    "copy": "نسخ",
    "save": "حفظ"

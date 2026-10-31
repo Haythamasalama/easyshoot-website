@@ -1,0 +1,671 @@
+{
+  "ui": {
+    "home": "Home",
+    "guides": "Guides",
+    "compare": "Compare",
+    "updated": "Updated 1 November 2026",
+    "steps": "Steps",
+    "faq": "Questions",
+    "related": "Keep reading",
+    "feature": "Feature",
+    "notListed": "Not listed",
+    "sources": "Competitor details come from each product's official pages, read on 1 November 2026. Prices and features change; check their sites before you buy.",
+    "ctaTitle": "Try EasyShoot on your Mac",
+    "ctaBody": "Capture, mark up and share, with nothing leaving your Mac."
+  },
+  "hubs": {
+    "guides": {
+      "title": "Mac screenshot guides | EasyShoot",
+      "description": "Short, practical guides for screenshots on Mac: scrolling captures, blurring private details, arrows and numbered steps, and Arabic text.",
+      "h1": "Screenshot guides for Mac",
+      "intro": "Short answers to the things people ask most about screenshots on a Mac, with the exact keys to press."
+    },
+    "compare": {
+      "title": "EasyShoot compared with other Mac screenshot apps",
+      "description": "How EasyShoot compares with CleanShot X, Shottr, Snagit and the screenshot tool built into macOS, with honest notes on when each one fits better.",
+      "h1": "EasyShoot compared",
+      "intro": "Looking for a different screenshot app for your Mac? Here is how EasyShoot lines up with the tools people usually compare it with, including where another tool is the better pick."
+    }
+  },
+  "articles": {
+    "scrolling-screenshot-mac": {
+      "short": "Scrolling screenshots",
+      "title": "How to take a scrolling screenshot on Mac | EasyShoot",
+      "description": "Capture a whole web page, chat or document as one long image on your Mac. Step-by-step with EasyShoot's Scrolling Capture.",
+      "h1": "How to take a scrolling screenshot on a Mac",
+      "intro": "A scrolling screenshot captures more than fits on your screen: a full web page, a long chat or a document, joined into one tall image. macOS's built-in Screenshot tool captures what is visible, so for a whole page you need a scrolling capture tool such as EasyShoot.",
+      "steps": [
+        {
+          "name": "Start Scrolling Capture",
+          "text": "Press Option-Shift-Command-6, or choose Scrolling Capture from the EasyShoot menu in the menu bar."
+        },
+        {
+          "name": "Select the area",
+          "text": "Drag over the part of the window you want to scroll, such as the page content without the browser toolbar. Press Esc to cancel."
+        },
+        {
+          "name": "Scroll slowly",
+          "text": "Scroll down at a steady pace. If you scroll too fast, EasyShoot asks you to scroll back up a little and continue more slowly."
+        },
+        {
+          "name": "Press Done",
+          "text": "EasyShoot joins everything into one image and opens it, ready to mark up, copy or save. Sticky headers appear once, not on every slice."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Tips for a clean result",
+          "html": "<ul><li>Select only the scrolling content, so fixed toolbars and sidebars stay out of the image.</li><li>Scroll in one direction, from top to bottom.</li><li>Long images can be wide too: resize or crop them in the editor before you share.</li></ul>"
+        },
+        {
+          "h2": "What you need",
+          "html": "<p>EasyShoot runs on macOS 14 or later. Scrolling Capture needs the Screen Recording permission, which EasyShoot asks for the first time you capture.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can the Mac take a scrolling screenshot without an app?",
+          "a": "Apple's guide to the built-in Screenshot tool covers the entire screen, a window or a selected portion. It doesn't describe a scrolling capture, so a separate app is the usual way to capture a whole page."
+        },
+        {
+          "q": "Does it work in any app?",
+          "a": "Scrolling Capture works with content you scroll on screen, such as web pages, chats and documents."
+        },
+        {
+          "q": "What is the shortcut?",
+          "a": "Option-Shift-Command-6 by default. You can change it in EasyShoot's Settings."
+        }
+      ]
+    },
+    "blur-screenshot-mac": {
+      "short": "Blur private details",
+      "title": "How to blur or pixelate part of a screenshot on Mac | EasyShoot",
+      "description": "Hide emails, card numbers and faces in a screenshot on your Mac before you share it. Pixelate any area in seconds with EasyShoot.",
+      "h1": "How to blur part of a screenshot on a Mac",
+      "intro": "Before you share a screenshot, hide what isn't yours to share: an email address, a card number, a name or a face. EasyShoot pixelates any area you drag over, and nothing leaves your Mac while you do it.",
+      "steps": [
+        {
+          "name": "Capture or open the image",
+          "text": "Take a screenshot with EasyShoot, or copy an image and choose Annotate Clipboard Image."
+        },
+        {
+          "name": "Choose Pixelate",
+          "text": "Press B, or click the Pixelate tool in the toolbar."
+        },
+        {
+          "name": "Drag over the private part",
+          "text": "Drag a box over the text or face. Draw more boxes for other details."
+        },
+        {
+          "name": "Copy or save",
+          "text": "Press Shift-Command-C to copy, or Command-S to save. The pixelated area is part of the exported image."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Pixelate small, not everything",
+          "html": "<p>Cover just the detail that is private. A screenshot with one small hidden area still explains itself; one that is half blurred doesn't.</p>"
+        },
+        {
+          "h2": "Private by design",
+          "html": "<p>EasyShoot has no account and no cloud. Your screenshot stays on your Mac while you edit it, and only goes where you copy or save it.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can macOS blur part of a screenshot on its own?",
+          "a": "Apple's Markup guide lists shapes, text, highlight, sketch, loupe and crop, but not a blur or pixelate tool, so people usually use an app for this."
+        },
+        {
+          "q": "Is pixelation reversible?",
+          "a": "The exported image only contains the pixelated blocks, not the original detail."
+        },
+        {
+          "q": "Can I pixelate after adding arrows and steps?",
+          "a": "Yes. Every mark stays editable until you export, in any order."
+        }
+      ]
+    },
+    "annotate-screenshot-mac": {
+      "short": "Arrows and numbered steps",
+      "title": "How to add arrows, text and numbered steps to a screenshot on Mac | EasyShoot",
+      "description": "Mark up screenshots on your Mac with arrows, boxes, text and numbered steps, one key per tool. A quick guide with EasyShoot.",
+      "h1": "How to add arrows and numbered steps to a screenshot on a Mac",
+      "intro": "A good screenshot points at one thing and says what to do. EasyShoot gives every markup tool a single key, so you can box, number and point without reaching for the mouse.",
+      "steps": [
+        {
+          "name": "Capture the screen",
+          "text": "Press Option-Shift-Command-4 and drag over an area. The editor opens with the capture."
+        },
+        {
+          "name": "Box the important part",
+          "text": "Press R and drag a rectangle around it, leaving a little space so the line doesn't cross text."
+        },
+        {
+          "name": "Number the steps",
+          "text": "Press N and click beside each thing in order. The numbers count themselves: 1, 2, 3."
+        },
+        {
+          "name": "Point and explain",
+          "text": "Press A to draw an arrow, or T to add a short note."
+        },
+        {
+          "name": "Share",
+          "text": "Press Shift-Command-C to copy and paste it straight into Messages, Slack or Mail."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Every tool, one key",
+          "html": "<table><thead><tr><th>Tool</th><th>Key</th></tr></thead><tbody><tr><td>Arrow</td><td><kbd>A</kbd></td></tr><tr><td>Line</td><td><kbd>L</kbd></td></tr><tr><td>Rectangle</td><td><kbd>R</kbd></td></tr><tr><td>Ellipse</td><td><kbd>O</kbd></td></tr><tr><td>Text</td><td><kbd>T</kbd></td></tr><tr><td>Numbered step</td><td><kbd>N</kbd></td></tr><tr><td>Highlighter</td><td><kbd>H</kbd></td></tr><tr><td>Pen</td><td><kbd>P</kbd></td></tr><tr><td>Pixelate</td><td><kbd>B</kbd></td></tr><tr><td>Crop</td><td><kbd>C</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Keep it readable",
+          "html": "<ul><li>Use three or four marks at most: one box, a couple of numbers, one arrow.</li><li>Put numbers beside what they mark, not on top of text.</li><li>Change colour and thickness for any mark in the Style panel.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I edit a mark after drawing it?",
+          "a": "Yes. Every mark stays editable until you export the image."
+        },
+        {
+          "q": "Can I use my own font for text?",
+          "a": "Yes. Text can use any font installed on your Mac."
+        },
+        {
+          "q": "Can I save my favourite style?",
+          "a": "Yes. Save a background, mark style and export format as a preset, and make it the default."
+        }
+      ]
+    },
+    "arabic-text-screenshot-mac": {
+      "short": "Arabic text on screenshots",
+      "title": "How to write Arabic text on a screenshot on Mac | EasyShoot",
+      "description": "Add Arabic or Hebrew text to screenshots on your Mac with correct right-to-left direction and letter shaping, in any font. A guide with EasyShoot.",
+      "h1": "How to write Arabic on a screenshot on a Mac",
+      "intro": "Many image tools write Arabic left to right or break the letters apart. EasyShoot detects Arabic and Hebrew as you type and writes them right to left with correct letter shaping, in any font on your Mac.",
+      "steps": [
+        {
+          "name": "Capture or open the image",
+          "text": "Take a screenshot, or copy an image and choose Annotate Clipboard Image."
+        },
+        {
+          "name": "Choose Text",
+          "text": "Press T and click where the text should go."
+        },
+        {
+          "name": "Type in Arabic",
+          "text": "Type normally. With Direction set to Auto, EasyShoot switches to right to left by itself."
+        },
+        {
+          "name": "Pick a font and size",
+          "text": "Choose any font on your Mac in the Style panel, and drag the corner of the text to resize it."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Direction: Auto, LTR or RTL",
+          "html": "<p>Auto detects Arabic and Hebrew and writes right to left. Choose LTR or RTL to force a direction, for example for a line that mixes Arabic with English product names.</p>"
+        },
+        {
+          "h2": "The whole app in Arabic",
+          "html": "<p>EasyShoot itself is available in Arabic, English, French, Spanish and German, and its windows follow the language's direction.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why do Arabic letters look separated in some apps?",
+          "a": "Arabic letters change shape depending on their neighbours. Apps that don't shape text draw each letter on its own; EasyShoot shapes text correctly."
+        },
+        {
+          "q": "Can I mix Arabic and English in one note?",
+          "a": "Yes. Set the direction for the line, and numbers and Latin words stay in the right order."
+        },
+        {
+          "q": "Does it support Hebrew?",
+          "a": "Yes. Auto direction detects Hebrew as well as Arabic."
+        }
+      ]
+    },
+    "cleanshot-x-alternative": {
+      "short": "vs CleanShot X",
+      "title": "CleanShot X alternative for Mac: EasyShoot compared | EasyShoot",
+      "description": "Comparing EasyShoot and CleanShot X: capture, markup, privacy and price, with honest notes on when CleanShot X is the better choice.",
+      "h1": "EasyShoot as a CleanShot X alternative",
+      "intro": "CleanShot X is a popular, full-featured Mac capture app with screen recording and a cloud service. EasyShoot is a focused, free screenshot app that keeps everything on your Mac. Here is how they compare.",
+      "competitor": "CleanShot X",
+      "table": [
+        [
+          "Price",
+          "Free",
+          "$35 one-time with one year of updates ($19/year to renew); Pro cloud plan $10 per user per month, billed yearly"
+        ],
+        [
+          "macOS",
+          "14 or later",
+          "13 or later"
+        ],
+        [
+          "Area, window and fullscreen",
+          "Yes",
+          "Not listed on the pages read"
+        ],
+        [
+          "Scrolling capture",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Arrows, boxes, text, numbered steps",
+          "Yes",
+          "Outline steps and other tools listed"
+        ],
+        [
+          "Hide private details",
+          "Pixelate",
+          "Redact"
+        ],
+        [
+          "Background tool",
+          "Yes",
+          "Yes, 20 backgrounds"
+        ],
+        [
+          "Screen recording and GIF",
+          "No",
+          "Yes, MP4 and GIF"
+        ],
+        [
+          "Text recognition (OCR)",
+          "No",
+          "Yes"
+        ],
+        [
+          "Cloud sharing links",
+          "No, nothing is uploaded",
+          "Optional CleanShot Cloud"
+        ],
+        [
+          "Account",
+          "None",
+          "Not needed for the app; used for Cloud"
+        ],
+        [
+          "Interface languages",
+          "English, Arabic, French, Spanish, German",
+          "Not listed"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Choose EasyShoot if",
+          "html": "<ul><li>You want screenshots only, with fast markup on single keys.</li><li>Nothing should leave your Mac: no account and no cloud.</li><li>You write Arabic or Hebrew on screenshots, or want the app in Arabic.</li><li>You'd rather not pay for a screenshot tool.</li></ul>"
+        },
+        {
+          "h2": "Choose CleanShot X if",
+          "html": "<ul><li>You also record your screen or make GIFs.</li><li>You need text recognition (OCR).</li><li>Your team shares captures by link through a cloud service.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is EasyShoot a free alternative to CleanShot X?",
+          "a": "EasyShoot is free and covers capture, scrolling capture, markup, pixelation and backgrounds. It doesn't record video or recognise text."
+        },
+        {
+          "q": "Can I use both?",
+          "a": "Yes. Each app lets you set its own shortcuts, so you can give them different keys."
+        },
+        {
+          "q": "Does EasyShoot upload screenshots?",
+          "a": "No. It has no account and no cloud; screenshots stay on your Mac."
+        }
+      ]
+    },
+    "shottr-alternative": {
+      "short": "vs Shottr",
+      "title": "Shottr alternative for Mac: EasyShoot compared | EasyShoot",
+      "description": "Comparing EasyShoot and Shottr for Mac screenshots: capture, markup, privacy, languages and price, with notes on when Shottr fits better.",
+      "h1": "EasyShoot as a Shottr alternative",
+      "intro": "Shottr is a small, fast Mac screenshot tool with OCR and many markup options. EasyShoot is a free, native app with no account, no uploads and full Arabic support. Here is how they compare.",
+      "competitor": "Shottr",
+      "table": [
+        [
+          "Price",
+          "Free",
+          "Free to use; $12 or $30 one-time licences; licence required for commercial use"
+        ],
+        [
+          "macOS",
+          "14 or later",
+          "10.15 or later"
+        ],
+        [
+          "Area, window and fullscreen",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Scrolling capture",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Arrows, boxes, text, numbered steps",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Hide private details",
+          "Pixelate",
+          "Pixelate, blur and remove"
+        ],
+        [
+          "Background tool",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Text recognition (OCR)",
+          "No",
+          "Yes, plus QR codes"
+        ],
+        [
+          "Upload",
+          "No, nothing is uploaded",
+          "Optional upload to S3-compatible storage"
+        ],
+        [
+          "Interface languages",
+          "English, Arabic, French, Spanish, German",
+          "Not listed"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Choose EasyShoot if",
+          "html": "<ul><li>You use the Mac in Arabic, French, Spanish or German, or write right to left on screenshots.</li><li>You want it free for work too, with nothing to license.</li><li>You prefer an app that never goes online with your screenshots.</li></ul>"
+        },
+        {
+          "h2": "Choose Shottr if",
+          "html": "<ul><li>You need OCR or QR code reading.</li><li>You're on a Mac older than macOS 14.</li><li>You upload captures to your own S3 storage.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is EasyShoot free for commercial use?",
+          "a": "Yes. EasyShoot is free, with no licence to buy for work."
+        },
+        {
+          "q": "Do both apps have scrolling capture?",
+          "a": "Yes, both capture long pages and chats into one image."
+        },
+        {
+          "q": "Which one supports Arabic?",
+          "a": "EasyShoot writes Arabic and Hebrew right to left with correct shaping and is available in Arabic. Shottr's pages don't mention Arabic."
+        }
+      ]
+    },
+    "snagit-alternative": {
+      "short": "vs Snagit",
+      "title": "Snagit alternative for Mac: EasyShoot compared | EasyShoot",
+      "description": "Comparing EasyShoot and Snagit on Mac: capture, markup, privacy and price, with honest notes on when Snagit is the better pick.",
+      "h1": "EasyShoot as a Snagit alternative on Mac",
+      "intro": "Snagit by TechSmith is a long-running capture tool for Mac and Windows, sold as a yearly subscription with screen recording and sharing. EasyShoot is a free, Mac-only screenshot app with no account. Here is how they compare.",
+      "competitor": "Snagit",
+      "table": [
+        [
+          "Price",
+          "Free",
+          "$39 per user per year"
+        ],
+        [
+          "Platforms",
+          "Mac (macOS 14 or later)",
+          "Mac (macOS 14 or later) and Windows"
+        ],
+        [
+          "Scrolling capture",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Arrows, text and callouts",
+          "Yes, plus numbered steps",
+          "Yes"
+        ],
+        [
+          "Hide private details",
+          "Pixelate",
+          "Smart Redact (blur or block)"
+        ],
+        [
+          "Background tool",
+          "Yes",
+          "Not listed"
+        ],
+        [
+          "Screen recording",
+          "No",
+          "Yes, with audio and webcam"
+        ],
+        [
+          "Sharing",
+          "Copy, save or drag into any app",
+          "Screencast hosting and share button"
+        ],
+        [
+          "Account",
+          "None",
+          "Sign-in unlocks the software"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Choose EasyShoot if",
+          "html": "<ul><li>You only need screenshots on a Mac and don't want a subscription.</li><li>You don't want to sign in to use a screenshot tool.</li><li>You want a background tool to make screenshots ready to post.</li></ul>"
+        },
+        {
+          "h2": "Choose Snagit if",
+          "html": "<ul><li>You also work on Windows.</li><li>You record your screen with your voice and webcam.</li><li>Your team shares through TechSmith Screencast.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is there a free Snagit alternative for Mac?",
+          "a": "EasyShoot is free on Mac and covers capture, scrolling capture, markup, pixelation and backgrounds. It doesn't record video."
+        },
+        {
+          "q": "Does EasyShoot need an account?",
+          "a": "No. Open it and start; nothing to sign in to."
+        },
+        {
+          "q": "Does EasyShoot run on Windows?",
+          "a": "No, EasyShoot is made for macOS only."
+        }
+      ]
+    },
+    "macos-screenshot-alternative": {
+      "short": "vs macOS Screenshot",
+      "title": "Better than Command-Shift-5? EasyShoot vs the Mac's Screenshot tool",
+      "description": "What EasyShoot adds to the screenshot tool built into macOS: scrolling capture, numbered steps, pixelation, backgrounds and presets.",
+      "h1": "EasyShoot vs the Mac's built-in Screenshot tool",
+      "intro": "macOS includes a solid Screenshot tool (Shift-Command-5) with screen recording and Markup. EasyShoot builds on the same idea for screenshots you want to explain and share.",
+      "competitor": "macOS Screenshot",
+      "table": [
+        [
+          "Price",
+          "Free",
+          "Included with macOS"
+        ],
+        [
+          "Area, window and fullscreen",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Scrolling capture",
+          "Yes",
+          "Not listed in Apple's guide"
+        ],
+        [
+          "Arrows and numbered steps",
+          "Yes",
+          "Shapes and text; numbered steps not listed"
+        ],
+        [
+          "Pixelate private details",
+          "Yes",
+          "Not listed in Apple's Markup guide"
+        ],
+        [
+          "Background, padding and shadow",
+          "Yes",
+          "Not listed"
+        ],
+        [
+          "Presets",
+          "Yes",
+          "No"
+        ],
+        [
+          "Screen recording",
+          "No",
+          "Yes (.mov)"
+        ],
+        [
+          "Export formats",
+          "PNG, JPEG, HEIC, TIFF",
+          "PNG for screenshots"
+        ],
+        [
+          "Custom shortcuts",
+          "Yes, in EasyShoot",
+          "Yes, in System Settings"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "When the built-in tool is enough",
+          "html": "<p>For a quick capture, or a screen recording, Shift-Command-3, -4 and -5 do the job and are already on your Mac.</p>"
+        },
+        {
+          "h2": "When EasyShoot helps",
+          "html": "<ul><li>Capturing a whole page or chat in one image.</li><li>Explaining something with numbered steps and arrows.</li><li>Hiding private details before you share.</li><li>Making screenshots ready to post with a background.</li></ul>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I keep using Shift-Command-4?",
+          "a": "Yes. EasyShoot uses Option-Shift-Command shortcuts by default, so the built-in ones keep working. You can change either set."
+        },
+        {
+          "q": "Does EasyShoot replace Markup?",
+          "a": "For screenshots, yes: it adds numbered steps, pixelation and backgrounds on top of arrows, shapes and text."
+        },
+        {
+          "q": "Is EasyShoot free?",
+          "a": "Yes."
+        }
+      ]
+    },
+    "lightshot-alternative": {
+      "short": "vs Lightshot",
+      "title": "Lightshot alternative for Mac: EasyShoot compared | EasyShoot",
+      "description": "Comparing EasyShoot and Lightshot (prnt.sc) on Mac: capture, markup and privacy, including what happens to uploaded screenshots.",
+      "h1": "EasyShoot as a Lightshot alternative on Mac",
+      "intro": "Lightshot is a free, quick screenshot tool for Windows and Mac that can upload a capture to prnt.sc and give you a short link. EasyShoot is a free Mac app that keeps every screenshot on your Mac. Here is how they compare.",
+      "competitor": "Lightshot",
+      "table": [
+        [
+          "Price",
+          "Free",
+          "Free"
+        ],
+        [
+          "Platforms",
+          "Mac (macOS 14 or later)",
+          "Windows, Mac (macOS 10.7 or later) and browser extensions"
+        ],
+        [
+          "Latest Mac version",
+          "New, built for current macOS",
+          "2.22, July 2019 (Mac App Store)"
+        ],
+        [
+          "Area capture",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Window, fullscreen and scrolling capture",
+          "Yes",
+          "Not listed"
+        ],
+        [
+          "Arrows, lines and text",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Numbered steps",
+          "Yes",
+          "Not listed"
+        ],
+        [
+          "Pixelate private details",
+          "Yes",
+          "Not listed"
+        ],
+        [
+          "Background tool",
+          "Yes",
+          "Not listed"
+        ],
+        [
+          "Sharing",
+          "Copy, save or drag into any app",
+          "Optional upload to prnt.sc with a short link"
+        ],
+        [
+          "Who can see shared images",
+          "Only people you send them to",
+          "Lightshot's privacy policy says uploaded images are public and reachable by URL"
+        ],
+        [
+          "Search for similar images",
+          "No",
+          "Yes"
+        ]
+      ],
+      "sections": [
+        {
+          "h2": "Choose EasyShoot if",
+          "html": "<ul><li>Your screenshots show private things and shouldn't be on a public server.</li><li>You want numbered steps, pixelation and a background tool.</li><li>You need scrolling, window or fullscreen capture on a Mac.</li></ul>"
+        },
+        {
+          "h2": "Choose Lightshot if",
+          "html": "<ul><li>You work on Windows, or want a browser extension.</li><li>You want a public short link to paste anywhere, and the image isn't private.</li><li>You use its search for similar images.</li></ul>"
+        },
+        {
+          "h2": "A note on uploads",
+          "html": "<p>Lightshot's privacy policy says every uploaded image is public and has its own URL. Uploading is optional: if you only save or copy, nothing is uploaded. EasyShoot has no upload at all.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is there a private alternative to Lightshot on Mac?",
+          "a": "EasyShoot keeps screenshots on your Mac: no account, no cloud and no upload. You share by copying, saving or dragging."
+        },
+        {
+          "q": "Are Lightshot uploads public?",
+          "a": "Lightshot's privacy policy says uploaded images are public and reachable by their URL. Saving or copying without uploading keeps them local."
+        },
+        {
+          "q": "Can I keep Lightshot's shortcut?",
+          "a": "Lightshot's Mac download page lists Shift-Command-9. EasyShoot uses Option-Shift-Command shortcuts by default, and you can change them."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, pagePath, type Lang } from "../i18n";
+import { content, articleOf, hubPath, articlePath, alternatesFor, GUIDES, COMPARES, type Kind } from "../i18n/articles";
+import { breadcrumbNode } from "../lib/seo";
+
+interface Props { lang: Lang; kind: Kind }
+const { lang, kind } = Astro.props;
+const c = content(lang);
+const hub = c.hubs[kind];
+const path = hubPath(lang, kind);
+const url = SITE + path;
+const items = kind === "guides" ? GUIDES : COMPARES;
+const graph = [
+  breadcrumbNode(url, [{ name: c.ui.home, path: pagePath(lang) }, { name: c.ui[kind], path }]),
+  {
+    "@type": "ItemList",
+    "@id": `${url}#list`,
+    itemListElement: items.map((a, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + articlePath(lang, a), name: articleOf(lang, a.slug).h1 })),
+  },
+];
+---
+<Base lang={lang} title={hub.title} description={hub.description} alternates={alternatesFor(l => hubPath(l, kind))} graph={graph}>
+<main class="doc">
+  <div class="wrap narrow-doc">
+    <nav class="crumbs reveal" aria-label="Breadcrumb">
+      <ol><li><a href={pagePath(lang)}>{c.ui.home}</a></li><li><span aria-current="page">{c.ui[kind]}</span></li></ol>
+    </nav>
+    <header class="doc-head reveal">
+      <h1>{hub.h1}</h1>
+      <p class="doc-lead">{hub.intro}</p>
+    </header>
+    <ul class="hub-list">
+      {items.map(a => (
+        <li class="reveal"><a href={articlePath(lang, a)}>
+          <strong>{articleOf(lang, a.slug).h1}</strong>
+          <span>{articleOf(lang, a.slug).description}</span>
+        </a></li>
+      ))}
+    </ul>
+  </div>
+</main>
+</Base>
