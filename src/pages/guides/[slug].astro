@@ -1,0 +1,10 @@
+---
+import ArticlePage from "../../components/ArticlePage.astro";
+import { GUIDES as LIST } from "../../i18n/articles";
+
+export function getStaticPaths() {
+  return LIST.map(article => ({ params: { slug: article.slug }, props: { article } }));
+}
+const { article } = Astro.props;
+---
+<ArticlePage lang="en" article={article} />

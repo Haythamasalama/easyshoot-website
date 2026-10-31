@@ -1,11 +1,11 @@
 ---
 name: easyshoot-screenshots
-description: Make real screenshots of the EasyShoot app for the website, the App Store or social posts, without asking the user to capture anything. Use when an image on the site shows the app (editor-en.png, editor-ar.png, feature tiles, og.png), when someone says a screenshot looks fake, drawn, low quality or "not the real app", or asks for a new one in English or Arabic. Covers picking real content, opening it in the real editor, annotating it, choosing a calm background and capturing the window.
+description: Make real screenshots of the EasyShoot app for the App Store or social posts, without asking the user to capture anything. The website itself draws the editor in HTML (src/lib/editor.ts) and needs no captures. Use when a real capture is wanted (App Store screenshots, a social post, or the user asks for a real one), in English or Arabic. Covers picking real content, opening it in the real editor, annotating it, choosing a calm background and capturing the window.
 ---
 
 # Real EasyShoot screenshots
 
-Every image of the app is a capture of the real EasyShoot editor showing real content. Never draw the app in HTML or SVG, and never use a mock app with invented data.
+The website draws the editor in HTML (`src/lib/editor.ts`), which the owner chose on 1 Nov 2026: it stays sharp, follows light and dark and every language. Use real captures where a store or post needs them. When capturing, show the real EasyShoot editor with real content, and keep pixelation to one small area.
 
 ## 0. One-time setup (ask the user once, then never again)
 
@@ -94,7 +94,9 @@ Background tab → keep **Show background** on and pick **Graphite** (calm, dark
 
 It captures only that window, with its real macOS shadow, rounded corners and a transparent surround, at the display's native resolution (about 3000 px wide for a filled window). Keep that full size on the site so text inside the image stays sharp; pass a third argument (max width) only when a smaller file is really needed. Never use the app's own Capture Window while full-screen control is on: it captures the control overlay instead.
 
-## 6. Put it on the site
+## 6. Using a capture outside the store
+
+The landing page no longer uses capture files. These notes are for one-off uses (a blog post, a social image):
 
 - `editor-en.png` and `editor-ar.png` in the repository root are the hero images (full window captures); `index.html` swaps them by language.
 - Feature tiles use images in `shots/`, made from the editor's real output: click the editor's **Copy** button, save the clipboard (`osascript … write (the clipboard as «class PNGf»)`), then crop with `sips`:

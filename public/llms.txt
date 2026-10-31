@@ -1,0 +1,66 @@
+# EasyShoot
+
+> EasyShoot is a free screenshot app for macOS 14 and later, coming soon to the Mac App Store. It captures an area, a window, the full screen or a whole scrolling page, lets you annotate the image and frame it on a clean background, and never uploads anything. The interface is in English, Arabic, French, Spanish and German.
+
+- Website: https://easyshoot.haythamasalama.me/
+- The same page in Arabic, French, Spanish and German: https://easyshoot.haythamasalama.me/ar/, /fr/, /es/, /de/
+- Sitemap: https://easyshoot.haythamasalama.me/sitemap-index.xml
+- Support: https://easyshoot.haythamasalama.me/support.html
+- Privacy policy: https://easyshoot.haythamasalama.me/privacy.html
+- Author: Haytham A. Salama (https://haythamasalama.me)
+
+## Features
+
+- Capture: area, window and fullscreen, each on a global shortcut you can record yourself.
+- Scrolling capture: stitches long web pages, chats and documents into one image as you scroll; sticky headers and footers appear once.
+- Quick Access: a floating thumbnail after each capture to copy, save, annotate or drag into another app.
+- Annotations: arrows, lines, rectangles, ellipses, text, numbered counters, highlighter, pen and pixelate. Every mark stays editable.
+- Text: any font installed on the Mac, plus Google Fonts downloaded on demand. Arabic and Hebrew are written right-to-left with correct shaping.
+- Background tool: gradients, solid colours or transparent, with padding, corner radius, shadow, aspect ratio and alignment.
+- Crop and resize: free or fixed ratios (1:1, 4:3, 16:9), resize by percent or to an exact width.
+- Presets: save a style and make it the default; without a default, each screenshot starts with the last settings.
+- Export: PNG, JPEG, HEIC or TIFF; copy with Shift-Command-C, save with Command-S.
+- Zoom: zoom the canvas in and out with Command-Plus and Command-Minus.
+- Editor keys: A arrow, L line, R rectangle, O ellipse, T text, N numbered step, H highlighter, P pen, B pixelate, C crop, V select.
+- Look: native SwiftUI and AppKit, light and dark, Liquid Glass on macOS 26.
+- Privacy: no account, no cloud, no analytics. The app only goes online to download a Google font you pick.
+
+## Default shortcuts
+
+- Capture area: Option-Shift-Command-4
+- Capture window: Option-Shift-Command-5
+- Capture fullscreen: Option-Shift-Command-3
+- Scrolling capture: Option-Shift-Command-6
+- Annotate the clipboard image: Option-Shift-Command-7
+
+## Install
+
+1. Get EasyShoot from the Mac App Store (coming soon).
+2. Click Allow in the Welcome window to grant Screen Recording permission. EasyShoot lives in the menu bar.
+3. Updates come from the App Store.
+
+## Guides
+
+- [How to take a scrolling screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/scrolling-screenshot-mac/)
+- [How to blur part of a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/blur-screenshot-mac/)
+- [How to add arrows and numbered steps to a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/annotate-screenshot-mac/)
+- [How to write Arabic on a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/arabic-text-screenshot-mac/)
+
+## Comparisons
+
+Honest comparisons with facts read from each product's official pages on 1 November 2026.
+
+- [EasyShoot as a CleanShot X alternative](https://easyshoot.haythamasalama.me/compare/cleanshot-x-alternative/)
+- [EasyShoot as a Shottr alternative](https://easyshoot.haythamasalama.me/compare/shottr-alternative/)
+- [EasyShoot as a Snagit alternative on Mac](https://easyshoot.haythamasalama.me/compare/snagit-alternative/)
+- [EasyShoot as a Lightshot alternative on Mac](https://easyshoot.haythamasalama.me/compare/lightshot-alternative/)
+- [EasyShoot vs the Mac's built-in Screenshot tool](https://easyshoot.haythamasalama.me/compare/macos-screenshot-alternative/)
+
+Every page also exists in Arabic, French, Spanish and German under /ar/, /fr/, /es/ and /de/.
+
+## What EasyShoot does not do
+
+- No screen recording or GIF export.
+- No text recognition (OCR).
+- No cloud upload or share links.
+- Mac only (macOS 14 or later).

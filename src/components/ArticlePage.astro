@@ -1,0 +1,107 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, APP_STORE_URL, pagePath, useT, type Lang } from "../i18n";
+import { content, articleOf, hubPath, articlePath, alternatesFor, GUIDES, COMPARES, type Article } from "../i18n/articles";
+import { appNode, faqNode, breadcrumbNode } from "../lib/seo";
+
+interface Props { lang: Lang; article: Article }
+const { lang, article } = Astro.props;
+const t = useT(lang);
+const c = content(lang);
+const a = articleOf(lang, article.slug);
+const ui = c.ui;
+const path = articlePath(lang, article);
+const url = SITE + path;
+const isGuide = article.kind === "guides";
+const storeHref = APP_STORE_URL || pagePath(lang) + "#get";
+const crumbs = [
+  { name: ui.home, path: pagePath(lang) },
+  { name: ui[article.kind], path: hubPath(lang, article.kind) },
+  { name: a.short, path },
+];
+const related = [...(isGuide ? GUIDES : COMPARES).filter(x => x.slug !== article.slug), ...(isGuide ? COMPARES : GUIDES).slice(0, 2)];
+
+const graph: object[] = [
+  appNode(lang),
+  breadcrumbNode(url, crumbs),
+  faqNode(url, lang, a.faq),
+  {
+    "@type": isGuide ? "TechArticle" : "Article",
+    "@id": `${url}#article`,
+    headline: a.h1,
+    description: a.description,
+    inLanguage: lang,
+    datePublished: "2026-11-01",
+    dateModified: "2026-11-01",
+    image: `${SITE}/og.png`,
+    author: { "@type": "Organization", name: "EasyShoot", url: `${SITE}/` },
+    publisher: { "@type": "Organization", name: "EasyShoot", logo: { "@type": "ImageObject", url: `${SITE}/icon.png` } },
+    mainEntityOfPage: url,
+    about: { "@id": `${SITE}/#app` },
+  },
+];
+if (isGuide && a.steps) {
+  graph.push({
+    "@type": "HowTo",
+    "@id": `${url}#howto`,
+    name: a.h1,
+    inLanguage: lang,
+    tool: { "@type": "HowToTool", name: "EasyShoot" },
+    step: a.steps.map((s: { name: string; text: string }, i: number) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
+  });
+}
+---
+<Base lang={lang} title={a.title} description={a.description} alternates={alternatesFor(l => articlePath(l, article))} graph={graph} ogType="article">
+<main class="doc">
+  <div class="wrap narrow-doc">
+    <nav class="crumbs reveal" aria-label="Breadcrumb">
+      <ol>{crumbs.map((cr, i) => <li>{i < crumbs.length - 1 ? <a href={cr.path}>{cr.name}</a> : <span aria-current="page">{cr.name}</span>}</li>)}</ol>
+    </nav>
+    <header class="doc-head reveal">
+      <span class="eyebrow">{ui[article.kind]}</span>
+      <h1>{a.h1}</h1>
+      <p class="doc-lead">{a.intro}</p>
+      <p class="doc-date">{ui.updated}</p>
+    </header>
+
+    {a.steps && (
+      <section class="doc-steps reveal" aria-labelledby="steps-h">
+        <h2 id="steps-h">{ui.steps}</h2>
+        <ol>{a.steps.map((s: { name: string; text: string }) => <li><strong>{s.name}</strong><span>{s.text}</span></li>)}</ol>
+      </section>
+    )}
+
+    {a.table && (
+      <section class="doc-table reveal">
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th scope="col">{ui.feature}</th><th scope="col"><span class="wm" dir="ltr">Easy<span class="s">Shoot</span></span></th><th scope="col">{a.competitor}</th></tr></thead>
+            <tbody>{a.table.map((row: string[]) => <tr><th scope="row">{row[0]}</th><td>{row[1]}</td><td>{row[2]}</td></tr>)}</tbody>
+          </table>
+        </div>
+        <p class="doc-note">{ui.sources}</p>
+      </section>
+    )}
+
+    {a.sections.map((s: { h2: string; html: string }) => (
+      <section class="doc-section reveal"><h2>{s.h2}</h2><div set:html={s.html} /></section>
+    ))}
+
+    <section class="doc-faq reveal" aria-labelledby="faq-h">
+      <h2 id="faq-h">{ui.faq}</h2>
+      <div class="faq">{a.faq.map((f: { q: string; a: string }, i: number) => <details open={i === 0}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+    </section>
+
+    <aside class="doc-cta reveal">
+      <img src="/icon.png" width="72" height="72" alt="" loading="lazy">
+      <div><h2>{ui.ctaTitle}</h2><p>{ui.ctaBody}</p></div>
+      <a class="btn btn-dark" href={storeHref}>{t("hero.cta")}</a>
+    </aside>
+
+    <nav class="doc-related reveal" aria-labelledby="rel-h">
+      <h2 id="rel-h">{ui.related}</h2>
+      <ul>{related.map(r => <li><a href={articlePath(lang, r)}><span>{articleOf(lang, r.slug).h1}</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>)}</ul>
+    </nav>
+  </div>
+</main>
+</Base>
