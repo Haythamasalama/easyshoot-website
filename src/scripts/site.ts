@@ -40,6 +40,15 @@ const langMenu = document.querySelector<HTMLDetailsElement>("details.lang");
 document.addEventListener("click", e => { if (langMenu?.open && !(e.target as Element).closest("details.lang")) langMenu.open = false; });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && langMenu?.open) { langMenu.open = false; langMenu.querySelector("summary")?.focus(); } });
 
+// Press kit: copy a ready-made description.
+document.querySelectorAll<HTMLButtonElement>("[data-copy]").forEach(b => b.addEventListener("click", async () => {
+  const text = document.getElementById(b.dataset.copy!)?.textContent ?? "";
+  try { await navigator.clipboard.writeText(text); } catch { return; }
+  const label = b.textContent;
+  b.textContent = b.dataset.done ?? label;
+  setTimeout(() => (b.textContent = label), 1600);
+}));
+
 // Showcase tabs: every mode is in the HTML already; only one is shown.
 const tabs = [...document.querySelectorAll<HTMLButtonElement>("[data-tab]")];
 function showTab(i: number) {

@@ -56,6 +56,8 @@ Honest comparisons with facts read from each product's official pages on 1 Novem
 - [EasyShoot as a Lightshot alternative on Mac](https://easyshoot.haythamasalama.me/compare/lightshot-alternative/)
 - [EasyShoot vs the Mac's built-in Screenshot tool](https://easyshoot.haythamasalama.me/compare/macos-screenshot-alternative/)
 
+- Press kit (icon, banner, descriptions, facts): https://easyshoot.haythamasalama.me/press/
+
 Every page also exists in Arabic, French, Spanish and German under /ar/, /fr/, /es/ and /de/.
 
 ## What EasyShoot does not do

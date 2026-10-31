@@ -1,0 +1,91 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, pagePath, type Lang } from "../i18n";
+import { alternatesFor } from "../i18n/articles";
+import { breadcrumbNode } from "../lib/seo";
+import press from "../i18n/press.json";
+
+const CONTACT = "haythamasalama@gmail.com";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = (press as Record<Lang, any>)[lang];
+const pressPath = (l: Lang) => `${pagePath(l)}press/`;
+const url = SITE + pressPath(lang);
+const descriptions = [p.short, p.medium, p.long];
+const graph = [
+  breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: p.crumb, path: pressPath(lang) }]),
+  { "@type": "Organization", "@id": `${SITE}/#org`, name: "EasyShoot", url: `${SITE}/`, logo: `${SITE}/press/easyshoot-icon-1024.png`, email: CONTACT },
+];
+---
+<Base lang={lang} title={p.title} description={p.description} alternates={alternatesFor(pressPath)} graph={graph}>
+<main class="doc press">
+  <div class="wrap narrow-doc">
+    <nav class="crumbs reveal" aria-label="Breadcrumb">
+      <ol><li><a href={pagePath(lang)}>EasyShoot</a></li><li><span aria-current="page">{p.crumb}</span></li></ol>
+    </nav>
+    <header class="doc-head reveal press-head">
+      <img src="/press/easyshoot-icon-256.png" width="112" height="112" alt="" loading="eager">
+      <div>
+        <h1>{p.h1}</h1>
+        <p class="doc-lead">{p.intro}</p>
+      </div>
+    </header>
+
+    <section class="doc-section reveal" aria-labelledby="facts-h">
+      <h2 id="facts-h">{p.factsH}</h2>
+      <div class="table-scroll"><table><tbody>
+        {p.facts.map(([k, v]: string[]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}
+      </tbody></table></div>
+    </section>
+
+    <section class="doc-section reveal" aria-labelledby="desc-h">
+      <h2 id="desc-h">{p.descH}</h2>
+      <div class="press-copy">
+        {descriptions.map((text: string, i: number) => (
+          <div class="copy-card">
+            <p id={`desc-${i}`}>{text}</p>
+            <button class="chip-btn copy-btn" type="button" data-copy={`desc-${i}`} data-done={p.copied}>{p.copy}</button>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="doc-section reveal" aria-labelledby="assets-h">
+      <h2 id="assets-h">{p.assetsH}</h2>
+      <div class="press-preview">
+        <img src="/press/easyshoot-icon-512.png" width="160" height="160" alt="EasyShoot" loading="lazy">
+        <img src="/press/easyshoot-banner-1200x630.png" width="600" height="315" alt="EasyShoot banner" loading="lazy">
+      </div>
+      <ul class="press-files">
+        {p.assets.map(([file, label]: string[]) => (
+          <li><a href={`/press/${file}`} download><span>{label}</span><small dir="ltr">{file}</small></a></li>
+        ))}
+      </ul>
+      <a class="btn btn-dark press-zip" href="/press/easyshoot-press-kit.zip" download>{p.zip}</a>
+      <p class="doc-note">{p.shotsNote}</p>
+    </section>
+
+    <section class="doc-section reveal press-grid">
+      <div><h2>{p.nameH}</h2><p>{p.nameBody}</p></div>
+      <div>
+        <h2>{p.iconH}</h2>
+        <ul class="do">{p.iconDo.map((x: string) => <li>{x}</li>)}</ul>
+        <ul class="dont">{p.iconDont.map((x: string) => <li>{x}</li>)}</ul>
+      </div>
+    </section>
+
+    <section class="doc-section reveal" aria-labelledby="colors-h">
+      <h2 id="colors-h">{p.colorsH}</h2>
+      <ul class="swatches">
+        {p.colors.map(([name, hex]: string[]) => <li><i style={`background:${hex}`}></i><strong>{name}</strong><code dir="ltr">{hex}</code></li>)}
+      </ul>
+    </section>
+
+    <section class="doc-cta reveal">
+      <img src="/icon.png" width="72" height="72" alt="" loading="lazy">
+      <div><h2>{p.contactH}</h2><p>{p.contactBody} <a href={`mailto:${CONTACT}`} dir="ltr">{CONTACT}</a></p></div>
+    </section>
+  </div>
+</main>
+</Base>
