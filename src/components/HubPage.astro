@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { SITE, pagePath, type Lang } from "../i18n";
-import { content, articleOf, hubPath, articlePath, alternatesFor, GUIDES, COMPARES, type Kind } from "../i18n/articles";
+import { content, articleOf, hubPath, articlePath, alternatesFor, tagsFor, wordCount, readingTime, GUIDES, COMPARES, type Kind } from "../i18n/articles";
 import { breadcrumbNode } from "../lib/seo";
 
 interface Props { lang: Lang; kind: Kind }
@@ -35,6 +35,7 @@ const graph = [
         <li class="reveal"><a href={articlePath(lang, a)}>
           <strong>{articleOf(lang, a.slug).h1}</strong>
           <span>{articleOf(lang, a.slug).description}</span>
+          <ul class="tag-list" aria-hidden="true"><li class="pill-tag">{readingTime(lang, wordCount(articleOf(lang, a.slug)))}</li>{tagsFor(lang, a.slug).slice(0, 2).map(tag => <li class="pill-tag">{tag}</li>)}</ul>
         </a></li>
       ))}
     </ul>
