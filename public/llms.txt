@@ -3,6 +3,8 @@
 > EasyShoot is a free screenshot app for macOS 14 and later, coming soon to the Mac App Store. It captures an area, a window, the full screen or a whole scrolling page, lets you annotate the image and frame it on a clean background, and never uploads anything. The interface is in English, Arabic, French, Spanish and German.
 
 - Website: https://easyshoot.haythamasalama.me/
+- The same page in Arabic, French, Spanish and German: https://easyshoot.haythamasalama.me/ar/, /fr/, /es/, /de/
+- Sitemap: https://easyshoot.haythamasalama.me/sitemap-index.xml
 - Support: https://easyshoot.haythamasalama.me/support.html
 - Privacy policy: https://easyshoot.haythamasalama.me/privacy.html
 - Author: Haytham A. Salama (https://haythamasalama.me)
@@ -18,6 +20,9 @@
 - Crop and resize: free or fixed ratios (1:1, 4:3, 16:9), resize by percent or to an exact width.
 - Presets: save a style and make it the default; without a default, each screenshot starts with the last settings.
 - Export: PNG, JPEG, HEIC or TIFF; copy with Shift-Command-C, save with Command-S.
+- Zoom: zoom the canvas in and out with Command-Plus and Command-Minus.
+- Editor keys: A arrow, L line, R rectangle, O ellipse, T text, N numbered step, H highlighter, P pen, B pixelate, C crop, V select.
+- Look: native SwiftUI and AppKit, light and dark, Liquid Glass on macOS 26.
 - Privacy: no account, no cloud, no analytics. The app only goes online to download a Google font you pick.
 
 ## Default shortcuts

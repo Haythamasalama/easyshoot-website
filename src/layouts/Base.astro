@@ -1,0 +1,104 @@
+---
+import "../styles/global.css";
+import { SITE, LANGS, OG_LOCALE, pagePath, dirOf, useT, APP_STORE_URL, type Lang } from "../i18n";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useT(lang);
+const url = SITE + pagePath(lang);
+const title = t("seo.title");
+const description = t("seo.desc");
+
+const faq = [1, 2, 3, 4, 5].map(n => ({
+  "@type": "Question",
+  name: t(`q.${n}`),
+  acceptedAnswer: { "@type": "Answer", text: t(`a.${n}`) },
+}));
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": `${SITE}/#app`,
+      name: "EasyShoot",
+      applicationCategory: "MultimediaApplication",
+      applicationSubCategory: "Screenshot tool",
+      operatingSystem: "macOS 14 or later",
+      description,
+      url,
+      image: `${SITE}/og.png`,
+      softwareHelp: `${SITE}/support.html`,
+      inLanguage: [...LANGS],
+      ...(APP_STORE_URL ? { downloadUrl: APP_STORE_URL } : {}),
+      featureList: [
+        "Area, window, fullscreen and scrolling capture",
+        "Quick Access after every capture",
+        "Arrows, boxes, ellipses, text and numbered steps",
+        "Highlighter, pen and pixelate",
+        "Arabic and right-to-left text in any font",
+        "Background tool with padding, corners and shadow",
+        "Crop and resize",
+        "Presets",
+        "PNG, JPEG, HEIC and TIFF export",
+        "Custom capture shortcuts",
+        "Liquid Glass on macOS 26",
+        "No account, no cloud, no tracking",
+      ],
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    },
+    { "@type": "WebSite", "@id": `${SITE}/#site`, name: "EasyShoot", url: `${SITE}/`, inLanguage: lang },
+    { "@type": "WebPage", "@id": `${url}#page`, url, name: title, description, inLanguage: lang, isPartOf: { "@id": `${SITE}/#site` }, about: { "@id": `${SITE}/#app` } },
+    { "@type": "FAQPage", "@id": `${url}#faq`, inLanguage: lang, mainEntity: faq },
+  ],
+};
+---
+<!doctype html>
+<html lang={lang} dir={dirOf(lang)}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{title}</title>
+<meta name="description" content={description}>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="application-name" content="EasyShoot">
+<link rel="canonical" href={url}>
+{LANGS.map(l => <link rel="alternate" hreflang={l} href={SITE + pagePath(l)}>)}
+<link rel="alternate" hreflang="x-default" href={SITE + "/"}>
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
+<link rel="sitemap" href="/sitemap-index.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EasyShoot">
+<meta property="og:locale" content={OG_LOCALE[lang]}>
+{LANGS.filter(l => l !== lang).map(l => <meta property="og:locale:alternate" content={OG_LOCALE[l]}>)}
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={url}>
+<meta property="og:image" content={`${SITE}/og.png`}>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content={title}>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content={title}>
+<meta name="twitter:description" content={description}>
+<meta name="twitter:image" content={`${SITE}/og.png`}>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon.png">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<script is:inline>
+  document.documentElement.classList.add("js");
+  try { var t = localStorage.getItem("easyshoot-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</head>
+<body>
+<slot />
+<script>
+  import "../scripts/site.ts";
+</script>
+</body>
+</html>

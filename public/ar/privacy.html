@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl" data-theme="dark">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -10,28 +10,36 @@
 <link rel="alternate" hreflang="en" href="https://easyshoot.haythamasalama.me/privacy.html">
 <link rel="alternate" hreflang="ar" href="https://easyshoot.haythamasalama.me/ar/privacy.html">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#08080A">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
 <script>
   // The theme chosen on the home page, before first paint.
   try { var t = localStorage.getItem("easyshoot-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
 <style>
 :root {
-  --bg: #09090B; --line: rgba(255, 255, 255, .08); --ink: #F5F5F7; --muted: #A1A1AA; --muted2: #8A8A94;
-  --signal-ink: #4DA3FF;
-  --display: "IBM Plex Sans", "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
-  --body: "IBM Plex Sans", "IBM Plex Sans Arabic", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  color-scheme: dark;
-}
-:root[data-theme="light"] {
-  --bg: #F5F5F3; --line: rgba(10, 10, 12, .09); --ink: #0B0B0D; --muted: #55555E; --muted2: #6B6B75;
-  --signal-ink: #0066CC;
+  --bg: #FFFFFF; --line: rgba(15, 35, 70, .08); --ink: #0A0A0B; --muted: #565A63; --muted2: #6B6E76;
+  --signal-ink: #1A63D6;
+  --display: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --body: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans Arabic", system-ui, sans-serif;
   color-scheme: light;
 }
-[lang="ar"] { --display: "IBM Plex Sans Arabic", system-ui, sans-serif; --body: "IBM Plex Sans Arabic", system-ui, sans-serif; }
+:root[data-theme="dark"] {
+  --bg: #0A0A0B; --line: rgba(255, 255, 255, .08); --ink: #F5F5F7; --muted: #9A9CA4; --muted2: #8A8D95;
+  --signal-ink: #8CC4FF;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A0A0B; --line: rgba(255, 255, 255, .08); --ink: #F5F5F7; --muted: #9A9CA4; --muted2: #8A8D95;
+    --signal-ink: #8CC4FF;
+    color-scheme: dark;
+  }
+}
+[lang="ar"] { --display: -apple-system, "IBM Plex Sans Arabic", system-ui, sans-serif; --body: -apple-system, "IBM Plex Sans Arabic", system-ui, sans-serif; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 a { color: var(--signal-ink); }
@@ -41,7 +49,7 @@ header a { color: var(--ink); text-decoration: none; font-family: var(--display)
 header a span { color: var(--signal-ink); }
 article { padding: 56px 0 24px; font-family: var(--body); }
 article + article { border-top: 1px solid var(--line); }
-h1 { font-family: var(--display); font-weight: 700; font-size: clamp(34px, 6vw, 52px); line-height: 1.05; margin: 0 0 12px; }
+h1 { font-family: var(--display); font-weight: 800; letter-spacing: -.02em; font-size: clamp(34px, 6vw, 52px); line-height: 1.05; margin: 0 0 12px; }
 h2 { font-family: var(--display); font-weight: 700; font-size: 22px; margin: 40px 0 8px; }
 p, li { color: var(--muted); }
 strong { color: var(--ink); font-weight: 600; }
@@ -53,11 +61,12 @@ footer { border-top: 1px solid var(--line); padding: 26px 0; font-size: 14px; co
 footer a { color: inherit; }
 header .wrap { display: flex; justify-content: space-between; align-items: center; }
 header .lang { font-family: var(--body); font-weight: 500; font-size: 15px; color: var(--muted); }
+[lang="ar"] h1, [lang="ar"] h2 { letter-spacing: 0; }
 </style>
 </head>
 <body>
 <header>
-  <div class="wrap"><a href="../" dir="ltr">Easy<span>Shoot</span></a><a class="lang" href="../privacy.html" hreflang="en" lang="en">English</a></div>
+  <div class="wrap"><a href="./" dir="ltr">Easy<span>Shoot</span></a><a class="lang" href="../privacy.html" hreflang="en" lang="en">English</a></div>
 </header>
 
 <main>
@@ -96,7 +105,7 @@ header .lang { font-family: var(--body); font-weight: 500; font-size: 15px; colo
 </main>
 
 <footer>
-  <div class="wrap" dir="ltr">© 2026 Haytham A. Salama · <a href="../">easyshoot.haythamasalama.me</a></div>
+  <div class="wrap" dir="ltr">© 2026 Haytham A. Salama · <a href="./">easyshoot.haythamasalama.me</a></div>
 </footer>
 </body>
 </html>

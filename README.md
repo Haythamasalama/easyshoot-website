@@ -1,12 +1,14 @@
 # EasyShoot website
 
-The site at <https://easyshoot.haythamasalama.me>: the landing page (`index.html`) in five languages (English, Arabic with right-to-left layout, French, Spanish and German), plus `privacy.html` and `support.html` in English, with Arabic copies in `ar/` (`ar/privacy.html`, `ar/support.html`). App Store Connect links to `privacy.html` and `support.html`, so they must stay online at those paths.
+The site at <https://easyshoot.haythamasalama.me>, built with [Astro](https://astro.build) as static HTML. The landing page exists once per language: `/` (English), `/ar/` (Arabic, right to left), `/fr/`, `/es/` and `/de/`. `privacy.html` and `support.html` are in English, with Arabic copies in `ar/`. App Store Connect links to `privacy.html` and `support.html`, so they must stay online at those paths.
 
-- **No build step.** Open a file in a browser to preview it.
-- **Deploy:** GitHub Pages publishes the `main` branch as it is. `CNAME` holds the custom domain and `.nojekyll` turns off Jekyll.
-- **Translations:** in the `I18N` object at the bottom of `index.html`. The English text also lives in the HTML itself; change both.
-- **App Store link:** set `APP_STORE_URL` at the top of the script in `index.html` once the app is live. Every link with the `store-link` class then opens the App Store, and the labels with a `data-i18n-live` key switch from "Coming soon" to their download text (`hero.badgeLive`, `hero.ctaLive`). Until then the buttons scroll to the download section.
-- **Screenshots:** `editor-en.png` and `editor-ar.png` show the editor; the page swaps to the Arabic one when the language is Arabic. Replace both when the app's look changes.
-- **Look:** IBM Plex Sans, IBM Plex Sans Arabic and IBM Plex Mono on every page, one blue accent (`--signal`), dark first with a light mode.
+- **Run:** `npm install`, then `npm run dev` (http://localhost:4321) or `npm run build` (output in `dist/`).
+- **Deploy:** `.github/workflows/deploy.yml` builds on every push to `main` and publishes `dist/` to GitHub Pages. In the repository's Settings → Pages, the source must be **GitHub Actions**. `public/CNAME` holds the custom domain.
+- **Text:** every string, in all five languages, is in `src/i18n/data.json` (`ui` for the page, `ed` for the drawn editor, `tabs` for the showcase). The page template is `src/components/Home.astro`.
+- **App Store link:** set `APP_STORE_URL` in `src/i18n/index.ts` once the app is live. The download buttons then link to the App Store, and keys with a `…Live` twin (`hero.ctaLive`, `a.5Live`) switch to their download text.
+- **SEO and GEO:** each language has its own title, description, canonical URL, `hreflang` links, Open Graph tags and JSON-LD (`SoftwareApplication`, `WebSite`, `WebPage`, `FAQPage`) in `src/layouts/Base.astro`. `@astrojs/sitemap` writes `sitemap-index.xml` with language alternates, and `public/llms.txt` is the plain summary for AI search.
+- **Images of the app:** drawn in HTML by `src/lib/editor.ts` (a checkout page in the editor, in the page's language), so they stay sharp and follow light and dark. Keep marks to a few, with little pixelation.
+- **Motion:** [Motion](https://motion.dev) in `src/scripts/site.ts`: the hero enters, sections rise in on scroll, the tool row springs in, the editor drifts as the hero scrolls away. Everything is skipped when the visitor prefers reduced motion, and the page is fully readable without JavaScript.
+- **Look:** Liquid Glass surfaces over a soft backdrop, light and dark each with one colour set (`src/styles/global.css`), the system font with Inter and IBM Plex Sans Arabic as fallbacks, one blue accent that matches the icon (`public/art/icon.svg`).
 
 The app's source is in a separate, private repository.
