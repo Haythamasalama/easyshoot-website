@@ -1,16 +1,16 @@
 # EasyShoot
 
-> EasyShoot is a free, open-source (MIT) screenshot app for macOS 14 and later. It captures an area, a window, the full screen or a whole scrolling page, lets you annotate the image and frame it on a clean background, and never uploads anything. The interface is in English, Arabic, French, Spanish and German.
+> EasyShoot is a free screenshot app for macOS 14 and later, coming soon to the Mac App Store. It captures an area, a window, the full screen or a whole scrolling page, lets you annotate the image and frame it on a clean background, and never uploads anything. The interface is in English, Arabic, French, Spanish and German.
 
 - Website: https://easyshoot.haythamasalama.me/
-- Download (latest release, EasyShoot.zip): https://github.com/Haythamasalama/easyshoot/releases/latest
-- Source code: https://github.com/Haythamasalama/easyshoot
+- Support: https://easyshoot.haythamasalama.me/support.html
+- Privacy policy: https://easyshoot.haythamasalama.me/privacy.html
 - Author: Haytham A. Salama (https://haythamasalama.me)
 
 ## Features
 
-- Capture: area, window (press Space while selecting) and fullscreen, each on a global shortcut you can record yourself.
-- Scrolling capture: stitches long web pages, chats and documents into one image; sticky headers and footers appear once. Auto-scroll is optional.
+- Capture: area, window and fullscreen, each on a global shortcut you can record yourself.
+- Scrolling capture: stitches long web pages, chats and documents into one image as you scroll; sticky headers and footers appear once.
 - Quick Access: a floating thumbnail after each capture to copy, save, annotate or drag into another app.
 - Annotations: arrows, lines, rectangles, ellipses, text, numbered counters, highlighter, pen and pixelate. Every mark stays editable.
 - Text: any font installed on the Mac, plus Google Fonts downloaded on demand. Arabic and Hebrew are written right-to-left with correct shaping.
@@ -18,8 +18,7 @@
 - Crop and resize: free or fixed ratios (1:1, 4:3, 16:9), resize by percent or to an exact width.
 - Presets: save a style and make it the default; without a default, each screenshot starts with the last settings.
 - Export: PNG, JPEG, HEIC or TIFF; copy with Shift-Command-C, save with Command-S.
-- Updates: checks GitHub Releases once a day (can be turned off) and installs a new version in place with one click.
-- Privacy: no account, no cloud, no analytics. The app only goes online to check for updates and to download a Google font you pick.
+- Privacy: no account, no cloud, no analytics. The app only goes online to download a Google font you pick.
 
 ## Default shortcuts
 
@@ -31,26 +30,6 @@
 
 ## Install
 
-1. Run in Terminal: `curl -fsSL https://easyshoot.haythamasalama.me/install.sh | bash`. It downloads the latest release into Applications and opens it, with no Gatekeeper prompt.
+1. Get EasyShoot from the Mac App Store (coming soon).
 2. Click Allow in the Welcome window to grant Screen Recording permission. EasyShoot lives in the menu bar.
-3. Updates are installed from inside the app (Settings > General > Updates, or the menu bar's Check for Updates).
-
-Manual alternative: download EasyShoot.zip from the latest release and move EasyShoot.app to Applications. The app is not notarized yet, so a browser download needs Open Anyway in System Settings > Privacy & Security once, or `xattr -cr /Applications/EasyShoot.app`.
-
-## Build from source
-
-Requires Xcode 15 or later (Xcode 26 for the Liquid Glass look). Swift Package Manager, Apple frameworks only, no third-party dependencies.
-
-```
-git clone https://github.com/Haythamasalama/easyshoot.git
-cd easyshoot
-swift test
-./scripts/build-app.sh
-open build/EasyShoot.app
-```
-
-## Contributing
-
-- Contributing guide: https://github.com/Haythamasalama/easyshoot/blob/main/CONTRIBUTING.md
-- Pull request titles follow Conventional Commits, for example `feat(editor): add a blur tool`.
-- Report a bug or request a feature: https://github.com/Haythamasalama/easyshoot/issues
+3. Updates come from the App Store.
