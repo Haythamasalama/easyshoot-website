@@ -26,23 +26,20 @@
    "chat.2": "Step 2, right here",
    "tools.eyebrow": "Markup",
    "tools.title": "Make your point, <span class=\"grad-text\">fast.</span>",
-   "tools.sub": "Every tool is one key away. Point, number, blur and frame without reaching for the mouse.",
+   "tools.sub": "Every tool is one key away. Point, number, blur and frame without reaching for the mouse, and style each mark in the inspector.",
    "t.arrow": "Arrow",
    "t.rect": "Box",
    "t.ellipse": "Circle",
    "t.counter": "Steps",
    "t.text": "Text",
-   "t.high": "Highlight",
    "t.pixel": "Pixelate",
    "t.crop": "Crop",
    "tab.mark": "Mark up",
-   "tab.pixel": "Pixelate",
+   "tab.pixel": "Hide",
    "tab.bg": "Background",
    "tab.ar": "Text",
    "more.eyebrow": "Everyday Mac work",
    "more.title": "Small things, done properly.",
-   "scroll.t": "Scrolling Capture",
-   "scroll.b": "Long pages, chats and documents in one image. Sticky headers appear once.",
    "fmt.t": "Export your way",
    "fmt.b": "The format and quality you need, every time.",
    "preset.t": "Presets",
@@ -52,7 +49,6 @@
    "sc.t": "Your shortcuts",
    "sc.b": "Change any capture key to the one your hands know.",
    "mode.area": "Area",
-   "mode.scroll": "Scrolling",
    "zoom.t": "Zoom in",
    "zoom.b": "Work on the smallest detail, then zoom back out.",
    "ap.t": "Light and dark",
@@ -101,7 +97,7 @@
    "theme.toLight": "Switch to light mode",
    "theme.toDark": "Switch to dark mode",
    "seo.title": "EasyShoot: screenshot app for Mac",
-   "seo.desc": "Capture an area, a window or a whole scrolling page on your Mac, mark it up with arrows, numbered steps and pixelation, and share it in seconds. No account, nothing uploaded.",
+   "seo.desc": "Capture an area, a window or the full screen on your Mac, mark it up with arrows, shapes, numbered steps, pixelation and blur, and share it in seconds. No account, nothing uploaded.",
    "lang.label": "Language",
    "theme.toggle": "Switch theme",
    "icon.alt": "EasyShoot app icon",
@@ -112,7 +108,13 @@
    "foot.changelog": "Changelog",
    "map.title": "Sitemap",
    "map.desc": "Every page on the EasyShoot website, in every language.",
-   "map.pages": "Pages"
+   "map.pages": "Pages",
+   "t.diamond": "Diamond",
+   "t.pen": "Pen",
+   "tab.shape": "Shapes",
+   "mode.window": "Window",
+   "style.t": "Shapes, your way",
+   "style.b": "Solid, dashed or dotted lines, a fill colour, sharp or round edges, any angle and opacity. Select several marks and restyle them at once."
   },
   "ar": {
    "nav.features": "المزايا",
@@ -144,23 +146,20 @@
    "chat.2": "الخطوة 2، هنا بالضبط",
    "tools.eyebrow": "التوضيح",
    "tools.title": "وصّل فكرتك <span class=\"grad-text\">بسرعة.</span>",
-   "tools.sub": "كل أداة على بُعد مفتاح واحد. أشِر ورقّم وموّه وأطّر دون أن تمدّ يدك للفأرة.",
+   "tools.sub": "كل أداة على بُعد مفتاح واحد. أشِر ورقّم وموّه وأطّر دون أن تمدّ يدك للفأرة، وتحكّم بنمط كل علامة من لوحة الخصائص.",
    "t.arrow": "سهم",
    "t.rect": "مربع",
    "t.ellipse": "دائرة",
    "t.counter": "خطوات",
    "t.text": "نص",
-   "t.high": "تظليل",
    "t.pixel": "تمويه",
    "t.crop": "قص",
    "tab.mark": "التوضيح",
-   "tab.pixel": "التمويه",
+   "tab.pixel": "الإخفاء",
    "tab.bg": "الخلفية",
    "tab.ar": "النص",
    "more.eyebrow": "عمل يومي على الماك",
    "more.title": "تفاصيل صغيرة، متقنة.",
-   "scroll.t": "التقاط مع التمرير",
-   "scroll.b": "صفحات ومحادثات ومستندات طويلة في صورة واحدة، والترويسات الثابتة تظهر مرة واحدة.",
    "fmt.t": "صدّر كما تريد",
    "fmt.b": "الصيغة والجودة التي تحتاجها، في كل مرة.",
    "preset.t": "الإعدادات المحفوظة",
@@ -168,7 +167,6 @@
    "sc.t": "اختصاراتك",
    "sc.b": "غيّر أي مفتاح التقاط إلى الذي اعتادت عليه يداك.",
    "mode.area": "منطقة",
-   "mode.scroll": "بالتمرير",
    "zoom.t": "كبّر",
    "zoom.b": "اشتغل على أصغر التفاصيل، ثم ارجع للصورة كاملة.",
    "ap.t": "فاتح وداكن",
@@ -219,7 +217,7 @@
    "theme.toLight": "التبديل إلى الوضع الفاتح",
    "theme.toDark": "التبديل إلى الوضع الداكن",
    "seo.title": "EasyShoot: تطبيق لقطات الشاشة للماك",
-   "seo.desc": "التقط منطقة أو نافذة أو صفحة كاملة بالتمرير على جهاز Mac، ووضّح عليها بالأسهم والخطوات المرقّمة والتمويه، وشاركها في ثوانٍ. بلا حساب، ولا يُرفع شيء.",
+   "seo.desc": "التقط منطقة أو نافذة أو الشاشة كاملة على جهاز Mac، ووضّح عليها بالأسهم والأشكال والخطوات المرقّمة والبكسلة والضبابية، وشاركها في ثوانٍ. بلا حساب، ولا يُرفع شيء.",
    "lang.label": "اللغة",
    "theme.toggle": "تبديل المظهر",
    "icon.alt": "أيقونة تطبيق EasyShoot",
@@ -230,7 +228,13 @@
    "foot.changelog": "سجل التحديثات",
    "map.title": "خريطة الموقع",
    "map.desc": "كل صفحات موقع EasyShoot، بكل اللغات.",
-   "map.pages": "الصفحات"
+   "map.pages": "الصفحات",
+   "t.diamond": "معيّن",
+   "t.pen": "قلم",
+   "tab.shape": "الأشكال",
+   "mode.window": "نافذة",
+   "style.t": "أشكال بالطريقة التي تريدها",
+   "style.b": "خط متصل أو متقطّع أو منقّط، ولون تعبئة، وحواف حادة أو مدوّرة، وأي زاوية وشفافية. حدّد أكثر من علامة وغيّر نمطها معًا."
   },
   "fr": {
    "nav.features": "Fonctionnalités",
@@ -259,23 +263,20 @@
    "chat.2": "Étape 2, juste là",
    "tools.eyebrow": "Annotation",
    "tools.title": "Faites passer le message, <span class=\"grad-text\">vite.</span>",
-   "tools.sub": "Chaque outil est à une touche. Pointez, numérotez, floutez et encadrez sans toucher la souris.",
+   "tools.sub": "Chaque outil est à une touche. Pointez, numérotez, floutez et encadrez sans toucher la souris, et réglez le style de chaque repère dans l’inspecteur.",
    "t.arrow": "Flèche",
    "t.rect": "Cadre",
    "t.ellipse": "Cercle",
    "t.counter": "Étapes",
    "t.text": "Texte",
-   "t.high": "Surligner",
    "t.pixel": "Pixeliser",
    "t.crop": "Recadrer",
    "tab.mark": "Annoter",
-   "tab.pixel": "Pixeliser",
+   "tab.pixel": "Masquer",
    "tab.bg": "Arrière-plan",
    "tab.ar": "Texte",
    "more.eyebrow": "Le Mac au quotidien",
    "more.title": "Les petites choses, bien faites.",
-   "scroll.t": "Capture défilante",
-   "scroll.b": "Pages, discussions et documents longs en une image. Les en-têtes fixes n’apparaissent qu’une fois.",
    "fmt.t": "Exportez à votre façon",
    "fmt.b": "Le format et la qualité qu’il vous faut, à chaque fois.",
    "preset.t": "Préréglages",
@@ -285,7 +286,6 @@
    "sc.t": "Vos raccourcis",
    "sc.b": "Remplacez n’importe quelle touche de capture par celle que vos doigts connaissent.",
    "mode.area": "Zone",
-   "mode.scroll": "Défilement",
    "zoom.t": "Zoomez",
    "zoom.b": "Travaillez le moindre détail, puis revenez à l’image entière.",
    "ap.t": "Clair et sombre",
@@ -333,7 +333,7 @@
    "theme.toLight": "Passer en mode clair",
    "theme.toDark": "Passer en mode sombre",
    "seo.title": "EasyShoot : l’app de capture d’écran pour Mac",
-   "seo.desc": "Capturez une zone, une fenêtre ou une page entière sur votre Mac, annotez avec flèches, étapes numérotées et pixelisation, et partagez en quelques secondes. Sans compte, rien n’est envoyé.",
+   "seo.desc": "Capturez une zone, une fenêtre ou tout l’écran sur votre Mac, annotez avec flèches, formes, étapes numérotées, pixelisation et flou, et partagez en quelques secondes. Sans compte, rien n’est envoyé.",
    "lang.label": "Langue",
    "theme.toggle": "Changer de thème",
    "icon.alt": "Icône de l’app EasyShoot",
@@ -344,7 +344,13 @@
    "foot.changelog": "Historique des versions",
    "map.title": "Plan du site",
    "map.desc": "Toutes les pages du site EasyShoot, dans toutes les langues.",
-   "map.pages": "Pages"
+   "map.pages": "Pages",
+   "t.diamond": "Losange",
+   "t.pen": "Stylo",
+   "tab.shape": "Formes",
+   "mode.window": "Fenêtre",
+   "style.t": "Des formes à votre façon",
+   "style.b": "Trait continu, en tirets ou pointillé, couleur de fond, bords droits ou arrondis, n’importe quel angle et opacité. Sélectionnez plusieurs repères et changez leur style d’un coup."
   },
   "es": {
    "nav.features": "Funciones",
@@ -373,23 +379,20 @@
    "chat.2": "Paso 2, justo aquí",
    "tools.eyebrow": "Anotación",
    "tools.title": "Explícalo, <span class=\"grad-text\">rápido.</span>",
-   "tools.sub": "Cada herramienta está a una tecla. Señala, numera, difumina y enmarca sin tocar el ratón.",
+   "tools.sub": "Cada herramienta está a una tecla. Señala, numera, difumina y enmarca sin tocar el ratón, y ajusta el estilo de cada marca en el inspector.",
    "t.arrow": "Flecha",
    "t.rect": "Recuadro",
    "t.ellipse": "Círculo",
    "t.counter": "Pasos",
    "t.text": "Texto",
-   "t.high": "Resaltar",
    "t.pixel": "Pixelar",
    "t.crop": "Recortar",
    "tab.mark": "Anotar",
-   "tab.pixel": "Pixelar",
+   "tab.pixel": "Ocultar",
    "tab.bg": "Fondo",
    "tab.ar": "Texto",
    "more.eyebrow": "El Mac de cada día",
    "more.title": "Los detalles, bien hechos.",
-   "scroll.t": "Captura con desplazamiento",
-   "scroll.b": "Páginas, chats y documentos largos en una sola imagen. Los encabezados fijos salen una vez.",
    "fmt.t": "Exporta a tu manera",
    "fmt.b": "El formato y la calidad que necesitas, siempre.",
    "preset.t": "Preajustes",
@@ -399,7 +402,6 @@
    "sc.t": "Tus atajos",
    "sc.b": "Cambia cualquier tecla de captura por la que ya conocen tus manos.",
    "mode.area": "Área",
-   "mode.scroll": "Desplazamiento",
    "zoom.t": "Amplía",
    "zoom.b": "Trabaja el detalle más pequeño y vuelve a la imagen completa.",
    "ap.t": "Claro y oscuro",
@@ -447,7 +449,7 @@
    "theme.toLight": "Cambiar a modo claro",
    "theme.toDark": "Cambiar a modo oscuro",
    "seo.title": "EasyShoot: app de capturas de pantalla para Mac",
-   "seo.desc": "Captura un área, una ventana o una página entera en tu Mac, anótala con flechas, pasos numerados y pixelado, y compártela en segundos. Sin cuenta, no se sube nada.",
+   "seo.desc": "Captura un área, una ventana o la pantalla completa en tu Mac, anótala con flechas, formas, pasos numerados, pixelado y desenfoque, y compártela en segundos. Sin cuenta, no se sube nada.",
    "lang.label": "Idioma",
    "theme.toggle": "Cambiar tema",
    "icon.alt": "Icono de la app EasyShoot",
@@ -458,7 +460,13 @@
    "foot.changelog": "Novedades",
    "map.title": "Mapa del sitio",
    "map.desc": "Todas las páginas del sitio de EasyShoot, en todos los idiomas.",
-   "map.pages": "Páginas"
+   "map.pages": "Páginas",
+   "t.diamond": "Rombo",
+   "t.pen": "Lápiz",
+   "tab.shape": "Formas",
+   "mode.window": "Ventana",
+   "style.t": "Formas a tu manera",
+   "style.b": "Trazo continuo, discontinuo o punteado, color de relleno, bordes rectos o redondeados, cualquier ángulo y opacidad. Selecciona varias marcas y cambia su estilo a la vez."
   },
   "de": {
    "nav.features": "Funktionen",
@@ -487,23 +495,20 @@
    "chat.2": "Schritt 2, genau hier",
    "tools.eyebrow": "Markieren",
    "tools.title": "Auf den Punkt, <span class=\"grad-text\">schnell.</span>",
-   "tools.sub": "Jedes Werkzeug liegt auf einer Taste. Zeigen, nummerieren, verpixeln und rahmen, ohne zur Maus zu greifen.",
+   "tools.sub": "Jedes Werkzeug liegt auf einer Taste. Zeigen, nummerieren, verpixeln und rahmen, ohne zur Maus zu greifen, und jede Markierung im Inspektor gestalten.",
    "t.arrow": "Pfeil",
    "t.rect": "Rahmen",
    "t.ellipse": "Kreis",
    "t.counter": "Schritte",
    "t.text": "Text",
-   "t.high": "Marker",
    "t.pixel": "Verpixeln",
    "t.crop": "Zuschneiden",
    "tab.mark": "Markieren",
-   "tab.pixel": "Verpixeln",
+   "tab.pixel": "Verbergen",
    "tab.bg": "Hintergrund",
    "tab.ar": "Text",
    "more.eyebrow": "Mac-Alltag",
    "more.title": "Kleine Dinge, richtig gemacht.",
-   "scroll.t": "Scroll-Aufnahme",
-   "scroll.b": "Lange Seiten, Chats und Dokumente in einem Bild. Feste Kopfzeilen erscheinen nur einmal.",
    "fmt.t": "Exportieren, wie du willst",
    "fmt.b": "Das Format und die Qualität, die du brauchst, jedes Mal.",
    "preset.t": "Vorlagen",
@@ -513,7 +518,6 @@
    "sc.t": "Deine Kurzbefehle",
    "sc.b": "Leg jede Aufnahmetaste auf die, die deine Hände kennen.",
    "mode.area": "Bereich",
-   "mode.scroll": "Scrollen",
    "zoom.t": "Zoomen",
    "zoom.b": "Am kleinsten Detail arbeiten, dann wieder zurück zum ganzen Bild.",
    "ap.t": "Hell und dunkel",
@@ -561,7 +565,7 @@
    "theme.toLight": "Zum hellen Modus wechseln",
    "theme.toDark": "Zum dunklen Modus wechseln",
    "seo.title": "EasyShoot: Screenshot-App für den Mac",
-   "seo.desc": "Nimm einen Bereich, ein Fenster oder eine ganze scrollende Seite auf deinem Mac auf, markiere sie mit Pfeilen, nummerierten Schritten und Verpixelung und teile sie in Sekunden. Kein Konto, nichts wird hochgeladen.",
+   "seo.desc": "Nimm einen Bereich, ein Fenster oder den ganzen Bildschirm auf deinem Mac auf, markiere ihn mit Pfeilen, Formen, nummerierten Schritten, Verpixeln und Weichzeichnen und teile ihn in Sekunden. Kein Konto, nichts wird hochgeladen.",
    "lang.label": "Sprache",
    "theme.toggle": "Design wechseln",
    "icon.alt": "App-Symbol von EasyShoot",
@@ -572,7 +576,13 @@
    "foot.changelog": "Änderungsprotokoll",
    "map.title": "Sitemap",
    "map.desc": "Alle Seiten der EasyShoot-Website, in allen Sprachen.",
-   "map.pages": "Seiten"
+   "map.pages": "Seiten",
+   "t.diamond": "Raute",
+   "t.pen": "Stift",
+   "tab.shape": "Formen",
+   "mode.window": "Fenster",
+   "style.t": "Formen, wie du sie willst",
+   "style.b": "Durchgezogen, gestrichelt oder gepunktet, eine Füllfarbe, eckige oder runde Ecken, jeder Winkel und jede Deckkraft. Wähle mehrere Markierungen aus und gestalte sie auf einmal."
   }
  },
  "ed": {
@@ -593,22 +603,37 @@
    "payBtn": "Payer 48,00 $",
    "note": "Ajoutez d’abord votre code",
    "style": "Style",
-   "bg": "Fond",
-   "exp": "Export",
+   "bg": "Arrière-plan",
+   "exp": "Exporter",
    "color": "Couleur",
-   "thick": "Épaisseur",
    "size": "Taille",
-   "pixel": "Taille des pixels",
    "padding": "Marge",
-   "radius": "Coins",
+   "radius": "Arrondi des coins",
    "shadow": "Ombre",
    "font": "Police",
-   "dir": "Sens",
+   "dir": "Direction",
    "auto": "Auto",
    "presets": "Préréglages",
    "copied": "Copié dans le presse-papiers",
-   "copy": "Copier",
-   "save": "Enregistrer"
+   "stroke": "Trait",
+   "strokeW": "Épaisseur du trait",
+   "strokeS": "Style du trait",
+   "edges": "Bords",
+   "opacity": "Opacité",
+   "angle": "Angle",
+   "look": "Aspect",
+   "strength": "Intensité",
+   "pixels": "Pixels",
+   "blur": "Flou",
+   "plain": "Simple",
+   "bubble": "Bulle",
+   "outline": "Contour",
+   "fill": "Remplissage",
+   "grad": "Dégradé",
+   "solid": "Uni",
+   "custom": "Personnalisé",
+   "none": "Aucun",
+   "layout": "Mise en page"
   },
   "es": {
    "store": "Tienda Acme",
@@ -630,19 +655,34 @@
    "bg": "Fondo",
    "exp": "Exportar",
    "color": "Color",
-   "thick": "Grosor",
    "size": "Tamaño",
-   "pixel": "Tamaño de píxel",
    "padding": "Margen",
-   "radius": "Esquinas",
+   "radius": "Radio de esquinas",
    "shadow": "Sombra",
    "font": "Fuente",
    "dir": "Dirección",
    "auto": "Auto",
    "presets": "Preajustes",
    "copied": "Copiado al portapapeles",
-   "copy": "Copiar",
-   "save": "Guardar"
+   "stroke": "Trazo",
+   "strokeW": "Grosor del trazo",
+   "strokeS": "Estilo de trazo",
+   "edges": "Bordes",
+   "opacity": "Opacidad",
+   "angle": "Ángulo",
+   "look": "Aspecto",
+   "strength": "Intensidad",
+   "pixels": "Píxeles",
+   "blur": "Desenfoque",
+   "plain": "Simple",
+   "bubble": "Burbuja",
+   "outline": "Contorno",
+   "fill": "Relleno",
+   "grad": "Degradado",
+   "solid": "Sólido",
+   "custom": "Personalizado",
+   "none": "Ninguno",
+   "layout": "Diseño"
   },
   "de": {
    "store": "Acme Store",
@@ -664,19 +704,34 @@
    "bg": "Hintergrund",
    "exp": "Export",
    "color": "Farbe",
-   "thick": "Stärke",
    "size": "Größe",
-   "pixel": "Pixelgröße",
    "padding": "Abstand",
-   "radius": "Ecken",
+   "radius": "Eckenradius",
    "shadow": "Schatten",
    "font": "Schrift",
    "dir": "Richtung",
    "auto": "Auto",
    "presets": "Vorlagen",
    "copied": "In die Zwischenablage kopiert",
-   "copy": "Kopieren",
-   "save": "Sichern"
+   "stroke": "Kontur",
+   "strokeW": "Linienstärke",
+   "strokeS": "Linienstil",
+   "edges": "Ecken",
+   "opacity": "Deckkraft",
+   "angle": "Winkel",
+   "look": "Darstellung",
+   "strength": "Stärke",
+   "pixels": "Pixel",
+   "blur": "Weichzeichnen",
+   "plain": "Einfach",
+   "bubble": "Sprechblase",
+   "outline": "Kontur",
+   "fill": "Füllung",
+   "grad": "Verlauf",
+   "solid": "Einfarbig",
+   "custom": "Eigene",
+   "none": "Keine",
+   "layout": "Layout"
   },
   "en": {
    "store": "Acme Store",
@@ -698,9 +753,7 @@
    "bg": "Background",
    "exp": "Export",
    "color": "Color",
-   "thick": "Thickness",
    "size": "Size",
-   "pixel": "Pixel size",
    "padding": "Padding",
    "radius": "Corner radius",
    "shadow": "Shadow",
@@ -709,8 +762,25 @@
    "auto": "Auto",
    "presets": "Presets",
    "copied": "Copied to clipboard",
-   "copy": "Copy",
-   "save": "Save"
+   "stroke": "Stroke",
+   "strokeW": "Stroke width",
+   "strokeS": "Stroke style",
+   "edges": "Edges",
+   "opacity": "Opacity",
+   "angle": "Angle",
+   "look": "Look",
+   "strength": "Strength",
+   "pixels": "Pixels",
+   "blur": "Blur",
+   "plain": "Plain",
+   "bubble": "Bubble",
+   "outline": "Outline",
+   "fill": "Fill",
+   "grad": "Gradient",
+   "solid": "Solid",
+   "custom": "Custom",
+   "none": "None",
+   "layout": "Layout"
   },
   "ar": {
    "store": "متجر أكمي",
@@ -732,26 +802,41 @@
    "bg": "الخلفية",
    "exp": "تصدير",
    "color": "اللون",
-   "thick": "السماكة",
    "size": "الحجم",
-   "pixel": "حجم البكسل",
-   "padding": "الهامش",
-   "radius": "الزوايا",
+   "padding": "الهوامش",
+   "radius": "استدارة الزوايا",
    "shadow": "الظل",
    "font": "الخط",
    "dir": "الاتجاه",
    "auto": "تلقائي",
-   "presets": "الإعدادات المحفوظة",
-   "copied": "نُسخت إلى الحافظة",
-   "copy": "نسخ",
-   "save": "حفظ"
+   "presets": "القوالب",
+   "copied": "تم النسخ إلى الحافظة",
+   "stroke": "الخط الخارجي",
+   "strokeW": "سماكة الخط",
+   "strokeS": "نمط الخط",
+   "edges": "الحواف",
+   "opacity": "الشفافية",
+   "angle": "الزاوية",
+   "look": "الشكل",
+   "strength": "الشدّة",
+   "pixels": "بكسلة",
+   "blur": "ضبابية",
+   "plain": "عادي",
+   "bubble": "فقاعة",
+   "outline": "إطار",
+   "fill": "التعبئة",
+   "grad": "تدرّج",
+   "solid": "لون واحد",
+   "custom": "مخصص",
+   "none": "بدون",
+   "layout": "التخطيط"
   }
  },
  "tabs": {
   "en": [
    {
     "t": "Point, number and explain.",
-    "b": "Arrows, boxes, text and numbered steps that count themselves. Change colour and thickness for any mark.",
+    "b": "Arrows that bend, boxes, text and numbered steps that count themselves. Set colour, stroke width and opacity for any mark.",
     "k": [
      "A",
      "R",
@@ -759,8 +844,17 @@
     ]
    },
    {
+    "t": "Style every shape.",
+    "b": "Dashed or dotted lines, a light fill, rounded edges and any angle. Rectangle, Diamond and Ellipse each take a background colour.",
+    "k": [
+     "R",
+     "D",
+     "O"
+    ]
+   },
+   {
     "t": "Hide what isn't yours to share.",
-    "b": "Pixelate emails, card numbers and faces before the image leaves your Mac.",
+    "b": "Pixelate or blur emails, card numbers and faces before the image leaves your Mac.",
     "k": [
      "B"
     ]
@@ -772,7 +866,7 @@
    },
    {
     "t": "Text in any language.",
-    "b": "Any font on your Mac, and Arabic or Hebrew flow right to left on their own.",
+    "b": "Any font on your Mac, plain, in a bubble or outlined, and Arabic or Hebrew flow right to left on their own.",
     "k": [
      "T"
     ]
@@ -781,7 +875,7 @@
   "ar": [
    {
     "t": "أشِر، رقّم، واشرح.",
-    "b": "أسهم ومربعات ونصوص وخطوات مرقّمة تعدّ نفسها، مع لون وسماكة لكل علامة.",
+    "b": "أسهم تنحني، ومربعات، ونصوص، وخطوات مرقّمة تعدّ نفسها، مع لون وسماكة خط وشفافية لكل علامة.",
     "k": [
      "A",
      "R",
@@ -789,8 +883,17 @@
     ]
    },
    {
+    "t": "تحكّم بنمط كل شكل.",
+    "b": "خطوط متقطّعة أو منقّطة، وتعبئة فاتحة، وحواف مدوّرة وأي زاوية. المستطيل والمعيّن والشكل البيضوي تأخذ لون خلفية.",
+    "k": [
+     "R",
+     "D",
+     "O"
+    ]
+   },
+   {
     "t": "أخفِ ما لا يخصّك مشاركته.",
-    "b": "موّه البريد وأرقام البطاقات والوجوه قبل أن تخرج الصورة من جهازك.",
+    "b": "موّه الإيميلات وأرقام البطاقات والوجوه بالبكسلة أو الضبابية قبل أن تخرج الصورة من جهازك.",
     "k": [
      "B"
     ]
@@ -802,7 +905,7 @@
    },
    {
     "t": "النص بأي لغة.",
-    "b": "بأي خط على جهازك، والعربية تُكتب من اليمين لليسار تلقائيًا بحروف متصلة صحيحة.",
+    "b": "بأي خط على جهازك، عاديًا أو في فقاعة أو بإطار، والعربية تُكتب من اليمين لليسار تلقائيًا بحروف متصلة صحيحة.",
     "k": [
      "T"
     ]
@@ -811,7 +914,7 @@
   "fr": [
    {
     "t": "Pointez, numérotez, expliquez.",
-    "b": "Flèches, cadres, texte et étapes numérotées qui se comptent toutes seules. Couleur et épaisseur pour chaque marque.",
+    "b": "Flèches qui se courbent, cadres, texte et étapes numérotées qui se comptent toutes seules. Couleur, épaisseur et opacité pour chaque marque.",
     "k": [
      "A",
      "R",
@@ -819,8 +922,17 @@
     ]
    },
    {
+    "t": "Un style pour chaque forme.",
+    "b": "Traits en tirets ou pointillés, fond clair, bords arrondis et n’importe quel angle. Rectangle, losange et ellipse prennent une couleur de fond.",
+    "k": [
+     "R",
+     "D",
+     "O"
+    ]
+   },
+   {
     "t": "Masquez ce qui ne doit pas circuler.",
-    "b": "Pixelisez e-mails, numéros de carte et visages avant que l’image ne quitte votre Mac.",
+    "b": "Pixelisez ou floutez e-mails, numéros de carte et visages avant que l’image ne quitte votre Mac.",
     "k": [
      "B"
     ]
@@ -832,7 +944,7 @@
    },
    {
     "t": "Du texte dans toutes les langues.",
-    "b": "N’importe quelle police de votre Mac, et l’arabe ou l’hébreu s’écrivent de droite à gauche tout seuls.",
+    "b": "N’importe quelle police de votre Mac, simple, en bulle ou avec contour, et l’arabe ou l’hébreu s’écrivent de droite à gauche tout seuls.",
     "k": [
      "T"
     ]
@@ -841,7 +953,7 @@
   "es": [
    {
     "t": "Señala, numera y explica.",
-    "b": "Flechas, recuadros, texto y pasos numerados que se cuentan solos. Color y grosor para cada marca.",
+    "b": "Flechas que se curvan, recuadros, texto y pasos numerados que se cuentan solos. Color, grosor y opacidad para cada marca.",
     "k": [
      "A",
      "R",
@@ -849,8 +961,17 @@
     ]
    },
    {
+    "t": "Un estilo para cada forma.",
+    "b": "Líneas discontinuas o punteadas, un relleno claro, bordes redondeados y cualquier ángulo. Rectángulo, rombo y elipse admiten color de fondo.",
+    "k": [
+     "R",
+     "D",
+     "O"
+    ]
+   },
+   {
     "t": "Oculta lo que no debes compartir.",
-    "b": "Pixela correos, números de tarjeta y caras antes de que la imagen salga de tu Mac.",
+    "b": "Pixela o desenfoca correos, números de tarjeta y caras antes de que la imagen salga de tu Mac.",
     "k": [
      "B"
     ]
@@ -862,7 +983,7 @@
    },
    {
     "t": "Texto en cualquier idioma.",
-    "b": "Cualquier fuente de tu Mac, y el árabe o el hebreo van de derecha a izquierda solos.",
+    "b": "Cualquier fuente de tu Mac, simple, en burbuja o con contorno, y el árabe o el hebreo van de derecha a izquierda solos.",
     "k": [
      "T"
     ]
@@ -871,7 +992,7 @@
   "de": [
    {
     "t": "Zeigen, nummerieren, erklären.",
-    "b": "Pfeile, Rahmen, Text und Schritte, die sich selbst zählen. Farbe und Stärke für jede Markierung.",
+    "b": "Pfeile, die sich biegen, Rahmen, Text und Schritte, die sich selbst zählen. Farbe, Linienstärke und Deckkraft für jede Markierung.",
     "k": [
      "A",
      "R",
@@ -879,8 +1000,17 @@
     ]
    },
    {
+    "t": "Jede Form gestalten.",
+    "b": "Gestrichelte oder gepunktete Linien, eine helle Füllung, runde Ecken und jeder Winkel. Rechteck, Raute und Ellipse bekommen eine Hintergrundfarbe.",
+    "k": [
+     "R",
+     "D",
+     "O"
+    ]
+   },
+   {
     "t": "Verbergen, was nicht raus soll.",
-    "b": "Verpixle E-Mails, Kartennummern und Gesichter, bevor das Bild deinen Mac verlässt.",
+    "b": "Verpixle oder zeichne E-Mails, Kartennummern und Gesichter weich, bevor das Bild deinen Mac verlässt.",
     "k": [
      "B"
     ]
@@ -892,7 +1022,7 @@
    },
    {
     "t": "Text in jeder Sprache.",
-    "b": "Jede Schrift auf deinem Mac, und Arabisch oder Hebräisch laufen von selbst von rechts nach links.",
+    "b": "Jede Schrift auf deinem Mac, einfach, als Sprechblase oder mit Kontur, und Arabisch oder Hebräisch laufen von selbst von rechts nach links.",
     "k": [
      "T"
     ]

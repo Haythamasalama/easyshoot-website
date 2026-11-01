@@ -7,6 +7,8 @@ export default defineConfig({
   build: { inlineStylesheets: "always", format: "preserve" },
   integrations: [
     sitemap({
+      // Old links that only redirect stay out of the sitemap.
+      filter: page => !page.includes("/scrolling-screenshot-mac"),
       lastmod: new Date(),
       // Home pages first, then comparisons and guides, then hubs and the rest.
       serialize(item) {

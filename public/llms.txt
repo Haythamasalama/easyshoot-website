@@ -1,6 +1,6 @@
 # EasyShoot
 
-> EasyShoot is a free screenshot app for macOS 14 and later, coming soon to the Mac App Store. It captures an area, a window, the full screen or a whole scrolling page, lets you annotate the image and frame it on a clean background, and never uploads anything. The interface is in English, Arabic, French, Spanish and German.
+> EasyShoot is a free screenshot app for macOS 14 and later, coming soon to the Mac App Store. It captures an area, a window or the full screen, lets you annotate the image and frame it on a clean background, and never uploads anything. The interface is in English, Arabic, French, Spanish and German.
 
 - Website: https://easyshoot.haythamasalama.me/
 - The same page in Arabic, French, Spanish and German: https://easyshoot.haythamasalama.me/ar/, /fr/, /es/, /de/
@@ -13,25 +13,27 @@
 ## Features
 
 - Capture: area, window and fullscreen, each on a global shortcut you can record yourself.
-- Scrolling capture: stitches long web pages, chats and documents into one image as you scroll; sticky headers and footers appear once.
 - Quick Access: a floating thumbnail after each capture to copy, save, annotate or drag into another app.
-- Annotations: arrows, lines, rectangles, ellipses, text, numbered counters, highlighter, pen and pixelate. Every mark stays editable.
+- Annotations: arrows, lines, rectangles, diamonds, ellipses, text, numbered steps, pen and pixelate. Every mark stays editable.
+- Style: every tool's settings live in the inspector's Style tab: colour, stroke width (thin, medium, bold or 1 to 30), solid, dashed or dotted strokes, a background colour for shapes and steps, sharp or round edges, an angle (Shift snaps to 15°), opacity and an optional shadow. Arrows have a standard or swept head and bend by dragging their middle handle.
+- Pixelate: pixels or blur, with a strength.
+- Text looks: plain, bubble or outline; direction auto, left to right or right to left.
+- Selection: Command-A, Shift-click or a box dragged over empty canvas selects several marks to move, restyle or delete together.
 - Text: any font installed on the Mac, plus Google Fonts downloaded on demand. Arabic and Hebrew are written right-to-left with correct shaping.
 - Background tool: gradients, solid colours or transparent, with padding, corner radius, shadow, aspect ratio and alignment.
 - Crop and resize: free or fixed ratios (1:1, 4:3, 16:9), resize by percent or to an exact width.
 - Presets: save a style and make it the default; without a default, each screenshot starts with the last settings.
 - Export: PNG, JPEG, HEIC or TIFF; copy with Shift-Command-C, save with Command-S.
 - Zoom: zoom the canvas in and out with Command-Plus and Command-Minus.
-- Editor keys: A arrow, L line, R rectangle, O ellipse, T text, N numbered step, H highlighter, P pen, B pixelate, C crop, V select.
+- Editor keys: A arrow, L line, R rectangle, O ellipse, T text, N numbered step, D diamond, P pen, B pixelate, C crop, V select.
 - Look: native SwiftUI and AppKit, light and dark, Liquid Glass on macOS 26.
-- Privacy: no account, no cloud, no analytics. The app only goes online to download a Google font you pick.
+- Privacy: no account, no cloud, no analytics. The app only goes online to download a Google font you pick and to check the App Store for a newer version.
 
 ## Default shortcuts
 
 - Capture area: Option-Shift-Command-4
 - Capture window: Option-Shift-Command-5
 - Capture fullscreen: Option-Shift-Command-3
-- Scrolling capture: Option-Shift-Command-6
 - Annotate the clipboard image: Option-Shift-Command-7
 
 ## Install
@@ -42,7 +44,7 @@
 
 ## Guides
 
-- [How to take a scrolling screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/scrolling-screenshot-mac/)
+- [How to use EasyShoot on your Mac: every feature in one guide](https://easyshoot.haythamasalama.me/guides/how-to-use-easyshoot/)
 - [How to blur part of a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/blur-screenshot-mac/)
 - [How to add arrows and numbered steps to a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/annotate-screenshot-mac/)
 - [How to write Arabic on a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/arabic-text-screenshot-mac/)

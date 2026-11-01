@@ -16,7 +16,7 @@
   "hubs": {
     "guides": {
       "title": "Guías de capturas de pantalla en Mac | EasyShoot",
-      "description": "Guías breves y prácticas para hacer capturas en Mac: capturas con desplazamiento, ocultar datos privados, flechas y pasos numerados, y texto en árabe.",
+      "description": "Guías breves y prácticas para hacer capturas en Mac: ocultar datos privados, flechas, formas y pasos numerados, y texto en árabe.",
       "h1": "Guías de capturas de pantalla para Mac",
       "intro": "Respuestas breves a lo que más se pregunta sobre las capturas de pantalla en un Mac, con las teclas exactas que hay que pulsar."
     },
@@ -28,61 +28,99 @@
     }
   },
   "articles": {
-    "scrolling-screenshot-mac": {
-      "short": "Capturas con desplazamiento",
-      "title": "Cómo hacer una captura con desplazamiento en Mac | EasyShoot",
-      "description": "Captura una página web, un chat o un documento entero como una sola imagen larga en tu Mac. Paso a paso con la Captura con desplazamiento de EasyShoot.",
-      "h1": "Cómo hacer una captura con desplazamiento en un Mac",
-      "intro": "Una captura con desplazamiento recoge más de lo que cabe en la pantalla: una página web completa, un chat largo o un documento, unidos en una sola imagen alta. La herramienta Captura de Pantalla de macOS captura lo que está a la vista, así que para una página entera necesitas una herramienta de captura con desplazamiento como EasyShoot.",
+    "how-to-use-easyshoot": {
+      "short": "Todas las funciones, paso a paso",
+      "title": "Cómo usar EasyShoot en Mac: todas las funciones en una guía | EasyShoot",
+      "description": "Un recorrido visual por EasyShoot para Mac: captura, flechas, formas, pasos numerados, pixelado y desenfoque, texto en árabe, fondos, preajustes y exportación, con la tecla de cada herramienta.",
+      "h1": "Cómo usar EasyShoot en tu Mac",
+      "intro": "Todo lo que hace EasyShoot, en el orden en que lo usarás: capturar, anotar, ocultar lo privado, enmarcar y compartir. Cada parte muestra el editor tal como es y la tecla que pulsar.",
       "steps": [
         {
-          "name": "Inicia la Captura con desplazamiento",
-          "text": "Pulsa Opción + Mayúsculas + Comando + 6, o elige Captura con desplazamiento en el menú de EasyShoot de la barra de menús."
+          "name": "Captura",
+          "text": "Pulsa Opción-Mayúsculas-Comando-4 y arrastra sobre lo que quieras mostrar."
         },
         {
-          "name": "Selecciona el área",
-          "text": "Arrastra sobre la parte de la ventana que quieres desplazar, por ejemplo el contenido de la página sin la barra del navegador. Pulsa Esc para cancelar."
+          "name": "Anota",
+          "text": "Se abre el editor. Pulsa A para una flecha, R para un recuadro o N para un paso numerado."
         },
         {
-          "name": "Desplázate despacio",
-          "text": "Desplázate hacia abajo a un ritmo constante. Si vas demasiado rápido, EasyShoot te pide que vuelvas un poco hacia arriba y sigas más despacio."
+          "name": "Dale estilo",
+          "text": "Elige color, trazo y relleno en la pestaña Estilo del inspector."
         },
         {
-          "name": "Pulsa Listo",
-          "text": "EasyShoot une todo en una sola imagen y la abre, lista para anotar, copiar o guardar. Los encabezados fijos aparecen una sola vez, no en cada fragmento."
+          "name": "Comparte",
+          "text": "Pulsa Mayúsculas-Comando-C para copiar o Comando-S para guardar."
         }
       ],
       "sections": [
         {
-          "h2": "Consejos para un resultado limpio",
-          "html": "<ul><li>Selecciona solo el contenido que se desplaza, para que las barras de herramientas y laterales fijas queden fuera de la imagen.</li><li>Desplázate en una sola dirección, de arriba abajo.</li><li>Las imágenes largas también pueden ser anchas: cambia su tamaño o recórtalas en el editor antes de compartirlas.</li></ul>"
+          "h2": "Captura lo que sea",
+          "html": "<p>EasyShoot vive en la barra de menús. Cada captura tiene su atajo, y puedes grabar los tuyos en Ajustes › Atajos.</p><table><thead><tr><th>Acción</th><th>Atajo</th></tr></thead><tbody><tr><td>Capturar área</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capturar ventana</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capturar pantalla completa</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Anotar imagen del portapapeles</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table><p>Tras cada captura, el <strong>acceso rápido</strong> muestra una miniatura en la esquina: cópiala, guárdala, ábrela en el editor o arrástrala a otra app.</p>"
         },
         {
-          "h2": "Qué necesitas",
-          "html": "<p>EasyShoot funciona en macOS 14 o posterior. La Captura con desplazamiento necesita el permiso de Grabación de pantalla, que EasyShoot te pide la primera vez que capturas.</p>"
+          "h2": "Anota",
+          "art": "mark",
+          "alt": "El editor de EasyShoot con un recuadro, dos pasos numerados, una flecha y una nota sobre una página de pago.",
+          "html": "<p>Cada herramienta está a una tecla: señala y explica sin ir a la barra de herramientas.</p><ul class=\"feature-grid\"><li><strong>Flecha · A</strong>Arrastra para dibujarla; arrastra el tirador central para curvarla.</li><li><strong>Línea · L</strong>Una línea recta entre dos puntos.</li><li><strong>Rectángulo · R</strong>Enmarca lo importante.</li><li><strong>Rombo · D</strong>Una forma que destaca entre los recuadros.</li><li><strong>Elipse · O</strong>Rodea un número o un botón.</li><li><strong>Paso numerado · N</strong>Haz clic en orden: 1, 2, 3 se cuentan solos.</li><li><strong>Texto · T</strong>Una nota corta justo donde hace falta.</li><li><strong>Lápiz · P</strong>Dibuja a mano.</li></ul>"
+        },
+        {
+          "h2": "Un estilo para cada marca",
+          "art": "shape",
+          "alt": "La pestaña Estilo del editor con un recuadro discontinuo con relleno y una elipse punteada sobre la captura.",
+          "html": "<p>La pestaña <strong>Estilo</strong> sigue la herramienta en uso o la marca seleccionada, y muestra solo lo que esa marca usa.</p><ul class=\"feature-grid\"><li><strong>Color y grosor</strong>Cinco colores, fino, medio o grueso, o cualquier grosor de 1 a 30.</li><li><strong>Estilo de trazo</strong>Líneas y formas continuas, discontinuas o punteadas.</li><li><strong>Fondo</strong>Un relleno claro para rectángulos, rombos, elipses y pasos.</li><li><strong>Bordes y ángulo</strong>Esquinas rectas o redondeadas y cualquier ángulo; Mayúsculas ajusta a 15°.</li><li><strong>Opacidad</strong>Atenúa una marca sin perderla.</li><li><strong>Varias a la vez</strong>Comando-A, Mayúsculas-clic o arrastra un recuadro sobre una zona vacía.</li></ul>"
+        },
+        {
+          "h2": "Oculta los datos privados",
+          "art": "pixel",
+          "alt": "Un número de tarjeta desenfocado con la herramienta Pixelar y la pestaña Estilo en Desenfoque.",
+          "html": "<p>Pulsa <kbd>B</kbd> y arrastra sobre un correo, un número de tarjeta o una cara. En la pestaña Estilo elige <strong>Píxeles</strong> o <strong>Desenfoque</strong> y ajusta la intensidad. La imagen exportada solo guarda la versión oculta.</p>"
+        },
+        {
+          "h2": "Texto en cualquier idioma",
+          "art": "ar",
+          "alt": "Una nota en burbuja sobre la captura, con fuente, tamaño, aspecto y dirección en la pestaña Estilo.",
+          "html": "<p>Pulsa <kbd>T</kbd> y escribe. Usa cualquier fuente de tu Mac, o una de Google que se descarga al elegirla. Pon el aspecto en <strong>Simple</strong>, <strong>Burbuja</strong> o <strong>Contorno</strong>.</p><p>Con la dirección en <strong>Auto</strong>, el árabe y el hebreo van de derecha a izquierda con las letras bien unidas; elige LTR o RTL para forzar una línea.</p>"
+        },
+        {
+          "h2": "Enmarcar, recortar y preajustes",
+          "art": "bg",
+          "alt": "La captura sobre un degradado suave, con relleno, margen, radio de esquinas y sombra en la pestaña Fondo.",
+          "html": "<p>La pestaña <strong>Fondo</strong> pone la captura sobre un degradado, un color sólido o nada, con margen, esquinas redondeadas, sombra, proporción y alineación.</p><ul class=\"feature-grid\"><li><strong>Recortar · C</strong>Proporción libre o fija: 1:1, 4:3, 16:9.</li><li><strong>Cambiar tamaño</strong>Por porcentaje o a un ancho exacto.</li><li><strong>Preajustes</strong>Guarda un estilo y hazlo el predeterminado.</li><li><strong>Zoom</strong>Comando-Más y Comando-Menos para los detalles.</li></ul>"
+        },
+        {
+          "h2": "Copia, guarda y comparte",
+          "html": "<table><thead><tr><th>Acción</th><th>Atajo</th></tr></thead><tbody><tr><td>Copiar la imagen</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Guardar</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Deshacer</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Rehacer</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr></tbody></table><p>Exporta en PNG, JPEG, HEIC o TIFF desde la pestaña <strong>Exportar</strong>, o arrastra la imagen a Mensajes, Slack o Mail.</p>"
+        },
+        {
+          "h2": "Privado desde el diseño",
+          "html": "<p>Sin cuenta, sin nube y sin rastreo. EasyShoot solo se conecta para descargar una fuente de Google que elijas y buscar actualizaciones en la App Store. Tus capturas se quedan en tu Mac.</p>"
         }
       ],
       "faq": [
         {
-          "q": "¿Puede el Mac hacer una captura con desplazamiento sin una app?",
-          "a": "La guía de Apple sobre la herramienta Captura de Pantalla incluye la pantalla completa, una ventana o una parte seleccionada. No describe una captura con desplazamiento, así que lo habitual es usar una app aparte para capturar una página entera."
+          "q": "¿EasyShoot es gratis?",
+          "a": "Sí. EasyShoot es gratis en la Mac App Store, sin cuenta."
         },
         {
-          "q": "¿Funciona en cualquier app?",
-          "a": "La Captura con desplazamiento funciona con el contenido que desplazas en pantalla, como páginas web, chats y documentos."
+          "q": "¿EasyShoot captura páginas con desplazamiento?",
+          "a": "No. EasyShoot captura un área, una ventana o la pantalla completa."
         },
         {
-          "q": "¿Cuál es el atajo?",
-          "a": "Opción + Mayúsculas + Comando + 6 de forma predeterminada. Puedes cambiarlo en los Ajustes de EasyShoot."
+          "q": "¿Puedo cambiar una marca después de dibujarla?",
+          "a": "Sí. Cada marca sigue siendo editable: muévela, cambia su estilo o bórrala cuando quieras."
+        },
+        {
+          "q": "¿En qué Mac funciona?",
+          "a": "En cualquier Mac con macOS 14 Sonoma o posterior, con Apple silicon o Intel."
         }
       ]
     },
     "blur-screenshot-mac": {
       "short": "Ocultar datos privados",
       "title": "Cómo difuminar o pixelar parte de una captura en Mac | EasyShoot",
-      "description": "Oculta correos, números de tarjeta y caras en una captura en tu Mac antes de compartirla. Pixela cualquier área en segundos con EasyShoot.",
+      "description": "Oculta correos, números de tarjeta y caras en una captura en tu Mac antes de compartirla. Pixela o desenfoca cualquier área en segundos con EasyShoot.",
       "h1": "Cómo difuminar parte de una captura de pantalla en un Mac",
-      "intro": "Antes de compartir una captura, oculta lo que no te corresponde compartir: una dirección de correo, un número de tarjeta, un nombre o una cara. EasyShoot pixela cualquier área sobre la que arrastres, y nada sale de tu Mac mientras lo haces.",
+      "intro": "Antes de compartir una captura, oculta lo que no te corresponde compartir: una dirección de correo, un número de tarjeta, un nombre o una cara. EasyShoot pixela o desenfoca cualquier área sobre la que arrastres, y nada sale de tu Mac mientras lo haces.",
       "steps": [
         {
           "name": "Captura o abre la imagen",
@@ -90,7 +128,7 @@
         },
         {
           "name": "Elige Pixelar",
-          "text": "Pulsa B, o haz clic en la herramienta Pixelar de la barra de herramientas."
+          "text": "Pulsa B o haz clic en la herramienta Pixelar. En la pestaña Estilo, elige Píxeles o Desenfoque y ajusta la intensidad."
         },
         {
           "name": "Arrastra sobre la parte privada",
@@ -117,8 +155,8 @@
           "a": "La guía de Marcación de Apple incluye formas, texto, resaltado, bosquejo, lupa y recorte, pero no una herramienta para difuminar o pixelar, así que se suele usar una app para esto."
         },
         {
-          "q": "¿Se puede deshacer el pixelado?",
-          "a": "La imagen exportada solo contiene los bloques pixelados, no el dato original."
+          "q": "¿Se puede deshacer el pixelado o el desenfoque?",
+          "a": "La imagen exportada solo contiene el área pixelada o desenfocada, no el dato original."
         },
         {
           "q": "¿Puedo pixelar después de añadir flechas y pasos?",
@@ -157,11 +195,15 @@
       "sections": [
         {
           "h2": "Cada herramienta, una tecla",
-          "html": "<table><thead><tr><th>Herramienta</th><th>Tecla</th></tr></thead><tbody><tr><td>Flecha</td><td><kbd>A</kbd></td></tr><tr><td>Línea</td><td><kbd>L</kbd></td></tr><tr><td>Rectángulo</td><td><kbd>R</kbd></td></tr><tr><td>Elipse</td><td><kbd>O</kbd></td></tr><tr><td>Texto</td><td><kbd>T</kbd></td></tr><tr><td>Paso numerado</td><td><kbd>N</kbd></td></tr><tr><td>Resaltador</td><td><kbd>H</kbd></td></tr><tr><td>Lápiz</td><td><kbd>P</kbd></td></tr><tr><td>Pixelar</td><td><kbd>B</kbd></td></tr><tr><td>Recortar</td><td><kbd>C</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Herramienta</th><th>Tecla</th></tr></thead><tbody><tr><td>Flecha</td><td><kbd>A</kbd></td></tr><tr><td>Línea</td><td><kbd>L</kbd></td></tr><tr><td>Rectángulo</td><td><kbd>R</kbd></td></tr><tr><td>Rombo</td><td><kbd>D</kbd></td></tr><tr><td>Elipse</td><td><kbd>O</kbd></td></tr><tr><td>Texto</td><td><kbd>T</kbd></td></tr><tr><td>Paso numerado</td><td><kbd>N</kbd></td></tr><tr><td>Lápiz</td><td><kbd>P</kbd></td></tr><tr><td>Pixelar</td><td><kbd>B</kbd></td></tr><tr><td>Recortar</td><td><kbd>C</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Un estilo para cada marca",
+          "html": "<ul><li><strong>Líneas y formas:</strong> trazo continuo, discontinuo o punteado, de fino a grueso.</li><li><strong>Rectángulo, rombo y elipse:</strong> un color de fondo, bordes rectos o redondeados y cualquier ángulo.</li><li><strong>Flechas:</strong> punta estándar o afilada; arrastra el tirador central para curvarla.</li><li><strong>Pasos numerados:</strong> sin fondo, en su propio color o con un relleno claro.</li><li><strong>Varias a la vez:</strong> Comando-A, Mayúsculas-clic o arrastra un recuadro sobre una zona vacía, y muévelas, cambia su estilo o bórralas juntas.</li></ul>"
         },
         {
           "h2": "Que se lea bien",
-          "html": "<ul><li>Usa tres o cuatro marcas como mucho: un recuadro, un par de números y una flecha.</li><li>Pon los números junto a lo que marcan, no encima del texto.</li><li>Cambia el color y el grosor de cualquier marca en el panel Estilo.</li></ul>"
+          "html": "<ul><li>Usa tres o cuatro marcas como mucho: un recuadro, un par de números y una flecha.</li><li>Pon los números junto a lo que marcan, no encima del texto.</li><li>Cambia el color, el grosor del trazo y la opacidad de cualquier marca en la pestaña Estilo.</li></ul>"
         }
       ],
       "faq": [
@@ -199,8 +241,8 @@
           "text": "Escribe con normalidad. Con Dirección en Auto, EasyShoot cambia a derecha a izquierda por sí solo."
         },
         {
-          "name": "Elige tipografía y tamaño",
-          "text": "Elige cualquier tipografía de tu Mac en el panel Estilo, y arrastra la esquina del texto para cambiar su tamaño."
+          "name": "Elige fuente y tamaño",
+          "text": "En la pestaña Estilo, elige cualquier fuente de tu Mac y ajusta el tamaño. Para una etiqueta que destaque, pon el aspecto en Burbuja o Contorno."
         }
       ],
       "sections": [
@@ -253,7 +295,7 @@
         ],
         [
           "Captura con desplazamiento",
-          "Sí",
+          "No",
           "Sí"
         ],
         [
@@ -263,7 +305,7 @@
         ],
         [
           "Ocultar datos privados",
-          "Pixelar",
+          "Pixelar o desenfocar",
           "Ocultar"
         ],
         [
@@ -310,7 +352,7 @@
       "faq": [
         {
           "q": "¿Es EasyShoot una alternativa gratuita a CleanShot X?",
-          "a": "EasyShoot es gratis e incluye captura, captura con desplazamiento, anotación, pixelado y fondos. No graba vídeo ni reconoce texto."
+          "a": "EasyShoot es gratis e incluye captura, anotación con formas, flechas, texto y pasos numerados, pixelado, desenfoque y fondos. No graba vídeo, no captura páginas con desplazamiento ni reconoce texto."
         },
         {
           "q": "¿Puedo usar las dos?",
@@ -347,7 +389,7 @@
         ],
         [
           "Captura con desplazamiento",
-          "Sí",
+          "No",
           "Sí"
         ],
         [
@@ -357,7 +399,7 @@
         ],
         [
           "Ocultar datos privados",
-          "Pixelar",
+          "Pixelar o desenfocar",
           "Pixelar, difuminar y eliminar"
         ],
         [
@@ -398,7 +440,7 @@
         },
         {
           "q": "¿Las dos apps tienen captura con desplazamiento?",
-          "a": "Sí, las dos capturan páginas y chats largos en una sola imagen."
+          "a": "No. Shottr captura páginas y chats largos en una sola imagen; EasyShoot captura un área, una ventana o la pantalla completa."
         },
         {
           "q": "¿Cuál es compatible con el árabe?",
@@ -426,7 +468,7 @@
         ],
         [
           "Captura con desplazamiento",
-          "Sí",
+          "No",
           "Sí"
         ],
         [
@@ -436,7 +478,7 @@
         ],
         [
           "Ocultar datos privados",
-          "Pixelar",
+          "Pixelar o desenfocar",
           "Smart Redact (difuminar o tapar)"
         ],
         [
@@ -473,7 +515,7 @@
       "faq": [
         {
           "q": "¿Hay una alternativa gratuita a Snagit para Mac?",
-          "a": "EasyShoot es gratis en Mac e incluye captura, captura con desplazamiento, anotación, pixelado y fondos. No graba vídeo."
+          "a": "EasyShoot es gratis en Mac e incluye captura, anotación con formas, flechas, texto y pasos numerados, pixelado, desenfoque y fondos. No graba vídeo ni captura páginas con desplazamiento."
         },
         {
           "q": "¿EasyShoot necesita una cuenta?",
@@ -488,7 +530,7 @@
     "macos-screenshot-alternative": {
       "short": "frente a Captura de Pantalla",
       "title": "¿Mejor que Mayúsculas + Comando + 5? EasyShoot frente a macOS",
-      "description": "Lo que EasyShoot añade a la herramienta de capturas de macOS: captura con desplazamiento, pasos numerados, pixelado, fondos y preajustes.",
+      "description": "Lo que EasyShoot añade a la herramienta de capturas de macOS: pasos numerados, pixelado y desenfoque, formas con estilo propio, fondos y preajustes.",
       "h1": "EasyShoot frente a la herramienta Captura de Pantalla del Mac",
       "intro": "macOS incluye una buena herramienta Captura de Pantalla (Mayúsculas + Comando + 5) con grabación de pantalla y Marcación. EasyShoot parte de la misma idea para las capturas que quieres explicar y compartir.",
       "competitor": "macOS Screenshot",
@@ -502,11 +544,6 @@
           "Área, ventana y pantalla completa",
           "Sí",
           "Sí"
-        ],
-        [
-          "Captura con desplazamiento",
-          "Sí",
-          "No indicada en la guía de Apple"
         ],
         [
           "Flechas y pasos numerados",
@@ -597,7 +634,7 @@
           "Sí"
         ],
         [
-          "Captura de ventana, pantalla completa y con desplazamiento",
+          "Captura de ventana y pantalla completa",
           "Sí",
           "No indicado"
         ],
@@ -640,7 +677,7 @@
       "sections": [
         {
           "h2": "Elige EasyShoot si",
-          "html": "<ul><li>Tus capturas muestran cosas privadas que no deberían estar en un servidor público.</li><li>Quieres pasos numerados, pixelado y una herramienta de fondo.</li><li>Necesitas capturar una ventana, la pantalla completa o una página con desplazamiento en Mac.</li></ul>"
+          "html": "<ul><li>Tus capturas muestran cosas privadas que no deberían estar en un servidor público.</li><li>Quieres pasos numerados, pixelado y una herramienta de fondo.</li><li>Necesitas capturar una ventana o la pantalla completa en Mac.</li></ul>"
         },
         {
           "h2": "Elige Lightshot si",

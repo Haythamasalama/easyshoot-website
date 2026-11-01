@@ -10,7 +10,7 @@ export type Kind = "guides" | "compare";
 export interface Article { slug: string; kind: Kind; short: Record<Lang, string> }
 
 const ORDER: Record<Kind, string[]> = {
-  guides: ["scrolling-screenshot-mac", "blur-screenshot-mac", "annotate-screenshot-mac", "arabic-text-screenshot-mac"],
+  guides: ["how-to-use-easyshoot", "blur-screenshot-mac", "annotate-screenshot-mac", "arabic-text-screenshot-mac"],
   compare: ["cleanshot-x-alternative", "shottr-alternative", "snagit-alternative", "lightshot-alternative", "macos-screenshot-alternative"],
 };
 
@@ -30,7 +30,6 @@ export const alternatesFor = (path: (l: Lang) => string) => Object.fromEntries(L
 const TAG_NAMES: Record<string, Record<Lang, string>> = {
   mac: { en: "Mac", ar: "ماك", fr: "Mac", es: "Mac", de: "Mac" },
   screenshots: { en: "Screenshots", ar: "لقطات الشاشة", fr: "Captures d’écran", es: "Capturas de pantalla", de: "Screenshots" },
-  scrolling: { en: "Scrolling capture", ar: "التقاط مع التمرير", fr: "Capture défilante", es: "Captura con desplazamiento", de: "Scroll-Aufnahme" },
   privacy: { en: "Privacy", ar: "الخصوصية", fr: "Confidentialité", es: "Privacidad", de: "Datenschutz" },
   markup: { en: "Markup", ar: "التوضيح", fr: "Annotation", es: "Anotación", de: "Markieren" },
   arabic: { en: "Arabic and RTL", ar: "العربية ومن اليمين لليسار", fr: "Arabe et RTL", es: "Árabe y RTL", de: "Arabisch und RTL" },
@@ -40,7 +39,7 @@ const TAG_NAMES: Record<string, Record<Lang, string>> = {
   free: { en: "Free apps", ar: "تطبيقات مجانية", fr: "Apps gratuites", es: "Apps gratis", de: "Kostenlose Apps" },
 };
 const ARTICLE_TAGS: Record<string, string[]> = {
-  "scrolling-screenshot-mac": ["scrolling", "screenshots", "mac"],
+  "how-to-use-easyshoot": ["screenshots", "markup", "shortcuts"],
   "blur-screenshot-mac": ["privacy", "markup", "screenshots"],
   "annotate-screenshot-mac": ["markup", "shortcuts", "screenshots"],
   "arabic-text-screenshot-mac": ["arabic", "markup", "mac"],
@@ -48,7 +47,7 @@ const ARTICLE_TAGS: Record<string, string[]> = {
   "shottr-alternative": ["comparison", "alternatives", "free"],
   "snagit-alternative": ["comparison", "alternatives", "free"],
   "lightshot-alternative": ["comparison", "alternatives", "privacy"],
-  "macos-screenshot-alternative": ["comparison", "mac", "scrolling"],
+  "macos-screenshot-alternative": ["comparison", "mac", "markup"],
 };
 export const tagsFor = (lang: Lang, slug: string) => (ARTICLE_TAGS[slug] ?? []).map(k => TAG_NAMES[k][lang]);
 
