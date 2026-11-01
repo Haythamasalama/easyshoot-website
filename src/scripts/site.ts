@@ -61,17 +61,54 @@ if (tocLinks.length && "IntersectionObserver" in window) {
   byId.forEach((_, id) => { const el = document.getElementById(id); if (el) spy.observe(el); });
 }
 
-// Showcase tabs: every mode is in the HTML already; only one is shown.
-const tabs = [...document.querySelectorAll<HTMLButtonElement>("[data-tab]")];
-function showTab(i: number) {
-  tabs.forEach(b => b.setAttribute("aria-selected", String(+b.dataset.tab! === i)));
-  document.querySelectorAll<HTMLElement>("[data-panel]").forEach(p => {
-    const on = +p.dataset.panel! === i;
-    p.hidden = !on;
-    if (on && !reduce) animate(p, { opacity: [0, 1], y: [10, 0], scale: [0.985, 1] }, { duration: 0.45, ease: [0.2, 0.8, 0.2, 1] });
+// Live inspector in the feature rows: each control sets a CSS variable on its figure, so the window and its close-ups change together.
+document.querySelectorAll<HTMLElement>(".feat-art").forEach(fig => {
+  fig.querySelectorAll<HTMLButtonElement>("button[data-ctl]").forEach(b => b.addEventListener("click", () => {
+    fig.querySelectorAll<HTMLButtonElement>(`button[data-ctl="${b.dataset.ctl}"]`).forEach(x => {
+      x.classList.toggle("on", x === b);
+      x.setAttribute("aria-pressed", String(x === b));
+    });
+    fig.style.setProperty(`--${b.dataset.ctl}`, b.dataset.v!);
+  }));
+  fig.querySelectorAll<HTMLInputElement>("input[data-ctl]").forEach(i => i.addEventListener("input", () => {
+    i.style.setProperty("--v", `${i.value}%`);
+    fig.style.setProperty(`--${i.dataset.ctl}`, String(+i.value / 100));
+  }));
+});
+
+// Close-ups: a copy of the drawing beside them (or the first one), magnified and centred on the mark it is about.
+// They are filled here rather than in the HTML so the page's text doesn't repeat the drawing many times.
+const firstDash = document.querySelector<HTMLElement>(".feat-art .ed .dash-wrap");
+document.querySelectorAll<HTMLElement>(".zc").forEach(zc => {
+  const source = zc.closest(".feat-art")?.querySelector<HTMLElement>(".ed .dash-wrap") ?? firstDash;
+  if (!source) return;
+  zc.append(source.cloneNode(true));
+  const shot = zc.querySelector<HTMLElement>(".dash"), el = zc.querySelector<HTMLElement>(zc.dataset.focus ?? "");
+  if (!shot || !el) return;
+  const s = shot.getBoundingClientRect(), r = el.getBoundingClientRect(), em = parseFloat(getComputedStyle(shot).fontSize);
+  zc.style.setProperty("--fx", ((r.left + r.width / 2 - s.left) / em).toFixed(2));
+  zc.style.setProperty("--fy", ((r.top + r.height / 2 - s.top) / em).toFixed(2));
+});
+
+// Quick Access card: Copy and Save confirm, Edit opens the tools, Close slides the thumbnail away and back.
+document.querySelectorAll<HTMLElement>(".qa-live").forEach(card => {
+  card.querySelectorAll<HTMLButtonElement>("[data-qa]").forEach(b => b.addEventListener("click", () => {
+    if (b.dataset.qa === "close") {
+      card.classList.add("gone");
+      setTimeout(() => card.classList.remove("gone"), 1400);
+    } else if (b.dataset.qa === "edit") {
+      document.getElementById("tools")?.scrollIntoView();
+    } else {
+      b.classList.add("done");
+      setTimeout(() => b.classList.remove("done"), 1200);
+    }
+  }));
+  // Shows the controls once when the card comes into view, so visitors know they are there.
+  inView(card, () => {
+    card.classList.add("on");
+    setTimeout(() => card.classList.remove("on"), 2600);
   });
-}
-tabs.forEach(b => b.addEventListener("click", () => showTab(+b.dataset.tab!)));
+});
 
 // Tool row: one pressed tool at a time, with a small spring.
 const tools = [...document.querySelectorAll<HTMLButtonElement>(".tool")];
@@ -82,7 +119,7 @@ tools.forEach(b => b.addEventListener("click", () => {
 
 // Every button and control gives a small spring when pressed.
 if (!reduce) {
-  press(".btn, .chip-btn, .tabs button, .faq summary, .lang-menu a, .links a, .foot-cols a, .foot-langs a, .pill-tag", el => {
+  press(".btn, .chip-btn, .faq summary, .lang-menu a, .links a, .foot-cols a, .foot-langs a, .pill-tag", el => {
     animate(el, { scale: 0.94 }, { type: "spring", stiffness: 600, damping: 30 });
     return () => animate(el, { scale: 1 }, { type: "spring", bounce: 0.55, duration: 0.45 });
   });
