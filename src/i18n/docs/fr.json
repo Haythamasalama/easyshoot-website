@@ -1,7 +1,7 @@
 {
   "ui": {
-    "title": "Guide d’utilisation d’EasyShoot : chaque fonction, sujet par sujet",
-    "description": "Le guide d’utilisation d’EasyShoot pour Mac : installation, capture, accès rapide, outils d’annotation, styles, pixelisation et flou, texte, arrière-plans, préréglages, export, raccourcis, réglages et confidentialité.",
+    "title": "Guide d’EasyShoot : chaque fonction, sujet par sujet",
+    "description": "Le guide d’EasyShoot pour Mac : capture, accès rapide, annotation, flou, texte, arrière-plans, préréglages, export, raccourcis et confidentialité.",
     "h1": "Guide d’utilisation",
     "intro": "Tout ce que fait EasyShoot, un sujet à la fois. Commencez en haut, ou allez droit à ce qu’il vous faut.",
     "groups": {

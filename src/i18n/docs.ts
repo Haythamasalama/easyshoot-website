@@ -10,6 +10,8 @@ export const DOC_GROUPS = [
   { id: "more", slugs: ["shortcuts", "settings", "privacy"] },
 ];
 export const DOC_SLUGS = DOC_GROUPS.flatMap(g => g.slugs);
+// Bump when the guide's text changes; search engines and AI assistants read it as the page's last update.
+export const DOCS_UPDATED = "2026-11-01";
 
 export const docsUI = (lang: Lang) => ({ ...docs("en").ui, ...docs(lang).ui });
 export const docOf = (lang: Lang, slug: string) => docs(lang).topics[slug] ?? docs("en").topics[slug];

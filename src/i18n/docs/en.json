@@ -1,7 +1,7 @@
 {
   "ui": {
     "title": "EasyShoot user guide: every feature, one topic at a time",
-    "description": "The EasyShoot user guide for Mac: setup, capture, Quick Access, markup tools, styles, pixelate and blur, text, backgrounds, presets, export, shortcuts, settings and privacy.",
+    "description": "The EasyShoot user guide for Mac: capture, Quick Access, markup, blur, text, backgrounds, presets, export, shortcuts, settings and privacy.",
     "h1": "User guide",
     "intro": "Everything EasyShoot can do, one topic at a time. Start at the top, or jump to what you need.",
     "groups": {

@@ -2,14 +2,17 @@
 import Base from "../layouts/Base.astro";
 import { SITE, pagePath, type Lang } from "../i18n";
 import { alternatesFor } from "../i18n/articles";
-import { DOC_GROUPS, docsUI, docOf, docsPath, docPath } from "../i18n/docs";
+import { DOC_GROUPS, DOC_SLUGS, docsUI, docOf, docsPath, docPath } from "../i18n/docs";
 import { breadcrumbNode } from "../lib/seo";
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const ui = docsUI(lang);
 const url = SITE + docsPath(lang);
-const graph = [breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: ui.h1, path: docsPath(lang) }])];
+const graph = [
+  breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: ui.h1, path: docsPath(lang) }]),
+  { "@type": "ItemList", "@id": `${url}#topics`, name: ui.h1, itemListElement: DOC_SLUGS.map((s, i) => ({ "@type": "ListItem", position: i + 1, name: docOf(lang, s).title, url: SITE + docPath(lang, s) })) },
+];
 ---
 <Base lang={lang} title={ui.title} description={ui.description} alternates={alternatesFor(docsPath)} graph={graph}>
 <main class="doc docs-hub">

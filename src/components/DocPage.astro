@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import DocsNav from "./DocsNav.astro";
 import { SITE, pagePath, type Lang } from "../i18n";
 import { alternatesFor } from "../i18n/articles";
-import { DOC_SLUGS, docsUI, docOf, docsPath, docPath } from "../i18n/docs";
+import { DOC_SLUGS, DOCS_UPDATED, docsUI, docOf, docsPath, docPath } from "../i18n/docs";
 import { appNode, breadcrumbNode } from "../lib/seo";
 import { edHTML } from "../lib/editor";
 
@@ -19,10 +19,16 @@ const next = DOC_SLUGS[i + 1];
 const graph = [
   appNode(lang),
   breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: ui.h1, path: docsPath(lang) }, { name: d.title, path }]),
-  { "@type": "TechArticle", "@id": `${url}#article`, headline: d.title, description: d.description, inLanguage: lang, mainEntityOfPage: url, about: { "@id": `${SITE}/#app` }, isPartOf: { "@type": "CreativeWork", name: ui.h1, url: SITE + docsPath(lang) } },
+  {
+    "@type": "TechArticle", "@id": `${url}#article`, headline: d.title, description: d.description, inLanguage: lang,
+    datePublished: DOCS_UPDATED, dateModified: DOCS_UPDATED, image: `${SITE}/og.png`,
+    author: { "@type": "Organization", name: "EasyShoot", url: `${SITE}/` },
+    publisher: { "@type": "Organization", name: "EasyShoot", logo: { "@type": "ImageObject", url: `${SITE}/icon.png` } },
+    mainEntityOfPage: url, about: { "@id": `${SITE}/#app` }, isPartOf: { "@type": "CreativeWork", name: ui.h1, url: SITE + docsPath(lang) },
+  },
 ];
 ---
-<Base lang={lang} title={`${d.title} · ${ui.h1} | EasyShoot`} description={d.description} alternates={alternatesFor(l => docPath(l, slug))} graph={graph} ogType="article">
+<Base lang={lang} title={`${d.title} · ${ui.h1} | EasyShoot`} description={d.description} alternates={alternatesFor(l => docPath(l, slug))} graph={graph} ogType="article" meta={[{ property: "article:published_time", content: DOCS_UPDATED }, { property: "article:modified_time", content: DOCS_UPDATED }]}>
 <main class="doc docs">
   <div class="wrap docs-layout">
     <DocsNav lang={lang} current={slug} />

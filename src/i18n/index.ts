@@ -24,6 +24,7 @@ export function useT(lang: Lang) {
 }
 
 export const tabsFor = (lang: Lang) => (data.tabs as Record<Lang, { t: string; b: string; k: string[] }[]>)[lang];
+export const shotAlts = (lang: Lang) => (data.shots as Record<Lang, string[]>)[lang];
 
 // The privacy and support pages exist in English and Arabic only.
 export const privacyPath = (lang: Lang) => (lang === "ar" ? "/ar/privacy.html" : "/privacy.html");

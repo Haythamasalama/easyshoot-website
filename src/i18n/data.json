@@ -37,7 +37,6 @@
    "tab.mark": "Mark up",
    "tab.pixel": "Hide",
    "tab.bg": "Background",
-   "tab.ar": "Text",
    "more.eyebrow": "Everyday Mac work",
    "more.title": "Small things, done properly.",
    "fmt.t": "Export your way",
@@ -97,7 +96,7 @@
    "theme.toLight": "Switch to light mode",
    "theme.toDark": "Switch to dark mode",
    "seo.title": "EasyShoot: screenshot app for Mac",
-   "seo.desc": "Capture an area, a window or the full screen on your Mac, mark it up with arrows, shapes, numbered steps, pixelation and blur, and share it in seconds. No account, nothing uploaded.",
+   "seo.desc": "Capture an area, a window or the full screen on your Mac, mark it up with arrows, steps and blur, and share it in seconds. No account, nothing uploaded.",
    "lang.label": "Language",
    "theme.toggle": "Switch theme",
    "icon.alt": "EasyShoot app icon",
@@ -115,7 +114,8 @@
    "mode.window": "Window",
    "style.t": "Shapes, your way",
    "style.b": "Solid, dashed or dotted lines, a fill colour, sharp or round edges, any angle and opacity. Select several marks and restyle them at once.",
-   "nav.docs": "User guide"
+   "nav.docs": "User guide",
+   "ui.close": "Close"
   },
   "ar": {
    "nav.features": "المزايا",
@@ -158,7 +158,6 @@
    "tab.mark": "التوضيح",
    "tab.pixel": "الإخفاء",
    "tab.bg": "الخلفية",
-   "tab.ar": "النص",
    "more.eyebrow": "عمل يومي على الماك",
    "more.title": "تفاصيل صغيرة، متقنة.",
    "fmt.t": "صدّر كما تريد",
@@ -228,7 +227,7 @@
    "foot.press": "الملف الصحفي",
    "foot.changelog": "سجل التحديثات",
    "map.title": "خريطة الموقع",
-   "map.desc": "كل صفحات موقع EasyShoot، بكل اللغات.",
+   "map.desc": "كل صفحات موقع EasyShoot بكل اللغات: دليل الاستخدام والشروحات والمقارنات والخصوصية والدعم.",
    "map.pages": "الصفحات",
    "t.diamond": "معيّن",
    "t.pen": "قلم",
@@ -236,7 +235,8 @@
    "mode.window": "نافذة",
    "style.t": "أشكال بالطريقة التي تريدها",
    "style.b": "خط متصل أو متقطّع أو منقّط، ولون تعبئة، وحواف حادة أو مدوّرة، وأي زاوية وشفافية. حدّد أكثر من علامة وغيّر نمطها معًا.",
-   "nav.docs": "دليل الاستخدام"
+   "nav.docs": "دليل الاستخدام",
+   "ui.close": "إغلاق"
   },
   "fr": {
    "nav.features": "Fonctionnalités",
@@ -276,7 +276,6 @@
    "tab.mark": "Annoter",
    "tab.pixel": "Masquer",
    "tab.bg": "Arrière-plan",
-   "tab.ar": "Texte",
    "more.eyebrow": "Le Mac au quotidien",
    "more.title": "Les petites choses, bien faites.",
    "fmt.t": "Exportez à votre façon",
@@ -335,7 +334,7 @@
    "theme.toLight": "Passer en mode clair",
    "theme.toDark": "Passer en mode sombre",
    "seo.title": "EasyShoot : l’app de capture d’écran pour Mac",
-   "seo.desc": "Capturez une zone, une fenêtre ou tout l’écran sur votre Mac, annotez avec flèches, formes, étapes numérotées, pixelisation et flou, et partagez en quelques secondes. Sans compte, rien n’est envoyé.",
+   "seo.desc": "Capturez une zone, une fenêtre ou tout l’écran sur Mac, annotez avec flèches, étapes et flou, et partagez en quelques secondes. Sans compte, rien n’est envoyé.",
    "lang.label": "Langue",
    "theme.toggle": "Changer de thème",
    "icon.alt": "Icône de l’app EasyShoot",
@@ -353,7 +352,8 @@
    "mode.window": "Fenêtre",
    "style.t": "Des formes à votre façon",
    "style.b": "Trait continu, en tirets ou pointillé, couleur de fond, bords droits ou arrondis, n’importe quel angle et opacité. Sélectionnez plusieurs repères et changez leur style d’un coup.",
-   "nav.docs": "Guide d’utilisation"
+   "nav.docs": "Guide d’utilisation",
+   "ui.close": "Fermer"
   },
   "es": {
    "nav.features": "Funciones",
@@ -393,7 +393,6 @@
    "tab.mark": "Anotar",
    "tab.pixel": "Ocultar",
    "tab.bg": "Fondo",
-   "tab.ar": "Texto",
    "more.eyebrow": "El Mac de cada día",
    "more.title": "Los detalles, bien hechos.",
    "fmt.t": "Exporta a tu manera",
@@ -452,7 +451,7 @@
    "theme.toLight": "Cambiar a modo claro",
    "theme.toDark": "Cambiar a modo oscuro",
    "seo.title": "EasyShoot: app de capturas de pantalla para Mac",
-   "seo.desc": "Captura un área, una ventana o la pantalla completa en tu Mac, anótala con flechas, formas, pasos numerados, pixelado y desenfoque, y compártela en segundos. Sin cuenta, no se sube nada.",
+   "seo.desc": "Captura un área, una ventana o toda la pantalla en tu Mac, anótala con flechas, pasos y desenfoque, y compártela en segundos. Sin cuenta, sin subidas.",
    "lang.label": "Idioma",
    "theme.toggle": "Cambiar tema",
    "icon.alt": "Icono de la app EasyShoot",
@@ -470,7 +469,8 @@
    "mode.window": "Ventana",
    "style.t": "Formas a tu manera",
    "style.b": "Trazo continuo, discontinuo o punteado, color de relleno, bordes rectos o redondeados, cualquier ángulo y opacidad. Selecciona varias marcas y cambia su estilo a la vez.",
-   "nav.docs": "Guía de uso"
+   "nav.docs": "Guía de uso",
+   "ui.close": "Cerrar"
   },
   "de": {
    "nav.features": "Funktionen",
@@ -510,7 +510,6 @@
    "tab.mark": "Markieren",
    "tab.pixel": "Verbergen",
    "tab.bg": "Hintergrund",
-   "tab.ar": "Text",
    "more.eyebrow": "Mac-Alltag",
    "more.title": "Kleine Dinge, richtig gemacht.",
    "fmt.t": "Exportieren, wie du willst",
@@ -569,7 +568,7 @@
    "theme.toLight": "Zum hellen Modus wechseln",
    "theme.toDark": "Zum dunklen Modus wechseln",
    "seo.title": "EasyShoot: Screenshot-App für den Mac",
-   "seo.desc": "Nimm einen Bereich, ein Fenster oder den ganzen Bildschirm auf deinem Mac auf, markiere ihn mit Pfeilen, Formen, nummerierten Schritten, Verpixeln und Weichzeichnen und teile ihn in Sekunden. Kein Konto, nichts wird hochgeladen.",
+   "seo.desc": "Bereich, Fenster oder ganzen Bildschirm am Mac aufnehmen, mit Pfeilen, Schritten und Weichzeichner markieren und in Sekunden teilen. Kein Konto, kein Upload.",
    "lang.label": "Sprache",
    "theme.toggle": "Design wechseln",
    "icon.alt": "App-Symbol von EasyShoot",
@@ -587,7 +586,8 @@
    "mode.window": "Fenster",
    "style.t": "Formen, wie du sie willst",
    "style.b": "Durchgezogen, gestrichelt oder gepunktet, eine Füllfarbe, eckige oder runde Ecken, jeder Winkel und jede Deckkraft. Wähle mehrere Markierungen aus und gestalte sie auf einmal.",
-   "nav.docs": "Benutzerhandbuch"
+   "nav.docs": "Benutzerhandbuch",
+   "ui.close": "Schließen"
   }
  },
  "ed": {
@@ -868,13 +868,6 @@
     "t": "Ready to post in one click.",
     "b": "Put any shot on a background with padding, rounded corners and a soft shadow.",
     "k": []
-   },
-   {
-    "t": "Text in any language.",
-    "b": "Any font on your Mac, plain, in a bubble or outlined, and Arabic or Hebrew flow right to left on their own.",
-    "k": [
-     "T"
-    ]
    }
   ],
   "ar": [
@@ -907,13 +900,6 @@
     "t": "جاهزة للنشر بنقرة.",
     "b": "ضع أي لقطة على خلفية مع هوامش وزوايا دائرية وظل ناعم.",
     "k": []
-   },
-   {
-    "t": "النص بأي لغة.",
-    "b": "بأي خط على جهازك، عاديًا أو في فقاعة أو بإطار، والعربية تُكتب من اليمين لليسار تلقائيًا بحروف متصلة صحيحة.",
-    "k": [
-     "T"
-    ]
    }
   ],
   "fr": [
@@ -946,13 +932,6 @@
     "t": "Prête à publier en un clic.",
     "b": "Posez n’importe quelle capture sur un fond, avec marges, coins arrondis et ombre douce.",
     "k": []
-   },
-   {
-    "t": "Du texte dans toutes les langues.",
-    "b": "N’importe quelle police de votre Mac, simple, en bulle ou avec contour, et l’arabe ou l’hébreu s’écrivent de droite à gauche tout seuls.",
-    "k": [
-     "T"
-    ]
    }
   ],
   "es": [
@@ -985,13 +964,6 @@
     "t": "Lista para publicar en un clic.",
     "b": "Pon cualquier captura sobre un fondo con márgenes, esquinas redondeadas y una sombra suave.",
     "k": []
-   },
-   {
-    "t": "Texto en cualquier idioma.",
-    "b": "Cualquier fuente de tu Mac, simple, en burbuja o con contorno, y el árabe o el hebreo van de derecha a izquierda solos.",
-    "k": [
-     "T"
-    ]
    }
   ],
   "de": [
@@ -1024,14 +996,241 @@
     "t": "Mit einem Klick bereit zum Posten.",
     "b": "Leg jeden Screenshot auf einen Hintergrund mit Abstand, runden Ecken und weichem Schatten.",
     "k": []
-   },
-   {
-    "t": "Text in jeder Sprache.",
-    "b": "Jede Schrift auf deinem Mac, einfach, als Sprechblase oder mit Kontur, und Arabisch oder Hebräisch laufen von selbst von rechts nach links.",
-    "k": [
-     "T"
-    ]
    }
   ]
+ },
+ "shots": {
+  "en": [
+   "The EasyShoot editor: a dashed box with step 1, a curved arrow from a Lowest day note and a circled Rejected badge with step 2",
+   "The EasyShoot editor with a dashed box selected and its Style options: stroke colour, fill, width, dashes and rounded edges",
+   "The EasyShoot editor with a blurred phone number selected and the blur strength slider",
+   "The EasyShoot editor framing a dashboard on a blue gradient, with the Background tab open",
+   "The EasyShoot editor in Arabic: a dashed box with step 1, a curved arrow from an Arabic note and a circled badge with step 2"
+  ],
+  "ar": [
+   "محرر EasyShoot: مربع متقطّع مع الخطوة 1، وسهم منحنٍ من ملاحظة «أقل يوم»، وشارة محاطة بدائرة مع الخطوة 2",
+   "محرر EasyShoot مع مربع متقطّع محدد وخيارات النمط: لون الخط والتعبئة والسماكة والتقطيع والحواف المدوّرة",
+   "محرر EasyShoot مع رقم هاتف مموّه محدد ومنزلق قوة التمويه",
+   "محرر EasyShoot يضع لوحة بيانات على خلفية متدرجة زرقاء، مع تبويب الخلفية مفتوحًا",
+   "محرر EasyShoot بالعربية: مربع متقطّع مع الخطوة 1، وسهم منحنٍ من ملاحظة عربية، وشارة محاطة بدائرة مع الخطوة 2"
+  ],
+  "fr": [
+   "L’éditeur EasyShoot : un cadre en pointillés avec l’étape 1, une flèche courbe depuis une note « Lowest day » et un badge entouré avec l’étape 2",
+   "L’éditeur EasyShoot avec un cadre en pointillés sélectionné et ses options de style : couleur, remplissage, épaisseur, tirets et coins arrondis",
+   "L’éditeur EasyShoot avec un numéro de téléphone flouté sélectionné et le curseur d’intensité du flou",
+   "L’éditeur EasyShoot qui place un tableau de bord sur un dégradé bleu, avec l’onglet Arrière-plan ouvert",
+   "L’éditeur EasyShoot en arabe : un cadre en pointillés avec l’étape 1, une flèche courbe depuis une note en arabe et un badge entouré avec l’étape 2"
+  ],
+  "es": [
+   "El editor de EasyShoot: un recuadro discontinuo con el paso 1, una flecha curva desde una nota «Lowest day» y una insignia rodeada con el paso 2",
+   "El editor de EasyShoot con un recuadro discontinuo seleccionado y sus opciones de estilo: color, relleno, grosor, guiones y bordes redondeados",
+   "El editor de EasyShoot con un número de teléfono difuminado seleccionado y el control de intensidad del desenfoque",
+   "El editor de EasyShoot colocando un panel sobre un degradado azul, con la pestaña Fondo abierta",
+   "El editor de EasyShoot en árabe: un recuadro discontinuo con el paso 1, una flecha curva desde una nota en árabe y una insignia rodeada con el paso 2"
+  ],
+  "de": [
+   "Der EasyShoot-Editor: ein gestrichelter Rahmen mit Schritt 1, ein gebogener Pfeil von einer Notiz „Lowest day“ und ein eingekreistes Abzeichen mit Schritt 2",
+   "Der EasyShoot-Editor mit ausgewähltem gestricheltem Rahmen und seinen Stiloptionen: Farbe, Füllung, Stärke, Striche und abgerundete Ecken",
+   "Der EasyShoot-Editor mit einer ausgewählten, unscharf gemachten Telefonnummer und dem Regler für die Stärke",
+   "Der EasyShoot-Editor setzt ein Dashboard auf einen blauen Verlauf, mit geöffnetem Tab Hintergrund",
+   "Der EasyShoot-Editor auf Arabisch: ein gestrichelter Rahmen mit Schritt 1, ein gebogener Pfeil von einer arabischen Notiz und ein eingekreistes Abzeichen mit Schritt 2"
+  ]
+ },
+ "dash": {
+  "en": {
+   "app": "WhatsApp Business Monitor",
+   "nav1": "Overview",
+   "nav2": "Manage accounts",
+   "nav3": "Settings",
+   "accts": "WhatsApp accounts",
+   "s1": "Yasmin Store",
+   "s2": "Yasmin Store Jeddah",
+   "title": "Overview",
+   "since": "2 accounts · Since October 1",
+   "c1": "This month's cost",
+   "c1s": "All accounts",
+   "c2": "Messages sent",
+   "c2s": "Average $0.0145 per message",
+   "c3": "Templates",
+   "c3s": "Approved: 12",
+   "c4": "Needs attention",
+   "c4s": "In review 2 · Rejected 2 · Paused 2",
+   "daily": "Daily cost",
+   "cost": "Cost",
+   "msgs": "Messages",
+   "byAcct": "Cost by account",
+   "m1": "9,022 messages · 70%",
+   "m2": "3,801 messages · 30%",
+   "table": "Accounts",
+   "h1": "Account",
+   "h2": "This month's cost",
+   "h3": "Messages",
+   "h4": "Templates",
+   "h5": "Needs attention",
+   "h6": "Number quality",
+   "appr": "Approved: 6",
+   "rej": "Rejected 1",
+   "high": "High",
+   "low": "Lowest day",
+   "d1": "Oct 1",
+   "d2": "Oct 11",
+   "d3": "Oct 21"
+  },
+  "ar": {
+   "app": "مراقب واتساب للأعمال",
+   "nav1": "نظرة عامة",
+   "nav2": "إدارة الحسابات",
+   "nav3": "الإعدادات",
+   "accts": "حسابات واتساب",
+   "s1": "متجر الياسمين",
+   "s2": "متجر الياسمين · جدة",
+   "title": "نظرة عامة",
+   "since": "حسابان · منذ 1 أكتوبر",
+   "c1": "تكلفة الشهر",
+   "c1s": "كل الحسابات",
+   "c2": "الرسائل المرسلة",
+   "c2s": "متوسط $0.0145 للرسالة",
+   "c3": "القوالب",
+   "c3s": "معتمد: 12",
+   "c4": "تحتاج متابعة",
+   "c4s": "قيد المراجعة 2 · مرفوض 2 · موقوف 2",
+   "daily": "التكلفة اليومية",
+   "cost": "التكلفة",
+   "msgs": "الرسائل",
+   "byAcct": "التكلفة حسب الحساب",
+   "m1": "9,022 رسالة · 70٪",
+   "m2": "3,801 رسالة · 30٪",
+   "table": "الحسابات",
+   "h1": "الحساب",
+   "h2": "تكلفة الشهر",
+   "h3": "الرسائل",
+   "h4": "القوالب",
+   "h5": "تحتاج متابعة",
+   "h6": "جودة الرقم",
+   "appr": "معتمد: 6",
+   "rej": "مرفوض 1",
+   "high": "عالية",
+   "low": "أقل يوم",
+   "d1": "1 أكتوبر",
+   "d2": "11 أكتوبر",
+   "d3": "21 أكتوبر"
+  },
+  "fr": {
+   "app": "WhatsApp Business Monitor",
+   "nav1": "Vue d’ensemble",
+   "nav2": "Gérer les comptes",
+   "nav3": "Réglages",
+   "accts": "Comptes WhatsApp",
+   "s1": "Yasmin Store",
+   "s2": "Yasmin Store Djeddah",
+   "title": "Vue d’ensemble",
+   "since": "2 comptes · Depuis le 1er octobre",
+   "c1": "Coût du mois",
+   "c1s": "Tous les comptes",
+   "c2": "Messages envoyés",
+   "c2s": "0,0145 $ par message en moyenne",
+   "c3": "Modèles",
+   "c3s": "Approuvés : 12",
+   "c4": "À traiter",
+   "c4s": "En revue 2 · Refusés 2 · En pause 2",
+   "daily": "Coût quotidien",
+   "cost": "Coût",
+   "msgs": "Messages",
+   "byAcct": "Coût par compte",
+   "m1": "9 022 messages · 70 %",
+   "m2": "3 801 messages · 30 %",
+   "table": "Comptes",
+   "h1": "Compte",
+   "h2": "Coût du mois",
+   "h3": "Messages",
+   "h4": "Modèles",
+   "h5": "À traiter",
+   "h6": "Qualité du numéro",
+   "appr": "Approuvés : 6",
+   "rej": "Refusé 1",
+   "high": "Élevée",
+   "low": "Jour le plus bas",
+   "d1": "1 oct.",
+   "d2": "11 oct.",
+   "d3": "21 oct."
+  },
+  "es": {
+   "app": "WhatsApp Business Monitor",
+   "nav1": "Resumen",
+   "nav2": "Gestionar cuentas",
+   "nav3": "Ajustes",
+   "accts": "Cuentas de WhatsApp",
+   "s1": "Yasmin Store",
+   "s2": "Yasmin Store Yeda",
+   "title": "Resumen",
+   "since": "2 cuentas · Desde el 1 de octubre",
+   "c1": "Coste del mes",
+   "c1s": "Todas las cuentas",
+   "c2": "Mensajes enviados",
+   "c2s": "Media de 0,0145 $ por mensaje",
+   "c3": "Plantillas",
+   "c3s": "Aprobadas: 12",
+   "c4": "Requieren atención",
+   "c4s": "En revisión 2 · Rechazadas 2 · En pausa 2",
+   "daily": "Coste diario",
+   "cost": "Coste",
+   "msgs": "Mensajes",
+   "byAcct": "Coste por cuenta",
+   "m1": "9022 mensajes · 70 %",
+   "m2": "3801 mensajes · 30 %",
+   "table": "Cuentas",
+   "h1": "Cuenta",
+   "h2": "Coste del mes",
+   "h3": "Mensajes",
+   "h4": "Plantillas",
+   "h5": "Requieren atención",
+   "h6": "Calidad del número",
+   "appr": "Aprobadas: 6",
+   "rej": "Rechazada 1",
+   "high": "Alta",
+   "low": "Día más bajo",
+   "d1": "1 oct",
+   "d2": "11 oct",
+   "d3": "21 oct"
+  },
+  "de": {
+   "app": "WhatsApp Business Monitor",
+   "nav1": "Übersicht",
+   "nav2": "Konten verwalten",
+   "nav3": "Einstellungen",
+   "accts": "WhatsApp-Konten",
+   "s1": "Yasmin Store",
+   "s2": "Yasmin Store Dschidda",
+   "title": "Übersicht",
+   "since": "2 Konten · Seit 1. Oktober",
+   "c1": "Kosten diesen Monat",
+   "c1s": "Alle Konten",
+   "c2": "Gesendete Nachrichten",
+   "c2s": "Im Schnitt 0,0145 $ pro Nachricht",
+   "c3": "Vorlagen",
+   "c3s": "Genehmigt: 12",
+   "c4": "Braucht Aufmerksamkeit",
+   "c4s": "In Prüfung 2 · Abgelehnt 2 · Pausiert 2",
+   "daily": "Tageskosten",
+   "cost": "Kosten",
+   "msgs": "Nachrichten",
+   "byAcct": "Kosten pro Konto",
+   "m1": "9.022 Nachrichten · 70 %",
+   "m2": "3.801 Nachrichten · 30 %",
+   "table": "Konten",
+   "h1": "Konto",
+   "h2": "Kosten diesen Monat",
+   "h3": "Nachrichten",
+   "h4": "Vorlagen",
+   "h5": "Braucht Aufmerksamkeit",
+   "h6": "Nummernqualität",
+   "appr": "Genehmigt: 6",
+   "rej": "Abgelehnt 1",
+   "high": "Hoch",
+   "low": "Niedrigster Tag",
+   "d1": "1. Okt.",
+   "d2": "11. Okt.",
+   "d3": "21. Okt."
+  }
  }
 }

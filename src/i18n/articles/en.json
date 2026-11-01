@@ -79,7 +79,7 @@
     },
     "annotate-screenshot-mac": {
       "short": "Arrows and numbered steps",
-      "title": "How to add arrows, text and numbered steps to a screenshot on Mac | EasyShoot",
+      "title": "Add arrows, text and steps to a Mac screenshot | EasyShoot",
       "description": "Mark up screenshots on your Mac with arrows, boxes, text and numbered steps, one key per tool. A quick guide with EasyShoot.",
       "h1": "How to add arrows and numbered steps to a screenshot on a Mac",
       "intro": "A good screenshot points at one thing and says what to do. EasyShoot gives every markup tool a single key, so you can box, number and point without reaching for the mouse.",
@@ -442,7 +442,7 @@
     },
     "macos-screenshot-alternative": {
       "short": "vs macOS Screenshot",
-      "title": "Better than Command-Shift-5? EasyShoot vs the Mac's Screenshot tool",
+      "title": "Better than Command-Shift-5? EasyShoot vs the Mac's tool",
       "description": "What EasyShoot adds to the screenshot tool built into macOS: numbered steps, pixelation and blur, shapes you can style, backgrounds and presets.",
       "h1": "EasyShoot vs the Mac's built-in Screenshot tool",
       "intro": "macOS includes a solid Screenshot tool (Shift-Command-5) with screen recording and Markup. EasyShoot builds on the same idea for screenshots you want to explain and share.",

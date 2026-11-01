@@ -69,40 +69,53 @@ export function shotHTML(mode, lang) {
 
 const sec = (title: string, body: string, value = "") =>
   `<div class="ed-sec"><div class="ed-cap"><span>${title}</span>${value ? `<em>${value}</em>` : ""}</div>${body}</div>`;
-const swatches = (colors: string[], on: number, none = false) =>
-  `<div class="ed-sw">${none ? `<i class="none${on === -1 ? " on" : ""}"></i>` : ""}${colors.map((c, i) => `<i class="${i === on ? "on" : ""}" style="--c:${c}"></i>`).join("")}</div>`;
-const options = (keys: string[], on: number) =>
-  `<div class="ed-opts">${keys.map((k, i) => `<b class="${i === on ? "on" : ""}">${opt(k)}</b>`).join("")}</div>`;
-const slider = (v: number) => `<div class="ed-sl" style="--v:${v}%"></div>`;
+// With a control name the inspector is live: real buttons and sliders that set a CSS variable on the page (site.ts).
+const pick = (ctl: string | undefined, v: string, on: boolean, label: string) =>
+  ctl ? `type="button" data-ctl="${ctl}" data-v="${v}" aria-pressed="${on}" aria-label="${label}"` : "";
+const swatches = (colors: string[], on: number, none = false, ctl?: string, title = "") => {
+  const tag = ctl ? "button" : "i";
+  return `<div class="ed-sw">${none ? `<i class="none${on === -1 ? " on" : ""}"></i>` : ""}${colors.map((c, i) => `<${tag} class="${i === on ? "on" : ""}" style="--c:${c}" ${pick(ctl, c, i === on, `${title} ${i + 1}`)}></${tag}>`).join("")}</div>`;
+};
+const options = (keys: string[], on: number, ctl?: string, title = "") => {
+  const tag = ctl ? "button" : "b";
+  return `<div class="ed-opts">${keys.map((k, i) => `<${tag} class="${i === on ? "on" : ""}" ${pick(ctl, k, i === on, `${title} ${i + 1}`)}>${opt(k)}</${tag}>`).join("")}</div>`;
+};
+const slider = (v: number, ctl?: string, title = "") => ctl
+  ? `<input class="ed-sl ed-range" type="range" min="0" max="100" value="${v}" style="--v:${v}%" data-ctl="${ctl}" aria-label="${title}">`
+  : `<div class="ed-sl" style="--v:${v}%"></div>`;
 const seg = (labels: string[], on: number) =>
   `<div class="ed-seg">${labels.map((l, i) => `<span class="${i === on ? "on" : ""}">${l}</span>`).join("")}</div>`;
 
-function inspectorHTML(mode: string, s: any, lang: string) {
+function inspectorHTML(mode: string, s: any, lang: string, live = false) {
+  const c = (name: string) => (live ? name : undefined);
   const tabs = seg([s.style, s.bg, s.exp], mode === "bg" ? 1 : 0);
   if (mode === "bg") {
     const fills = ["linear-gradient(135deg,#E9EDF2,#C9D1DC)", "linear-gradient(135deg,#84B6FF,#4790FB)", "linear-gradient(135deg,#FFE79D,#FFA666)", "linear-gradient(135deg,#B0E8BA,#0AA99B)", "linear-gradient(135deg,#E2CCFF,#7C83FA)", "#1C1F24", "linear-gradient(135deg,#FFC4DE,#DD5DA1)", "linear-gradient(135deg,#FEF3EB,#ECD2C0)"];
     const rows = [[s.padding, "56", 55], [s.radius, "12", 30], [s.shadow, "30", 40]] as const;
     return tabs
-      + sec(s.fill, seg([s.grad, s.solid, s.custom, s.none], 0) + `<div class="ed-sw ed-sw-grid">${fills.map((c, i) => `<i class="sq${i === 0 ? " on" : ""}" style="--c:${c}"></i>`).join("")}</div>`)
-      + sec(s.layout, `<div class="ed-group">${rows.map(([l, v, p]) => `<div class="ed-cap"><span>${l}</span><em>${v}</em></div>${slider(p)}`).join("")}</div>`);
+      + sec(s.fill, seg([s.grad, s.solid, s.custom, s.none], 0) + `<div class="ed-sw ed-sw-grid">${fills.map((f, i) => live
+      ? `<button class="sq${i === 1 ? " on" : ""}" style="--c:${f}" ${pick("fill", f, i === 1, `${s.fill} ${i + 1}`)}></button>`
+      : `<i class="sq${i === 0 ? " on" : ""}" style="--c:${f}"></i>`).join("")}</div>`)
+      + sec(s.layout, `<div class="ed-group">${rows.map(([l, v, p], i) => `<div class="ed-cap"><span>${l}</span><em>${v}</em></div>${slider(p, i === 0 ? c("pad") : undefined, l)}`).join("")}</div>`);
   }
-  if (mode === "pixel") return tabs + sec(s.look, seg([s.pixels, s.blur], 1)) + sec(s.strength, slider(38), "12");
+  if (mode === "pixel") return tabs + sec(s.look, seg([s.pixels, s.blur], 1)) + sec(s.strength, slider(38, c("blur"), s.strength), "12");
   if (mode === "ar") return tabs + sec(s.color, swatches(STROKES, 1))
     + sec(s.font, `<div class="ed-pop"><span>${lang === "ar" ? "SF Arabic" : "SF Pro"}</span>${glyph("chevron")}</div>`)
     + sec(s.size, slider(42), "28") + sec(s.look, seg([s.plain, s.bubble, s.outline], 1)) + sec(s.dir, seg([s.auto, "LTR", "RTL"], 0));
   const shape = mode === "shape";
-  return tabs + sec(s.stroke, swatches(STROKES, shape ? 2 : 1)) + sec(s.bg, swatches(FILLS, shape ? 3 : -1, true))
+  return tabs + sec(s.stroke, swatches(STROKES, shape && !live ? 2 : 1, false, c(shape ? "box" : "mark"), s.stroke)) + sec(s.bg, swatches(FILLS, shape ? 3 : -1, true))
     + sec(s.strokeW, options(["thin", "medium", "bold"], 1) + slider(14), "5")
-    + sec(s.strokeS, options(["solid", "dashed", "dotted"], shape ? 1 : 0))
+    + sec(s.strokeS, options(["solid", "dashed", "dotted"], shape ? 1 : 0, shape ? c("dashes") : undefined, s.strokeS))
     + sec(s.edges, options(["sharp", "round"], 1))
     + sec(s.opacity, slider(100), "100%");
 }
 
-export function edHTML(mode, lang) {
+// `shot` swaps the drawn page inside the canvas; `live` makes the inspector controls work.
+export function edHTML(mode, lang, { shot = shotHTML(mode, lang), live = false } = {}) {
   const s = ED[lang];
   const on = ACTIVE_TOOL[mode];
   const capsule = (keys: string[]) => `<span class="kc">${keys.map(k => `<b class="${k === on ? "on" : ""}">${glyph(k)}</b>`).join("")}</span>`;
-  const status = mode === "mark" ? `<span class="ed-status">${glyph("check")}${s.copied}</span>` : "";
+  const status = mode === "mark" && !live ? `<span class="ed-status">${glyph("check")}${s.copied}</span>` : "";
   return `<div class="ed-in" dir="${lang === "ar" ? "rtl" : "ltr"}">
   <div class="ed-bar">
     <span class="ed-tl"><i></i><i></i><i></i></span>
@@ -116,10 +129,10 @@ export function edHTML(mode, lang) {
   <div class="ed-body">
     <div class="ed-canvas">
       <div class="ed-tools">${TOOL_GROUPS.map(capsule).join("")}<span class="kc"><b>${glyph("undo")}</b><b>${glyph("redo")}</b></span></div>
-      <div class="frame">${shotHTML(mode, lang)}</div>
+      <div class="frame">${shot}</div>
       ${status}
     </div>
-    <div class="ed-side">${inspectorHTML(mode, s, lang)}</div>
+    <div class="ed-side">${inspectorHTML(mode, s, lang, live)}</div>
   </div>
 </div>`;
 }
