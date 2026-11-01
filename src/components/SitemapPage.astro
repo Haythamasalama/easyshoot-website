@@ -5,6 +5,7 @@ import { content, articleOf, hubPath, articlePath, alternatesFor, GUIDES, COMPAR
 import { breadcrumbNode } from "../lib/seo";
 import press from "../i18n/press.json";
 import changelog from "../i18n/changelog.json";
+import { DOC_SLUGS, docOf, docsPath, docPath } from "../i18n/docs";
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -18,6 +19,7 @@ const groups = [
     { name: (changelog.page as any)[lang].h1, href: `${pagePath(lang)}changelog/` },
     { name: (press as any)[lang].h1, href: `${pagePath(lang)}press/` },
   ] },
+  { h: t("nav.docs"), hub: docsPath(lang), links: DOC_SLUGS.map(s => ({ name: docOf(lang, s).title, href: docPath(lang, s) })) },
   { h: ui.guides, hub: hubPath(lang, "guides"), links: GUIDES.map(a => ({ name: articleOf(lang, a.slug).h1, href: articlePath(lang, a) })) },
   { h: ui.compare, hub: hubPath(lang, "compare"), links: COMPARES.map(a => ({ name: articleOf(lang, a.slug).h1, href: articlePath(lang, a) })) },
   { h: t("foot.help"), links: [

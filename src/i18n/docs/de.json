@@ -1,0 +1,210 @@
+{
+  "ui": {
+    "title": "EasyShoot-Benutzerhandbuch: jede Funktion, Thema für Thema",
+    "description": "Das EasyShoot-Benutzerhandbuch für den Mac: Einrichtung, Aufnahme, Schnellzugriff, Markierwerkzeuge, Stile, Verpixeln und Weichzeichnen, Text, Hintergründe, Vorlagen, Export, Kurzbefehle, Einstellungen und Datenschutz.",
+    "h1": "Benutzerhandbuch",
+    "intro": "Alles, was EasyShoot kann, ein Thema nach dem anderen. Fang oben an oder spring direkt zu dem, was du brauchst.",
+    "groups": {
+      "start": "Loslegen",
+      "editor": "Der Editor",
+      "more": "Kurzbefehle und Einstellungen"
+    },
+    "topics": "Alle Themen",
+    "prev": "Zurück",
+    "next": "Weiter"
+  },
+  "topics": {
+    "getting-started": {
+      "title": "Erste Schritte",
+      "short": "Installieren, Aufnahme erlauben, ersten Screenshot machen.",
+      "description": "Installiere EasyShoot auf deinem Mac, erlaube die Bildschirmaufnahme und mach deinen ersten Screenshot.",
+      "intro": "EasyShoot läuft auf jedem Mac ab macOS 14 Sonoma, mit Apple Silicon oder Intel.",
+      "blocks": [
+        {
+          "h2": "In einer Minute bereit",
+          "html": "<ul><li>Lade EasyShoot aus dem Mac App Store.</li><li>Öffne es. Das <strong>Willkommensfenster</strong> fragt nach der Bildschirmaufnahme, die jeder Screenshot braucht. Klicke auf <strong>Erlauben …</strong>, schalte EasyShoot in der Liste ein und drücke dann <strong>Neu starten</strong>.</li><li>EasyShoot lebt in der Menüleiste. Klicke auf das Symbol und wähle <strong>Bereich aufnehmen…</strong>, oder drücke <kbd dir=\"ltr\">⌥⇧⌘4</kbd>.</li></ul>"
+        },
+        {
+          "h2": "Symbol nicht zu sehen?",
+          "html": "<p>Verdeckt die Notch das Symbol, nimm die Kurzbefehle. Um das Willkommensfenster wieder zu sehen, öffne EasyShoot aus dem Ordner Programme.</p>"
+        }
+      ]
+    },
+    "capture": {
+      "title": "Aufnahme",
+      "short": "Bereich, Fenster, ganzer Bildschirm oder ein vorhandenes Bild.",
+      "description": "Nimm mit EasyShoot einen Bereich, ein Fenster oder den ganzen Bildschirm auf, oder öffne ein kopiertes Bild oder eine Datei im Editor.",
+      "intro": "Jede Aufnahme hat ihr eigenes Kürzel. Die Standards nutzen Wahl-Umschalt-Befehl, damit sie den Mac-Kürzeln nie in die Quere kommen.",
+      "blocks": [
+        {
+          "html": "<table><thead><tr><th>Aufnahme</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bereich: über das Gewünschte ziehen</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Fenster: ein Fenster anklicken</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Ganzer Bildschirm</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Bild aus der Zwischenablage bearbeiten</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Bild öffnen …: eine Datei bearbeiten</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Fensterschatten",
+          "html": "<p>Um den Fensterschatten wegzulassen, schalte <strong>Fensterschatten einschließen</strong> unter Einstellungen › Allgemein aus.</p>"
+        }
+      ]
+    },
+    "quick-access": {
+      "title": "Schnellzugriff",
+      "short": "Was direkt nach einer Aufnahme passiert.",
+      "description": "Der Schnellzugriff in EasyShoot: einen Screenshot direkt nach der Aufnahme kopieren, sichern, bearbeiten oder ziehen, und festlegen, was nach jeder Aufnahme passiert.",
+      "intro": "Nach jeder Aufnahme zeigt der Schnellzugriff eine Miniatur in der Bildschirmecke. Kopiere sie, sichere sie, öffne sie im Editor oder zieh sie direkt in eine andere App.",
+      "blocks": [
+        {
+          "h2": "Festlegen, was passiert",
+          "html": "<p>Einstellungen › Allgemein › <strong>Nach der Aufnahme</strong> legt fest, was von selbst passiert:</p><ul><li><strong>In die Zwischenablage kopieren</strong></li><li><strong>In Ordner sichern</strong></li><li><strong>Editor sofort öffnen</strong></li><li><strong>Schnellzugriff anzeigen</strong></li><li><strong>Ton abspielen</strong></li></ul><p><strong>Schnellzugriff schließen nach</strong> legt fest, wie lange die Miniatur bleibt: nie, 5, 10 oder 30 Sekunden.</p>"
+        }
+      ]
+    },
+    "mark-up": {
+      "title": "Markieren",
+      "short": "Pfeile, Formen, nummerierte Schritte, Text und Stift.",
+      "description": "Die Markierwerkzeuge von EasyShoot und ihre Tasten: Pfeil, Linie, Rechteck, Raute, Ellipse, nummerierte Schritte, Text und Stift.",
+      "intro": "Jedes Werkzeug liegt auf einer Taste, so zeigst und erklärst du, ohne zur Werkzeugleiste zu greifen.",
+      "blocks": [
+        {
+          "art": "mark",
+          "alt": "Der EasyShoot-Editor mit einem Rahmen, zwei nummerierten Schritten, einem Pfeil und einer Notiz auf einer Bezahlseite.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Pfeil · A</strong>Zum Zeichnen ziehen; am mittleren Griff ziehen, um ihn zu biegen.</li><li><strong>Linie · L</strong>Eine gerade Linie zwischen zwei Punkten.</li><li><strong>Rechteck · R</strong>Rahme ein, worauf es ankommt.</li><li><strong>Raute · D</strong>Eine Form, die sich von Rahmen abhebt.</li><li><strong>Ellipse · O</strong>Kreise eine Zahl oder einen Knopf ein.</li><li><strong>Nummerierter Schritt · N</strong>Der Reihe nach klicken: 1, 2, 3 zählen sich selbst.</li><li><strong>Text · T</strong>Eine kurze Notiz genau dort, wo sie hingehört.</li><li><strong>Stift · P</strong>Von Hand zeichnen.</li></ul>"
+        },
+        {
+          "h2": "Eine Markierung ändern",
+          "html": "<p>Drücke <kbd dir=\"ltr\">V</kbd> zum Auswählen. Zieh eine Markierung, um sie zu bewegen, einen Griff, um ihre Größe zu ändern, und drücke Löschen, um sie zu entfernen. Jede Markierung bleibt bis zum Export bearbeitbar.</p>"
+        }
+      ]
+    },
+    "styles": {
+      "title": "Stile",
+      "short": "Farbe, Linie, Füllung, Ecken, Winkel und Deckkraft.",
+      "description": "Gestalte jede Markierung in EasyShoot: Farbe, Linienstärke, durchgezogene, gestrichelte oder gepunktete Linien, Füllung, runde Ecken, Winkel, Deckkraft und Schatten.",
+      "intro": "Der Tab „Stil“ im Inspektor folgt dem Werkzeug in der Hand oder der ausgewählten Markierung und zeigt nur, was sie nutzt.",
+      "blocks": [
+        {
+          "art": "shape",
+          "alt": "Der Tab „Stil“ mit einem gestrichelten, gefüllten Rahmen und einer gepunkteten Ellipse auf dem Screenshot.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Farbe und Stärke</strong>Fünf Farben, mehr unter „Weitere Farben“. Dünn, mittel oder fett, oder jede Stärke von 1 bis 30.</li><li><strong>Linienstil</strong>Durchgezogene, gestrichelte oder gepunktete Linien und Formen.</li><li><strong>Hintergrund</strong>Eine helle Füllung für Rechtecke, Rauten, Ellipsen und Schritte.</li><li><strong>Ecken und Winkel</strong>Eckig oder abgerundet. Tippe einen Winkel oder dreh am Griff; Umschalt rastet bei 15° ein.</li><li><strong>Pfeilspitze</strong>Normal oder spitz.</li><li><strong>Deckkraft und Schatten</strong>Blende eine Markierung ab und gib ihr bei Bedarf einen weichen Schatten.</li></ul>"
+        },
+        {
+          "h2": "Mehrere auf einmal",
+          "html": "<p>Drücke <kbd dir=\"ltr\">⌘A</kbd>, Umschalt-Klick oder zieh einen Rahmen über leere Fläche, um mehrere Markierungen auszuwählen. Bewege, gestalte oder lösche sie gemeinsam; eine Änderung betrifft nur die Einstellung, die du anfasst.</p>"
+        }
+      ]
+    },
+    "hide-details": {
+      "title": "Private Details verbergen",
+      "short": "E-Mails, Namen und Kartennummern verpixeln oder weichzeichnen.",
+      "description": "Verpixle oder zeichne private Details in einem Screenshot auf dem Mac mit EasyShoot weich, bevor du ihn teilst.",
+      "intro": "Verberge, was nicht raus soll, bevor das Bild deinen Mac verlässt.",
+      "blocks": [
+        {
+          "art": "pixel",
+          "alt": "Eine weichgezeichnete Kartennummer mit dem Werkzeug Verpixeln, der Tab „Stil“ auf Weichzeichnen.",
+          "html": "<ul><li>Drücke <kbd dir=\"ltr\">B</kbd> oder wähle Verpixeln.</li><li>Zieh über die E-Mail, die Kartennummer oder das Gesicht.</li><li>Wähle im Tab „Stil“ <strong>Pixel</strong> oder <strong>Weichzeichnen</strong> und stelle die <strong>Stärke</strong> ein.</li></ul><p>Das exportierte Bild enthält nur die verborgene Fassung, nicht das ursprüngliche Detail.</p>"
+        }
+      ]
+    },
+    "text": {
+      "title": "Text",
+      "short": "Jede Schrift, drei Darstellungen und Rechts-nach-links.",
+      "description": "Füge mit EasyShoot Text zu Screenshots hinzu: jede Mac- oder Google-Schrift, einfach, als Sprechblase oder mit Kontur, und Arabisch oder Hebräisch von rechts nach links.",
+      "intro": "Drücke T, klicke dorthin, wo die Notiz hin soll, und tippe.",
+      "blocks": [
+        {
+          "art": "ar",
+          "alt": "Eine Notiz als Sprechblase auf dem Screenshot, mit Schrift, Größe, Darstellung und Richtung im Tab „Stil“.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Schrift</strong>Jede Schrift deines Macs, oder eine Google-Schrift, die beim Auswählen geladen wird.</li><li><strong>Größe</strong>Mit dem Regler, oder zieh an der Ecke des Textes.</li><li><strong>Darstellung</strong>Einfach, Sprechblase oder Kontur.</li><li><strong>Richtung</strong>Auto schreibt Arabisch und Hebräisch von rechts nach links, Buchstaben korrekt verbunden; LTR oder RTL legt eine Zeile fest.</li></ul>"
+        }
+      ]
+    },
+    "background-and-crop": {
+      "title": "Hintergrund und Zuschneiden",
+      "short": "Gestalten, zuschneiden und Größe ändern.",
+      "description": "Leg einen Screenshot in EasyShoot auf einen Hintergrund mit Abstand, runden Ecken und Schatten, dann schneide ihn zu und ändere seine Größe.",
+      "intro": "Der Tab „Hintergrund“ macht eine Aufnahme bereit zum Posten.",
+      "blocks": [
+        {
+          "art": "bg",
+          "alt": "Der Screenshot auf einem sanften Verlauf, mit Füllung, Abstand, Eckenradius und Schatten im Tab „Hintergrund“.",
+          "html": "<p>Wähle einen Verlauf, eine Farbe, deine eigene Farbe oder keinen Hintergrund, dann Abstand, Eckenradius, Schatten, Seitenverhältnis und Ausrichtung.</p>"
+        },
+        {
+          "h2": "Zuschneiden, Größe und Zoom",
+          "html": "<ul class=\"feature-grid\"><li><strong>Zuschneiden · C</strong>Frei, oder fest auf 1:1, 4:3 oder 16:9.</li><li><strong>Größe ändern</strong>In Prozent oder auf eine genaue Breite.</li><li><strong>Zoom</strong>⌘+ und ⌘− für Details; ⌘0 Originalgröße und ⌘9 ins Fenster einpassen.</li></ul>"
+        }
+      ]
+    },
+    "presets": {
+      "title": "Vorlagen",
+      "short": "Einen Stil sichern und wiederverwenden.",
+      "description": "Sichere in EasyShoot Hintergrund, Markierungsstil und Export als Vorlage und mach sie zum Standard.",
+      "intro": "Eine Vorlage hält Hintergrund, Markierungsstil und Exporteinstellungen zusammen.",
+      "blocks": [
+        {
+          "html": "<ul><li>Zum Sichern öffne <strong>Vorlagen</strong> in der Werkzeugleiste des Editors und wähle <strong>Aktuellen Stil als Vorlage sichern …</strong>.</li><li>Zum Verwenden wähle sie im selben Menü.</li><li>Unter Einstellungen › Vorlagen wähle <strong>Als Standard</strong>, damit jeder neue Screenshot damit beginnt, oder <strong>Integrierte Vorlagen wiederherstellen</strong>.</li></ul><p>Ohne Standard beginnt jeder Screenshot mit den zuletzt benutzten Einstellungen.</p>"
+        }
+      ]
+    },
+    "export": {
+      "title": "Exportieren und teilen",
+      "short": "Kopieren, sichern, Formate und Größe.",
+      "description": "Kopiere oder sichere Screenshots aus EasyShoot als PNG, JPEG, HEIC oder TIFF in jeder Größe, oder zieh sie in eine andere App.",
+      "intro": "Kopiere, sichere oder zieh das Bild direkt in Nachrichten, Slack oder Mail.",
+      "blocks": [
+        {
+          "html": "<table><thead><tr><th>Aktion</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bild kopieren</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Sichern</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Format, Qualität und Größe",
+          "html": "<p>Der Tab „Export“ legt <strong>Format</strong> (PNG, JPEG, HEIC oder TIFF), Qualität und Größe fest. Wähle den <strong>Speicherort</strong> unter Einstellungen › Allgemein und schalte <strong>Editor nach dem Kopieren schließen</strong> ein, um in einem Schritt fertig zu sein.</p>"
+        }
+      ]
+    },
+    "shortcuts": {
+      "title": "Tastaturkurzbefehle",
+      "short": "Alle Tasten an einem Ort.",
+      "description": "Alle Kurzbefehle von EasyShoot: globale Aufnahme-Kürzel, Werkzeuge und Befehle des Editors.",
+      "intro": "Ändere die Aufnahme-Kürzel unter Einstellungen › Kurzbefehle. Die Editor-Tasten funktionieren, solange du keinen Text tippst.",
+      "blocks": [
+        {
+          "h2": "Aufnahme",
+          "html": "<table><thead><tr><th>Aufnahme</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bereich aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Fenster aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Ganzen Bildschirm aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Bild aus der Zwischenablage bearbeiten</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Editor-Werkzeuge",
+          "html": "<table><thead><tr><th>Werkzeug</th><th>Taste</th></tr></thead><tbody><tr><td>Auswählen & bewegen</td><td><kbd dir=\"ltr\">V</kbd></td></tr><tr><td>Zuschneiden</td><td><kbd dir=\"ltr\">C</kbd></td></tr><tr><td>Pfeil</td><td><kbd dir=\"ltr\">A</kbd></td></tr><tr><td>Linie</td><td><kbd dir=\"ltr\">L</kbd></td></tr><tr><td>Rechteck</td><td><kbd dir=\"ltr\">R</kbd></td></tr><tr><td>Raute</td><td><kbd dir=\"ltr\">D</kbd></td></tr><tr><td>Ellipse</td><td><kbd dir=\"ltr\">O</kbd></td></tr><tr><td>Text</td><td><kbd dir=\"ltr\">T</kbd></td></tr><tr><td>Nummerierter Schritt</td><td><kbd dir=\"ltr\">N</kbd></td></tr><tr><td>Stift</td><td><kbd dir=\"ltr\">P</kbd></td></tr><tr><td>Verpixeln</td><td><kbd dir=\"ltr\">B</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Editor-Befehle",
+          "html": "<table><thead><tr><th>Befehl</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bild kopieren</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Sichern</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Widerrufen</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Wiederholen</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Alle Markierungen auswählen</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Vergrößern / verkleinern</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Originalgröße / einpassen</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Inspektor ein- oder ausblenden</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+        }
+      ]
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "short": "Allgemein, Kurzbefehle, Vorlagen, Berechtigungen und Über.",
+      "description": "Was jeder Teil der EasyShoot-Einstellungen macht: Allgemein, Kurzbefehle, Vorlagen, Berechtigungen und Über.",
+      "intro": "Öffne Einstellungen … über das Symbol in der Menüleiste, oder drücke ⌘, wenn EasyShoot vorne ist.",
+      "blocks": [
+        {
+          "html": "<ul class=\"feature-grid\"><li><strong>Allgemein</strong>Was nach der Aufnahme passiert, Speicherort, Fensterschatten, Editor-Optionen und Update-Hinweise.</li><li><strong>Kurzbefehle</strong>Nimm deine eigenen Aufnahme-Kürzel auf.</li><li><strong>Vorlagen</strong>Umbenennen, löschen, als Standard festlegen oder die integrierten wiederherstellen.</li><li><strong>Berechtigungen</strong>Prüfe die Bildschirmaufnahme, die jeder Screenshot braucht.</li><li><strong>Über</strong>Version, Website und Support.</li></ul>"
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "short": "Was auf deinem Mac bleibt, und wann die App online geht.",
+      "description": "Wie EasyShoot mit Datenschutz umgeht: kein Konto, keine Cloud, kein Tracking, und die zwei einzigen Fälle, in denen es online geht.",
+      "intro": "Kein Konto, keine Cloud, kein Tracking. Deine Screenshots bleiben auf deinem Mac und gehen nur dorthin, wo du sie kopierst, sicherst oder hinziehst.",
+      "blocks": [
+        {
+          "h2": "Wann EasyShoot online geht",
+          "html": "<ul><li>Um eine Google-Schrift zu laden, die du für Text wählst.</li><li>Um im App Store nach einer neueren Version zu sehen. Schalte das mit <strong>Mitteilen, wenn ein Update verfügbar ist</strong> unter Einstellungen › Allgemein aus.</li></ul>"
+        },
+        {
+          "html": "<p>Lies die vollständige <a href=\"/privacy.html\">Datenschutzerklärung</a>.</p>"
+        }
+      ]
+    }
+  }
+}

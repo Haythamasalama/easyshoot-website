@@ -3,7 +3,6 @@ import Base from "../layouts/Base.astro";
 import { SITE, APP_STORE_URL, pagePath, useT, type Lang } from "../i18n";
 import { content, articleOf, hubPath, articlePath, alternatesFor, tagsFor, wordCount, readingTime, TOC_LABEL, GUIDES, COMPARES, type Article } from "../i18n/articles";
 import { appNode, faqNode, breadcrumbNode } from "../lib/seo";
-import { edHTML } from "../lib/editor";
 
 interface Props { lang: Lang; article: Article }
 const { lang, article } = Astro.props;
@@ -109,10 +108,9 @@ const meta = [
         </section>
       )}
 
-      {a.sections.map((s: { h2: string; html: string; art?: string; alt?: string }, i: number) => (
+      {a.sections.map((s: { h2: string; html: string }, i: number) => (
         <section class="doc-section reveal" id={`s${i + 1}`} aria-labelledby={`s${i + 1}-h`}>
           <h2 id={`s${i + 1}-h`}><a class="anchor" href={`#s${i + 1}`} aria-hidden="true">#</a>{s.h2}</h2>
-          {s.art && <figure class="doc-figure"><div class={`ed m-${s.art}`} role="img" aria-label={s.alt} set:html={edHTML(s.art, lang)} /></figure>}
           <div class="prose" set:html={s.html} />
         </section>
       ))}

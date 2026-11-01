@@ -114,7 +114,8 @@
    "tab.shape": "Shapes",
    "mode.window": "Window",
    "style.t": "Shapes, your way",
-   "style.b": "Solid, dashed or dotted lines, a fill colour, sharp or round edges, any angle and opacity. Select several marks and restyle them at once."
+   "style.b": "Solid, dashed or dotted lines, a fill colour, sharp or round edges, any angle and opacity. Select several marks and restyle them at once.",
+   "nav.docs": "User guide"
   },
   "ar": {
    "nav.features": "المزايا",
@@ -234,7 +235,8 @@
    "tab.shape": "الأشكال",
    "mode.window": "نافذة",
    "style.t": "أشكال بالطريقة التي تريدها",
-   "style.b": "خط متصل أو متقطّع أو منقّط، ولون تعبئة، وحواف حادة أو مدوّرة، وأي زاوية وشفافية. حدّد أكثر من علامة وغيّر نمطها معًا."
+   "style.b": "خط متصل أو متقطّع أو منقّط، ولون تعبئة، وحواف حادة أو مدوّرة، وأي زاوية وشفافية. حدّد أكثر من علامة وغيّر نمطها معًا.",
+   "nav.docs": "دليل الاستخدام"
   },
   "fr": {
    "nav.features": "Fonctionnalités",
@@ -350,7 +352,8 @@
    "tab.shape": "Formes",
    "mode.window": "Fenêtre",
    "style.t": "Des formes à votre façon",
-   "style.b": "Trait continu, en tirets ou pointillé, couleur de fond, bords droits ou arrondis, n’importe quel angle et opacité. Sélectionnez plusieurs repères et changez leur style d’un coup."
+   "style.b": "Trait continu, en tirets ou pointillé, couleur de fond, bords droits ou arrondis, n’importe quel angle et opacité. Sélectionnez plusieurs repères et changez leur style d’un coup.",
+   "nav.docs": "Guide d’utilisation"
   },
   "es": {
    "nav.features": "Funciones",
@@ -466,7 +469,8 @@
    "tab.shape": "Formas",
    "mode.window": "Ventana",
    "style.t": "Formas a tu manera",
-   "style.b": "Trazo continuo, discontinuo o punteado, color de relleno, bordes rectos o redondeados, cualquier ángulo y opacidad. Selecciona varias marcas y cambia su estilo a la vez."
+   "style.b": "Trazo continuo, discontinuo o punteado, color de relleno, bordes rectos o redondeados, cualquier ángulo y opacidad. Selecciona varias marcas y cambia su estilo a la vez.",
+   "nav.docs": "Guía de uso"
   },
   "de": {
    "nav.features": "Funktionen",
@@ -582,7 +586,8 @@
    "tab.shape": "Formen",
    "mode.window": "Fenster",
    "style.t": "Formen, wie du sie willst",
-   "style.b": "Durchgezogen, gestrichelt oder gepunktet, eine Füllfarbe, eckige oder runde Ecken, jeder Winkel und jede Deckkraft. Wähle mehrere Markierungen aus und gestalte sie auf einmal."
+   "style.b": "Durchgezogen, gestrichelt oder gepunktet, eine Füllfarbe, eckige oder runde Ecken, jeder Winkel und jede Deckkraft. Wähle mehrere Markierungen aus und gestalte sie auf einmal.",
+   "nav.docs": "Benutzerhandbuch"
   }
  },
  "ed": {

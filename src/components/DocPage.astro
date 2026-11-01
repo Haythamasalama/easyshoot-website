@@ -1,0 +1,51 @@
+---
+import Base from "../layouts/Base.astro";
+import DocsNav from "./DocsNav.astro";
+import { SITE, pagePath, type Lang } from "../i18n";
+import { alternatesFor } from "../i18n/articles";
+import { DOC_SLUGS, docsUI, docOf, docsPath, docPath } from "../i18n/docs";
+import { appNode, breadcrumbNode } from "../lib/seo";
+import { edHTML } from "../lib/editor";
+
+interface Props { lang: Lang; slug: string }
+const { lang, slug } = Astro.props;
+const ui = docsUI(lang);
+const d = docOf(lang, slug);
+const path = docPath(lang, slug);
+const url = SITE + path;
+const i = DOC_SLUGS.indexOf(slug);
+const prev = DOC_SLUGS[i - 1];
+const next = DOC_SLUGS[i + 1];
+const graph = [
+  appNode(lang),
+  breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: ui.h1, path: docsPath(lang) }, { name: d.title, path }]),
+  { "@type": "TechArticle", "@id": `${url}#article`, headline: d.title, description: d.description, inLanguage: lang, mainEntityOfPage: url, about: { "@id": `${SITE}/#app` }, isPartOf: { "@type": "CreativeWork", name: ui.h1, url: SITE + docsPath(lang) } },
+];
+---
+<Base lang={lang} title={`${d.title} · ${ui.h1} | EasyShoot`} description={d.description} alternates={alternatesFor(l => docPath(l, slug))} graph={graph} ogType="article">
+<main class="doc docs">
+  <div class="wrap docs-layout">
+    <DocsNav lang={lang} current={slug} />
+    <article class="docs-main">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol><li><a href={pagePath(lang)}>EasyShoot</a></li><li><a href={docsPath(lang)}>{ui.h1}</a></li><li><span aria-current="page">{d.title}</span></li></ol>
+      </nav>
+      <header class="doc-head">
+        <h1>{d.title}</h1>
+        <p class="doc-lead">{d.intro}</p>
+      </header>
+      {d.blocks.map((b: { h2?: string; html: string; art?: string; alt?: string }) => (
+        <section class="doc-section">
+          {b.h2 && <h2>{b.h2}</h2>}
+          {b.art && <figure class="doc-figure"><div class={`ed m-${b.art}`} role="img" aria-label={b.alt} set:html={edHTML(b.art, lang)} /></figure>}
+          <div class="prose" set:html={b.html} />
+        </section>
+      ))}
+      <nav class="docs-pager" aria-label={ui.topics}>
+        {prev ? <a class="prev" href={docPath(lang, prev)}><small>{ui.prev}</small><span>{docOf(lang, prev).title}</span></a> : <span />}
+        {next && <a class="next" href={docPath(lang, next)}><small>{ui.next}</small><span>{docOf(lang, next).title}</span></a>}
+      </nav>
+    </article>
+  </div>
+</main>
+</Base>

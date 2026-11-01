@@ -1,0 +1,210 @@
+{
+  "ui": {
+    "title": "EasyShoot user guide: every feature, one topic at a time",
+    "description": "The EasyShoot user guide for Mac: setup, capture, Quick Access, markup tools, styles, pixelate and blur, text, backgrounds, presets, export, shortcuts, settings and privacy.",
+    "h1": "User guide",
+    "intro": "Everything EasyShoot can do, one topic at a time. Start at the top, or jump to what you need.",
+    "groups": {
+      "start": "Get started",
+      "editor": "The editor",
+      "more": "Shortcuts and settings"
+    },
+    "topics": "All topics",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "topics": {
+    "getting-started": {
+      "title": "Getting started",
+      "short": "Install, allow screen capture and take your first screenshot.",
+      "description": "Install EasyShoot on your Mac, allow Screen Recording and take your first screenshot.",
+      "intro": "EasyShoot works on any Mac with macOS 14 Sonoma or later, on Apple silicon or Intel.",
+      "blocks": [
+        {
+          "h2": "Set up in a minute",
+          "html": "<ul><li>Get EasyShoot from the Mac App Store.</li><li>Open it. The <strong>Welcome</strong> window asks for Screen Recording, which every screenshot needs. Click <strong>Allow…</strong>, turn on EasyShoot in the list, then press <strong>Restart</strong>.</li><li>EasyShoot lives in the menu bar. Click its icon and choose <strong>Capture Area…</strong>, or press <kbd dir=\"ltr\">⌥⇧⌘4</kbd>.</li></ul>"
+        },
+        {
+          "h2": "Can't see the icon?",
+          "html": "<p>If the notch hides the menu bar icon, use the shortcuts. To see the Welcome window again, open EasyShoot from the Applications folder.</p>"
+        }
+      ]
+    },
+    "capture": {
+      "title": "Capture",
+      "short": "Area, window, full screen, or an image you already have.",
+      "description": "Capture an area, a window or the full screen on your Mac with EasyShoot, or open a copied image or a file in the editor.",
+      "intro": "Each kind of capture has its own shortcut. The defaults use Option-Shift-Command so they never clash with the Mac's own.",
+      "blocks": [
+        {
+          "html": "<table><thead><tr><th>Capture</th><th>Shortcut</th></tr></thead><tbody><tr><td>Area: drag over what you want</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Window: click a window</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Fullscreen</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Annotate Clipboard Image</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Open Image…: edit a file</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Window shadow",
+          "html": "<p>To leave the window's shadow out of window captures, turn off <strong>Include window shadow</strong> in Settings › General.</p>"
+        }
+      ]
+    },
+    "quick-access": {
+      "title": "Quick Access",
+      "short": "What happens right after a capture.",
+      "description": "Quick Access in EasyShoot: copy, save, edit or drag a screenshot right after you take it, and choose what happens after every capture.",
+      "intro": "After every capture, Quick Access shows a thumbnail in the corner of the screen. Copy it, save it, open it in the editor or drag it straight into another app.",
+      "blocks": [
+        {
+          "h2": "Choose what happens",
+          "html": "<p>Settings › General › <strong>After capture</strong> decides what happens on its own:</p><ul><li><strong>Copy to clipboard</strong></li><li><strong>Save to folder</strong></li><li><strong>Open the editor immediately</strong></li><li><strong>Show Quick Access overlay</strong></li><li><strong>Play sound</strong></li></ul><p><strong>Close Quick Access after</strong> sets how long the thumbnail stays: never, 5, 10 or 30 seconds.</p>"
+        }
+      ]
+    },
+    "mark-up": {
+      "title": "Mark up",
+      "short": "Arrows, shapes, numbered steps, text and pen.",
+      "description": "The EasyShoot markup tools and their keys: arrow, line, rectangle, diamond, ellipse, numbered steps, text and pen.",
+      "intro": "Every tool is one key away, so you can point and explain without reaching for the toolbar.",
+      "blocks": [
+        {
+          "art": "mark",
+          "alt": "The EasyShoot editor with a box, two numbered steps, an arrow and a note on a checkout page.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Arrow · A</strong>Drag to draw; drag the middle handle to bend it.</li><li><strong>Line · L</strong>A straight line between two points.</li><li><strong>Rectangle · R</strong>Box the part that matters.</li><li><strong>Diamond · D</strong>A shape that stands out from boxes.</li><li><strong>Ellipse · O</strong>Circle a number or a button.</li><li><strong>Numbered step · N</strong>Click in order: 1, 2, 3 count themselves.</li><li><strong>Text · T</strong>A short note right where it's needed.</li><li><strong>Pen · P</strong>Draw by hand.</li></ul>"
+        },
+        {
+          "h2": "Change a mark",
+          "html": "<p>Press <kbd dir=\"ltr\">V</kbd> to select. Drag a mark to move it, drag a handle to resize it, and press Delete to remove it. Every mark stays editable until you export.</p>"
+        }
+      ]
+    },
+    "styles": {
+      "title": "Styles",
+      "short": "Colour, stroke, fill, edges, angle and opacity.",
+      "description": "Style any mark in EasyShoot: colour, stroke width, solid, dashed or dotted lines, fills, rounded edges, angle, opacity and shadow.",
+      "intro": "The Style tab in the inspector follows the tool in your hand or the mark you selected, and shows only what that mark uses.",
+      "blocks": [
+        {
+          "art": "shape",
+          "alt": "The Style tab with a dashed, filled box and a dotted ellipse on the screenshot.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Stroke and width</strong>Five colours, or more in the colour picker. Thin, medium or bold, or any width from 1 to 30.</li><li><strong>Stroke style</strong>Solid, dashed or dotted lines and shapes.</li><li><strong>Background</strong>A light fill for rectangles, diamonds, ellipses and numbered steps.</li><li><strong>Edges and angle</strong>Sharp or round corners. Type an angle or turn the handle; Shift snaps to 15°.</li><li><strong>Arrow head</strong>Standard or swept.</li><li><strong>Opacity and shadow</strong>Fade any mark, and add a soft shadow if you want one.</li></ul>"
+        },
+        {
+          "h2": "Several marks at once",
+          "html": "<p>Press <kbd dir=\"ltr\">⌘A</kbd>, Shift-click, or drag a box over empty canvas to select several marks. Move, restyle or delete them together; a change applies only the setting you touched.</p>"
+        }
+      ]
+    },
+    "hide-details": {
+      "title": "Hide private details",
+      "short": "Pixelate or blur emails, names and card numbers.",
+      "description": "Pixelate or blur private details in a screenshot on your Mac with EasyShoot before you share it.",
+      "intro": "Hide what isn't yours to share before the image leaves your Mac.",
+      "blocks": [
+        {
+          "art": "pixel",
+          "alt": "A card number blurred with the Pixelate tool, and the Style tab set to Blur.",
+          "html": "<ul><li>Press <kbd dir=\"ltr\">B</kbd> or pick Pixelate.</li><li>Drag over the email, card number or face.</li><li>In the Style tab choose <strong>Pixels</strong> or <strong>Blur</strong> and set the <strong>Strength</strong>.</li></ul><p>The exported image keeps only the hidden version, not the original detail.</p>"
+        }
+      ]
+    },
+    "text": {
+      "title": "Text",
+      "short": "Any font, three looks, and right-to-left text.",
+      "description": "Add text to screenshots with EasyShoot: any Mac or Google font, plain, bubble or outline, and Arabic or Hebrew right to left.",
+      "intro": "Press T, click where the note goes and type.",
+      "blocks": [
+        {
+          "art": "ar",
+          "alt": "A note in a bubble on the screenshot, with the Style tab showing font, size, look and direction.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Font</strong>Any font on your Mac, or a Google font downloaded the moment you pick it.</li><li><strong>Size</strong>Use the slider, or drag the text's corner.</li><li><strong>Look</strong>Plain, Bubble or Outline.</li><li><strong>Direction</strong>Auto writes Arabic and Hebrew right to left with letters joined correctly; LTR or RTL forces a line.</li></ul>"
+        }
+      ]
+    },
+    "background-and-crop": {
+      "title": "Background and crop",
+      "short": "Frame a shot, crop it and resize it.",
+      "description": "Put a screenshot on a background with padding, rounded corners and shadow in EasyShoot, then crop and resize it.",
+      "intro": "The Background tab makes a capture ready to post.",
+      "blocks": [
+        {
+          "art": "bg",
+          "alt": "The screenshot on a soft gradient, with fill, padding, corner radius and shadow in the Background tab.",
+          "html": "<p>Pick a gradient, a solid colour, your own colour or none, then set padding, corner radius, shadow, aspect ratio and alignment.</p>"
+        },
+        {
+          "h2": "Crop, resize and zoom",
+          "html": "<ul class=\"feature-grid\"><li><strong>Crop · C</strong>Free, or fixed at 1:1, 4:3 or 16:9.</li><li><strong>Resize</strong>By percent, or to an exact width.</li><li><strong>Zoom</strong>⌘+ and ⌘− for small details; ⌘0 shows actual size and ⌘9 fits the window.</li></ul>"
+        }
+      ]
+    },
+    "presets": {
+      "title": "Presets",
+      "short": "Save a look and reuse it.",
+      "description": "Save a background, mark style and export settings as a preset in EasyShoot, and make it the default.",
+      "intro": "A preset keeps a background, a mark style and export settings together.",
+      "blocks": [
+        {
+          "html": "<ul><li>To save one, open <strong>Presets</strong> in the editor's toolbar and choose <strong>Save Current Style as Preset…</strong>.</li><li>To use one, pick it from the same menu.</li><li>In Settings › Presets, choose <strong>Make Default</strong> so every new screenshot starts with it, or <strong>Restore Built-in Presets</strong>.</li></ul><p>With no default, each screenshot starts with the settings you used last.</p>"
+        }
+      ]
+    },
+    "export": {
+      "title": "Export and share",
+      "short": "Copy, save, formats and size.",
+      "description": "Copy or save screenshots from EasyShoot as PNG, JPEG, HEIC or TIFF, at any size, or drag them into another app.",
+      "intro": "Copy, save or drag the image straight into Messages, Slack or Mail.",
+      "blocks": [
+        {
+          "html": "<table><thead><tr><th>Action</th><th>Shortcut</th></tr></thead><tbody><tr><td>Copy the image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Save</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Format, quality and size",
+          "html": "<p>The Export tab sets the <strong>Format</strong> (PNG, JPEG, HEIC or TIFF), the quality and the size. Choose the <strong>Save location</strong> in Settings › General, and turn on <strong>Close the editor after copying</strong> to finish in one step.</p>"
+        }
+      ]
+    },
+    "shortcuts": {
+      "title": "Keyboard shortcuts",
+      "short": "Every key in one place.",
+      "description": "Every EasyShoot keyboard shortcut: global capture shortcuts, editor tools and editor commands.",
+      "intro": "Change the capture shortcuts in Settings › Shortcuts. The editor keys work whenever you're not typing text.",
+      "blocks": [
+        {
+          "h2": "Capture",
+          "html": "<table><thead><tr><th>Capture</th><th>Shortcut</th></tr></thead><tbody><tr><td>Capture Area</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capture Window</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capture Fullscreen</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Annotate Clipboard Image</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Editor tools",
+          "html": "<table><thead><tr><th>Tool</th><th>Key</th></tr></thead><tbody><tr><td>Select & Move</td><td><kbd dir=\"ltr\">V</kbd></td></tr><tr><td>Crop</td><td><kbd dir=\"ltr\">C</kbd></td></tr><tr><td>Arrow</td><td><kbd dir=\"ltr\">A</kbd></td></tr><tr><td>Line</td><td><kbd dir=\"ltr\">L</kbd></td></tr><tr><td>Rectangle</td><td><kbd dir=\"ltr\">R</kbd></td></tr><tr><td>Diamond</td><td><kbd dir=\"ltr\">D</kbd></td></tr><tr><td>Ellipse</td><td><kbd dir=\"ltr\">O</kbd></td></tr><tr><td>Text</td><td><kbd dir=\"ltr\">T</kbd></td></tr><tr><td>Numbered step</td><td><kbd dir=\"ltr\">N</kbd></td></tr><tr><td>Pen</td><td><kbd dir=\"ltr\">P</kbd></td></tr><tr><td>Pixelate</td><td><kbd dir=\"ltr\">B</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Editor commands",
+          "html": "<table><thead><tr><th>Command</th><th>Shortcut</th></tr></thead><tbody><tr><td>Copy the image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Save</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Undo</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Redo</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Select all marks</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Zoom in / out</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Actual size / zoom to fit</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Show or hide the inspector</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+        }
+      ]
+    },
+    "settings": {
+      "title": "Settings",
+      "short": "General, Shortcuts, Presets, Permissions and About.",
+      "description": "What each part of EasyShoot's Settings does: General, Shortcuts, Presets, Permissions and About.",
+      "intro": "Open Settings… from the menu bar icon, or press ⌘, while EasyShoot is in front.",
+      "blocks": [
+        {
+          "html": "<ul class=\"feature-grid\"><li><strong>General</strong>What happens after capture, the save location, window shadow, editor options and update notices.</li><li><strong>Shortcuts</strong>Record your own capture shortcuts.</li><li><strong>Presets</strong>Rename, delete, make default or restore the built-in presets.</li><li><strong>Permissions</strong>Check Screen Recording, which every screenshot needs.</li><li><strong>About</strong>Version, website and support.</li></ul>"
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy",
+      "short": "What stays on your Mac, and when the app goes online.",
+      "description": "How EasyShoot handles privacy: no account, no cloud, no tracking, and the two times it goes online.",
+      "intro": "No account, no cloud and no tracking. Your screenshots stay on your Mac and go only where you copy, save or drag them.",
+      "blocks": [
+        {
+          "h2": "When EasyShoot goes online",
+          "html": "<ul><li>To download a Google font you pick for text.</li><li>To check the App Store for a newer version. Turn this off with <strong>Tell me when an update is available</strong> in Settings › General.</li></ul>"
+        },
+        {
+          "html": "<p>Read the full <a href=\"/privacy.html\">privacy policy</a>.</p>"
+        }
+      ]
+    }
+  }
+}

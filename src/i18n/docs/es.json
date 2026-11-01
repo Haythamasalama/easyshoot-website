@@ -1,0 +1,210 @@
+{
+  "ui": {
+    "title": "Guía de uso de EasyShoot: cada función, tema a tema",
+    "description": "La guía de uso de EasyShoot para Mac: instalación, captura, acceso rápido, herramientas de anotación, estilos, pixelado y desenfoque, texto, fondos, preajustes, exportación, atajos, ajustes y privacidad.",
+    "h1": "Guía de uso",
+    "intro": "Todo lo que hace EasyShoot, un tema cada vez. Empieza arriba o ve directo a lo que necesitas.",
+    "groups": {
+      "start": "Empezar",
+      "editor": "El editor",
+      "more": "Atajos y ajustes"
+    },
+    "topics": "Todos los temas",
+    "prev": "Anterior",
+    "next": "Siguiente"
+  },
+  "topics": {
+    "getting-started": {
+      "title": "Primeros pasos",
+      "short": "Instalar, permitir la captura y hacer la primera.",
+      "description": "Instala EasyShoot en tu Mac, permite la grabación de pantalla y haz tu primera captura.",
+      "intro": "EasyShoot funciona en cualquier Mac con macOS 14 Sonoma o posterior, con Apple silicon o Intel.",
+      "blocks": [
+        {
+          "h2": "Listo en un minuto",
+          "html": "<ul><li>Descarga EasyShoot de la Mac App Store.</li><li>Ábrelo. La ventana de <strong>bienvenida</strong> pide la grabación de pantalla, que necesita cada captura. Haz clic en <strong>Permitir…</strong>, activa EasyShoot en la lista y pulsa <strong>Reiniciar</strong>.</li><li>EasyShoot vive en la barra de menús. Haz clic en su icono y elige <strong>Capturar área…</strong>, o pulsa <kbd dir=\"ltr\">⌥⇧⌘4</kbd>.</li></ul>"
+        },
+        {
+          "h2": "¿No ves el icono?",
+          "html": "<p>Si la muesca oculta el icono, usa los atajos. Para ver otra vez la ventana de bienvenida, abre EasyShoot desde la carpeta Aplicaciones.</p>"
+        }
+      ]
+    },
+    "capture": {
+      "title": "Captura",
+      "short": "Un área, una ventana, la pantalla o una imagen que ya tienes.",
+      "description": "Captura un área, una ventana o la pantalla completa con EasyShoot, o abre en el editor una imagen copiada o un archivo.",
+      "intro": "Cada captura tiene su atajo. Los predeterminados usan Opción-Mayúsculas-Comando para no chocar con los del Mac.",
+      "blocks": [
+        {
+          "html": "<table><thead><tr><th>Captura</th><th>Atajo</th></tr></thead><tbody><tr><td>Área: arrastra sobre lo que quieras</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Ventana: haz clic en una ventana</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Pantalla completa</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Anotar imagen del portapapeles</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Abrir imagen…: editar un archivo</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Sombra de la ventana",
+          "html": "<p>Para quitar la sombra de las capturas de ventana, desactiva <strong>Incluir sombra de la ventana</strong> en Ajustes › General.</p>"
+        }
+      ]
+    },
+    "quick-access": {
+      "title": "Acceso rápido",
+      "short": "Lo que pasa justo después de capturar.",
+      "description": "El acceso rápido de EasyShoot: copia, guarda, edita o arrastra una captura justo después de hacerla, y elige qué pasa tras cada captura.",
+      "intro": "Tras cada captura, el acceso rápido muestra una miniatura en la esquina de la pantalla. Cópiala, guárdala, ábrela en el editor o arrástrala a otra app.",
+      "blocks": [
+        {
+          "h2": "Elige qué pasa",
+          "html": "<p>Ajustes › General › <strong>Después de capturar</strong> decide lo que pasa solo:</p><ul><li><strong>Copiar al portapapeles</strong></li><li><strong>Guardar en carpeta</strong></li><li><strong>Abrir el editor al instante</strong></li><li><strong>Mostrar acceso rápido</strong></li><li><strong>Reproducir sonido</strong></li></ul><p><strong>Cerrar acceso rápido tras</strong> fija cuánto dura la miniatura: nunca, 5, 10 o 30 segundos.</p>"
+        }
+      ]
+    },
+    "mark-up": {
+      "title": "Anotar",
+      "short": "Flechas, formas, pasos numerados, texto y lápiz.",
+      "description": "Las herramientas de anotación de EasyShoot y sus teclas: flecha, línea, rectángulo, rombo, elipse, pasos numerados, texto y lápiz.",
+      "intro": "Cada herramienta está a una tecla: señala y explica sin ir a la barra de herramientas.",
+      "blocks": [
+        {
+          "art": "mark",
+          "alt": "El editor de EasyShoot con un recuadro, dos pasos numerados, una flecha y una nota sobre una página de pago.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Flecha · A</strong>Arrastra para dibujarla; arrastra el tirador central para curvarla.</li><li><strong>Línea · L</strong>Una línea recta entre dos puntos.</li><li><strong>Rectángulo · R</strong>Enmarca lo importante.</li><li><strong>Rombo · D</strong>Una forma que destaca entre los recuadros.</li><li><strong>Elipse · O</strong>Rodea un número o un botón.</li><li><strong>Paso numerado · N</strong>Haz clic en orden: 1, 2, 3 se cuentan solos.</li><li><strong>Texto · T</strong>Una nota corta justo donde hace falta.</li><li><strong>Lápiz · P</strong>Dibuja a mano.</li></ul>"
+        },
+        {
+          "h2": "Cambiar una marca",
+          "html": "<p>Pulsa <kbd dir=\"ltr\">V</kbd> para seleccionar. Arrastra una marca para moverla, un tirador para cambiar su tamaño, y pulsa Suprimir para borrarla. Cada marca sigue siendo editable hasta exportar.</p>"
+        }
+      ]
+    },
+    "styles": {
+      "title": "Estilos",
+      "short": "Color, trazo, relleno, bordes, ángulo y opacidad.",
+      "description": "Da estilo a cualquier marca en EasyShoot: color, grosor, trazo continuo, discontinuo o punteado, relleno, bordes redondeados, ángulo, opacidad y sombra.",
+      "intro": "La pestaña Estilo del inspector sigue la herramienta en uso o la marca seleccionada, y muestra solo lo que esa marca usa.",
+      "blocks": [
+        {
+          "art": "shape",
+          "alt": "La pestaña Estilo con un recuadro discontinuo con relleno y una elipse punteada sobre la captura.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Color y grosor</strong>Cinco colores, y más en «Más colores». Fino, medio o grueso, o cualquier grosor de 1 a 30.</li><li><strong>Estilo de trazo</strong>Líneas y formas continuas, discontinuas o punteadas.</li><li><strong>Fondo</strong>Un relleno claro para rectángulos, rombos, elipses y pasos.</li><li><strong>Bordes y ángulo</strong>Esquinas rectas o redondeadas. Escribe un ángulo o gira el tirador; Mayúsculas ajusta a 15°.</li><li><strong>Punta de flecha</strong>Estándar o afilada.</li><li><strong>Opacidad y sombra</strong>Atenúa una marca y añade una sombra suave si quieres.</li></ul>"
+        },
+        {
+          "h2": "Varias marcas a la vez",
+          "html": "<p>Pulsa <kbd dir=\"ltr\">⌘A</kbd>, haz Mayúsculas-clic o arrastra un recuadro sobre una zona vacía para seleccionar varias marcas. Muévelas, cambia su estilo o bórralas juntas; un cambio solo aplica el ajuste que tocaste.</p>"
+        }
+      ]
+    },
+    "hide-details": {
+      "title": "Ocultar datos privados",
+      "short": "Pixela o desenfoca correos, nombres y tarjetas.",
+      "description": "Pixela o desenfoca datos privados en una captura en tu Mac con EasyShoot antes de compartirla.",
+      "intro": "Oculta lo que no debes compartir antes de que la imagen salga de tu Mac.",
+      "blocks": [
+        {
+          "art": "pixel",
+          "alt": "Un número de tarjeta desenfocado con la herramienta Pixelar y la pestaña Estilo en Desenfoque.",
+          "html": "<ul><li>Pulsa <kbd dir=\"ltr\">B</kbd> o elige Pixelar.</li><li>Arrastra sobre el correo, el número de tarjeta o la cara.</li><li>En la pestaña Estilo elige <strong>Píxeles</strong> o <strong>Desenfoque</strong> y ajusta la <strong>intensidad</strong>.</li></ul><p>La imagen exportada solo guarda la versión oculta, no el dato original.</p>"
+        }
+      ]
+    },
+    "text": {
+      "title": "Texto",
+      "short": "Cualquier fuente, tres aspectos y escritura de derecha a izquierda.",
+      "description": "Añade texto a tus capturas con EasyShoot: cualquier fuente del Mac o de Google, simple, en burbuja o con contorno, y árabe o hebreo de derecha a izquierda.",
+      "intro": "Pulsa T, haz clic donde va la nota y escribe.",
+      "blocks": [
+        {
+          "art": "ar",
+          "alt": "Una nota en burbuja sobre la captura, con fuente, tamaño, aspecto y dirección en la pestaña Estilo.",
+          "html": "<ul class=\"feature-grid\"><li><strong>Fuente</strong>Cualquier fuente de tu Mac, o una de Google que se descarga al elegirla.</li><li><strong>Tamaño</strong>Usa el control deslizante o arrastra la esquina del texto.</li><li><strong>Aspecto</strong>Simple, Burbuja o Contorno.</li><li><strong>Dirección</strong>Auto escribe árabe y hebreo de derecha a izquierda con las letras bien unidas; LTR o RTL fuerza una línea.</li></ul>"
+        }
+      ]
+    },
+    "background-and-crop": {
+      "title": "Fondo y recorte",
+      "short": "Enmarca, recorta y cambia el tamaño.",
+      "description": "Pon una captura sobre un fondo con margen, esquinas redondeadas y sombra en EasyShoot, y luego recórtala y cambia su tamaño.",
+      "intro": "La pestaña Fondo deja una captura lista para publicar.",
+      "blocks": [
+        {
+          "art": "bg",
+          "alt": "La captura sobre un degradado suave, con relleno, margen, radio de esquinas y sombra en la pestaña Fondo.",
+          "html": "<p>Elige un degradado, un color sólido, tu propio color o ninguno, y ajusta margen, radio de esquinas, sombra, proporción y alineación.</p>"
+        },
+        {
+          "h2": "Recortar, cambiar tamaño y zoom",
+          "html": "<ul class=\"feature-grid\"><li><strong>Recortar · C</strong>Libre, o fijo en 1:1, 4:3 o 16:9.</li><li><strong>Cambiar tamaño</strong>Por porcentaje o a un ancho exacto.</li><li><strong>Zoom</strong>⌘+ y ⌘− para los detalles; ⌘0 tamaño real y ⌘9 ajusta a la ventana.</li></ul>"
+        }
+      ]
+    },
+    "presets": {
+      "title": "Preajustes",
+      "short": "Guarda un estilo y reutilízalo.",
+      "description": "Guarda un fondo, un estilo de marcas y ajustes de exportación como preajuste en EasyShoot, y hazlo predeterminado.",
+      "intro": "Un preajuste guarda juntos un fondo, un estilo de marcas y ajustes de exportación.",
+      "blocks": [
+        {
+          "html": "<ul><li>Para guardar uno, abre <strong>Preajustes</strong> en la barra del editor y elige <strong>Guardar estilo actual como preajuste…</strong>.</li><li>Para usarlo, elígelo en el mismo menú.</li><li>En Ajustes › Preajustes, elige <strong>Usar por defecto</strong> para que cada captura empiece con él, o <strong>Restaurar preajustes incluidos</strong>.</li></ul><p>Sin preajuste por defecto, cada captura empieza con los últimos ajustes que usaste.</p>"
+        }
+      ]
+    },
+    "export": {
+      "title": "Exportar y compartir",
+      "short": "Copiar, guardar, formatos y tamaño.",
+      "description": "Copia o guarda tus capturas de EasyShoot en PNG, JPEG, HEIC o TIFF, a cualquier tamaño, o arrástralas a otra app.",
+      "intro": "Copia, guarda o arrastra la imagen a Mensajes, Slack o Mail.",
+      "blocks": [
+        {
+          "html": "<table><thead><tr><th>Acción</th><th>Atajo</th></tr></thead><tbody><tr><td>Copiar la imagen</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Guardar</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Formato, calidad y tamaño",
+          "html": "<p>La pestaña Exportar fija el <strong>formato</strong> (PNG, JPEG, HEIC o TIFF), la calidad y el tamaño. Elige la <strong>ubicación de guardado</strong> en Ajustes › General y activa <strong>Cerrar el editor después de copiar</strong> para terminar en un paso.</p>"
+        }
+      ]
+    },
+    "shortcuts": {
+      "title": "Atajos de teclado",
+      "short": "Todas las teclas en un sitio.",
+      "description": "Todos los atajos de EasyShoot: atajos de captura globales, herramientas y comandos del editor.",
+      "intro": "Cambia los atajos de captura en Ajustes › Atajos. Las teclas del editor funcionan mientras no escribas texto.",
+      "blocks": [
+        {
+          "h2": "Captura",
+          "html": "<table><thead><tr><th>Captura</th><th>Atajo</th></tr></thead><tbody><tr><td>Capturar área</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capturar ventana</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capturar pantalla completa</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Anotar imagen del portapapeles</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Herramientas del editor",
+          "html": "<table><thead><tr><th>Herramienta</th><th>Tecla</th></tr></thead><tbody><tr><td>Seleccionar y mover</td><td><kbd dir=\"ltr\">V</kbd></td></tr><tr><td>Recortar</td><td><kbd dir=\"ltr\">C</kbd></td></tr><tr><td>Flecha</td><td><kbd dir=\"ltr\">A</kbd></td></tr><tr><td>Línea</td><td><kbd dir=\"ltr\">L</kbd></td></tr><tr><td>Rectángulo</td><td><kbd dir=\"ltr\">R</kbd></td></tr><tr><td>Rombo</td><td><kbd dir=\"ltr\">D</kbd></td></tr><tr><td>Elipse</td><td><kbd dir=\"ltr\">O</kbd></td></tr><tr><td>Texto</td><td><kbd dir=\"ltr\">T</kbd></td></tr><tr><td>Paso numerado</td><td><kbd dir=\"ltr\">N</kbd></td></tr><tr><td>Lápiz</td><td><kbd dir=\"ltr\">P</kbd></td></tr><tr><td>Pixelar</td><td><kbd dir=\"ltr\">B</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Comandos del editor",
+          "html": "<table><thead><tr><th>Comando</th><th>Atajo</th></tr></thead><tbody><tr><td>Copiar la imagen</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Guardar</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Deshacer</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Rehacer</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Seleccionar todas las marcas</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Acercar / alejar</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Tamaño real / ajustar</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Mostrar u ocultar el inspector</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+        }
+      ]
+    },
+    "settings": {
+      "title": "Ajustes",
+      "short": "General, Atajos, Preajustes, Permisos y Acerca de.",
+      "description": "Qué hace cada parte de los ajustes de EasyShoot: General, Atajos, Preajustes, Permisos y Acerca de.",
+      "intro": "Abre Ajustes… desde el icono de la barra de menús, o pulsa ⌘, con EasyShoot delante.",
+      "blocks": [
+        {
+          "html": "<ul class=\"feature-grid\"><li><strong>General</strong>Lo que pasa tras capturar, la ubicación de guardado, la sombra de ventana, opciones del editor y avisos de actualización.</li><li><strong>Atajos</strong>Graba tus propios atajos de captura.</li><li><strong>Preajustes</strong>Renombra, borra, usa por defecto o restaura los preajustes incluidos.</li><li><strong>Permisos</strong>Comprueba la grabación de pantalla, que necesita cada captura.</li><li><strong>Acerca de</strong>Versión, web y soporte.</li></ul>"
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacidad",
+      "short": "Lo que se queda en tu Mac y cuándo se conecta la app.",
+      "description": "Cómo trata EasyShoot la privacidad: sin cuenta, sin nube, sin rastreo, y los dos únicos casos en que se conecta.",
+      "intro": "Sin cuenta, sin nube y sin rastreo. Tus capturas se quedan en tu Mac y solo van donde las copies, guardes o arrastres.",
+      "blocks": [
+        {
+          "h2": "Cuándo se conecta EasyShoot",
+          "html": "<ul><li>Para descargar una fuente de Google que elijas para el texto.</li><li>Para comprobar si hay una versión nueva en la App Store. Desactívalo con <strong>Avisarme cuando haya una actualización</strong> en Ajustes › General.</li></ul>"
+        },
+        {
+          "html": "<p>Lee la <a href=\"/privacy.html\">política de privacidad</a> completa.</p>"
+        }
+      ]
+    }
+  }
+}
