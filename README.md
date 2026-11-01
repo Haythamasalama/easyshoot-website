@@ -21,7 +21,7 @@
 
 | | |
 |:--|:--|
-| **Pages** | The landing page once per language (`/`, `/ar/`, `/fr/`, `/es/`, `/de/`), a press kit (`/press/`) and an HTML sitemap (`/sitemap/`) in every language, plus `privacy.html` and `support.html` in English and Arabic (`/ar/…`), built from `src/i18n/legal.ts` |
+| **Pages** | The landing page once per language (`/`, `/ar/`, `/fr/`, `/es/`, `/de/`), a changelog (`/changelog/`), a press kit (`/press/`) and an HTML sitemap (`/sitemap/`) in every language, plus `privacy.html` and `support.html` in English and Arabic (`/ar/…`), built from `src/i18n/legal.ts` |
 | **Guides and comparisons** | Four how-to guides (`/guides/…`) and five honest comparisons (`/compare/…`: CleanShot X, Shottr, Snagit, Lightshot, macOS Screenshot), each in all five languages |
 | **Look** | Liquid Glass surfaces, separate light and dark colour sets, one blue accent. See [BRAND.md](BRAND.md) |
 | **Pictures** | The editor is drawn in HTML in the page's language, so it stays sharp and follows the theme |
@@ -71,6 +71,7 @@ BRAND.md            colours, logo, type, glass, motion and voice
 | Colours or glass | The tokens at the end of `src/styles/global.css`, and the tables in [BRAND.md](BRAND.md) |
 | The icon | `public/art/icon.svg`, then render `public/icon.png` at 1024 px with a transparent background |
 | A guide or comparison | `src/i18n/articles/<lang>.json` (same keys in every language); the order is in `src/i18n/articles.ts`. Re-check competitor facts on their official sites before changing them |
+| The changelog, for each new version | Add a release at the top of `releases` in `src/i18n/changelog.json`: `version`, `date` (`YYYY-MM-DD`; leave it empty to show "Coming soon"), optional `major`, and `notes` per language with an `intro` and either `items` (plain lines, for fixes) or `groups` of `[emoji, title, text]` features. A missing language falls back to English |
 | The privacy policy or support page | `src/i18n/legal.ts` (English and Arabic). Change the date when the policy changes |
 | What AI search reads | `public/llms.txt` |
 

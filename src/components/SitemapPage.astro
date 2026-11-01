@@ -4,6 +4,7 @@ import { SITE, pagePath, privacyPath, supportPath, useT, type Lang } from "../i1
 import { content, articleOf, hubPath, articlePath, alternatesFor, GUIDES, COMPARES } from "../i18n/articles";
 import { breadcrumbNode } from "../lib/seo";
 import press from "../i18n/press.json";
+import changelog from "../i18n/changelog.json";
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -14,6 +15,7 @@ const url = SITE + mapPath(lang);
 const groups = [
   { h: t("map.pages"), links: [
     { name: "EasyShoot", href: pagePath(lang) },
+    { name: (changelog.page as any)[lang].h1, href: `${pagePath(lang)}changelog/` },
     { name: (press as any)[lang].h1, href: `${pagePath(lang)}press/` },
   ] },
   { h: ui.guides, hub: hubPath(lang, "guides"), links: GUIDES.map(a => ({ name: articleOf(lang, a.slug).h1, href: articlePath(lang, a) })) },

@@ -5,6 +5,7 @@
 - Website: https://easyshoot.haythamasalama.me/
 - The same page in Arabic, French, Spanish and German: https://easyshoot.haythamasalama.me/ar/, /fr/, /es/, /de/
 - Sitemap: https://easyshoot.haythamasalama.me/sitemap-index.xml
+- Changelog: https://easyshoot.haythamasalama.me/changelog/
 - Support: https://easyshoot.haythamasalama.me/support.html
 - Privacy policy: https://easyshoot.haythamasalama.me/privacy.html
 - Author: Haytham A. Salama (https://haythamasalama.me)
