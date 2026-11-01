@@ -31,7 +31,7 @@
     "blur-screenshot-mac": {
       "short": "Flouter les infos privées",
       "title": "Flouter ou pixeliser une capture d’écran sur Mac | EasyShoot",
-      "description": "Masquez adresses e-mail, numéros de carte et visages dans une capture d’écran sur Mac avant de la partager. Pixelisez ou floutez une zone en quelques secondes avec EasyShoot.",
+      "description": "Masquez e-mails, numéros de carte et visages dans une capture d’écran sur Mac avant de la partager. Pixelisez ou floutez une zone en quelques secondes.",
       "h1": "Comment flouter une partie d’une capture d’écran sur Mac",
       "intro": "Avant de partager une capture d’écran, masquez ce qui ne vous appartient pas : une adresse e-mail, un numéro de carte, un nom ou un visage. EasyShoot pixelise ou floute toute zone sur laquelle vous faites glisser le pointeur, et rien ne quitte votre Mac pendant ce temps.",
       "steps": [
@@ -79,7 +79,7 @@
     },
     "annotate-screenshot-mac": {
       "short": "Flèches et étapes numérotées",
-      "title": "Ajouter flèches, texte et étapes à une capture sur Mac | EasyShoot",
+      "title": "Flèches, texte et étapes sur une capture Mac | EasyShoot",
       "description": "Annotez vos captures d’écran sur Mac avec des flèches, des cadres, du texte et des étapes numérotées, une touche par outil. Un guide rapide avec EasyShoot.",
       "h1": "Comment ajouter des flèches et des étapes numérotées à une capture d’écran sur Mac",
       "intro": "Une bonne capture d’écran montre une seule chose et dit quoi faire. EasyShoot attribue une seule touche à chaque outil d’annotation : vous encadrez, numérotez et pointez sans toucher à la souris.",
