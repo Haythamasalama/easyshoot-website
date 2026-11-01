@@ -16,7 +16,7 @@
   "hubs": {
     "guides": {
       "title": "Mac screenshot guides | EasyShoot",
-      "description": "Short, practical guides for screenshots on Mac: scrolling captures, blurring private details, arrows and numbered steps, and Arabic text.",
+      "description": "Short, practical guides for screenshots on Mac: blurring private details, arrows, shapes and numbered steps, and Arabic text.",
       "h1": "Screenshot guides for Mac",
       "intro": "Short answers to the things people ask most about screenshots on a Mac, with the exact keys to press."
     },
@@ -28,61 +28,12 @@
     }
   },
   "articles": {
-    "scrolling-screenshot-mac": {
-      "short": "Scrolling screenshots",
-      "title": "How to take a scrolling screenshot on Mac | EasyShoot",
-      "description": "Capture a whole web page, chat or document as one long image on your Mac. Step-by-step with EasyShoot's Scrolling Capture.",
-      "h1": "How to take a scrolling screenshot on a Mac",
-      "intro": "A scrolling screenshot captures more than fits on your screen: a full web page, a long chat or a document, joined into one tall image. macOS's built-in Screenshot tool captures what is visible, so for a whole page you need a scrolling capture tool such as EasyShoot.",
-      "steps": [
-        {
-          "name": "Start Scrolling Capture",
-          "text": "Press Option-Shift-Command-6, or choose Scrolling Capture from the EasyShoot menu in the menu bar."
-        },
-        {
-          "name": "Select the area",
-          "text": "Drag over the part of the window you want to scroll, such as the page content without the browser toolbar. Press Esc to cancel."
-        },
-        {
-          "name": "Scroll slowly",
-          "text": "Scroll down at a steady pace. If you scroll too fast, EasyShoot asks you to scroll back up a little and continue more slowly."
-        },
-        {
-          "name": "Press Done",
-          "text": "EasyShoot joins everything into one image and opens it, ready to mark up, copy or save. Sticky headers appear once, not on every slice."
-        }
-      ],
-      "sections": [
-        {
-          "h2": "Tips for a clean result",
-          "html": "<ul><li>Select only the scrolling content, so fixed toolbars and sidebars stay out of the image.</li><li>Scroll in one direction, from top to bottom.</li><li>Long images can be wide too: resize or crop them in the editor before you share.</li></ul>"
-        },
-        {
-          "h2": "What you need",
-          "html": "<p>EasyShoot runs on macOS 14 or later. Scrolling Capture needs the Screen Recording permission, which EasyShoot asks for the first time you capture.</p>"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Can the Mac take a scrolling screenshot without an app?",
-          "a": "Apple's guide to the built-in Screenshot tool covers the entire screen, a window or a selected portion. It doesn't describe a scrolling capture, so a separate app is the usual way to capture a whole page."
-        },
-        {
-          "q": "Does it work in any app?",
-          "a": "Scrolling Capture works with content you scroll on screen, such as web pages, chats and documents."
-        },
-        {
-          "q": "What is the shortcut?",
-          "a": "Option-Shift-Command-6 by default. You can change it in EasyShoot's Settings."
-        }
-      ]
-    },
     "blur-screenshot-mac": {
       "short": "Blur private details",
       "title": "How to blur or pixelate part of a screenshot on Mac | EasyShoot",
-      "description": "Hide emails, card numbers and faces in a screenshot on your Mac before you share it. Pixelate any area in seconds with EasyShoot.",
+      "description": "Hide emails, card numbers and faces in a screenshot on your Mac before you share it. Pixelate or blur any area in seconds with EasyShoot.",
       "h1": "How to blur part of a screenshot on a Mac",
-      "intro": "Before you share a screenshot, hide what isn't yours to share: an email address, a card number, a name or a face. EasyShoot pixelates any area you drag over, and nothing leaves your Mac while you do it.",
+      "intro": "Before you share a screenshot, hide what isn't yours to share: an email address, a card number, a name or a face. EasyShoot pixelates or blurs any area you drag over, and nothing leaves your Mac while you do it.",
       "steps": [
         {
           "name": "Capture or open the image",
@@ -90,7 +41,7 @@
         },
         {
           "name": "Choose Pixelate",
-          "text": "Press B, or click the Pixelate tool in the toolbar."
+          "text": "Press B, or click the Pixelate tool. In the Style tab, pick Pixels or Blur and set the Strength."
         },
         {
           "name": "Drag over the private part",
@@ -117,8 +68,8 @@
           "a": "Apple's Markup guide lists shapes, text, highlight, sketch, loupe and crop, but not a blur or pixelate tool, so people usually use an app for this."
         },
         {
-          "q": "Is pixelation reversible?",
-          "a": "The exported image only contains the pixelated blocks, not the original detail."
+          "q": "Is pixelation or blur reversible?",
+          "a": "The exported image only contains the pixelated or blurred area, not the original detail."
         },
         {
           "q": "Can I pixelate after adding arrows and steps?",
@@ -157,11 +108,15 @@
       "sections": [
         {
           "h2": "Every tool, one key",
-          "html": "<table><thead><tr><th>Tool</th><th>Key</th></tr></thead><tbody><tr><td>Arrow</td><td><kbd>A</kbd></td></tr><tr><td>Line</td><td><kbd>L</kbd></td></tr><tr><td>Rectangle</td><td><kbd>R</kbd></td></tr><tr><td>Ellipse</td><td><kbd>O</kbd></td></tr><tr><td>Text</td><td><kbd>T</kbd></td></tr><tr><td>Numbered step</td><td><kbd>N</kbd></td></tr><tr><td>Highlighter</td><td><kbd>H</kbd></td></tr><tr><td>Pen</td><td><kbd>P</kbd></td></tr><tr><td>Pixelate</td><td><kbd>B</kbd></td></tr><tr><td>Crop</td><td><kbd>C</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Tool</th><th>Key</th></tr></thead><tbody><tr><td>Arrow</td><td><kbd>A</kbd></td></tr><tr><td>Line</td><td><kbd>L</kbd></td></tr><tr><td>Rectangle</td><td><kbd>R</kbd></td></tr><tr><td>Diamond</td><td><kbd>D</kbd></td></tr><tr><td>Ellipse</td><td><kbd>O</kbd></td></tr><tr><td>Text</td><td><kbd>T</kbd></td></tr><tr><td>Numbered step</td><td><kbd>N</kbd></td></tr><tr><td>Pen</td><td><kbd>P</kbd></td></tr><tr><td>Pixelate</td><td><kbd>B</kbd></td></tr><tr><td>Crop</td><td><kbd>C</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Style every mark",
+          "html": "<ul><li><strong>Lines and shapes:</strong> solid, dashed or dotted strokes, from thin to bold.</li><li><strong>Rectangle, Diamond and Ellipse:</strong> a background colour, sharp or round edges, and any angle.</li><li><strong>Arrows:</strong> a standard or swept head; drag the middle handle to bend one.</li><li><strong>Numbered steps:</strong> no background, their own colour or a light fill.</li><li><strong>Several at once:</strong> Command-A, Shift-click or drag a box over empty canvas, then move, restyle or delete them together.</li></ul>"
         },
         {
           "h2": "Keep it readable",
-          "html": "<ul><li>Use three or four marks at most: one box, a couple of numbers, one arrow.</li><li>Put numbers beside what they mark, not on top of text.</li><li>Change colour and thickness for any mark in the Style panel.</li></ul>"
+          "html": "<ul><li>Use three or four marks at most: one box, a couple of numbers, one arrow.</li><li>Put numbers beside what they mark, not on top of text.</li><li>Change colour, stroke width and opacity for any mark in the Style tab.</li></ul>"
         }
       ],
       "faq": [
@@ -200,7 +155,7 @@
         },
         {
           "name": "Pick a font and size",
-          "text": "Choose any font on your Mac in the Style panel, and drag the corner of the text to resize it."
+          "text": "In the Style tab, choose any font on your Mac and set the Size. For a label that stands out, set Look to Bubble or Outline."
         }
       ],
       "sections": [
@@ -253,7 +208,7 @@
         ],
         [
           "Scrolling capture",
-          "Yes",
+          "No",
           "Yes"
         ],
         [
@@ -263,7 +218,7 @@
         ],
         [
           "Hide private details",
-          "Pixelate",
+          "Pixelate or blur",
           "Redact"
         ],
         [
@@ -310,7 +265,7 @@
       "faq": [
         {
           "q": "Is EasyShoot a free alternative to CleanShot X?",
-          "a": "EasyShoot is free and covers capture, scrolling capture, markup, pixelation and backgrounds. It doesn't record video or recognise text."
+          "a": "EasyShoot is free and covers capture, markup with shapes, arrows, text and numbered steps, pixelation, blur and backgrounds. It doesn't record video, capture scrolling pages or recognise text."
         },
         {
           "q": "Can I use both?",
@@ -347,7 +302,7 @@
         ],
         [
           "Scrolling capture",
-          "Yes",
+          "No",
           "Yes"
         ],
         [
@@ -357,7 +312,7 @@
         ],
         [
           "Hide private details",
-          "Pixelate",
+          "Pixelate or blur",
           "Pixelate, blur and remove"
         ],
         [
@@ -398,7 +353,7 @@
         },
         {
           "q": "Do both apps have scrolling capture?",
-          "a": "Yes, both capture long pages and chats into one image."
+          "a": "No. Shottr can capture long pages and chats as one image; EasyShoot captures an area, a window or the full screen."
         },
         {
           "q": "Which one supports Arabic?",
@@ -426,7 +381,7 @@
         ],
         [
           "Scrolling capture",
-          "Yes",
+          "No",
           "Yes"
         ],
         [
@@ -436,7 +391,7 @@
         ],
         [
           "Hide private details",
-          "Pixelate",
+          "Pixelate or blur",
           "Smart Redact (blur or block)"
         ],
         [
@@ -473,7 +428,7 @@
       "faq": [
         {
           "q": "Is there a free Snagit alternative for Mac?",
-          "a": "EasyShoot is free on Mac and covers capture, scrolling capture, markup, pixelation and backgrounds. It doesn't record video."
+          "a": "EasyShoot is free on Mac and covers capture, markup with shapes, arrows, text and numbered steps, pixelation, blur and backgrounds. It doesn't record video or capture scrolling pages."
         },
         {
           "q": "Does EasyShoot need an account?",
@@ -488,7 +443,7 @@
     "macos-screenshot-alternative": {
       "short": "vs macOS Screenshot",
       "title": "Better than Command-Shift-5? EasyShoot vs the Mac's Screenshot tool",
-      "description": "What EasyShoot adds to the screenshot tool built into macOS: scrolling capture, numbered steps, pixelation, backgrounds and presets.",
+      "description": "What EasyShoot adds to the screenshot tool built into macOS: numbered steps, pixelation and blur, shapes you can style, backgrounds and presets.",
       "h1": "EasyShoot vs the Mac's built-in Screenshot tool",
       "intro": "macOS includes a solid Screenshot tool (Shift-Command-5) with screen recording and Markup. EasyShoot builds on the same idea for screenshots you want to explain and share.",
       "competitor": "macOS Screenshot",
@@ -502,11 +457,6 @@
           "Area, window and fullscreen",
           "Yes",
           "Yes"
-        ],
-        [
-          "Scrolling capture",
-          "Yes",
-          "Not listed in Apple's guide"
         ],
         [
           "Arrows and numbered steps",
@@ -598,7 +548,7 @@
           "Yes"
         ],
         [
-          "Window, fullscreen and scrolling capture",
+          "Window and fullscreen capture",
           "Yes",
           "Not listed"
         ],
@@ -641,7 +591,7 @@
       "sections": [
         {
           "h2": "Choose EasyShoot if",
-          "html": "<ul><li>Your screenshots show private things and shouldn't be on a public server.</li><li>You want numbered steps, pixelation and a background tool.</li><li>You need scrolling, window or fullscreen capture on a Mac.</li></ul>"
+          "html": "<ul><li>Your screenshots show private things and shouldn't be on a public server.</li><li>You want numbered steps, pixelation and a background tool.</li><li>You need window or fullscreen capture on a Mac.</li></ul>"
         },
         {
           "h2": "Choose Lightshot if",

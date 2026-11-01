@@ -55,171 +55,676 @@
         "en": {
           "intro": "EasyShoot arrives on the Mac App Store. Capture anything on your screen, explain it with clear marks and share it in seconds. Free, private and in five languages.",
           "groups": [
-            { "h": "Capture", "items": [
-              ["🔲", "Capture Area, Window or Fullscreen", "Each one has its own global shortcut, and you can record your own."],
-              ["📜", "Scrolling Capture", "Scroll a long page, chat or document and EasyShoot stitches it into one image. Sticky headers show up once."],
-              ["⚡", "Quick Access", "A floating thumbnail after every capture: copy it, save it, annotate it or drag it straight into another app."],
-              ["📋", "Annotate the clipboard", "Open any copied image in the editor with Option-Shift-Command-7."]
-            ] },
-            { "h": "Mark up", "items": [
-              ["➡️", "Arrows, lines and shapes", "Arrows, lines, rectangles and ellipses, each one key away: A, L, R and O."],
-              ["🔢", "Numbered steps", "Drop 1, 2, 3 on the image to walk someone through a flow."],
-              ["🖍️", "Highlighter and pen", "Point at what matters by hand."],
-              ["🫥", "Pixelate", "Hide emails, names and card numbers before you share."],
-              ["🔤", "Text in any font", "Every font on your Mac, plus Google Fonts downloaded the moment you pick one."],
-              ["🌍", "Arabic and right-to-left", "Arabic and Hebrew are written right to left with letters joined correctly."],
-              ["↩️", "Every mark stays editable", "Move, restyle or delete any mark at any time."]
-            ] },
-            { "h": "Make it look good", "items": [
-              ["🎨", "Backgrounds", "Gradients, solid colours or transparent, with padding, rounded corners and a soft shadow."],
-              ["✂️", "Crop and resize", "Free or fixed ratios (1:1, 4:3, 16:9), resize by percent or to an exact width."],
-              ["💾", "Presets", "Save a style and make it the default for every new screenshot."]
-            ] },
-            { "h": "Share", "items": [
-              ["🗂️", "PNG, JPEG, HEIC or TIFF", "Pick the format that fits where the image is going."],
-              ["⌨️", "Copy or save with one shortcut", "Shift-Command-C copies, Command-S saves."]
-            ] },
-            { "h": "Private and made for Mac", "items": [
-              ["🔒", "No account, no cloud, no tracking", "Your screenshots never leave your Mac. EasyShoot goes online only to fetch a Google font you pick and to check the App Store for an update."],
-              ["🪟", "Native on macOS", "SwiftUI and AppKit, light and dark, Liquid Glass on macOS 26 and later. Works on macOS 14 and later."],
-              ["🗣️", "Five languages", "English, Arabic, French, Spanish and German."]
-            ] }
+            {
+              "h": "Capture",
+              "items": [
+                [
+                  "🔲",
+                  "Capture Area, Window or Fullscreen",
+                  "Each one has its own global shortcut, and you can record your own."
+                ],
+                [
+                  "⚡",
+                  "Quick Access",
+                  "A floating thumbnail after every capture: copy it, save it, annotate it or drag it straight into another app."
+                ],
+                [
+                  "📋",
+                  "Annotate the clipboard",
+                  "Open any copied image in the editor with Option-Shift-Command-7."
+                ]
+              ]
+            },
+            {
+              "h": "Mark up",
+              "items": [
+                [
+                  "➡️",
+                  "Arrows that bend",
+                  "A standard or swept head. Drag the middle handle to curve any arrow."
+                ],
+                [
+                  "🔷",
+                  "Lines, rectangles, diamonds and ellipses",
+                  "Solid, dashed or dotted, with a fill colour, sharp or round edges and any angle. Keys L, R, D and O."
+                ],
+                [
+                  "🔢",
+                  "Numbered steps",
+                  "Drop 1, 2, 3 on the image, with no background, their own colour or a light fill."
+                ],
+                [
+                  "✍️",
+                  "Pen",
+                  "Draw by hand to point at what matters."
+                ],
+                [
+                  "🫥",
+                  "Pixelate or blur",
+                  "Hide emails, names and card numbers before you share, with the strength you choose."
+                ],
+                [
+                  "🔤",
+                  "Text in any font",
+                  "Every font on your Mac, plus Google Fonts on demand. Plain, in a bubble or outlined."
+                ],
+                [
+                  "🌍",
+                  "Arabic and right-to-left",
+                  "Arabic and Hebrew are written right to left with letters joined correctly."
+                ],
+                [
+                  "🎚️",
+                  "Stroke width and opacity",
+                  "Thin, medium or bold, or any width from 1 to 30, and an opacity for every mark."
+                ],
+                [
+                  "🧲",
+                  "Select several at once",
+                  "Command-A, Shift-click or drag a box over empty canvas, then move, restyle or delete them together."
+                ],
+                [
+                  "↩️",
+                  "Every mark stays editable",
+                  "Change any mark at any time, all in the inspector's Style tab."
+                ]
+              ]
+            },
+            {
+              "h": "Make it look good",
+              "items": [
+                [
+                  "🎨",
+                  "Backgrounds",
+                  "Gradients, solid colours or transparent, with padding, rounded corners and a soft shadow."
+                ],
+                [
+                  "✂️",
+                  "Crop and resize",
+                  "Free or fixed ratios (1:1, 4:3, 16:9), resize by percent or to an exact width."
+                ],
+                [
+                  "💾",
+                  "Presets",
+                  "Save a style and make it the default for every new screenshot."
+                ]
+              ]
+            },
+            {
+              "h": "Share",
+              "items": [
+                [
+                  "🗂️",
+                  "PNG, JPEG, HEIC or TIFF",
+                  "Pick the format that fits where the image is going."
+                ],
+                [
+                  "⌨️",
+                  "Copy or save with one shortcut",
+                  "Shift-Command-C copies, Command-S saves."
+                ]
+              ]
+            },
+            {
+              "h": "Private and made for Mac",
+              "items": [
+                [
+                  "🔒",
+                  "No account, no cloud, no tracking",
+                  "Your screenshots never leave your Mac. EasyShoot goes online only to fetch a Google font you pick and to check the App Store for an update."
+                ],
+                [
+                  "🪟",
+                  "Native on macOS",
+                  "SwiftUI and AppKit, light and dark, Liquid Glass on macOS 26 and later. Works on macOS 14 and later."
+                ],
+                [
+                  "🗣️",
+                  "Five languages",
+                  "English, Arabic, French, Spanish and German."
+                ]
+              ]
+            }
           ]
         },
         "ar": {
           "intro": "وصل EasyShoot إلى متجر تطبيقات الماك. التقط أي شيء على شاشتك، ووضّحه بعلامات واضحة، وشاركه في ثوانٍ. مجاني وخاص وبخمس لغات.",
           "groups": [
-            { "h": "الالتقاط", "items": [
-              ["🔲", "التقاط منطقة أو نافذة أو الشاشة كاملة", "لكل منها اختصار عام، ويمكنك تسجيل اختصارك الخاص."],
-              ["📜", "الالتقاط مع التمرير", "مرّر صفحة أو محادثة أو مستندًا طويلًا، ويجمعه EasyShoot في صورة واحدة. والأجزاء الثابتة في الأعلى تظهر مرة واحدة فقط."],
-              ["⚡", "الوصول السريع", "صورة مصغّرة عائمة بعد كل لقطة: انسخها أو احفظها أو وضّحها أو اسحبها مباشرة إلى تطبيق آخر."],
-              ["📋", "توضيح صورة الحافظة", "افتح أي صورة منسوخة في المحرر بالاختصار Option-Shift-Command-7."]
-            ] },
-            { "h": "التوضيح", "items": [
-              ["➡️", "أسهم وخطوط وأشكال", "أسهم وخطوط ومستطيلات وأشكال بيضوية، ولكل أداة مفتاح: A وL وR وO."],
-              ["🔢", "خطوات مرقّمة", "ضع 1 و2 و3 على الصورة لتشرح الخطوات بالترتيب."],
-              ["🖍️", "قلم تمييز وقلم", "أشِر بيدك إلى ما يهم."],
-              ["🫥", "التمويه", "أخفِ الإيميلات والأسماء وأرقام البطاقات قبل المشاركة."],
-              ["🔤", "نص بأي خط", "كل الخطوط على جهازك، مع خطوط Google تُنزَّل لحظة اختيارها."],
-              ["🌍", "العربية ومن اليمين لليسار", "العربية والعبرية تُكتبان من اليمين لليسار والحروف متصلة بشكل صحيح."],
-              ["↩️", "كل علامة تبقى قابلة للتعديل", "حرّك أي علامة أو غيّر شكلها أو احذفها في أي وقت."]
-            ] },
-            { "h": "اجعلها أجمل", "items": [
-              ["🎨", "الخلفيات", "تدرّجات أو ألوان ثابتة أو خلفية شفافة، مع هوامش وزوايا دائرية وظل ناعم."],
-              ["✂️", "القص وتغيير الحجم", "نِسب حرّة أو ثابتة (1:1 و4:3 و16:9)، وتغيير الحجم بالنسبة المئوية أو إلى عرض محدد."],
-              ["💾", "الإعدادات الجاهزة", "احفظ أسلوبًا واجعله الافتراضي لكل لقطة جديدة."]
-            ] },
-            { "h": "المشاركة", "items": [
-              ["🗂️", "PNG أو JPEG أو HEIC أو TIFF", "اختر الصيغة التي تناسب المكان الذي ستذهب إليه الصورة."],
-              ["⌨️", "النسخ أو الحفظ باختصار واحد", "Shift-Command-C للنسخ، وCommand-S للحفظ."]
-            ] },
-            { "h": "خاص ومصمَّم للماك", "items": [
-              ["🔒", "بلا حساب، بلا سحابة، بلا تتبّع", "لقطاتك لا تغادر جهازك. يتصل EasyShoot بالإنترنت فقط لتنزيل خط Google تختاره وللتحقق من وجود تحديث في المتجر."],
-              ["🪟", "تطبيق أصلي على macOS", "مبني بـ SwiftUI وAppKit، بالوضعين الفاتح والداكن، مع Liquid Glass على macOS 26 وما بعده. يعمل على macOS 14 وما بعده."],
-              ["🗣️", "خمس لغات", "الإنجليزية والعربية والفرنسية والإسبانية والألمانية."]
-            ] }
+            {
+              "h": "الالتقاط",
+              "items": [
+                [
+                  "🔲",
+                  "التقاط منطقة أو نافذة أو الشاشة كاملة",
+                  "لكل منها اختصار عام، ويمكنك تسجيل اختصارك الخاص."
+                ],
+                [
+                  "⚡",
+                  "الوصول السريع",
+                  "صورة مصغّرة عائمة بعد كل لقطة: انسخها أو احفظها أو وضّحها أو اسحبها مباشرة إلى تطبيق آخر."
+                ],
+                [
+                  "📋",
+                  "توضيح صورة الحافظة",
+                  "افتح أي صورة منسوخة في المحرر بالاختصار Option-Shift-Command-7."
+                ]
+              ]
+            },
+            {
+              "h": "التوضيح",
+              "items": [
+                [
+                  "➡️",
+                  "أسهم تنحني",
+                  "رأس عادي أو مدبّب، واسحب المقبض الأوسط لتحني أي سهم."
+                ],
+                [
+                  "🔷",
+                  "خطوط ومستطيلات ومعيّنات وأشكال بيضوية",
+                  "متصلة أو متقطّعة أو منقّطة، مع لون تعبئة وحواف حادة أو مدوّرة وأي زاوية. المفاتيح L وR وD وO."
+                ],
+                [
+                  "🔢",
+                  "خطوات مرقّمة",
+                  "ضع 1 و2 و3 على الصورة، بلا خلفية أو بلونها أو بتعبئة فاتحة."
+                ],
+                [
+                  "✍️",
+                  "قلم",
+                  "ارسم بيدك لتشير إلى ما يهم."
+                ],
+                [
+                  "🫥",
+                  "بكسلة أو ضبابية",
+                  "أخفِ الإيميلات والأسماء وأرقام البطاقات قبل المشاركة، بالشدّة التي تختارها."
+                ],
+                [
+                  "🔤",
+                  "نص بأي خط",
+                  "كل الخطوط على جهازك، مع خطوط Google عند الطلب. عادي أو في فقاعة أو بإطار."
+                ],
+                [
+                  "🌍",
+                  "العربية ومن اليمين لليسار",
+                  "العربية والعبرية تُكتبان من اليمين لليسار والحروف متصلة بشكل صحيح."
+                ],
+                [
+                  "🎚️",
+                  "سماكة الخط والشفافية",
+                  "رفيع أو متوسط أو عريض، أو أي سماكة من 1 إلى 30، وشفافية لكل علامة."
+                ],
+                [
+                  "🧲",
+                  "حدّد أكثر من علامة",
+                  "Command-A، أو Shift مع النقر، أو اسحب مربعًا على مساحة فارغة، ثم حرّكها أو غيّر نمطها أو احذفها معًا."
+                ],
+                [
+                  "↩️",
+                  "كل علامة تبقى قابلة للتعديل",
+                  "غيّر أي علامة في أي وقت، وكل ذلك من تبويب النمط في لوحة الخصائص."
+                ]
+              ]
+            },
+            {
+              "h": "اجعلها أجمل",
+              "items": [
+                [
+                  "🎨",
+                  "الخلفيات",
+                  "تدرّجات أو ألوان ثابتة أو خلفية شفافة، مع هوامش وزوايا دائرية وظل ناعم."
+                ],
+                [
+                  "✂️",
+                  "القص وتغيير الحجم",
+                  "نِسب حرّة أو ثابتة (1:1 و4:3 و16:9)، وتغيير الحجم بالنسبة المئوية أو إلى عرض محدد."
+                ],
+                [
+                  "💾",
+                  "الإعدادات الجاهزة",
+                  "احفظ أسلوبًا واجعله الافتراضي لكل لقطة جديدة."
+                ]
+              ]
+            },
+            {
+              "h": "المشاركة",
+              "items": [
+                [
+                  "🗂️",
+                  "PNG أو JPEG أو HEIC أو TIFF",
+                  "اختر الصيغة التي تناسب المكان الذي ستذهب إليه الصورة."
+                ],
+                [
+                  "⌨️",
+                  "النسخ أو الحفظ باختصار واحد",
+                  "Shift-Command-C للنسخ، وCommand-S للحفظ."
+                ]
+              ]
+            },
+            {
+              "h": "خاص ومصمَّم للماك",
+              "items": [
+                [
+                  "🔒",
+                  "بلا حساب، بلا سحابة، بلا تتبّع",
+                  "لقطاتك لا تغادر جهازك. يتصل EasyShoot بالإنترنت فقط لتنزيل خط Google تختاره وللتحقق من وجود تحديث في المتجر."
+                ],
+                [
+                  "🪟",
+                  "تطبيق أصلي على macOS",
+                  "مبني بـ SwiftUI وAppKit، بالوضعين الفاتح والداكن، مع Liquid Glass على macOS 26 وما بعده. يعمل على macOS 14 وما بعده."
+                ],
+                [
+                  "🗣️",
+                  "خمس لغات",
+                  "الإنجليزية والعربية والفرنسية والإسبانية والألمانية."
+                ]
+              ]
+            }
           ]
         },
         "fr": {
           "intro": "EasyShoot arrive sur le Mac App Store. Capturez tout ce qui est à l’écran, expliquez-le avec des repères clairs et partagez-le en quelques secondes. Gratuit, privé et en cinq langues.",
           "groups": [
-            { "h": "Capture", "items": [
-              ["🔲", "Zone, fenêtre ou plein écran", "Chacune a son raccourci global, et vous pouvez enregistrer le vôtre."],
-              ["📜", "Capture défilante", "Faites défiler une longue page, une discussion ou un document : EasyShoot l’assemble en une seule image. Les en-têtes fixes n’apparaissent qu’une fois."],
-              ["⚡", "Accès rapide", "Une vignette flottante après chaque capture : copiez-la, enregistrez-la, annotez-la ou glissez-la directement dans une autre app."],
-              ["📋", "Annoter le presse-papiers", "Ouvrez n’importe quelle image copiée dans l’éditeur avec Option-Maj-Commande-7."]
-            ] },
-            { "h": "Annotation", "items": [
-              ["➡️", "Flèches, lignes et formes", "Flèches, lignes, rectangles et ellipses, chacun à une touche : A, L, R et O."],
-              ["🔢", "Étapes numérotées", "Posez 1, 2, 3 sur l’image pour guider quelqu’un pas à pas."],
-              ["🖍️", "Surligneur et stylo", "Montrez l’essentiel à main levée."],
-              ["🫥", "Pixellisation", "Masquez e-mails, noms et numéros de carte avant de partager."],
-              ["🔤", "Du texte dans n’importe quelle police", "Toutes les polices de votre Mac, plus Google Fonts téléchargées dès que vous en choisissez une."],
-              ["🌍", "Arabe et droite à gauche", "L’arabe et l’hébreu s’écrivent de droite à gauche, lettres correctement liées."],
-              ["↩️", "Chaque repère reste modifiable", "Déplacez, restylez ou supprimez un repère à tout moment."]
-            ] },
-            { "h": "Mise en valeur", "items": [
-              ["🎨", "Arrière-plans", "Dégradés, couleurs unies ou transparence, avec marges, coins arrondis et ombre douce."],
-              ["✂️", "Recadrer et redimensionner", "Ratio libre ou fixe (1:1, 4:3, 16:9), redimensionnement en pourcentage ou à une largeur précise."],
-              ["💾", "Préréglages", "Enregistrez un style et faites-en le style par défaut de chaque nouvelle capture."]
-            ] },
-            { "h": "Partage", "items": [
-              ["🗂️", "PNG, JPEG, HEIC ou TIFF", "Choisissez le format adapté à la destination de l’image."],
-              ["⌨️", "Copier ou enregistrer d’un raccourci", "Maj-Commande-C copie, Commande-S enregistre."]
-            ] },
-            { "h": "Privé et pensé pour le Mac", "items": [
-              ["🔒", "Pas de compte, pas de cloud, pas de suivi", "Vos captures ne quittent jamais votre Mac. EasyShoot ne se connecte que pour télécharger une police Google choisie et vérifier les mises à jour sur l’App Store."],
-              ["🪟", "Natif sur macOS", "SwiftUI et AppKit, clair et sombre, Liquid Glass sur macOS 26 et versions ultérieures. Fonctionne sur macOS 14 et versions ultérieures."],
-              ["🗣️", "Cinq langues", "Anglais, arabe, français, espagnol et allemand."]
-            ] }
+            {
+              "h": "Capture",
+              "items": [
+                [
+                  "🔲",
+                  "Zone, fenêtre ou plein écran",
+                  "Chacune a son raccourci global, et vous pouvez enregistrer le vôtre."
+                ],
+                [
+                  "⚡",
+                  "Accès rapide",
+                  "Une vignette flottante après chaque capture : copiez-la, enregistrez-la, annotez-la ou glissez-la directement dans une autre app."
+                ],
+                [
+                  "📋",
+                  "Annoter le presse-papiers",
+                  "Ouvrez n’importe quelle image copiée dans l’éditeur avec Option-Maj-Commande-7."
+                ]
+              ]
+            },
+            {
+              "h": "Annotation",
+              "items": [
+                [
+                  "➡️",
+                  "Des flèches qui se courbent",
+                  "Pointe standard ou effilée. Tirez la poignée du milieu pour courber une flèche."
+                ],
+                [
+                  "🔷",
+                  "Lignes, rectangles, losanges et ellipses",
+                  "Trait continu, en tirets ou pointillé, couleur de fond, bords droits ou arrondis et n’importe quel angle. Touches L, R, D et O."
+                ],
+                [
+                  "🔢",
+                  "Étapes numérotées",
+                  "Posez 1, 2, 3 sur l’image, sans fond, dans leur couleur ou avec un fond clair."
+                ],
+                [
+                  "✍️",
+                  "Stylo",
+                  "Dessinez à main levée pour montrer l’essentiel."
+                ],
+                [
+                  "🫥",
+                  "Pixeliser ou flouter",
+                  "Masquez e-mails, noms et numéros de carte avant de partager, avec l’intensité de votre choix."
+                ],
+                [
+                  "🔤",
+                  "Du texte dans n’importe quelle police",
+                  "Toutes les polices de votre Mac, plus Google Fonts à la demande. Simple, en bulle ou avec contour."
+                ],
+                [
+                  "🌍",
+                  "Arabe et droite à gauche",
+                  "L’arabe et l’hébreu s’écrivent de droite à gauche, lettres correctement liées."
+                ],
+                [
+                  "🎚️",
+                  "Épaisseur et opacité",
+                  "Fin, moyen ou épais, ou n’importe quelle épaisseur de 1 à 30, et une opacité pour chaque repère."
+                ],
+                [
+                  "🧲",
+                  "Plusieurs repères à la fois",
+                  "Commande-A, Maj-clic ou un cadre tracé sur une zone vide, puis déplacez, restylez ou supprimez-les ensemble."
+                ],
+                [
+                  "↩️",
+                  "Chaque repère reste modifiable",
+                  "Modifiez un repère à tout moment, depuis l’onglet Style de l’inspecteur."
+                ]
+              ]
+            },
+            {
+              "h": "Mise en valeur",
+              "items": [
+                [
+                  "🎨",
+                  "Arrière-plans",
+                  "Dégradés, couleurs unies ou transparence, avec marges, coins arrondis et ombre douce."
+                ],
+                [
+                  "✂️",
+                  "Recadrer et redimensionner",
+                  "Ratio libre ou fixe (1:1, 4:3, 16:9), redimensionnement en pourcentage ou à une largeur précise."
+                ],
+                [
+                  "💾",
+                  "Préréglages",
+                  "Enregistrez un style et faites-en le style par défaut de chaque nouvelle capture."
+                ]
+              ]
+            },
+            {
+              "h": "Partage",
+              "items": [
+                [
+                  "🗂️",
+                  "PNG, JPEG, HEIC ou TIFF",
+                  "Choisissez le format adapté à la destination de l’image."
+                ],
+                [
+                  "⌨️",
+                  "Copier ou enregistrer d’un raccourci",
+                  "Maj-Commande-C copie, Commande-S enregistre."
+                ]
+              ]
+            },
+            {
+              "h": "Privé et pensé pour le Mac",
+              "items": [
+                [
+                  "🔒",
+                  "Pas de compte, pas de cloud, pas de suivi",
+                  "Vos captures ne quittent jamais votre Mac. EasyShoot ne se connecte que pour télécharger une police Google choisie et vérifier les mises à jour sur l’App Store."
+                ],
+                [
+                  "🪟",
+                  "Natif sur macOS",
+                  "SwiftUI et AppKit, clair et sombre, Liquid Glass sur macOS 26 et versions ultérieures. Fonctionne sur macOS 14 et versions ultérieures."
+                ],
+                [
+                  "🗣️",
+                  "Cinq langues",
+                  "Anglais, arabe, français, espagnol et allemand."
+                ]
+              ]
+            }
           ]
         },
         "es": {
           "intro": "EasyShoot llega a la Mac App Store. Captura lo que haya en tu pantalla, explícalo con marcas claras y compártelo en segundos. Gratis, privado y en cinco idiomas.",
           "groups": [
-            { "h": "Captura", "items": [
-              ["🔲", "Área, ventana o pantalla completa", "Cada una tiene su atajo global, y puedes grabar el tuyo."],
-              ["📜", "Captura con desplazamiento", "Desplázate por una página, un chat o un documento largo y EasyShoot lo une en una sola imagen. Las cabeceras fijas aparecen una vez."],
-              ["⚡", "Acceso rápido", "Una miniatura flotante tras cada captura: cópiala, guárdala, anótala o arrástrala directamente a otra app."],
-              ["📋", "Anotar el portapapeles", "Abre cualquier imagen copiada en el editor con Opción-Mayúsculas-Comando-7."]
-            ] },
-            { "h": "Anotación", "items": [
-              ["➡️", "Flechas, líneas y formas", "Flechas, líneas, rectángulos y elipses, cada uno a una tecla: A, L, R y O."],
-              ["🔢", "Pasos numerados", "Coloca 1, 2, 3 sobre la imagen para guiar a alguien paso a paso."],
-              ["🖍️", "Resaltador y lápiz", "Señala lo importante a mano."],
-              ["🫥", "Pixelado", "Oculta correos, nombres y números de tarjeta antes de compartir."],
-              ["🔤", "Texto en cualquier fuente", "Todas las fuentes de tu Mac, más Google Fonts descargadas en cuanto eliges una."],
-              ["🌍", "Árabe y de derecha a izquierda", "El árabe y el hebreo se escriben de derecha a izquierda con las letras bien unidas."],
-              ["↩️", "Cada marca sigue siendo editable", "Mueve, cambia el estilo o borra cualquier marca cuando quieras."]
-            ] },
-            { "h": "Que se vea bien", "items": [
-              ["🎨", "Fondos", "Degradados, colores sólidos o transparente, con margen, esquinas redondeadas y una sombra suave."],
-              ["✂️", "Recortar y redimensionar", "Proporción libre o fija (1:1, 4:3, 16:9), redimensiona por porcentaje o a un ancho exacto."],
-              ["💾", "Ajustes guardados", "Guarda un estilo y conviértelo en el predeterminado de cada captura nueva."]
-            ] },
-            { "h": "Compartir", "items": [
-              ["🗂️", "PNG, JPEG, HEIC o TIFF", "Elige el formato que encaje con el destino de la imagen."],
-              ["⌨️", "Copiar o guardar con un atajo", "Mayúsculas-Comando-C copia, Comando-S guarda."]
-            ] },
-            { "h": "Privado y hecho para Mac", "items": [
-              ["🔒", "Sin cuenta, sin nube, sin rastreo", "Tus capturas nunca salen de tu Mac. EasyShoot solo se conecta para descargar una fuente de Google que elijas y para buscar actualizaciones en la App Store."],
-              ["🪟", "Nativo en macOS", "SwiftUI y AppKit, claro y oscuro, Liquid Glass en macOS 26 y posteriores. Funciona en macOS 14 y posteriores."],
-              ["🗣️", "Cinco idiomas", "Inglés, árabe, francés, español y alemán."]
-            ] }
+            {
+              "h": "Captura",
+              "items": [
+                [
+                  "🔲",
+                  "Área, ventana o pantalla completa",
+                  "Cada una tiene su atajo global, y puedes grabar el tuyo."
+                ],
+                [
+                  "⚡",
+                  "Acceso rápido",
+                  "Una miniatura flotante tras cada captura: cópiala, guárdala, anótala o arrástrala directamente a otra app."
+                ],
+                [
+                  "📋",
+                  "Anotar el portapapeles",
+                  "Abre cualquier imagen copiada en el editor con Opción-Mayúsculas-Comando-7."
+                ]
+              ]
+            },
+            {
+              "h": "Anotación",
+              "items": [
+                [
+                  "➡️",
+                  "Flechas que se curvan",
+                  "Punta estándar o afilada. Arrastra el tirador central para curvar cualquier flecha."
+                ],
+                [
+                  "🔷",
+                  "Líneas, rectángulos, rombos y elipses",
+                  "Trazo continuo, discontinuo o punteado, con color de relleno, bordes rectos o redondeados y cualquier ángulo. Teclas L, R, D y O."
+                ],
+                [
+                  "🔢",
+                  "Pasos numerados",
+                  "Coloca 1, 2, 3 sobre la imagen, sin fondo, en su propio color o con un relleno claro."
+                ],
+                [
+                  "✍️",
+                  "Lápiz",
+                  "Dibuja a mano para señalar lo importante."
+                ],
+                [
+                  "🫥",
+                  "Pixelar o desenfocar",
+                  "Oculta correos, nombres y números de tarjeta antes de compartir, con la intensidad que elijas."
+                ],
+                [
+                  "🔤",
+                  "Texto en cualquier fuente",
+                  "Todas las fuentes de tu Mac, más Google Fonts cuando las necesites. Simple, en burbuja o con contorno."
+                ],
+                [
+                  "🌍",
+                  "Árabe y de derecha a izquierda",
+                  "El árabe y el hebreo se escriben de derecha a izquierda con las letras bien unidas."
+                ],
+                [
+                  "🎚️",
+                  "Grosor y opacidad",
+                  "Fino, medio o grueso, o cualquier grosor de 1 a 30, y una opacidad para cada marca."
+                ],
+                [
+                  "🧲",
+                  "Varias marcas a la vez",
+                  "Comando-A, Mayúsculas-clic o arrastra un recuadro sobre una zona vacía, y muévelas, cambia su estilo o bórralas juntas."
+                ],
+                [
+                  "↩️",
+                  "Cada marca sigue siendo editable",
+                  "Cambia cualquier marca cuando quieras, desde la pestaña Estilo del inspector."
+                ]
+              ]
+            },
+            {
+              "h": "Que se vea bien",
+              "items": [
+                [
+                  "🎨",
+                  "Fondos",
+                  "Degradados, colores sólidos o transparente, con margen, esquinas redondeadas y una sombra suave."
+                ],
+                [
+                  "✂️",
+                  "Recortar y redimensionar",
+                  "Proporción libre o fija (1:1, 4:3, 16:9), redimensiona por porcentaje o a un ancho exacto."
+                ],
+                [
+                  "💾",
+                  "Ajustes guardados",
+                  "Guarda un estilo y conviértelo en el predeterminado de cada captura nueva."
+                ]
+              ]
+            },
+            {
+              "h": "Compartir",
+              "items": [
+                [
+                  "🗂️",
+                  "PNG, JPEG, HEIC o TIFF",
+                  "Elige el formato que encaje con el destino de la imagen."
+                ],
+                [
+                  "⌨️",
+                  "Copiar o guardar con un atajo",
+                  "Mayúsculas-Comando-C copia, Comando-S guarda."
+                ]
+              ]
+            },
+            {
+              "h": "Privado y hecho para Mac",
+              "items": [
+                [
+                  "🔒",
+                  "Sin cuenta, sin nube, sin rastreo",
+                  "Tus capturas nunca salen de tu Mac. EasyShoot solo se conecta para descargar una fuente de Google que elijas y para buscar actualizaciones en la App Store."
+                ],
+                [
+                  "🪟",
+                  "Nativo en macOS",
+                  "SwiftUI y AppKit, claro y oscuro, Liquid Glass en macOS 26 y posteriores. Funciona en macOS 14 y posteriores."
+                ],
+                [
+                  "🗣️",
+                  "Cinco idiomas",
+                  "Inglés, árabe, francés, español y alemán."
+                ]
+              ]
+            }
           ]
         },
         "de": {
           "intro": "EasyShoot kommt in den Mac App Store. Nimm alles auf deinem Bildschirm auf, erkläre es mit klaren Markierungen und teile es in Sekunden. Kostenlos, privat und in fünf Sprachen.",
           "groups": [
-            { "h": "Aufnehmen", "items": [
-              ["🔲", "Bereich, Fenster oder ganzer Bildschirm", "Jede Aufnahme hat ihr eigenes globales Kürzel, und du kannst dein eigenes festlegen."],
-              ["📜", "Scroll-Aufnahme", "Scrolle durch eine lange Seite, einen Chat oder ein Dokument und EasyShoot fügt alles zu einem Bild zusammen. Fixierte Kopfzeilen erscheinen nur einmal."],
-              ["⚡", "Schnellzugriff", "Eine schwebende Miniatur nach jeder Aufnahme: kopieren, sichern, markieren oder direkt in eine andere App ziehen."],
-              ["📋", "Zwischenablage markieren", "Öffne jedes kopierte Bild mit Wahl-Umschalt-Befehl-7 im Editor."]
-            ] },
-            { "h": "Markieren", "items": [
-              ["➡️", "Pfeile, Linien und Formen", "Pfeile, Linien, Rechtecke und Ellipsen, jeweils eine Taste entfernt: A, L, R und O."],
-              ["🔢", "Nummerierte Schritte", "Setze 1, 2, 3 auf das Bild und führe jemanden Schritt für Schritt."],
-              ["🖍️", "Textmarker und Stift", "Zeige von Hand, worauf es ankommt."],
-              ["🫥", "Verpixeln", "Verberge E-Mails, Namen und Kartennummern, bevor du teilst."],
-              ["🔤", "Text in jeder Schrift", "Alle Schriften auf deinem Mac, dazu Google Fonts, geladen, sobald du eine auswählst."],
-              ["🌍", "Arabisch und Rechts-nach-links", "Arabisch und Hebräisch laufen von rechts nach links, die Buchstaben korrekt verbunden."],
-              ["↩️", "Jede Markierung bleibt bearbeitbar", "Verschiebe, gestalte oder lösche jede Markierung jederzeit."]
-            ] },
-            { "h": "Gut aussehen lassen", "items": [
-              ["🎨", "Hintergründe", "Verläufe, Vollfarben oder transparent, mit Rand, abgerundeten Ecken und weichem Schatten."],
-              ["✂️", "Zuschneiden und Größe ändern", "Freies oder festes Format (1:1, 4:3, 16:9), Größe in Prozent oder auf eine genaue Breite."],
-              ["💾", "Vorgaben", "Sichere einen Stil und mach ihn zum Standard für jeden neuen Screenshot."]
-            ] },
-            { "h": "Teilen", "items": [
-              ["🗂️", "PNG, JPEG, HEIC oder TIFF", "Wähle das Format, das zum Ziel des Bildes passt."],
-              ["⌨️", "Kopieren oder sichern mit einem Kürzel", "Umschalt-Befehl-C kopiert, Befehl-S sichert."]
-            ] },
-            { "h": "Privat und für den Mac gemacht", "items": [
-              ["🔒", "Kein Konto, keine Cloud, kein Tracking", "Deine Screenshots verlassen nie deinen Mac. EasyShoot geht nur online, um eine gewählte Google-Schrift zu laden und im App Store nach Updates zu sehen."],
-              ["🪟", "Nativ auf macOS", "SwiftUI und AppKit, hell und dunkel, Liquid Glass ab macOS 26. Läuft ab macOS 14."],
-              ["🗣️", "Fünf Sprachen", "Englisch, Arabisch, Französisch, Spanisch und Deutsch."]
-            ] }
+            {
+              "h": "Aufnehmen",
+              "items": [
+                [
+                  "🔲",
+                  "Bereich, Fenster oder ganzer Bildschirm",
+                  "Jede Aufnahme hat ihr eigenes globales Kürzel, und du kannst dein eigenes festlegen."
+                ],
+                [
+                  "⚡",
+                  "Schnellzugriff",
+                  "Eine schwebende Miniatur nach jeder Aufnahme: kopieren, sichern, markieren oder direkt in eine andere App ziehen."
+                ],
+                [
+                  "📋",
+                  "Zwischenablage markieren",
+                  "Öffne jedes kopierte Bild mit Wahl-Umschalt-Befehl-7 im Editor."
+                ]
+              ]
+            },
+            {
+              "h": "Markieren",
+              "items": [
+                [
+                  "➡️",
+                  "Pfeile, die sich biegen",
+                  "Normale oder spitze Pfeilspitze. Zieh am mittleren Griff, um einen Pfeil zu biegen."
+                ],
+                [
+                  "🔷",
+                  "Linien, Rechtecke, Rauten und Ellipsen",
+                  "Durchgezogen, gestrichelt oder gepunktet, mit Füllfarbe, eckigen oder runden Ecken und jedem Winkel. Tasten L, R, D und O."
+                ],
+                [
+                  "🔢",
+                  "Nummerierte Schritte",
+                  "Setze 1, 2, 3 auf das Bild, ohne Hintergrund, in eigener Farbe oder mit heller Füllung."
+                ],
+                [
+                  "✍️",
+                  "Stift",
+                  "Zeichne von Hand, worauf es ankommt."
+                ],
+                [
+                  "🫥",
+                  "Verpixeln oder weichzeichnen",
+                  "Verberge E-Mails, Namen und Kartennummern, bevor du teilst, in der Stärke deiner Wahl."
+                ],
+                [
+                  "🔤",
+                  "Text in jeder Schrift",
+                  "Alle Schriften auf deinem Mac, dazu Google Fonts bei Bedarf. Einfach, als Sprechblase oder mit Kontur."
+                ],
+                [
+                  "🌍",
+                  "Arabisch und Rechts-nach-links",
+                  "Arabisch und Hebräisch laufen von rechts nach links, die Buchstaben korrekt verbunden."
+                ],
+                [
+                  "🎚️",
+                  "Linienstärke und Deckkraft",
+                  "Dünn, mittel oder fett, oder jede Stärke von 1 bis 30, und eine Deckkraft für jede Markierung."
+                ],
+                [
+                  "🧲",
+                  "Mehrere auf einmal",
+                  "Befehl-A, Umschalt-Klick oder ein Rahmen über leere Fläche, dann gemeinsam bewegen, gestalten oder löschen."
+                ],
+                [
+                  "↩️",
+                  "Jede Markierung bleibt bearbeitbar",
+                  "Ändere jede Markierung jederzeit, alles im Tab „Stil“ des Inspektors."
+                ]
+              ]
+            },
+            {
+              "h": "Gut aussehen lassen",
+              "items": [
+                [
+                  "🎨",
+                  "Hintergründe",
+                  "Verläufe, Vollfarben oder transparent, mit Rand, abgerundeten Ecken und weichem Schatten."
+                ],
+                [
+                  "✂️",
+                  "Zuschneiden und Größe ändern",
+                  "Freies oder festes Format (1:1, 4:3, 16:9), Größe in Prozent oder auf eine genaue Breite."
+                ],
+                [
+                  "💾",
+                  "Vorgaben",
+                  "Sichere einen Stil und mach ihn zum Standard für jeden neuen Screenshot."
+                ]
+              ]
+            },
+            {
+              "h": "Teilen",
+              "items": [
+                [
+                  "🗂️",
+                  "PNG, JPEG, HEIC oder TIFF",
+                  "Wähle das Format, das zum Ziel des Bildes passt."
+                ],
+                [
+                  "⌨️",
+                  "Kopieren oder sichern mit einem Kürzel",
+                  "Umschalt-Befehl-C kopiert, Befehl-S sichert."
+                ]
+              ]
+            },
+            {
+              "h": "Privat und für den Mac gemacht",
+              "items": [
+                [
+                  "🔒",
+                  "Kein Konto, keine Cloud, kein Tracking",
+                  "Deine Screenshots verlassen nie deinen Mac. EasyShoot geht nur online, um eine gewählte Google-Schrift zu laden und im App Store nach Updates zu sehen."
+                ],
+                [
+                  "🪟",
+                  "Nativ auf macOS",
+                  "SwiftUI und AppKit, hell und dunkel, Liquid Glass ab macOS 26. Läuft ab macOS 14."
+                ],
+                [
+                  "🗣️",
+                  "Fünf Sprachen",
+                  "Englisch, Arabisch, Französisch, Spanisch und Deutsch."
+                ]
+              ]
+            }
           ]
         }
       }

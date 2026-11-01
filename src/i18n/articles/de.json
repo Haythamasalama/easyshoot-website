@@ -16,7 +16,7 @@
   "hubs": {
     "guides": {
       "title": "Anleitungen für Screenshots auf dem Mac | EasyShoot",
-      "description": "Kurze, praktische Anleitungen für Screenshots auf dem Mac: Scroll-Aufnahmen, private Details verpixeln, Pfeile und nummerierte Schritte, arabischer Text.",
+      "description": "Kurze, praktische Anleitungen für Screenshots auf dem Mac: private Details verbergen, Pfeile, Formen und nummerierte Schritte, arabischer Text.",
       "h1": "Screenshot-Anleitungen für den Mac",
       "intro": "Kurze Antworten auf die häufigsten Fragen zu Screenshots auf dem Mac, mit genau den Tasten, die du drücken musst."
     },
@@ -28,69 +28,20 @@
     }
   },
   "articles": {
-    "scrolling-screenshot-mac": {
-      "short": "Scrollende Screenshots",
-      "title": "Scrollenden Screenshot auf dem Mac aufnehmen | EasyShoot",
-      "description": "Nimm eine ganze Webseite, einen Chat oder ein Dokument als ein langes Bild auf deinem Mac auf. Schritt für Schritt mit der scrollenden Aufnahme von EasyShoot.",
-      "h1": "So nimmst du einen scrollenden Screenshot auf dem Mac auf",
-      "intro": "Ein scrollender Screenshot erfasst mehr, als auf den Bildschirm passt: eine ganze Webseite, einen langen Chat oder ein Dokument, zusammengesetzt zu einem hohen Bild. Das Bildschirmfoto-Werkzeug von macOS nimmt auf, was sichtbar ist. Für eine ganze Seite brauchst du deshalb ein Werkzeug für Scroll-Aufnahmen wie EasyShoot.",
-      "steps": [
-        {
-          "name": "Scroll-Aufnahme starten",
-          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-6 oder wähle „Scroll-Aufnahme“ im EasyShoot-Menü in der Menüleiste."
-        },
-        {
-          "name": "Bereich auswählen",
-          "text": "Zieh über den Teil des Fensters, den du scrollen möchtest, zum Beispiel den Seiteninhalt ohne die Symbolleiste des Browsers. Drücke Esc zum Abbrechen."
-        },
-        {
-          "name": "Langsam scrollen",
-          "text": "Scrolle gleichmäßig nach unten. Scrollst du zu schnell, bittet dich EasyShoot, ein Stück zurückzuscrollen und langsamer weiterzumachen."
-        },
-        {
-          "name": "Auf „Fertig“ klicken",
-          "text": "EasyShoot setzt alles zu einem Bild zusammen und öffnet es, bereit zum Markieren, Kopieren oder Sichern. Fixierte Kopfzeilen erscheinen nur einmal, nicht in jedem Abschnitt."
-        }
-      ],
-      "sections": [
-        {
-          "h2": "Tipps für ein sauberes Ergebnis",
-          "html": "<ul><li>Wähle nur den scrollenden Inhalt aus, damit feste Symbolleisten und Seitenleisten nicht im Bild landen.</li><li>Scrolle in eine Richtung, von oben nach unten.</li><li>Lange Bilder können auch breit sein: Ändere vor dem Teilen im Editor die Größe oder schneide sie zu.</li></ul>"
-        },
-        {
-          "h2": "Was du brauchst",
-          "html": "<p>EasyShoot läuft ab macOS 14. Die Scroll-Aufnahme braucht die Berechtigung „Bildschirmaufnahme“, um die EasyShoot dich bei der ersten Aufnahme bittet.</p>"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Kann der Mac ohne App einen scrollenden Screenshot aufnehmen?",
-          "a": "Apples Anleitung zum Bildschirmfoto-Werkzeug beschreibt den ganzen Bildschirm, ein Fenster oder einen ausgewählten Bereich. Eine Scroll-Aufnahme wird dort nicht beschrieben, daher nimmt man für eine ganze Seite meist eine eigene App."
-        },
-        {
-          "q": "Funktioniert das in jeder App?",
-          "a": "Die Scroll-Aufnahme funktioniert mit Inhalten, die du auf dem Bildschirm scrollst, etwa Webseiten, Chats und Dokumente."
-        },
-        {
-          "q": "Wie lautet der Kurzbefehl?",
-          "a": "Standardmäßig Wahltaste-Umschalttaste-Befehlstaste-6. Du kannst ihn in den Einstellungen von EasyShoot ändern."
-        }
-      ]
-    },
     "blur-screenshot-mac": {
       "short": "Private Details verpixeln",
       "title": "Teile eines Screenshots auf dem Mac verpixeln | EasyShoot",
-      "description": "Verberge E-Mail-Adressen, Kartennummern und Gesichter in Screenshots auf deinem Mac, bevor du sie teilst. Mit EasyShoot verpixelst du jeden Bereich in Sekunden.",
+      "description": "Verberge E-Mail-Adressen, Kartennummern und Gesichter in Screenshots auf deinem Mac, bevor du sie teilst. Mit EasyShoot verpixelst oder weichzeichnest du jeden Bereich in Sekunden.",
       "h1": "So machst du Teile eines Screenshots auf dem Mac unkenntlich",
-      "intro": "Bevor du einen Screenshot teilst, verberge, was nicht dir gehört: eine E-Mail-Adresse, eine Kartennummer, einen Namen oder ein Gesicht. EasyShoot verpixelt jeden Bereich, über den du ziehst, und dabei verlässt nichts deinen Mac.",
+      "intro": "Bevor du einen Screenshot teilst, verberge, was nicht dir gehört: eine E-Mail-Adresse, eine Kartennummer, einen Namen oder ein Gesicht. EasyShoot verpixelt oder weichzeichnet jeden Bereich, über den du ziehst, und dabei verlässt nichts deinen Mac.",
       "steps": [
         {
           "name": "Bild aufnehmen oder öffnen",
           "text": "Nimm einen Screenshot mit EasyShoot auf, oder kopiere ein Bild und wähle „Bild aus der Zwischenablage bearbeiten“."
         },
         {
-          "name": "„Verpixeln“ wählen",
-          "text": "Drücke B oder klicke in der Symbolleiste auf das Werkzeug „Verpixeln“."
+          "name": "Verpixeln wählen",
+          "text": "Drücke B oder klicke auf das Werkzeug Verpixeln. Wähle im Tab Stil Pixel oder Weichzeichnen und stelle die Stärke ein."
         },
         {
           "name": "Über den privaten Teil ziehen",
@@ -117,8 +68,8 @@
           "a": "Apples Anleitung zu den Markierungen nennt Formen, Text, Hervorheben, Skizzieren, Lupe und Zuschneiden, aber kein Werkzeug zum Weichzeichnen oder Verpixeln. Dafür nimmt man meist eine App."
         },
         {
-          "q": "Lässt sich die Verpixelung rückgängig machen?",
-          "a": "Das exportierte Bild enthält nur die verpixelten Blöcke, nicht das ursprüngliche Detail."
+          "q": "Lässt sich Verpixeln oder Weichzeichnen rückgängig machen?",
+          "a": "Das exportierte Bild enthält nur den verpixelten oder weichgezeichneten Bereich, nicht das ursprüngliche Detail."
         },
         {
           "q": "Kann ich verpixeln, nachdem ich Pfeile und Schritte hinzugefügt habe?",
@@ -157,11 +108,15 @@
       "sections": [
         {
           "h2": "Jedes Werkzeug, eine Taste",
-          "html": "<table><thead><tr><th>Werkzeug</th><th>Taste</th></tr></thead><tbody><tr><td>Pfeil</td><td><kbd>A</kbd></td></tr><tr><td>Linie</td><td><kbd>L</kbd></td></tr><tr><td>Rechteck</td><td><kbd>R</kbd></td></tr><tr><td>Ellipse</td><td><kbd>O</kbd></td></tr><tr><td>Text</td><td><kbd>T</kbd></td></tr><tr><td>Nummerierter Schritt</td><td><kbd>N</kbd></td></tr><tr><td>Textmarker</td><td><kbd>H</kbd></td></tr><tr><td>Stift</td><td><kbd>P</kbd></td></tr><tr><td>Verpixeln</td><td><kbd>B</kbd></td></tr><tr><td>Zuschneiden</td><td><kbd>C</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Werkzeug</th><th>Taste</th></tr></thead><tbody><tr><td>Pfeil</td><td><kbd>A</kbd></td></tr><tr><td>Linie</td><td><kbd>L</kbd></td></tr><tr><td>Rechteck</td><td><kbd>R</kbd></td></tr><tr><td>Raute</td><td><kbd>D</kbd></td></tr><tr><td>Ellipse</td><td><kbd>O</kbd></td></tr><tr><td>Text</td><td><kbd>T</kbd></td></tr><tr><td>Nummerierter Schritt</td><td><kbd>N</kbd></td></tr><tr><td>Stift</td><td><kbd>P</kbd></td></tr><tr><td>Verpixeln</td><td><kbd>B</kbd></td></tr><tr><td>Zuschneiden</td><td><kbd>C</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Jede Markierung gestalten",
+          "html": "<ul><li><strong>Linien und Formen:</strong> durchgezogen, gestrichelt oder gepunktet, von dünn bis kräftig.</li><li><strong>Rechteck, Raute und Ellipse:</strong> eine Hintergrundfarbe, eckige oder abgerundete Ecken und jeder Winkel.</li><li><strong>Pfeile:</strong> eine normale oder spitze Spitze; zieh am mittleren Griff, um ihn zu biegen.</li><li><strong>Nummerierte Schritte:</strong> ohne Hintergrund, in eigener Farbe oder mit heller Füllung.</li><li><strong>Mehrere auf einmal:</strong> Befehl-A, Umschalt-Klick oder ein Rahmen über leere Fläche, dann gemeinsam bewegen, gestalten oder löschen.</li></ul>"
         },
         {
           "h2": "Gut lesbar bleiben",
-          "html": "<ul><li>Nutze höchstens drei oder vier Markierungen: einen Rahmen, ein paar Zahlen, einen Pfeil.</li><li>Setze Zahlen neben das, was sie markieren, nicht auf den Text.</li><li>Ändere Farbe und Stärke jeder Markierung im Bereich „Stil“.</li></ul>"
+          "html": "<ul><li>Nutze höchstens drei oder vier Markierungen: einen Rahmen, ein paar Zahlen, einen Pfeil.</li><li>Setze Zahlen neben das, was sie markieren, nicht auf den Text.</li><li>Ändere Farbe, Linienstärke und Deckkraft jeder Markierung im Tab „Stil“.</li></ul>"
         }
       ],
       "faq": [
@@ -200,7 +155,7 @@
         },
         {
           "name": "Schrift und Größe wählen",
-          "text": "Wähle im Bereich „Stil“ eine beliebige Schrift auf deinem Mac und zieh an der Ecke des Texts, um seine Größe zu ändern."
+          "text": "Wähle im Tab Stil eine beliebige Schrift deines Macs und stelle die Größe ein. Für ein auffälliges Etikett stelle die Darstellung auf Sprechblase oder Kontur."
         }
       ],
       "sections": [
@@ -253,7 +208,7 @@
         ],
         [
           "Scroll-Aufnahme",
-          "Ja",
+          "Nein",
           "Ja"
         ],
         [
@@ -263,7 +218,7 @@
         ],
         [
           "Private Details verbergen",
-          "Verpixeln",
+          "Verpixeln oder weichzeichnen",
           "Schwärzen"
         ],
         [
@@ -310,7 +265,7 @@
       "faq": [
         {
           "q": "Ist EasyShoot eine kostenlose Alternative zu CleanShot X?",
-          "a": "EasyShoot ist kostenlos und deckt Aufnahme, Scroll-Aufnahme, Markieren, Verpixeln und Hintergründe ab. Es nimmt kein Video auf und erkennt keinen Text."
+          "a": "EasyShoot ist kostenlos und deckt Aufnahme, Markieren mit Formen, Pfeilen, Text und nummerierten Schritten, Verpixeln, Weichzeichnen und Hintergründe ab. Es nimmt kein Video auf, keine scrollenden Seiten und erkennt keinen Text."
         },
         {
           "q": "Kann ich beide verwenden?",
@@ -347,7 +302,7 @@
         ],
         [
           "Scroll-Aufnahme",
-          "Ja",
+          "Nein",
           "Ja"
         ],
         [
@@ -357,7 +312,7 @@
         ],
         [
           "Private Details verbergen",
-          "Verpixeln",
+          "Verpixeln oder weichzeichnen",
           "Verpixeln, Weichzeichnen und Entfernen"
         ],
         [
@@ -398,7 +353,7 @@
         },
         {
           "q": "Haben beide Apps eine Scroll-Aufnahme?",
-          "a": "Ja, beide nehmen lange Seiten und Chats als ein Bild auf."
+          "a": "Nein. Shottr nimmt lange Seiten und Chats als ein Bild auf; EasyShoot nimmt einen Bereich, ein Fenster oder den ganzen Bildschirm auf."
         },
         {
           "q": "Welche App unterstützt Arabisch?",
@@ -426,7 +381,7 @@
         ],
         [
           "Scroll-Aufnahme",
-          "Ja",
+          "Nein",
           "Ja"
         ],
         [
@@ -436,7 +391,7 @@
         ],
         [
           "Private Details verbergen",
-          "Verpixeln",
+          "Verpixeln oder weichzeichnen",
           "Smart Redact (Weichzeichnen oder Abdecken)"
         ],
         [
@@ -473,7 +428,7 @@
       "faq": [
         {
           "q": "Gibt es eine kostenlose Snagit-Alternative für den Mac?",
-          "a": "EasyShoot ist auf dem Mac kostenlos und deckt Aufnahme, Scroll-Aufnahme, Markieren, Verpixeln und Hintergründe ab. Es nimmt kein Video auf."
+          "a": "EasyShoot ist auf dem Mac kostenlos und deckt Aufnahme, Markieren mit Formen, Pfeilen, Text und nummerierten Schritten, Verpixeln, Weichzeichnen und Hintergründe ab. Es nimmt kein Video und keine scrollenden Seiten auf."
         },
         {
           "q": "Braucht EasyShoot ein Konto?",
@@ -488,7 +443,7 @@
     "macos-screenshot-alternative": {
       "short": "vs. macOS-Bildschirmfoto",
       "title": "Besser als Umschalttaste-Befehlstaste-5? EasyShoot vs. macOS",
-      "description": "Was EasyShoot dem Screenshot-Werkzeug von macOS hinzufügt: Scroll-Aufnahme, nummerierte Schritte, Verpixeln, Hintergründe und Vorlagen.",
+      "description": "Was EasyShoot dem Screenshot-Werkzeug von macOS hinzufügt: nummerierte Schritte, Verpixeln und Weichzeichnen, gestaltbare Formen, Hintergründe und Vorlagen.",
       "h1": "EasyShoot vs. das integrierte Bildschirmfoto-Werkzeug des Mac",
       "intro": "macOS bringt mit Bildschirmfoto (Umschalttaste-Befehlstaste-5) ein solides Werkzeug mit Bildschirmaufnahme und Markierungen mit. EasyShoot baut auf derselben Idee auf, für Screenshots, die du erklären und teilen willst.",
       "competitor": "macOS Screenshot",
@@ -502,11 +457,6 @@
           "Bereich, Fenster und Vollbild",
           "Ja",
           "Ja"
-        ],
-        [
-          "Scroll-Aufnahme",
-          "Ja",
-          "In Apples Anleitung nicht angegeben"
         ],
         [
           "Pfeile und nummerierte Schritte",
@@ -597,7 +547,7 @@
           "Ja"
         ],
         [
-          "Fenster, Vollbild und Scroll-Aufnahme",
+          "Fenster- und Vollbild-Aufnahme",
           "Ja",
           "Nicht angegeben"
         ],
@@ -640,7 +590,7 @@
       "sections": [
         {
           "h2": "Nimm EasyShoot, wenn",
-          "html": "<ul><li>deine Screenshots Privates zeigen, das nicht auf einen öffentlichen Server gehört.</li><li>du nummerierte Schritte, Verpixeln und ein Hintergrund-Werkzeug willst.</li><li>du auf dem Mac Fenster, Vollbild oder ganze Seiten per Scroll-Aufnahme brauchst.</li></ul>"
+          "html": "<ul><li>deine Screenshots Privates zeigen, das nicht auf einen öffentlichen Server gehört.</li><li>du nummerierte Schritte, Verpixeln und ein Hintergrund-Werkzeug willst.</li><li>du auf dem Mac Fenster- oder Vollbild-Aufnahmen brauchst.</li></ul>"
         },
         {
           "h2": "Nimm Lightshot, wenn",

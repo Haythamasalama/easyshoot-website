@@ -16,7 +16,7 @@
   "hubs": {
     "guides": {
       "title": "Guides de capture d’écran sur Mac | EasyShoot",
-      "description": "Des guides courts et pratiques pour les captures d’écran sur Mac : captures défilantes, floutage des infos privées, flèches, étapes numérotées et texte arabe.",
+      "description": "Des guides courts et pratiques pour les captures d’écran sur Mac : floutage des infos privées, flèches, formes et étapes numérotées, et texte arabe.",
       "h1": "Guides de capture d’écran sur Mac",
       "intro": "Des réponses courtes aux questions les plus fréquentes sur les captures d’écran sur Mac, avec les touches exactes à utiliser."
     },
@@ -28,61 +28,12 @@
     }
   },
   "articles": {
-    "scrolling-screenshot-mac": {
-      "short": "Captures défilantes",
-      "title": "Faire une capture d’écran défilante sur Mac | EasyShoot",
-      "description": "Capturez une page web, une conversation ou un document entier en une seule longue image sur votre Mac, pas à pas avec la Capture défilante d’EasyShoot.",
-      "h1": "Comment faire une capture d’écran défilante sur Mac",
-      "intro": "Une capture défilante enregistre plus que ce qui tient à l’écran : une page web entière, une longue conversation ou un document, assemblés en une seule grande image. L’outil Capture d’écran intégré à macOS ne capture que ce qui est visible ; pour une page entière, il faut un outil de capture défilante comme EasyShoot.",
-      "steps": [
-        {
-          "name": "Lancez la Capture défilante",
-          "text": "Appuyez sur Option + Maj + Commande + 6, ou choisissez Capture défilante dans le menu EasyShoot de la barre des menus."
-        },
-        {
-          "name": "Sélectionnez la zone",
-          "text": "Faites glisser le pointeur sur la partie de la fenêtre à faire défiler, par exemple le contenu de la page sans la barre d’outils du navigateur. Appuyez sur Échap pour annuler."
-        },
-        {
-          "name": "Faites défiler lentement",
-          "text": "Faites défiler vers le bas à un rythme régulier. Si vous allez trop vite, EasyShoot vous demande de remonter un peu et de continuer plus lentement."
-        },
-        {
-          "name": "Cliquez sur Terminé",
-          "text": "EasyShoot assemble le tout en une seule image et l’ouvre, prête à être annotée, copiée ou enregistrée. Les en-têtes fixes n’apparaissent qu’une fois, pas sur chaque tranche."
-        }
-      ],
-      "sections": [
-        {
-          "h2": "Conseils pour un résultat propre",
-          "html": "<ul><li>Sélectionnez uniquement le contenu qui défile, pour que les barres d’outils et barres latérales fixes restent hors de l’image.</li><li>Faites défiler dans un seul sens, de haut en bas.</li><li>Les longues images peuvent aussi être larges : redimensionnez-les ou recadrez-les dans l’éditeur avant de les partager.</li></ul>"
-        },
-        {
-          "h2": "Ce qu’il vous faut",
-          "html": "<p>EasyShoot fonctionne sous macOS 14 ou version ultérieure. La Capture défilante nécessite l’autorisation Enregistrement de l’écran, qu’EasyShoot vous demande lors de votre première capture.</p>"
-        }
-      ],
-      "faq": [
-        {
-          "q": "Le Mac peut-il faire une capture défilante sans app ?",
-          "a": "Le guide d’Apple sur l’outil Capture d’écran intégré couvre l’écran entier, une fenêtre ou une partie sélectionnée. Il ne décrit pas de capture défilante ; une app séparée est donc la solution habituelle pour capturer une page entière."
-        },
-        {
-          "q": "Est-ce que ça fonctionne dans toutes les apps ?",
-          "a": "La Capture défilante fonctionne avec le contenu que vous faites défiler à l’écran, comme les pages web, les conversations et les documents."
-        },
-        {
-          "q": "Quel est le raccourci ?",
-          "a": "Option + Maj + Commande + 6 par défaut. Vous pouvez le modifier dans les réglages d’EasyShoot."
-        }
-      ]
-    },
     "blur-screenshot-mac": {
       "short": "Flouter les infos privées",
       "title": "Flouter ou pixeliser une capture d’écran sur Mac | EasyShoot",
-      "description": "Masquez adresses e-mail, numéros de carte et visages dans une capture d’écran sur Mac avant de la partager. Pixelisez une zone en quelques secondes.",
+      "description": "Masquez adresses e-mail, numéros de carte et visages dans une capture d’écran sur Mac avant de la partager. Pixelisez ou floutez une zone en quelques secondes avec EasyShoot.",
       "h1": "Comment flouter une partie d’une capture d’écran sur Mac",
-      "intro": "Avant de partager une capture d’écran, masquez ce qui ne vous appartient pas : une adresse e-mail, un numéro de carte, un nom ou un visage. EasyShoot pixelise toute zone sur laquelle vous faites glisser le pointeur, et rien ne quitte votre Mac pendant ce temps.",
+      "intro": "Avant de partager une capture d’écran, masquez ce qui ne vous appartient pas : une adresse e-mail, un numéro de carte, un nom ou un visage. EasyShoot pixelise ou floute toute zone sur laquelle vous faites glisser le pointeur, et rien ne quitte votre Mac pendant ce temps.",
       "steps": [
         {
           "name": "Capturez ou ouvrez l’image",
@@ -90,7 +41,7 @@
         },
         {
           "name": "Choisissez Pixeliser",
-          "text": "Appuyez sur B, ou cliquez sur l’outil Pixeliser dans la barre d’outils."
+          "text": "Appuyez sur B ou cliquez sur l’outil Pixeliser. Dans l’onglet Style, choisissez Pixels ou Flou et réglez l’intensité."
         },
         {
           "name": "Faites glisser sur la partie privée",
@@ -117,8 +68,8 @@
           "a": "Le guide d’Apple sur Annotation mentionne les formes, le texte, la surbrillance, le croquis, la loupe et le recadrage, mais pas d’outil de flou ou de pixelisation ; on utilise donc généralement une app pour cela."
         },
         {
-          "q": "La pixelisation est-elle réversible ?",
-          "a": "L’image exportée ne contient que les blocs pixelisés, pas le détail d’origine."
+          "q": "La pixelisation ou le flou sont-ils réversibles ?",
+          "a": "L’image exportée ne contient que la zone pixelisée ou floutée, pas le détail d’origine."
         },
         {
           "q": "Puis-je pixeliser après avoir ajouté des flèches et des étapes ?",
@@ -157,11 +108,15 @@
       "sections": [
         {
           "h2": "Chaque outil, une touche",
-          "html": "<table><thead><tr><th>Outil</th><th>Touche</th></tr></thead><tbody><tr><td>Flèche</td><td><kbd>A</kbd></td></tr><tr><td>Ligne</td><td><kbd>L</kbd></td></tr><tr><td>Rectangle</td><td><kbd>R</kbd></td></tr><tr><td>Ellipse</td><td><kbd>O</kbd></td></tr><tr><td>Texte</td><td><kbd>T</kbd></td></tr><tr><td>Étape numérotée</td><td><kbd>N</kbd></td></tr><tr><td>Surligneur</td><td><kbd>H</kbd></td></tr><tr><td>Stylo</td><td><kbd>P</kbd></td></tr><tr><td>Pixeliser</td><td><kbd>B</kbd></td></tr><tr><td>Recadrer</td><td><kbd>C</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Outil</th><th>Touche</th></tr></thead><tbody><tr><td>Flèche</td><td><kbd>A</kbd></td></tr><tr><td>Ligne</td><td><kbd>L</kbd></td></tr><tr><td>Rectangle</td><td><kbd>R</kbd></td></tr><tr><td>Losange</td><td><kbd>D</kbd></td></tr><tr><td>Ellipse</td><td><kbd>O</kbd></td></tr><tr><td>Texte</td><td><kbd>T</kbd></td></tr><tr><td>Étape numérotée</td><td><kbd>N</kbd></td></tr><tr><td>Stylo</td><td><kbd>P</kbd></td></tr><tr><td>Pixeliser</td><td><kbd>B</kbd></td></tr><tr><td>Recadrer</td><td><kbd>C</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Un style pour chaque repère",
+          "html": "<ul><li><strong>Lignes et formes :</strong> trait continu, en tirets ou pointillé, du plus fin au plus épais.</li><li><strong>Rectangle, losange et ellipse :</strong> une couleur de fond, des bords droits ou arrondis et n’importe quel angle.</li><li><strong>Flèches :</strong> une pointe standard ou effilée ; tirez la poignée du milieu pour la courber.</li><li><strong>Étapes numérotées :</strong> sans fond, dans leur couleur ou avec un fond clair.</li><li><strong>Plusieurs à la fois :</strong> Commande-A, Maj-clic ou un cadre tracé sur une zone vide, puis déplacez, restylez ou supprimez-les ensemble.</li></ul>"
         },
         {
           "h2": "Restez lisible",
-          "html": "<ul><li>Utilisez trois ou quatre annotations au maximum : un cadre, deux numéros, une flèche.</li><li>Placez les numéros à côté de ce qu’ils désignent, pas sur le texte.</li><li>Modifiez la couleur et l’épaisseur de chaque annotation dans le panneau Style.</li></ul>"
+          "html": "<ul><li>Utilisez trois ou quatre annotations au maximum : un cadre, deux numéros, une flèche.</li><li>Placez les numéros à côté de ce qu’ils désignent, pas sur le texte.</li><li>Modifiez la couleur, l’épaisseur du trait et l’opacité de chaque annotation dans l’onglet Style.</li></ul>"
         }
       ],
       "faq": [
@@ -199,8 +154,8 @@
           "text": "Tapez normalement. Avec la direction réglée sur Auto, EasyShoot passe de lui-même de droite à gauche."
         },
         {
-          "name": "Choisissez une police et une taille",
-          "text": "Choisissez n’importe quelle police de votre Mac dans le panneau Style, et faites glisser le coin du texte pour le redimensionner."
+          "name": "Choisissez la police et la taille",
+          "text": "Dans l’onglet Style, choisissez n’importe quelle police de votre Mac et réglez la taille. Pour une étiquette bien visible, réglez l’aspect sur Bulle ou Contour."
         }
       ],
       "sections": [
@@ -253,7 +208,7 @@
         ],
         [
           "Capture défilante",
-          "Oui",
+          "Non",
           "Oui"
         ],
         [
@@ -263,7 +218,7 @@
         ],
         [
           "Masquer les infos privées",
-          "Pixeliser",
+          "Pixeliser ou flouter",
           "Caviarder"
         ],
         [
@@ -310,7 +265,7 @@
       "faq": [
         {
           "q": "EasyShoot est-il une alternative gratuite à CleanShot X ?",
-          "a": "EasyShoot est gratuit et couvre la capture, la capture défilante, l’annotation, la pixelisation et les arrière-plans. Il n’enregistre pas de vidéo et ne reconnaît pas le texte."
+          "a": "EasyShoot est gratuit et couvre la capture, l’annotation avec formes, flèches, texte et étapes numérotées, la pixelisation, le flou et les arrière-plans. Il n’enregistre pas de vidéo, ne capture pas les pages défilantes et ne reconnaît pas le texte."
         },
         {
           "q": "Puis-je utiliser les deux ?",
@@ -347,7 +302,7 @@
         ],
         [
           "Capture défilante",
-          "Oui",
+          "Non",
           "Oui"
         ],
         [
@@ -357,7 +312,7 @@
         ],
         [
           "Masquer les infos privées",
-          "Pixeliser",
+          "Pixeliser ou flouter",
           "Pixeliser, flouter et supprimer"
         ],
         [
@@ -398,7 +353,7 @@
         },
         {
           "q": "Les deux apps proposent-elles la capture défilante ?",
-          "a": "Oui, les deux capturent les longues pages et conversations en une seule image."
+          "a": "Non. Shottr capture les longues pages et conversations en une seule image ; EasyShoot capture une zone, une fenêtre ou tout l’écran."
         },
         {
           "q": "Laquelle prend en charge l’arabe ?",
@@ -426,7 +381,7 @@
         ],
         [
           "Capture défilante",
-          "Oui",
+          "Non",
           "Oui"
         ],
         [
@@ -436,7 +391,7 @@
         ],
         [
           "Masquer les infos privées",
-          "Pixeliser",
+          "Pixeliser ou flouter",
           "Smart Redact (flou ou masquage)"
         ],
         [
@@ -473,7 +428,7 @@
       "faq": [
         {
           "q": "Existe-t-il une alternative gratuite à Snagit sur Mac ?",
-          "a": "EasyShoot est gratuit sur Mac et couvre la capture, la capture défilante, l’annotation, la pixelisation et les arrière-plans. Il n’enregistre pas de vidéo."
+          "a": "EasyShoot est gratuit sur Mac et couvre la capture, l’annotation avec formes, flèches, texte et étapes numérotées, la pixelisation, le flou et les arrière-plans. Il n’enregistre pas de vidéo et ne capture pas les pages défilantes."
         },
         {
           "q": "EasyShoot nécessite-t-il un compte ?",
@@ -488,7 +443,7 @@
     "macos-screenshot-alternative": {
       "short": "vs Capture d’écran de macOS",
       "title": "Mieux que Commande + Maj + 5 ? EasyShoot face à l’outil du Mac",
-      "description": "Ce qu’EasyShoot ajoute à l’outil de capture intégré à macOS : capture défilante, étapes numérotées, pixelisation, arrière-plans et préréglages.",
+      "description": "Ce qu’EasyShoot ajoute à l’outil de capture intégré à macOS : étapes numérotées, pixelisation et flou, formes personnalisables, arrière-plans et préréglages.",
       "h1": "EasyShoot face à l’outil Capture d’écran intégré au Mac",
       "intro": "macOS comprend un outil Capture d’écran solide (Maj + Commande + 5) avec enregistrement de l’écran et Annotation. EasyShoot reprend la même idée pour les captures que vous voulez expliquer et partager.",
       "competitor": "macOS Screenshot",
@@ -502,11 +457,6 @@
           "Zone, fenêtre et plein écran",
           "Oui",
           "Oui"
-        ],
-        [
-          "Capture défilante",
-          "Oui",
-          "Non mentionné dans le guide d’Apple"
         ],
         [
           "Flèches et étapes numérotées",
@@ -597,7 +547,7 @@
           "Oui"
         ],
         [
-          "Capture de fenêtre, plein écran et défilante",
+          "Capture de fenêtre et plein écran",
           "Oui",
           "Non mentionné"
         ],
@@ -640,7 +590,7 @@
       "sections": [
         {
           "h2": "Choisissez EasyShoot si",
-          "html": "<ul><li>Vos captures montrent des choses privées qui ne doivent pas être sur un serveur public.</li><li>Vous voulez des étapes numérotées, la pixelisation et un outil d’arrière-plan.</li><li>Vous avez besoin de capturer une fenêtre, tout l’écran ou une page défilante sur Mac.</li></ul>"
+          "html": "<ul><li>Vos captures montrent des choses privées qui ne doivent pas être sur un serveur public.</li><li>Vous voulez des étapes numérotées, la pixelisation et un outil d’arrière-plan.</li><li>Vous avez besoin de capturer une fenêtre ou tout l’écran sur Mac.</li></ul>"
         },
         {
           "h2": "Choisissez Lightshot si",
