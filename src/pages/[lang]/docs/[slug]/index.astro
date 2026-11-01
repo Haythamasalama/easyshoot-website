@@ -1,0 +1,10 @@
+---
+import DocPage from "../../../../components/DocPage.astro";
+import { LANGS, type Lang } from "../../../../i18n";
+import { DOC_SLUGS } from "../../../../i18n/docs";
+
+export function getStaticPaths() {
+  return LANGS.filter(l => l !== "en").flatMap(lang => DOC_SLUGS.map(slug => ({ params: { lang, slug } })));
+}
+---
+<DocPage lang={Astro.params.lang as Lang} slug={Astro.params.slug} />

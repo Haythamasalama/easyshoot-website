@@ -7,8 +7,6 @@ export default defineConfig({
   build: { inlineStylesheets: "always", format: "preserve" },
   integrations: [
     sitemap({
-      // Old links that only redirect stay out of the sitemap.
-      filter: page => !page.includes("/scrolling-screenshot-mac"),
       lastmod: new Date(),
       // Home pages first, then comparisons and guides, then hubs and the rest.
       serialize(item) {
@@ -22,7 +20,7 @@ export default defineConfig({
         item.url = real(item.url);
         item.links = item.links?.map(l => ({ ...l, url: real(l.url) }));
         const path = new URL(item.url).pathname.replace(/^\/(ar|fr|es|de)\//, "/");
-        item.priority = path === "/" ? 1 : /^\/(compare|guides)\/[^/]+\/$/.test(path) ? 0.8 : /^\/(compare|guides)\/$/.test(path) ? 0.7 : 0.5;
+        item.priority = path === "/" ? 1 : /^\/(compare|guides|docs)\/[^/]+\/$/.test(path) ? 0.8 : /^\/(compare|guides|docs)\/$/.test(path) ? 0.7 : 0.5;
         item.changefreq = path === "/" ? "weekly" : "monthly";
         return item;
       },

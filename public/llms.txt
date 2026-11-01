@@ -42,9 +42,26 @@
 2. Click Allow in the Welcome window to grant Screen Recording permission. EasyShoot lives in the menu bar.
 3. Updates come from the App Store.
 
+## User guide
+
+One page per topic, in English, Arabic, French, Spanish and German: https://easyshoot.haythamasalama.me/docs/
+
+- [Getting started](https://easyshoot.haythamasalama.me/docs/getting-started/): Install, allow screen capture and take your first screenshot.
+- [Capture](https://easyshoot.haythamasalama.me/docs/capture/): Area, window, full screen, or an image you already have.
+- [Quick Access](https://easyshoot.haythamasalama.me/docs/quick-access/): What happens right after a capture.
+- [Mark up](https://easyshoot.haythamasalama.me/docs/mark-up/): Arrows, shapes, numbered steps, text and pen.
+- [Styles](https://easyshoot.haythamasalama.me/docs/styles/): Colour, stroke, fill, edges, angle and opacity.
+- [Hide private details](https://easyshoot.haythamasalama.me/docs/hide-details/): Pixelate or blur emails, names and card numbers.
+- [Text](https://easyshoot.haythamasalama.me/docs/text/): Any font, three looks, and right-to-left text.
+- [Background and crop](https://easyshoot.haythamasalama.me/docs/background-and-crop/): Frame a shot, crop it and resize it.
+- [Presets](https://easyshoot.haythamasalama.me/docs/presets/): Save a look and reuse it.
+- [Export and share](https://easyshoot.haythamasalama.me/docs/export/): Copy, save, formats and size.
+- [Keyboard shortcuts](https://easyshoot.haythamasalama.me/docs/shortcuts/): Every key in one place.
+- [Settings](https://easyshoot.haythamasalama.me/docs/settings/): General, Shortcuts, Presets, Permissions and About.
+- [Privacy](https://easyshoot.haythamasalama.me/docs/privacy/): What stays on your Mac, and when the app goes online.
+
 ## Guides
 
-- [How to use EasyShoot on your Mac: every feature in one guide](https://easyshoot.haythamasalama.me/guides/how-to-use-easyshoot/)
 - [How to blur part of a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/blur-screenshot-mac/)
 - [How to add arrows and numbered steps to a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/annotate-screenshot-mac/)
 - [How to write Arabic on a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/arabic-text-screenshot-mac/)

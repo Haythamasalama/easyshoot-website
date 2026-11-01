@@ -1,0 +1,34 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, pagePath, type Lang } from "../i18n";
+import { alternatesFor } from "../i18n/articles";
+import { DOC_GROUPS, docsUI, docOf, docsPath, docPath } from "../i18n/docs";
+import { breadcrumbNode } from "../lib/seo";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ui = docsUI(lang);
+const url = SITE + docsPath(lang);
+const graph = [breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: ui.h1, path: docsPath(lang) }])];
+---
+<Base lang={lang} title={ui.title} description={ui.description} alternates={alternatesFor(docsPath)} graph={graph}>
+<main class="doc docs-hub">
+  <div class="wrap">
+    <nav class="crumbs reveal" aria-label="Breadcrumb">
+      <ol><li><a href={pagePath(lang)}>EasyShoot</a></li><li><span aria-current="page">{ui.h1}</span></li></ol>
+    </nav>
+    <header class="doc-head reveal">
+      <h1>{ui.h1}</h1>
+      <p class="doc-lead">{ui.intro}</p>
+    </header>
+    {DOC_GROUPS.map(g => (
+      <section class="docs-hub-group reveal">
+        <h2>{ui.groups[g.id]}</h2>
+        <ul class="docs-cards">
+          {g.slugs.map(s => { const d = docOf(lang, s); return <li><a href={docPath(lang, s)}><strong>{d.title}</strong><span>{d.short}</span></a></li>; })}
+        </ul>
+      </section>
+    ))}
+  </div>
+</main>
+</Base>

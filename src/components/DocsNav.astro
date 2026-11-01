@@ -1,0 +1,15 @@
+---
+import type { Lang } from "../i18n";
+import { DOC_GROUPS, docsUI, docOf, docPath } from "../i18n/docs";
+
+interface Props { lang: Lang; current?: string }
+const { lang, current } = Astro.props;
+const ui = docsUI(lang);
+const list = DOC_GROUPS.map(g => (
+  `<div class="docs-group"><p>${ui.groups[g.id]}</p><ul>${g.slugs.map(s => `<li><a href="${docPath(lang, s)}"${s === current ? ' aria-current="page"' : ""}>${docOf(lang, s).title}</a></li>`).join("")}</ul></div>`
+)).join("");
+---
+<nav class="docs-nav" aria-label={ui.h1}>
+  <details class="docs-nav-toggle"><summary>{ui.topics}</summary><div set:html={list} /></details>
+  <div class="docs-nav-list" set:html={list} />
+</nav>
