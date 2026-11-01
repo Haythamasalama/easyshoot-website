@@ -144,7 +144,7 @@ Short, confident and plain. *Capture. Mark up. Share.* — *التقط، وضّ�
 
 - Lead with what the person gets: "Point, number and explain", not "powerful annotation engine".
 - Privacy is the promise: no account, no cloud, no tracking. Say only what is true for the build.
-- No superlatives, no exclamation marks, no emoji. Name features the same everywhere: Capture Area, Capture Window, Capture Fullscreen, Scrolling Capture, Quick Access, Presets.
+- No superlatives, no exclamation marks, no emoji (the changelog is the one exception: one emoji per feature). Name features the same everywhere: Capture Area, Capture Window, Capture Fullscreen, Scrolling Capture, Quick Access, Presets.
 - Each language is written for its readers, not translated word for word.
 
 ## Search and AI

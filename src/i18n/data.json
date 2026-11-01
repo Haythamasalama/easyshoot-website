@@ -109,6 +109,7 @@
    "foot.guides": "Guides",
    "foot.compare": "Compare",
    "foot.press": "Press kit",
+   "foot.changelog": "Changelog",
    "map.title": "Sitemap",
    "map.desc": "Every page on the EasyShoot website, in every language.",
    "map.pages": "Pages"
@@ -226,6 +227,7 @@
    "foot.guides": "الأدلة",
    "foot.compare": "مقارنات",
    "foot.press": "الملف الصحفي",
+   "foot.changelog": "سجل التحديثات",
    "map.title": "خريطة الموقع",
    "map.desc": "كل صفحات موقع EasyShoot، بكل اللغات.",
    "map.pages": "الصفحات"
@@ -339,6 +341,7 @@
    "foot.guides": "Guides",
    "foot.compare": "Comparatifs",
    "foot.press": "Dossier de presse",
+   "foot.changelog": "Historique des versions",
    "map.title": "Plan du site",
    "map.desc": "Toutes les pages du site EasyShoot, dans toutes les langues.",
    "map.pages": "Pages"
@@ -452,6 +455,7 @@
    "foot.guides": "Guías",
    "foot.compare": "Comparativas",
    "foot.press": "Kit de prensa",
+   "foot.changelog": "Novedades",
    "map.title": "Mapa del sitio",
    "map.desc": "Todas las páginas del sitio de EasyShoot, en todos los idiomas.",
    "map.pages": "Páginas"
@@ -565,6 +569,7 @@
    "foot.guides": "Anleitungen",
    "foot.compare": "Vergleiche",
    "foot.press": "Pressemappe",
+   "foot.changelog": "Änderungsprotokoll",
    "map.title": "Sitemap",
    "map.desc": "Alle Seiten der EasyShoot-Website, in allen Sprachen.",
    "map.pages": "Seiten"

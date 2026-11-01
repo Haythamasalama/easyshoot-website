@@ -61,7 +61,7 @@ const supportHref = supportPath(lang);
         <div><h4>{t("foot.product")}</h4><ul><li><a href={home + "#features"}>{t("nav.features")}</a></li><li><a href={home + "#tools"}>{t("nav.tools")}</a></li><li><a href={home + "#privacy"}>{t("nav.privacy")}</a></li><li><a href={home + "#faq"}>{t("nav.faq")}</a></li></ul></div>
         <div><h4>{t("foot.guides")}</h4><ul>{GUIDES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
         <div><h4>{t("foot.compare")}</h4><ul>{COMPARES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
-        <div><h4>{t("foot.help")}</h4><ul><li><a href={supportHref}>{t("foot.support")}</a></li><li><a href={privacyHref}>{t("foot.privacy")}</a></li><li><a href={home + "press/"}>{t("foot.press")}</a></li><li><a href={home + "sitemap/"}>{t("map.title")}</a></li></ul></div>
+        <div><h4>{t("foot.help")}</h4><ul><li><a href={supportHref}>{t("foot.support")}</a></li><li><a href={privacyHref}>{t("foot.privacy")}</a></li><li><a href={home + "changelog/"}>{t("foot.changelog")}</a></li><li><a href={home + "press/"}>{t("foot.press")}</a></li><li><a href={home + "sitemap/"}>{t("map.title")}</a></li></ul></div>
       </nav>
     </div>
     <div class="foot-bar">

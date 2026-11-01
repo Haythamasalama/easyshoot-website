@@ -1,0 +1,75 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, pagePath, type Lang } from "../i18n";
+import { alternatesFor } from "../i18n/articles";
+import { breadcrumbNode } from "../lib/seo";
+import changelog from "../i18n/changelog.json";
+
+type Item = string | [emoji: string, title: string, text: string];
+interface Notes { intro?: string; items?: Item[]; groups?: { h?: string; items: Item[] }[] }
+interface Release { version: string; date: string; major?: boolean; notes: Partial<Record<Lang, Notes>> }
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const c = (changelog.page as Record<Lang, Record<string, string>>)[lang];
+const releases = (changelog.releases as Release[]).map(r => {
+  const n = r.notes[lang] ?? r.notes.en ?? {};
+  return { ...r, intro: n.intro, groups: n.groups ?? (n.items ? [{ items: n.items }] : []) };
+});
+const changelogPath = (l: Lang) => `${pagePath(l)}changelog/`;
+const url = SITE + changelogPath(lang);
+
+const LOCALE: Record<Lang, string> = { en: "en-GB", ar: "ar-u-nu-latn", fr: "fr-FR", es: "es-ES", de: "de-DE" };
+const dateFormat = new Intl.DateTimeFormat(LOCALE[lang], { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+const when = (date: string) => (date ? dateFormat.format(new Date(date)) : c.soon);
+const latest = releases[0];
+---
+<Base lang={lang} title={c.title} description={c.description} alternates={alternatesFor(changelogPath)} graph={[breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: c.h1, path: changelogPath(lang) }])]}>
+<main class="doc changelog">
+  <div class="wrap changelog-wrap">
+    <nav class="crumbs reveal" aria-label="Breadcrumb">
+      <ol><li><a href={pagePath(lang)}>EasyShoot</a></li><li><span aria-current="page">{c.h1}</span></li></ol>
+    </nav>
+    <header class="doc-head reveal changelog-head">
+      <img src="/icon.png" width="96" height="96" alt="" loading="eager">
+      <div>
+        <h1>{c.h1}</h1>
+        <p class="doc-lead">{c.intro}</p>
+        {latest && (
+          <a class="latest-chip" href={`#v${latest.version}`}>
+            <span>{c.latest}</span><strong dir="ltr">{latest.version}</strong><span aria-hidden="true">·</span><span>{when(latest.date)}</span>
+          </a>
+        )}
+      </div>
+    </header>
+
+    <ol class="releases">
+      {releases.map(r => (
+        <li class:list={["release", { "release-major": r.major }]} id={`v${r.version}`}>
+          <div class="release-meta">
+            {r.date ? <time datetime={r.date}>{when(r.date)}</time> : <span>{c.soon}</span>}
+          </div>
+          <article class="release-body reveal">
+            <h2><a href={`#v${r.version}`} dir="ltr">{r.version}</a>{r.major && <span class="release-tag">{c.major}</span>}</h2>
+            {r.intro && <p class="release-intro">{r.intro}</p>}
+            {r.groups.map(g => (
+              <section class="release-group">
+                {g.h && <h3>{g.h}</h3>}
+                {g.items.some(i => Array.isArray(i)) ? (
+                  <ul class="feature-list">
+                    {g.items.map(i => Array.isArray(i)
+                      ? <li><span class="feature-emoji" aria-hidden="true">{i[0]}</span><div><strong>{i[1]}</strong><p>{i[2]}</p></div></li>
+                      : <li><div><p>{i}</p></div></li>)}
+                  </ul>
+                ) : (
+                  <ul class="change-list">{g.items.map(i => <li>{i}</li>)}</ul>
+                )}
+              </section>
+            ))}
+          </article>
+        </li>
+      ))}
+    </ol>
+  </div>
+</main>
+</Base>
