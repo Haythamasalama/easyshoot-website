@@ -28,6 +28,93 @@
     }
   },
   "articles": {
+    "how-to-use-easyshoot": {
+      "short": "Every feature, step by step",
+      "title": "How to use EasyShoot on Mac: every feature in one guide | EasyShoot",
+      "description": "A visual tour of EasyShoot for Mac: capture, arrows, shapes, numbered steps, pixelate and blur, Arabic text, backgrounds, presets and export, with the keys for each tool.",
+      "h1": "How to use EasyShoot on your Mac",
+      "intro": "Everything EasyShoot can do, in the order you'll use it: capture, mark up, hide what's private, frame it and share it. Each part shows the editor as it looks and the key to press.",
+      "steps": [
+        {
+          "name": "Capture",
+          "text": "Press Option-Shift-Command-4 and drag over what you want to show."
+        },
+        {
+          "name": "Mark it up",
+          "text": "The editor opens. Press A for an arrow, R for a box or N for a numbered step."
+        },
+        {
+          "name": "Style it",
+          "text": "Pick the colour, stroke and fill in the inspector's Style tab."
+        },
+        {
+          "name": "Share it",
+          "text": "Press Shift-Command-C to copy, or Command-S to save."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Capture anything",
+          "html": "<p>EasyShoot lives in the menu bar. Each kind of capture has its own shortcut, and you can record your own in Settings › Shortcuts.</p><table><thead><tr><th>Action</th><th>Shortcut</th></tr></thead><tbody><tr><td>Capture Area</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capture Window</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capture Fullscreen</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Annotate Clipboard Image</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table><p>After every capture, <strong>Quick Access</strong> shows a thumbnail in the corner: copy it, save it, open it in the editor or drag it straight into another app.</p>"
+        },
+        {
+          "h2": "Mark it up",
+          "art": "mark",
+          "alt": "The EasyShoot editor with a box, two numbered steps, an arrow and a note on a checkout page.",
+          "html": "<p>Every tool is one key away, so you can point and explain without reaching for the toolbar.</p><ul class=\"feature-grid\"><li><strong>Arrow · A</strong>Drag to draw; drag the middle handle to bend it.</li><li><strong>Line · L</strong>A straight line between two points.</li><li><strong>Rectangle · R</strong>Box the part that matters.</li><li><strong>Diamond · D</strong>A shape that stands out from boxes.</li><li><strong>Ellipse · O</strong>Circle a number or a button.</li><li><strong>Numbered step · N</strong>Click in order: 1, 2, 3 count themselves.</li><li><strong>Text · T</strong>A short note right where it's needed.</li><li><strong>Pen · P</strong>Draw by hand.</li></ul>"
+        },
+        {
+          "h2": "Style every mark",
+          "art": "shape",
+          "alt": "The editor's Style tab with a dashed, filled box and a dotted ellipse on the screenshot.",
+          "html": "<p>The <strong>Style</strong> tab follows the tool in your hand or the mark you selected, and shows only what that mark uses.</p><ul class=\"feature-grid\"><li><strong>Stroke and width</strong>Five colours, thin, medium or bold, or any width from 1 to 30.</li><li><strong>Stroke style</strong>Solid, dashed or dotted lines and shapes.</li><li><strong>Background</strong>A light fill for rectangles, diamonds, ellipses and steps.</li><li><strong>Edges and angle</strong>Sharp or round corners, and any angle; Shift snaps to 15°.</li><li><strong>Opacity</strong>Fade any mark without losing it.</li><li><strong>Several at once</strong>Command-A, Shift-click or drag a box over empty canvas.</li></ul>"
+        },
+        {
+          "h2": "Hide private details",
+          "art": "pixel",
+          "alt": "A card number blurred with the Pixelate tool, and the Style tab set to Blur.",
+          "html": "<p>Press <kbd>B</kbd> and drag over an email, a card number or a face. In the Style tab choose <strong>Pixels</strong> or <strong>Blur</strong> and set the strength. The exported image keeps only the hidden version.</p>"
+        },
+        {
+          "h2": "Text in any language",
+          "art": "ar",
+          "alt": "A note in a bubble on the screenshot, with the Style tab showing font, size, look and direction.",
+          "html": "<p>Press <kbd>T</kbd> and type. Use any font on your Mac, or a Google font downloaded when you pick it. Set the look to <strong>Plain</strong>, <strong>Bubble</strong> or <strong>Outline</strong>.</p><p>With direction on <strong>Auto</strong>, Arabic and Hebrew are written right to left with letters joined correctly; choose LTR or RTL to force a line.</p>"
+        },
+        {
+          "h2": "Frame, crop and presets",
+          "art": "bg",
+          "alt": "The screenshot on a soft gradient background, with the Background tab's fill, padding, corner radius and shadow.",
+          "html": "<p>The <strong>Background</strong> tab puts the shot on a gradient, a solid colour or nothing, with padding, rounded corners, a shadow, an aspect ratio and alignment.</p><ul class=\"feature-grid\"><li><strong>Crop · C</strong>Free or fixed ratios: 1:1, 4:3, 16:9.</li><li><strong>Resize</strong>By percent or to an exact width.</li><li><strong>Presets</strong>Save a look and make it the default.</li><li><strong>Zoom</strong>Command-Plus and Command-Minus for small details.</li></ul>"
+        },
+        {
+          "h2": "Copy, save and share",
+          "html": "<table><thead><tr><th>Action</th><th>Shortcut</th></tr></thead><tbody><tr><td>Copy the image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Save</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Undo</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Redo</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr></tbody></table><p>Export as PNG, JPEG, HEIC or TIFF from the <strong>Export</strong> tab, or drag the image straight into Messages, Slack or Mail.</p>"
+        },
+        {
+          "h2": "Private by design",
+          "html": "<p>No account, no cloud and no tracking. EasyShoot only goes online to fetch a Google font you pick and to check the App Store for a newer version. Your screenshots stay on your Mac.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is EasyShoot free?",
+          "a": "Yes. EasyShoot is free on the Mac App Store, with no account."
+        },
+        {
+          "q": "Can EasyShoot capture a scrolling page?",
+          "a": "No. EasyShoot captures an area, a window or the full screen."
+        },
+        {
+          "q": "Can I change a mark after drawing it?",
+          "a": "Yes. Every mark stays editable: move it, restyle it or delete it at any time."
+        },
+        {
+          "q": "Which Macs does it run on?",
+          "a": "Any Mac with macOS 14 Sonoma or later, on Apple silicon or Intel."
+        }
+      ]
+    },
     "blur-screenshot-mac": {
       "short": "Blur private details",
       "title": "How to blur or pixelate part of a screenshot on Mac | EasyShoot",

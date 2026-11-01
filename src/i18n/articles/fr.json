@@ -28,6 +28,93 @@
     }
   },
   "articles": {
+    "how-to-use-easyshoot": {
+      "short": "Toutes les fonctions, pas à pas",
+      "title": "Comment utiliser EasyShoot sur Mac : toutes les fonctions en un guide | EasyShoot",
+      "description": "Une visite illustrée d’EasyShoot pour Mac : capture, flèches, formes, étapes numérotées, pixelisation et flou, texte arabe, arrière-plans, préréglages et export, avec la touche de chaque outil.",
+      "h1": "Comment utiliser EasyShoot sur votre Mac",
+      "intro": "Tout ce que fait EasyShoot, dans l’ordre où vous l’utiliserez : capturer, annoter, masquer le privé, mettre en valeur et partager. Chaque partie montre l’éditeur tel qu’il est et la touche à presser.",
+      "steps": [
+        {
+          "name": "Capturez",
+          "text": "Appuyez sur Option-Maj-Commande-4 et faites glisser sur ce que vous voulez montrer."
+        },
+        {
+          "name": "Annotez",
+          "text": "L’éditeur s’ouvre. Appuyez sur A pour une flèche, R pour un cadre ou N pour une étape numérotée."
+        },
+        {
+          "name": "Réglez le style",
+          "text": "Choisissez couleur, trait et fond dans l’onglet Style de l’inspecteur."
+        },
+        {
+          "name": "Partagez",
+          "text": "Appuyez sur Maj-Commande-C pour copier, ou Commande-S pour enregistrer."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Capturez tout",
+          "html": "<p>EasyShoot vit dans la barre des menus. Chaque capture a son raccourci, et vous pouvez enregistrer les vôtres dans Réglages › Raccourcis.</p><table><thead><tr><th>Action</th><th>Raccourci</th></tr></thead><tbody><tr><td>Capturer une zone</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capturer une fenêtre</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capturer tout l’écran</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Annoter l’image du presse-papiers</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table><p>Après chaque capture, l’<strong>accès rapide</strong> affiche une vignette dans le coin : copiez-la, enregistrez-la, ouvrez-la dans l’éditeur ou glissez-la dans une autre app.</p>"
+        },
+        {
+          "h2": "Annotez",
+          "art": "mark",
+          "alt": "L’éditeur EasyShoot avec un cadre, deux étapes numérotées, une flèche et une note sur une page de paiement.",
+          "html": "<p>Chaque outil est à une touche : pointez et expliquez sans passer par la barre d’outils.</p><ul class=\"feature-grid\"><li><strong>Flèche · A</strong>Faites glisser pour tracer ; tirez la poignée du milieu pour la courber.</li><li><strong>Ligne · L</strong>Une ligne droite entre deux points.</li><li><strong>Rectangle · R</strong>Encadrez l’essentiel.</li><li><strong>Losange · D</strong>Une forme qui se distingue des cadres.</li><li><strong>Ellipse · O</strong>Entourez un chiffre ou un bouton.</li><li><strong>Étape numérotée · N</strong>Cliquez dans l’ordre : 1, 2, 3 se comptent tout seuls.</li><li><strong>Texte · T</strong>Une courte note là où il faut.</li><li><strong>Stylo · P</strong>Dessinez à main levée.</li></ul>"
+        },
+        {
+          "h2": "Un style pour chaque repère",
+          "art": "shape",
+          "alt": "L’onglet Style de l’éditeur avec un cadre en tirets rempli et une ellipse en pointillé sur la capture.",
+          "html": "<p>L’onglet <strong>Style</strong> suit l’outil en main ou le repère sélectionné, et n’affiche que ce qu’il utilise.</p><ul class=\"feature-grid\"><li><strong>Couleur et épaisseur</strong>Cinq couleurs, fin, moyen ou épais, ou toute épaisseur de 1 à 30.</li><li><strong>Style du trait</strong>Lignes et formes continues, en tirets ou pointillées.</li><li><strong>Fond</strong>Un fond clair pour rectangles, losanges, ellipses et étapes.</li><li><strong>Bords et angle</strong>Coins droits ou arrondis et n’importe quel angle ; Maj aimante à 15°.</li><li><strong>Opacité</strong>Atténuez un repère sans le perdre.</li><li><strong>Plusieurs à la fois</strong>Commande-A, Maj-clic ou un cadre tracé sur une zone vide.</li></ul>"
+        },
+        {
+          "h2": "Masquez les infos privées",
+          "art": "pixel",
+          "alt": "Un numéro de carte flouté avec l’outil Pixeliser, et l’onglet Style réglé sur Flou.",
+          "html": "<p>Appuyez sur <kbd>B</kbd> et faites glisser sur un e-mail, un numéro de carte ou un visage. Dans l’onglet Style, choisissez <strong>Pixels</strong> ou <strong>Flou</strong> et réglez l’intensité. L’image exportée ne garde que la version masquée.</p>"
+        },
+        {
+          "h2": "Du texte dans toutes les langues",
+          "art": "ar",
+          "alt": "Une note en bulle sur la capture, avec la police, la taille, l’aspect et la direction dans l’onglet Style.",
+          "html": "<p>Appuyez sur <kbd>T</kbd> et tapez. Utilisez n’importe quelle police de votre Mac, ou une police Google téléchargée dès que vous la choisissez. Réglez l’aspect sur <strong>Simple</strong>, <strong>Bulle</strong> ou <strong>Contour</strong>.</p><p>Avec la direction sur <strong>Auto</strong>, l’arabe et l’hébreu s’écrivent de droite à gauche, lettres bien liées ; choisissez LTR ou RTL pour forcer une ligne.</p>"
+        },
+        {
+          "h2": "Cadrer, recadrer et préréglages",
+          "art": "bg",
+          "alt": "La capture sur un dégradé doux, avec remplissage, marge, arrondi et ombre dans l’onglet Arrière-plan.",
+          "html": "<p>L’onglet <strong>Arrière-plan</strong> pose la capture sur un dégradé, une couleur unie ou rien, avec marges, coins arrondis, ombre, format et alignement.</p><ul class=\"feature-grid\"><li><strong>Recadrer · C</strong>Ratio libre ou fixe : 1:1, 4:3, 16:9.</li><li><strong>Redimensionner</strong>En pourcentage ou à une largeur précise.</li><li><strong>Préréglages</strong>Enregistrez un style et faites-en le défaut.</li><li><strong>Zoom</strong>Commande-Plus et Commande-Moins pour les détails.</li></ul>"
+        },
+        {
+          "h2": "Copier, enregistrer et partager",
+          "html": "<table><thead><tr><th>Action</th><th>Raccourci</th></tr></thead><tbody><tr><td>Copier l’image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Enregistrer</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Annuler</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Rétablir</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr></tbody></table><p>Exportez en PNG, JPEG, HEIC ou TIFF depuis l’onglet <strong>Exporter</strong>, ou glissez l’image dans Messages, Slack ou Mail.</p>"
+        },
+        {
+          "h2": "Privé par conception",
+          "html": "<p>Pas de compte, pas de cloud, pas de suivi. EasyShoot ne se connecte que pour télécharger une police Google choisie et vérifier les mises à jour sur l’App Store. Vos captures restent sur votre Mac.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "EasyShoot est-il gratuit ?",
+          "a": "Oui. EasyShoot est gratuit sur le Mac App Store, sans compte."
+        },
+        {
+          "q": "EasyShoot capture-t-il une page défilante ?",
+          "a": "Non. EasyShoot capture une zone, une fenêtre ou tout l’écran."
+        },
+        {
+          "q": "Puis-je modifier un repère après l’avoir tracé ?",
+          "a": "Oui. Chaque repère reste modifiable : déplacez-le, restylez-le ou supprimez-le à tout moment."
+        },
+        {
+          "q": "Sur quels Mac fonctionne-t-il ?",
+          "a": "Tout Mac sous macOS 14 Sonoma ou ultérieur, Apple silicon ou Intel."
+        }
+      ]
+    },
     "blur-screenshot-mac": {
       "short": "Flouter les infos privées",
       "title": "Flouter ou pixeliser une capture d’écran sur Mac | EasyShoot",

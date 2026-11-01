@@ -44,6 +44,7 @@
 
 ## Guides
 
+- [How to use EasyShoot on your Mac: every feature in one guide](https://easyshoot.haythamasalama.me/guides/how-to-use-easyshoot/)
 - [How to blur part of a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/blur-screenshot-mac/)
 - [How to add arrows and numbered steps to a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/annotate-screenshot-mac/)
 - [How to write Arabic on a screenshot on a Mac](https://easyshoot.haythamasalama.me/guides/arabic-text-screenshot-mac/)

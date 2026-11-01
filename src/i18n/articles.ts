@@ -10,7 +10,7 @@ export type Kind = "guides" | "compare";
 export interface Article { slug: string; kind: Kind; short: Record<Lang, string> }
 
 const ORDER: Record<Kind, string[]> = {
-  guides: ["blur-screenshot-mac", "annotate-screenshot-mac", "arabic-text-screenshot-mac"],
+  guides: ["how-to-use-easyshoot", "blur-screenshot-mac", "annotate-screenshot-mac", "arabic-text-screenshot-mac"],
   compare: ["cleanshot-x-alternative", "shottr-alternative", "snagit-alternative", "lightshot-alternative", "macos-screenshot-alternative"],
 };
 
@@ -39,6 +39,7 @@ const TAG_NAMES: Record<string, Record<Lang, string>> = {
   free: { en: "Free apps", ar: "تطبيقات مجانية", fr: "Apps gratuites", es: "Apps gratis", de: "Kostenlose Apps" },
 };
 const ARTICLE_TAGS: Record<string, string[]> = {
+  "how-to-use-easyshoot": ["screenshots", "markup", "shortcuts"],
   "blur-screenshot-mac": ["privacy", "markup", "screenshots"],
   "annotate-screenshot-mac": ["markup", "shortcuts", "screenshots"],
   "arabic-text-screenshot-mac": ["arabic", "markup", "mac"],
